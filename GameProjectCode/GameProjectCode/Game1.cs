@@ -1,6 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System.Collections.Generic;
+using GameProjectCode.Models;
+using GameProjectCode.Sprites;
 
 namespace GameProjectCode
 {
@@ -11,6 +14,8 @@ namespace GameProjectCode
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+
+        private List<Sprite_Base> _sprites;
 
         public Game1()
         {
@@ -40,6 +45,41 @@ namespace GameProjectCode
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
+            var animations = new Dictionary<string, Animation>()
+            {
+                {"WalkUp", new Animation(Content.Load<Texture2D>("Player/WalkUp"), 6) },
+                {"WalkDown", new Animation(Content.Load<Texture2D>("Player/WalkDown"), 6) },
+                {"WalkLeft", new Animation(Content.Load<Texture2D>("Player/WalkLeft"), 6) },
+                {"WalkRight", new Animation(Content.Load<Texture2D>("Player/WalkRight"), 6) },
+            };
+
+            _sprites = new List<Sprite_Base>()
+            {
+                new Sprite_Controlled(animations)
+                {
+                    Position = new Vector2(100,100),
+                    Input = new Input()
+                    {
+                        Up = Keys.Z,
+                        Down = Keys.S,
+                        Left = Keys.Q,
+                        Right = Keys.D,
+
+                    },
+                },
+                //new Sprite(animations)
+                //{
+                //    Position = new Vector2(150,100),
+                //    Input = new Input()
+                //    {
+                //        Up = Keys.Up,
+                //        Down = Keys.Down,
+                //        Left = Keys.Left,
+                //        Right = Keys.Right,
+
+                //    },
+                //},
+            };
             // TODO: use this.Content to load your game content here
         }
 
@@ -59,8 +99,8 @@ namespace GameProjectCode
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
-                Exit();
+            foreach (var sprite in _sprites)
+                sprite.Update(gameTime, _sprites);
 
             // TODO: Add your update logic here
 
@@ -76,6 +116,11 @@ namespace GameProjectCode
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
+            spriteBatch.Begin();
+
+            foreach (var sprite in _sprites)
+                sprite.Draw(spriteBatch);
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }
