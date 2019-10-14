@@ -11,78 +11,26 @@ using Microsoft.Xna.Framework;
 namespace GameProjectCode.Sprites
 {
     abstract class Sprite_Base
-    { 
-        #region Fields
-
-    protected Texture2D _texture;
-
-    protected AnimationManager _animationManager;
-
-    protected Dictionary<string, Animation> _animations;
-
-    protected Vector2 _position;
-
-    #endregion
-    #region Properties
-
-    public Input Input;
-
-    public Vector2 Position
     {
-        get { return _position; }
-        set
+        public Vector2 Velocity;
+        protected AnimationManager _animationManager;
+        protected Dictionary<string, Animation> _animations;
+        public Input Input;
+        protected Vector2 _position;
+
+        public virtual Vector2 Position
         {
-            _position = value;
-
-            if (_animationManager != null)
-            {
-                _animationManager.Position = _position;
-            }
+        get { return _position; }
+        set { _position = value; }
         }
-    }
 
-    public float Speed = 0.8f;
+        public float Speed = 0.8f;
+        protected Texture2D _texture;
 
-    public Vector2 Velocity;
-
-    #endregion
-
-    #region Method
-
-    public Sprite_Base(Texture2D texture)
-    {
-        _texture = texture;
-    }
-    public Sprite_Base(Dictionary<string, Animation> animations)
-    {
-        _animations = animations;
-        _animationManager = new AnimationManager(_animations.First().Value);
-    }
-    public virtual void Draw(SpriteBatch spriteBatch)
-    {
-        if (_texture != null)
-            spriteBatch.Draw(_texture, Position, Color.White);
-        else if (_animationManager != null)
-            _animationManager.Draw(spriteBatch);
-        else throw new Exception("This ain't right..!");
-    }
-
-    protected abstract void Move();
-
-    protected abstract void SetAnimations();
-    public virtual void Update(GameTime gametime, List<Sprite_Base> sprites)
-    {
-        Move();
-
-        SetAnimations();
-
-        _animationManager.Update(gametime);
-
-        Position += Velocity;
-
-        Velocity = Vector2.Zero;
-    }
-
-        #endregion
+        public abstract void Draw(SpriteBatch spriteBatch);
+        protected abstract void Move();
+        protected abstract void SetAnimations();
+        public abstract void Update(GameTime gametime, List<Sprite_Base> sprites);
+        
     }
 }

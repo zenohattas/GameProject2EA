@@ -67,18 +67,18 @@ namespace GameProjectCode
 
                     },
                 },
-                //new Sprite(animations)
-                //{
-                //    Position = new Vector2(150,100),
-                //    Input = new Input()
-                //    {
-                //        Up = Keys.Up,
-                //        Down = Keys.Down,
-                //        Left = Keys.Left,
-                //        Right = Keys.Right,
+                new Sprite_Controlled(animations)
+                {
+                    Position = new Vector2(150,100),
+                    Input = new Input()
+                    {
+                        Up = Keys.Up,
+                        Down = Keys.Down,
+                        Left = Keys.Left,
+                        Right = Keys.Right,
 
-                //    },
-                //},
+                    },
+                },
             };
             // TODO: use this.Content to load your game content here
         }

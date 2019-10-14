@@ -9,22 +9,9 @@ using GameProjectCode.Models;
 
 namespace GameProjectCode.Sprites
 {
-    class Sprite_Controlled : Sprite_Base
+    class Sprite_Controlled : Sprite_Animated
     {
-        public Sprite_Controlled(Texture2D texture) : base(texture)
-        {
-        }
-
-        public Sprite_Controlled(Dictionary<string, Animation> animations) : base(animations)
-        {
-
-        }
-
-        //Can be a static image or a animation
-
-
-        #region Method
-
+        public Sprite_Controlled(Dictionary<string, Animation> animations) : base(animations) { }
 
         protected override void Move()
         {
@@ -37,20 +24,5 @@ namespace GameProjectCode.Sprites
             else if (Keyboard.GetState().IsKeyDown(Input.Right))
                 Velocity.X = Speed;
         }
-        protected override void SetAnimations()
-        {
-            if (Velocity.X < 0)
-                _animationManager.Play(_animations["WalkLeft"]);
-            else if (Velocity.X > 0)
-                _animationManager.Play(_animations["WalkRight"]);
-            else if (Velocity.Y > 0)
-                _animationManager.Play(_animations["WalkDown"]);
-            else if (Velocity.Y < 0)
-                _animationManager.Play(_animations["WalkUp"]);
-            else
-                _animationManager.Stop();
-        }
-
-        #endregion
     }
 }
