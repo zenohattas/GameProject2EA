@@ -1,4 +1,4 @@
-﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
@@ -51,6 +51,35 @@ namespace GameProjectCode
                 {"WalkDown", new Animation(Content.Load<Texture2D>("Player/WalkDown"), 6) },
                 {"WalkLeft", new Animation(Content.Load<Texture2D>("Player/WalkLeft"), 6) },
                 {"WalkRight", new Animation(Content.Load<Texture2D>("Player/WalkRight"), 6) },
+                {"Adventurer/AirAttack1", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-air-attack1"),4) },
+                {"Adventurer/AirAttack2", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-air-attack2"),3) },
+                {"Adventurer/AirAttack3End", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-air-attack3-end"),3) },
+                {"Adventurer/AirAttack3Loop", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-air-attack3-loop"),2) },
+                {"Adventurer/AirAttack3Ready", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-air-attack3-rdy"),1) },
+                {"Adventurer/Attack1", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-attack1"),5) },
+                {"Adventurer/Attack2", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-attack2"),6) },
+                {"Adventurer/Attack3", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-attack3"),6) },
+                {"Adventurer/Cast", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-cast"),4) },
+                {"Adventurer/CastLoop", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-cast-loop"),4) },
+                {"Adventurer/CornerClimb", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-crnr-clmb"),5) },
+                {"Adventurer/CornerGrab", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-crnr-grb"),4) },
+                {"Adventurer/CornerJump", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-crnr-jmp"),2) },
+                {"Adventurer/Crouch", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-crouch"),4) },
+                {"Adventurer/Die", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-die"),7) },
+                {"Adventurer/Fall", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-fall"),2) },
+                {"Adventurer/Hurt", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-hurt"),3) },
+                {"Adventurer/Idle", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-idle"),4) },
+                {"Adventurer/Idle2", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-idle-2"),4) },
+                {"Adventurer/Items", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-items"),3) },
+                {"Adventurer/Jump", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-jump"),4) },
+                {"Adventurer/LadderClimb", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-ladder-climb"),4) },
+                {"Adventurer/Run", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-run"),6) },
+                {"Adventurer/Slide", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-slide"),2) },
+                {"Adventurer/RollDodge", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-smrslt"),4) },
+                {"Adventurer/Stand", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-stand"),3) },
+                {"Adventurer/SwordDraw", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-swrd-drw"),4) },
+                {"Adventurer/SwordSheat", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-swrd-shte"),4) },
+                {"Adventurer/WallSlide", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-wall-slide"),2) },
             };
 
             _sprites = new List<Sprite_Base>()
