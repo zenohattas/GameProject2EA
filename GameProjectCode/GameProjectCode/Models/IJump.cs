@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace GameProjectCode.Models
 {
-    class Controller
+    interface IJump
     {
+        bool HasJumped { get; set; }
     }
 }
