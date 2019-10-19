@@ -3,7 +3,8 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
 using GameProjectCode.Models;
-using GameProjectCode.Sprites;
+using System;
+using GameProjectCode.Objects;
 
 namespace GameProjectCode
 {
@@ -15,7 +16,7 @@ namespace GameProjectCode
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        private List<Sprite_Base> _sprites;
+        private List<GameObject> _sprites;
 
         public Game1()
         {
@@ -83,8 +84,9 @@ namespace GameProjectCode
             };
 
             _sprites = new List<Sprite_Base>()
+            _sprites = new List<GameObject>()
             {
-                new Sprite_Controlled(animations)
+                new PlayerGameObject(animations)
                 {
                     Position = new Vector2(100,100),
                     Input = new Input()
@@ -96,7 +98,7 @@ namespace GameProjectCode
 
                     },
                 },
-                new Sprite_Controlled(animations)
+                //new ControlledGameObject(animations)
                 {
                     Position = new Vector2(150,100),
                     Input = new Input()

@@ -7,22 +7,23 @@ using System.Text;
 using System.Threading.Tasks;
 using GameProjectCode.Models;
 
-namespace GameProjectCode.Sprites
+namespace GameProjectCode.Objects
 {
-    class Sprite_Controlled : Sprite_Animated
+    class ControlledGameObject : MoveableGameObject
     {
-        public Sprite_Controlled(Dictionary<string, Animation> animations) : base(animations) { }
+        public Input Input;
+        public ControlledGameObject(Dictionary<string, Animation> animations) : base(animations) { }
 
         protected override void Move()
         {
-            if (Keyboard.GetState().IsKeyDown(Input.Up))
-                Velocity.Y = -Speed;
-            else if (Keyboard.GetState().IsKeyDown(Input.Down))
-                Velocity.Y = Speed;
-            else if (Keyboard.GetState().IsKeyDown(Input.Left))
+            if (Keyboard.GetState().IsKeyDown(Input.Left))
                 Velocity.X = -Speed;
             else if (Keyboard.GetState().IsKeyDown(Input.Right))
                 Velocity.X = Speed;
+        }
+        protected override void SetAnimations()
+        {
+            //not implemented
         }
     }
 }
