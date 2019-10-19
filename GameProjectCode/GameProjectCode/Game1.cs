@@ -97,21 +97,25 @@ namespace GameProjectCode
                         Down = Keys.S,
                         Left = Keys.Q,
                         Right = Keys.D,
-
+                        Jump = Keys.Space,
+                        Sprint = Keys.LeftShift,
+                        Dodge = Keys.L,
+                        Attack = Keys.J,
+                        Spell = Keys.K,
                     },
                 },
                 //new ControlledGameObject(animations)
-                {
-                    Position = new Vector2(150,100),
-                    Input = new Input()
-                    {
-                        Up = Keys.Up,
-                        Down = Keys.Down,
-                        Left = Keys.Left,
-                        Right = Keys.Right,
+                //{
+                //    Position = new Vector2(150,100),
+                //    Input = new Input()
+                //    {
+                //        Up = Keys.Up,
+                //        Down = Keys.Down,
+                //        Left = Keys.Left,
+                //        Right = Keys.Right,
 
-                    },
-                },
+                //    },
+                //},
             };
             // TODO: use this.Content to load your game content here
         }
