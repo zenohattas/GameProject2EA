@@ -11,7 +11,7 @@ namespace GameProjectCode.Manager
 {
     class AnimationManager
     { 
-        private Animation _animation;
+        public Animation _animation;
         private float _timer;
 
         public Vector2 Position { get; set; }
@@ -22,8 +22,6 @@ namespace GameProjectCode.Manager
         }
         public void Play(Animation animation)
         {
-            if (_animation == animation)
-                return;
 
             _animation = animation;
 
@@ -44,9 +42,15 @@ namespace GameProjectCode.Manager
                 _timer = 0;
                 _animation.CurrentFrame++;
 
-                if (_animation.CurrentFrame >= _animation.FrameCount)
+                if (_animation.CurrentFrame >= _animation.Frames.Count)
                 {
-                    _animation.CurrentFrame = 0;
+                    if (_animation.IsLooping)
+                    {
+                        _animation.CurrentFrame = 0;
+                    }
+                    else{
+                        _animation.CurrentFrame--;
+                    }
                 }
             }
         }
@@ -54,11 +58,8 @@ namespace GameProjectCode.Manager
         {
             spritebatch.Draw(_animation.Texture,
                             Position,
-                            new Rectangle(_animation.CurrentFrame * _animation.FrameWidth,
-                                          0,
-                                          _animation.FrameWidth,
-                                          _animation.FrameHeight),
-                            Color.White);
+                            _animation.Frames[_animation.CurrentFrame].Frame,
+                                Color.White);
         }
     }
 }
