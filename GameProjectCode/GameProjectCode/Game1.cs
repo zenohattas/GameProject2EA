@@ -1,4 +1,4 @@
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
@@ -16,6 +16,7 @@ namespace GameProjectCode
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Manager.CollisionManager collisionManager;
+        Random r = new Random();
 
         private List<GameObject> _sprites;
 
