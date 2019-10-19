@@ -43,8 +43,10 @@
   <ItemGroup>
     <Compile Include="Game1.cs" />
     <Compile Include="Manager\AnimationManager.cs" />
+    <Compile Include="Manager\CollisionManager.cs" />
     <Compile Include="Models\Animation.cs" />
     <Compile Include="Models\Controller.cs" />
+    <Compile Include="Models\ICollidable.cs" />
     <Compile Include="Models\Input.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

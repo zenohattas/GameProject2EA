@@ -15,6 +15,7 @@ namespace GameProjectCode
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        Manager.CollisionManager collisionManager;
 
         private List<GameObject> _sprites;
 
@@ -22,6 +23,7 @@ namespace GameProjectCode
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            collisionManager = new Manager.CollisionManager();
         }
 
         /// <summary>
@@ -132,6 +134,33 @@ namespace GameProjectCode
         {
             foreach (var sprite in _sprites)
                 sprite.Update(gameTime, _sprites);
+
+            List<ICollidable> collidables = collisionManager.GetCollidableList(_sprites);
+            for (int i = 0; i < collidables.Count-1; i++)
+            {
+                if (collidables[i] is MoveableGameObject)
+                {
+                for (int j = 0; i < collidables.Count-1; i++)
+                    {
+                        if (collisionManager.DetectCollision(collidables[i], collidables[j]))
+                        {
+                            collidables[i].Collide(collidables[j]);
+                            if (collidables[j] is MoveableGameObject)
+                                collidables[j].Collide(collidables[i]);
+                        }
+                    }
+                }
+            }
+            //foreach (var spriteToCheck in collisionManager.GetCollidableList(_sprites))
+            //{
+            //    foreach (var sprite in _sprites)
+            //    {
+            //        if (collisionManager.DetectCollision(spriteToCheck, sprite))
+            //        {
+            //            GraphicsDevice.Clear(Color.FromNonPremultiplied(r.Next(0, 256), r.Next(0, 256), r.Next(0, 256), 255));
+            //        }
+            //    }
+            //}
 
             // TODO: Add your update logic here
 
