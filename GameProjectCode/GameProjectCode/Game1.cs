@@ -16,7 +16,12 @@ namespace GameProjectCode
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Manager.CollisionManager collisionManager;
+        Camera2D camera;
         Random r = new Random();
+        PlayerGameObject hero;
+        float rotation = 0;
+        float zoom = 1;
+        Vector2 camPos = new Vector2();
 
         private List<GameObject> _sprites;
 
@@ -36,7 +41,7 @@ namespace GameProjectCode
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
+            camera = new Camera2D(GraphicsDevice.Viewport);
             base.Initialize();
         }
 
@@ -116,7 +121,8 @@ namespace GameProjectCode
                 //{"Adventurer/Left_SwordSheat", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-SheetLeft"), , , 36, 50) },
                 //{"Adventurer/Left_WallSlide", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-SheetLeft"), , , 36, 50) },
 
-                {"Environment/sheet.png", new Animation(Content.Load<Texture2D>("Environment/sheet"), 80, 128, 16, 32, isLooping: false) },
+                {"Environment/Ground_Blue", new Animation(Content.Load<Texture2D>("Environment/sheet"), 128, 80, 16, 32, isLooping: false) },
+                { "Environment/Box", new Animation(Content.Load<Texture2D>("Environment/sheet"), 130, 66, 12, 12, isLooping:false) },
                 //{ "", new Animation(Content.Load<Texture2D>(""), , ,) },
             };
 
@@ -144,9 +150,9 @@ namespace GameProjectCode
             animations["Adventurer/Left_Idle"].AddFrame(250,0);
             animations["Adventurer/Left_Idle"].AddFrame(200,0);
 
-            animations["Adventurer/Left_Jump"].AddFrame(300,72);
             animations["Adventurer/Left_Jump"].AddFrame(250,72);
             animations["Adventurer/Left_Jump"].AddFrame(200,72);
+            animations["Adventurer/Left_Jump"].AddFrame(150,72);
 
             _sprites = new List<GameObject>()
             {
@@ -166,6 +172,13 @@ namespace GameProjectCode
                         Spell = Keys.K,
                     },
                 },
+                new Ground(animations, graphics.GraphicsDevice.Viewport, animations["Environment/Ground_Blue"], new Vector2(0,200)),
+                new Ground(animations, graphics.GraphicsDevice.Viewport, animations["Environment/Ground_Blue"], new Vector2(0,50)),
+                new Block(animations, animations["Environment/Box"])
+                {
+                    Position = new Vector2(200,188)
+                }
+                
                 //new ControlledGameObject(animations)
                 //{
                 //    Position = new Vector2(150,100),
@@ -179,6 +192,7 @@ namespace GameProjectCode
                 //    },
                 //},
             };
+            hero = (PlayerGameObject)_sprites[0];
             // TODO: use this.Content to load your game content here
         }
 
@@ -201,32 +215,43 @@ namespace GameProjectCode
             foreach (var sprite in _sprites)
                 sprite.Update(gameTime, _sprites);
 
-            List<ICollidable> collidables = collisionManager.GetCollidableList(_sprites);
-            for (int i = 0; i < collidables.Count-1; i++)
+            collisionManager.DetectCollisions(_sprites);
+
+            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
+                Exit();
+
+            // TODO: Add your update logic here
+            KeyboardState stateKey = Keyboard.GetState();
+
+
+
+            if (stateKey.IsKeyDown(Keys.F1))
             {
-                if (collidables[i] is MoveableGameObject)
-                {
-                for (int j = 0; i < collidables.Count-1; i++)
-                    {
-                        if (collisionManager.DetectCollision(collidables[i], collidables[j]))
-                        {
-                            collidables[i].Collide(collidables[j]);
-                            if (collidables[j] is MoveableGameObject)
-                                collidables[j].Collide(collidables[i]);
-                        }
-                    }
-                }
+                camPos.X -= 1;
             }
-            //foreach (var spriteToCheck in collisionManager.GetCollidableList(_sprites))
-            //{
-            //    foreach (var sprite in _sprites)
-            //    {
-            //        if (collisionManager.DetectCollision(spriteToCheck, sprite))
-            //        {
-            //            GraphicsDevice.Clear(Color.FromNonPremultiplied(r.Next(0, 256), r.Next(0, 256), r.Next(0, 256), 255));
-            //        }
-            //    }
-            //}
+            if (stateKey.IsKeyDown(Keys.F2))
+            {
+                camPos.X += 1;
+            }
+            if (stateKey.IsKeyDown(Keys.F3))
+            {
+                rotation += .1f;
+            }
+            if (stateKey.IsKeyDown(Keys.F4))
+            {
+                rotation -= .1f;
+            }
+            if (stateKey.IsKeyDown(Keys.F5))
+            {
+                zoom += .1f;
+            }
+            if (stateKey.IsKeyDown(Keys.F6))
+            {
+                zoom -= .1f;
+            };
+
+            if (hero.IsMoving)
+                camPos.X = hero.Position.X - GraphicsDevice.Viewport.Width / 2;
 
             // TODO: Add your update logic here
 
@@ -242,7 +267,14 @@ namespace GameProjectCode
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
-            spriteBatch.Begin();
+            var viewMatrix = camera.GetViewMatrix();
+            //_camera.Position = new Vector2(theHero.position.X - 200, theHero.position.Y - 300);// new Vector2(theHero.position.X + 200, theHero.position.Y+400);
+            camera.Position = camPos;
+            camera.Rotation = rotation;
+            camera.Zoom = zoom;
+
+
+            spriteBatch.Begin(transformMatrix: viewMatrix);
 
             foreach (var sprite in _sprites)
                 sprite.Draw(spriteBatch);
