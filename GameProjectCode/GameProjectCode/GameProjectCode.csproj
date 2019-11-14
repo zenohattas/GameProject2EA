@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Extensions\RectangleExtension.cs" />
     <Compile Include="Game1.cs" />
+    <Compile Include="Manager\ActionManager.cs" />
     <Compile Include="Manager\AnimationManager.cs" />
     <Compile Include="Manager\CollisionManager.cs" />
     <Compile Include="Models\Animation.cs" />
