@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GameProjectCode.Manager;
 using GameProjectCode.Models;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
@@ -11,6 +12,7 @@ namespace GameProjectCode.Objects
 {
     class PlayerGameObject : ControlledGameObject, ICollidable, IJump
     {
+        private bool Collided;
         private bool IsfacingRight;
         public PlayerGameObject(Dictionary<string, Animation> animations, string animationLeft_AirAttack1 = "Adventurer/Left_AirAttack1", string animationLeft_AirAttack2 = "Adventurer/Left_AirAttack2", string animationLeft_AirAttack3End = "Adventurer/Left_AirAttack3", string animationLeft_AirAttack3Loop = "Adventurer/Left_AirAttack3Loop", string animationLeft_AirAttack3Ready = "Adventurer/Left_AirAttack3Ready", string animationLeft_Attack1 = "Adventurer/Left_Attack1", string animationLeft_Attack2 = "Adventurer/Left_Attack2", string animationLeft_Attack3 = "Adventurer/Left_Attack3", string animationLeft_Cast = "Adventurer/Left_Cast", string animationLeft_CastLoop = "Adventurer/Left_CastLoop", string animationLeft_CornerClimb = "Adventurer/Left_CornerClimb", string animationLeft_CornerGrab = "Adventurer/Left_CornerGrab", string animationLeft_CornerJump = "Adventurer/Left_CornerJump", string animationLeft_Crouch = "Adventurer/Left_Crouch", string animationLeft_Die = "Adventurer/Left_Die", string animationLeft_Fall = "Adventurer/Left_Fall", string animationLeft_Hurt = "Adventurer/Left_Hurt", string animationLeft_Idle = "Adventurer/Left_Idle", string animationLeft_Idle2 = "Adventurer/Left_Idle2", string animationLeft_Items = "Adventurer/Left_Items", string animationLeft_Jump = "Adventurer/Left_Jump", string animationLeft_LadderClimb = "Adventurer/Left_LadderClimb", string animationLeft_Run = "Adventurer/Left_Run", string animationLeft_Slide = "Adventurer/Left_Slide", string animationLeft_RollDodge = "Adventurer/Left_RollDodge", string animationLeft_Stand = "Adventurer/Left_Stand", string animationLeft_SwordDraw = "Adventurer/Left_SwordDraw", string animationLeft_SwordSheat = "Adventurer/Left_SwordSheat", string animationLeft_WallSlide = "Adventurer/Left_WallSlide", string animationRight_AirAttack1 = "Adventurer/Right_AirAttack1", string animationRight_AirAttack2 = "Adventurer/Right_AirAttack2", string animationRight_AirAttack3End = "Adventurer/Right_AirAttack3", string animationRight_AirAttack3Loop = "Adventurer/Right_AirAttack3Loop", string animationRight_AirAttack3Ready = "Adventurer/Right_AirAttack3Ready", string animationRight_Attack1 = "Adventurer/Right_Attack1", string animationRight_Attack2 = "Adventurer/Right_Attack2", string animationRight_Attack3 = "Adventurer/Right_Attack3", string animationRight_Cast = "Adventurer/Right_Cast", string animationRight_CastLoop = "Adventurer/Right_CastLoop", string animationRight_CornerClimb = "Adventurer/Right_CornerClimb", string animationRight_CornerGrab = "Adventurer/Right_CornerGrab", string animationRight_CornerJump = "Adventurer/Right_CornerJump", string animationRight_Crouch = "Adventurer/Right_Crouch", string animationRight_Die = "Adventurer/Right_Die", string animationRight_Fall = "Adventurer/Right_Fall", string animationRight_Hurt = "Adventurer/Right_Hurt", string animationRight_Idle = "Adventurer/Right_Idle", string animationRight_Idle2 = "Adventurer/Right_Idle2", string animationRight_Items = "Adventurer/Right_Items", string animationRight_Jump = "Adventurer/Right_Jump", string animationRight_LadderClimb = "Adventurer/Right_LadderClimb", string animationRight_Run = "Adventurer/Right_Run", string animationRight_Slide = "Adventurer/Right_Slide", string animationRight_RollDodge = "Adventurer/Right_RollDodge", string animationRight_Stand = "Adventurer/Right_Stand", string animationRight_SwordDraw = "Adventurer/Right_SwordDraw", string animationRight_SwordSheat = "Adventurer/Right_SwordSheat", string animationRight_WallSlide = "Adventurer/Right_WallSlide") : base(animations)
         {
@@ -142,32 +144,37 @@ namespace GameProjectCode.Objects
 
         protected override void SetAnimations()
         {
-            if (Keyboard.GetState().IsKeyDown(Input.Left))
+            if (IsGrounded)
             {
-                _animationManager.Play(_animations[_animationLeft_Run]);
-                IsfacingRight = false;
-            }
-            else if (Keyboard.GetState().IsKeyDown(Input.Right))
-            {
-                _animationManager.Play(_animations[_animationRight_Run]);
-                IsfacingRight = true;
+                if (Keyboard.GetState().IsKeyDown(Input.Left))
+                {
+                    _animationManager.Play(_animations[_animationLeft_Run]);
+                    IsfacingRight = false;
+                }
+                else if (Keyboard.GetState().IsKeyDown(Input.Right))
+                {
+                    _animationManager.Play(_animations[_animationRight_Run]);
+                    IsfacingRight = true;
 
-            }
-
-            if (IsfacingRight)
-            {
-                if (Keyboard.GetState().IsKeyDown(Input.Jump))
-                    _animationManager.Play(_animations[_animationRight_Jump]);
-                else if (!Keyboard.GetState().IsKeyDown(Input.Right))
+                }
+                else if (IsfacingRight)
                     _animationManager.Play(_animations[_animationRight_Idle]);
-
+                else if (!IsfacingRight)
+                    _animationManager.Play(_animations[_animationLeft_Idle]);
             }
             else
             {
-                if (Keyboard.GetState().IsKeyDown(Input.Jump))
-                    _animationManager.Play(_animations[_animationLeft_Jump]);
-                else if (!Keyboard.GetState().IsKeyDown(Input.Left))
-                    _animationManager.Play(_animations[_animationLeft_Idle]);
+                if (IsfacingRight)
+                {
+                    if (Keyboard.GetState().IsKeyDown(Input.Jump))
+                        _animationManager.Play(_animations[_animationRight_Jump]);
+
+                }
+                else
+                {
+                    if (Keyboard.GetState().IsKeyDown(Input.Jump))
+                        _animationManager.Play(_animations[_animationLeft_Jump]);
+                }
             }
         }
         protected override void Move()
@@ -180,7 +187,7 @@ namespace GameProjectCode.Objects
                     Velocity.X = Speed * 2;
                 else
                 {
-                    Velocity.X = Velocity.X / 1.1f;
+                    Velocity.X = Velocity.X / 1.2f;
                 }
             }
             else
@@ -191,26 +198,24 @@ namespace GameProjectCode.Objects
                     Velocity.X = Speed;
                 else
                 {
-                    Velocity.X = Velocity.X / 1.1f;
+                    Velocity.X = Velocity.X / 1.2f;
                 }
             }
-            if (Keyboard.GetState().IsKeyDown(Input.Jump) && !HasJumped)
+
+            if (Keyboard.GetState().IsKeyDown(Input.Jump) && IsGrounded)
             {
-                Velocity.Y -= 10f;
-                HasJumped = true;
+                Velocity.Y -= 7f;
+                IsGrounded = false;
             }
-            else if (HasJumped)
+            else if (!IsGrounded)
             {
                 Velocity.Y += 0.15f;
             }
-            else if (HasJumped)
-            {
-                Velocity.Y = 0f;
-            }
-            else if (Position.Y >= 450)
-            {
-                HasJumped = false;
-            }
+            //if (Position.Y >= 100)
+            //{
+            //    IsGrounded = true;
+            //    Velocity.Y = 0;
+            //}
         }
         protected Rectangle _collisionRectangle;
         public Rectangle CollisionRectangle
@@ -219,34 +224,79 @@ namespace GameProjectCode.Objects
             {
                 _collisionRectangle.X = (int)Position.X;
                 _collisionRectangle.Y = (int)Position.Y;
+                _collisionRectangle.Width = (int)Dimenions.X;
+                _collisionRectangle.Height = (int)Dimenions.Y;
                 return _collisionRectangle;
+                //return _animationManager._animation.Frames[_animationManager._animation.CurrentFrame].Frame;
             }
         }
         public void Collide(ICollidable o)
         {
-            if(o.Position.X + o.Dimenion.X > this.Position.X && o.Position.X < this.Position.X)
-            {
-                this._position.X = o.Position.X + o.Dimenion.X;
-            }
-            if (this.Position.X + this.Dimenion.X > o.Position.X && this.Position.X < o.Position.X)
-            {
-                this._position.X = o.Position.X - this.Dimenion.X;
-            }
-            if (o.Position.Y + o.Dimenion.Y > this.Position.Y && o.Position.Y < this.Position.Y)
-            {
-                this._position.Y = o.Position.Y + o.Dimenion.Y;
+            //  Rectangle collider = o.CollisionRectangle;
+            //if (o.Position.X + o.Dimenions.X > this.Position.X && o.Position.X < this.Position.X)
+            //{
+            //    //this._position.X = o.Position.X + o.Dimenions.X;
+            //    this._position.X -= Velocity.X;
+            //}
+            //else if (this.Position.X + this.Dimenions.X > o.Position.X && this.Position.X < o.Position.X)
+            //{
+            //    //this._position.X = o.Position.X - this.Dimenions.X;
+            //    this._position.X -= Velocity.X;
+            //}
+            //else if (this.Position.Y + this.Dimenions.Y > o.Position.Y && this.Position.Y < o.Position.Y)
+            //{
+            //    this._position.Y = o.Position.Y - this.Dimenions.Y;
+            //    IsGrounded = true;
+            //    Velocity.Y = 0;
+            //}
+            //else if (this.Position.Y < o.Position.Y + o.Dimenions.Y && this.Position.Y > o.Position.Y && !IsGrounded)
+            //{
+            //    //this._position.Y = o.Position.Y - this.Dimenions.Y;
+            //    Velocity.Y = 0;
 
-            }
-            if (this.Position.Y + this.Dimenion.Y > o.Position.Y && this.Position.Y < o.Position.X)
-            {
-                this._position.Y = o.Position.Y - this.Dimenion.Y;
+            //}
 
-            }
+            //Vector2 collisionDepth = GameProjectCode.Extensions.RectangleExtension.GetIntersectionDepth(this.CollisionRectangle, o.CollisionRectangle);
+
+            ////Touching left
+            //if (collisionDepth.X > 0 && this.Position.X + this.Dimenions.X > o.Position.X + o.Dimenions.X && Velocity.X < collisionDepth.X)
+            //{
+            //    this._position.X -= Velocity.X;
+            //}
+            ////Touching right
+            //if (collisionDepth.X < 0 && this.Position.X < o.Position.X && Velocity.X > collisionDepth.X)
+            //{
+            //    this._position.X -= Velocity.X;
+            //}
+            ////Touching Top
+            //if (collisionDepth.Y > 0 && this.Position.Y + this.Dimenions.Y > o.Position.Y + o.Dimenions.Y && Velocity.Y < 0)
+            //{
+            //    this._position.Y += collisionDepth.Y;
+            //    Velocity.Y = 0;
+            //}
+            //////Touching Bottom
+            //if (collisionDepth.Y < 0 && this.Position.Y < o.Position.Y && Velocity.Y > 0)
+            //{
+            //    this._position.Y += collisionDepth.Y;
+            //    IsGrounded = true;
+            //    Velocity.Y = 0;
+            //}
+
+            Collided = true;
+            
+            Vector2 movement = actionManager.MoveObject((ICollidable)this, o);
+
+            if (movement.Y < 0)
+                IsGrounded = true;
+            if (movement.Y > 0 && Velocity.Y < 0)
+                Velocity.Y = 0;
+            
+            Position += movement;
         }
 
         private bool hasJumped;
         public bool HasJumped { get => hasJumped; set => hasJumped = value; }
-        public Vector2 Dimenion {
+        public Vector2 Dimenions {
             get
             {
                 _dimension.X = _animationManager._animation.Frames[_animationManager._animation.CurrentFrame].Frame.Width;
@@ -255,5 +305,23 @@ namespace GameProjectCode.Objects
             }
         }
         private Vector2 _dimension;
+        public bool IsGrounded = false;
+        public bool IsMoving
+        {
+            get
+            {
+                if (Velocity.X != 0)
+                    return true;
+                else
+                    return false;
+            }
+        }
+        public override void Update(GameTime gametime, List<GameObject> objects)
+        {
+            if (!Collided)
+                IsGrounded = false;
+            Collided = false;
+            base.Update(gametime, objects);
+        }
     }
 }
