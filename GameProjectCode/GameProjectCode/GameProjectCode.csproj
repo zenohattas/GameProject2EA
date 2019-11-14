@@ -41,6 +41,7 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Extensions\RectangleExtension.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Manager\AnimationManager.cs" />
     <Compile Include="Manager\CollisionManager.cs" />
