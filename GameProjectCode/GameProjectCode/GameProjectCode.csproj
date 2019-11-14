@@ -50,6 +50,7 @@
     <Compile Include="Models\ICollidable.cs" />
     <Compile Include="Models\IJump.cs" />
     <Compile Include="Models\Input.cs" />
+    <Compile Include="Objects\Block.cs" />
     <Compile Include="Objects\Ground.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
