@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GameProjectCode.Manager;
 using GameProjectCode.Models;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -13,11 +14,13 @@ namespace GameProjectCode.Objects
     {
         public Vector2 Velocity;
         public float Speed = 1.5f;
+        protected ActionManager actionManager; 
 
         protected abstract void Move();
 
         protected MoveableGameObject(Dictionary<string, Animation> animations):base(animations)
         {
+            actionManager = new ActionManager();
         }
 
         public override void Update(GameTime gametime, List<GameObject> objects)
