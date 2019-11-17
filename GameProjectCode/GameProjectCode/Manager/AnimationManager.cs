@@ -57,7 +57,7 @@ namespace GameProjectCode.Manager
         public void Draw(SpriteBatch spritebatch)
         {
             spritebatch.Draw(_animation.Texture,
-                            Position,
+                            Position + _animation.Offset,
                             _animation.Frames[_animation.CurrentFrame].Frame,
                                 Color.White);
         }
