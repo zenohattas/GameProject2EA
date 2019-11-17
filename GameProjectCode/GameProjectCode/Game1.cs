@@ -76,7 +76,7 @@ namespace GameProjectCode
                 //{"Adventurer/Right_CornerJump", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-SheetRight"), , , 36, 50) },
                 //{"Adventurer/Right_Crouch", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-SheetRight"), , , 36, 50) },
                 //{"Adventurer/Right_Die", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-SheetRight"), , , 36, 50) },
-                //{"Adventurer/Right_Fall", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-SheetRight"), , , 36, 50) },
+                {"Adventurer/Right_Fall", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-SheetRight"), 68, 112, 16, 30) },
                 //{"Adventurer/Right_Hurt", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-SheetRight"), , , 36, 50) },
                 {"Adventurer/Right_Idle", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-SheetRight"), 0, 0, 50, 36) },
                 //{"Adventurer/Right_Idle2", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-SheetRight"), , , 36, 50) },
@@ -106,7 +106,7 @@ namespace GameProjectCode
                 //{"Adventurer/Left_CornerJump", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-SheetLeft"), , , 36, 50) },
                 //{"Adventurer/Left_Crouch", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-SheetLeft"), , , 36, 50) },
                 //{"Adventurer/Left_Die", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-SheetLeft"), , , 36, 50) },
-                //{"Adventurer/Left_Fall", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-SheetLeft"), , , 36, 50) },
+                {"Adventurer/Left_Fall", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-SheetLeft"), 266, 112, 16, 30) },
                 //{"Adventurer/Left_Hurt", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-SheetLeft"), , , 36, 50) },
                 {"Adventurer/Left_Idle", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-SheetLeft"), 300, 0, 50, 36) },
                 //{"Adventurer/Left_Idle2", new Animation(Content.Load<Texture2D>("Adventurer/adventurer-SheetLeft"), , , 36, 50) },
@@ -126,11 +126,15 @@ namespace GameProjectCode
                 //{ "", new Animation(Content.Load<Texture2D>(""), , ,) },
             };
 
-            animations["Adventurer/Right_Jump"].AddFrame(100, 36);
+            animations["Adventurer/Right_Run"].AddFrame(100, 36);
             animations["Adventurer/Right_Run"].AddFrame(150, 36);
             animations["Adventurer/Right_Run"].AddFrame(200, 36);
             animations["Adventurer/Right_Run"].AddFrame(250, 36);
             animations["Adventurer/Right_Run"].AddFrame(300, 36);
+
+            animations["Adventurer/Right_Fall"].AddFrame(118, 112);
+
+            animations["Adventurer/Left_Fall"].AddFrame(216, 112);
 
             animations["Adventurer/Right_Idle"].AddFrame(50, 0);
             animations["Adventurer/Right_Idle"].AddFrame(100, 0);

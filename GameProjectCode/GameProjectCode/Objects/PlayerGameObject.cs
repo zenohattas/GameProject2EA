@@ -168,13 +168,20 @@ namespace GameProjectCode.Objects
                 {
                     if (Keyboard.GetState().IsKeyDown(Input.Jump))
                         _animationManager.Play(_animations[_animationRight_Jump]);
-
+                    else if(Velocity.Y>1)
+                        _animationManager.Play(_animations[_animationRight_Fall]);
                 }
                 else
                 {
                     if (Keyboard.GetState().IsKeyDown(Input.Jump))
                         _animationManager.Play(_animations[_animationLeft_Jump]);
+                    else if (Velocity.Y > 1)
+                        _animationManager.Play(_animations[_animationLeft_Fall]);
                 }
+                if (Keyboard.GetState().IsKeyDown(Input.Left))
+                    IsfacingRight = false;
+                if (Keyboard.GetState().IsKeyDown(Input.Right))
+                    IsfacingRight = true;
             }
         }
         protected override void Move()
@@ -204,7 +211,7 @@ namespace GameProjectCode.Objects
 
             if (Keyboard.GetState().IsKeyDown(Input.Jump) && IsGrounded)
             {
-                Velocity.Y -= 7f;
+                Velocity.Y -= 4f;
                 IsGrounded = false;
             }
             else if (!IsGrounded)
@@ -287,7 +294,10 @@ namespace GameProjectCode.Objects
             Vector2 movement = actionManager.MoveObject((ICollidable)this, o);
 
             if (movement.Y < 0)
+            {
                 IsGrounded = true;
+                Velocity.Y = 0;
+            }
             if (movement.Y > 0 && Velocity.Y < 0)
                 Velocity.Y = 0;
             
