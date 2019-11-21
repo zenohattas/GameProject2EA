@@ -19,7 +19,7 @@ namespace GameProjectCode.Models
         public float FrameSpeed { get; set; }
         //public int FrameWidth { get; set; }
         public bool IsLooping { get; set; }
-        public Animation(Texture2D texture, int framePositionX, int framePositionY, int frameWidth, int frameHeight, bool isLooping = true, float framespeed = 0.1f)
+        public Animation(Texture2D texture, int framePositionX, int framePositionY, int frameWidth, int frameHeight, bool isLooping = true, float framespeed = 0.14f)
         {
 
             Texture = texture;
