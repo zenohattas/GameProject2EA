@@ -46,6 +46,7 @@
     <Compile Include="Manager\ActionManager.cs" />
     <Compile Include="Manager\AnimationManager.cs" />
     <Compile Include="Manager\CollisionManager.cs" />
+    <Compile Include="Manager\MenuManager.cs" />
     <Compile Include="Manager\Sprite_Loader.cs" />
     <Compile Include="Models\Animation.cs" />
     <Compile Include="Models\AnimationFrame.cs" />
