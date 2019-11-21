@@ -49,6 +49,7 @@
     <Compile Include="Manager\MenuManager.cs" />
     <Compile Include="Manager\ObjectInitialiser.cs" />
     <Compile Include="Manager\Sprite_Loader.cs" />
+    <Compile Include="Manager\StageManager.cs" />
     <Compile Include="Models\Animation.cs" />
     <Compile Include="Models\AnimationFrame.cs" />
     <Compile Include="Models\Camera2D.cs" />
