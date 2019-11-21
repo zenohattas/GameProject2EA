@@ -46,7 +46,7 @@ namespace GameProjectCode.Objects
                 _position = value;
                 if (_animationManager != null)
                 {
-                    _animationManager.Position = _position;
+                    _animationManager.Position = _position;//+ _animationManager._animation.Offset;
                 }
             }
         }  
