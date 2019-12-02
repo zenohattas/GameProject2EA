@@ -1,4 +1,5 @@
-﻿using GameProjectCode.Objects;
+﻿using GameProjectCode.Models;
+using GameProjectCode.Objects;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
@@ -11,30 +12,44 @@ namespace GameProjectCode.Manager
 {
     class StageManager
     {
+        PlayerManager playerManager;
         public MenuManager Menu;
-        List<List<GameObject>> Stage;
+        List<Stage> Stages;
         public int SelectedStage { get; set; }
 
-        public StageManager(MenuManager menuManager)
+        public StageManager(MenuManager menuManager, PlayerManager playerManager)
         {
-            Stage = new List<List<GameObject>>();
+            Stages = new List<Stage>();
             Menu = menuManager;
             SelectedStage = -1;
+            this.playerManager = playerManager;
         }
-        public void AddStage(List<GameObject> stage)
+        public GameObject GetPlayer()
         {
-            Stage.Add(stage);
+            return playerManager.GetPlayer();
+        }
+        public void AddPlayer(GameObject player)
+        {
+            playerManager.AddPlayer(player);
+        }
+        public void AddStage(Stage stage)
+        {
+            Stages.Add(stage);
         }
         public List<GameObject> GetStage()
         {
-            if(SelectedStage >= 0 && SelectedStage < Stage.Count)
-                return Stage[SelectedStage];
+            if(SelectedStage >= 0 && SelectedStage < Stages.Count)
+            {
+                List<GameObject> Stage = new List<GameObject>(Stages[SelectedStage].GameObjects);
+                Stage.Add(playerManager.GetPlayer());
+                return Stage;
+            }
             return null;
         }
         public List<GameObject> GetStage(int stageLevel)
         {
-            if (stageLevel >= 0 && stageLevel < Stage.Count)
-                return Stage[stageLevel];
+            if (stageLevel >= 0 && stageLevel < Stages.Count)
+                return Stages[stageLevel].GameObjects;
             return null;
         }
         public void Draw(SpriteBatch spriteBatch, SpriteFont spriteFont)
@@ -45,15 +60,14 @@ namespace GameProjectCode.Manager
                     Menu.Draw(spriteBatch, spriteFont);
                     break;
                 case 0:
-                    foreach (var sprite in Stage[0])
-                        sprite.Draw(spriteBatch);
+                    Stages[0].Draw(spriteBatch);
                     break;                        
                 default:
-                    foreach (var sprite in Stage[0])
-                        sprite.Draw(spriteBatch);
+                    Stages[0].Draw(spriteBatch);
                     break;
             }
-            
+            if (SelectedStage > -1)
+                playerManager.Draw(spriteBatch);
         }
         public void Update(GameTime gameTime)
         {
@@ -61,12 +75,28 @@ namespace GameProjectCode.Manager
             {
                 Menu.Update(gameTime, this);
             }
-            else if (Stage.Count >= SelectedStage)
+            else if (Stages.Count >= SelectedStage)
             {
-                foreach (var sprite in Stage[SelectedStage])
+                foreach (var sprite in Stages[SelectedStage].GameObjects)
                 {
-                    sprite.Update(gameTime, Stage[SelectedStage]);
+                    sprite.Update(gameTime);
                 }
+                playerManager.Update(gameTime);
+            }
+        }
+        public void ResolveCollisions()
+        {
+            if (SelectedStage>= 0 && SelectedStage<Stages.Count)
+            {
+                foreach (GameObject o in Stages[SelectedStage].GameObjects)
+                {
+                    if (o is IInteractable)
+                    {
+                        IInteractable interactable = o as IInteractable;
+                        interactable.ResolveCollisions();
+                    }
+                }
+                playerManager.ResolveCollision();
             }
         }
     }

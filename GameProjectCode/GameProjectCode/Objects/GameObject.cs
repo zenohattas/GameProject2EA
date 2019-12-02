@@ -55,11 +55,8 @@ namespace GameProjectCode.Objects
         {
             _animationManager.Draw(spriteBatch);
         }
-        protected abstract void SetAnimations();
-        public virtual void Update(GameTime gametime, List<GameObject> objects)
+        public virtual void Update(GameTime gametime)
         {
-            SetAnimations();
-
             _animationManager.Update(gametime);
         }
 

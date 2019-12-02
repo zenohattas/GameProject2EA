@@ -46,16 +46,6 @@ namespace GameProjectCode.Objects
                 return _dimension;
             }
         }
-
-        protected override void SetAnimations()
-        {
-            //Keeps the same sprite as declared in the object creation;
-        }
-
-        void ICollidable.Collide(ICollidable o)
-        {
-            //Does nothing for now, no ground functionality;
-        }
         public override void Draw(SpriteBatch spriteBatch)
         {
             Vector2 origin = Position;

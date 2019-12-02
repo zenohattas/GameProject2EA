@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace GameProjectCode.Manager
 {
+    //FONT TO USE = RINGBEARER
     class MenuManager
     {
         Color color;
@@ -34,6 +35,12 @@ namespace GameProjectCode.Manager
                 "To be implemented",
                 "Back"
             });
+            Menu.Add(new List<string>
+            {
+                "Contact",
+                "Start again"
+            });
+
             color = Color.White;
             colorSelected = Color.SeaGreen;
             selectedMenu = 0;

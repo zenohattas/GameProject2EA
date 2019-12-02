@@ -6,6 +6,7 @@ using GameProjectCode.Models;
 using System;
 using GameProjectCode.Objects;
 using GameProjectCode.Manager;
+using GameProjectCode.Factory;
 
 namespace GameProjectCode
 {
@@ -34,10 +35,10 @@ namespace GameProjectCode
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            collisionManager = new Manager.CollisionManager();
-            spriteLoader = new Manager.Sprite_Loader();
-            objectInitialiser = new Manager.ObjectInitialiser();
-            stageManager = new StageManager(new MenuManager());
+            collisionManager = new CollisionManager();
+            spriteLoader = new Sprite_Loader();
+            objectInitialiser = new ObjectInitialiser();
+            stageManager = new StageManager(new MenuManager(), new PlayerManager());
         }
 
         /// <summary>
@@ -64,9 +65,10 @@ namespace GameProjectCode
 
             var animations = spriteLoader.GetAnimationDictionary(Content);
 
-            stageManager.AddStage(objectInitialiser.LoadStage1(animations, graphics));
+            stageManager.AddStage(new Stage(objectInitialiser.LoadStage1(animations, graphics), new Background(Content.Load<Texture2D>("Environment/Desert"), new Rectangle(0,0, 1279, 639))));
+            stageManager.AddPlayer(objectInitialiser.LoadPlayer(animations));
 
-            hero = (PlayerGameObject)stageManager.GetStage(0)[0];
+            hero = (PlayerGameObject)stageManager.GetPlayer();
             spriteFont = Content.Load<SpriteFont>("Misc/basicFont");
             // TODO: use this.Content to load your game content here
         }
@@ -104,6 +106,8 @@ namespace GameProjectCode
             //Implement in stagemanager
             if (stageManager.SelectedStage > -1)
                 collisionManager.DetectCollisions(stageManager.GetStage());
+
+            stageManager.ResolveCollisions();
 
             // TODO: Add your update logic here
             KeyboardState stateKey = Keyboard.GetState();

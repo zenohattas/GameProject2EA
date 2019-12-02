@@ -12,6 +12,6 @@ namespace GameProjectCode.Models
         Rectangle CollisionRectangle { get; }
         Vector2 Position { get; set; }
         Vector2 Dimenions { get; }
-        void Collide(ICollidable o);
+        
     }
 }

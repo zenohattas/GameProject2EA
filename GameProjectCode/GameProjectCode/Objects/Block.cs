@@ -31,15 +31,5 @@ namespace GameProjectCode.Objects
         }
         protected Vector2 _dimensions;
         public Vector2 Dimenions => _dimensions;
-
-        public void Collide(ICollidable o)
-        {
-            //nothing happens
-        }
-
-        protected override void SetAnimations()
-        {
-            //no animation
-        }
     }
 }
