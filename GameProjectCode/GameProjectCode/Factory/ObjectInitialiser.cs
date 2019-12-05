@@ -14,11 +14,37 @@ namespace GameProjectCode.Factory
     {
         private Vector2 _initiasePos;
         private Vector2 _spriteSize;
-        public int[,] Stage1 =
+        public string[,] Stage1 =
         {
-            { },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "3","3","3","6","0","0","0","5","3","3","3","6","0","0","0","0","0","0","0","0","0","0"},
+            { "4","4","4","12","0","0","0","11","4","4","4","12","0","0","0","0","0","0","0","0","0","0"},
+            { "4","4","4","12","0","0","0","11","4","4","4","12","0","0","0","0","0","0","0","0","0","0" }
         };
-        public int[,] Stage2 =
+        public string[,] Stage1Background =
+        {
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44", },
+            { "45","45","45","45","45","45","45","45","45","45","45","45","45","45","45","45","45","45","45","45","45","45",}
+        };
+        public string[,] Stage2 =
         {
             { },
         };
@@ -32,176 +58,214 @@ namespace GameProjectCode.Factory
             _initiasePos = initialisePos;
             _spriteSize = spriteSize;
         }
-        public List<GameObject> LoadStage(Dictionary<string, Animation> animations, int[,] Stage)
+        public List<GameObject> LoadStage(Dictionary<string, Animation> animations, string[,] Stage, string[,] StageBackground)
         {
             List<GameObject> sprites = new List<GameObject>();
-            for (int i = 0; i < Stage.GetLength(0); i++)
-            {
-                for (int j = 0; j < Stage.GetLength(1); j++)
-                {
-                    string animationName = GetAnimationName(Stage[i, j]);
 
-                    if (animationName.Last() == 'S')
-                        sprites.Add(new BlockSolidGameObject(animations, animations[animationName], _initiasePos));
-                    else if (animationName.Last() == 'L')
-                        sprites.Add(new BlockLiquidGameObject(animations, animations[animationName], _initiasePos));
-                    else if (animationName.Last() == 'T')
-                        sprites.Add(new BlockTransparentGameObject(animations, animations[animationName], _initiasePos));
-                    else if(animationName.Last() == 'F')
-                        sprites.Add(new BlockFallThroughGameObject(animations, animations[animationName], _initiasePos));
+            sprites.AddRange(this.LoadObjects(animations, StageBackground));
+            sprites.AddRange(this.LoadObjects(animations, Stage));
 
-                    _initiasePos.Y += _spriteSize.Y;
-                }
-                _initiasePos.Y += 0;
-                _initiasePos.X += _spriteSize.X;
-            }
-            _initiasePos.X = 0;
             return sprites;
         }
-        public string GetAnimationName(int i)
+        private List<GameObject> LoadObjects(Dictionary<string, Animation> animations, string[,] objects)
+        {
+            List<GameObject> sprites = new List<GameObject>();
+            for (int i = 0; i < objects.GetLength(0); i++)
+            {
+                for (int j = 0; j < objects.GetLength(1); j++)
+                {
+                    string[] ellement = objects[i, j].Split(',');
+                    if (ellement.Length > 0)
+                    {
+                        string animationName = GetAnimationName(ellement[0]);
+                        if (animationName != "")
+                        {
+                            //Optional parameter
+                            if (ellement.Length > 1)
+                            {
+                                if (ellement[1] == "L")
+                                    sprites.Add(new BlockLiquidGameObject(animations, animations[animationName], _initiasePos));
+                                else if (ellement[1] == "T")
+                                    sprites.Add(new BlockTransparentGameObject(animations, animations[animationName], _initiasePos));
+                                else if (ellement[1] == "F")
+                                    sprites.Add(new BlockFallThroughGameObject(animations, animations[animationName], _initiasePos));
+                                //else
+                                //Do nothing
+                            }
+
+                            sprites.Add(new BlockSolidGameObject(animations, animations[animationName], _initiasePos));
+                        }
+
+                    }
+
+                    _initiasePos.X += _spriteSize.X;
+                }
+                _initiasePos.X = 0;
+                _initiasePos.Y += _spriteSize.Y;
+            }
+            _initiasePos.Y = 0;
+            return sprites;
+        }
+        public string GetAnimationName(string i)
         {
             switch (i)
             {
-                case 1:
-                    return "Environment/Grass_brown_dirtedge_left_S";
-                case 2:
-                    return "Environment/Grass_brown_dirtedge_right_S";
-                case 3:
-                    return "Environment/Grass_brown_top_S";
-                case 4:
-                    return "Environment/Grass_brown_middle_S";
-                case 5:
-                    return "Environment/Grass_brown_corner_left_S";
-                case 6:
-                    return "Environment/Grass_brown_corner_right_S";
-                case 7:
-                    return "Environment/Dirt_brown_top_S";
-                case 8:
-                    return "Environment/Dirt_brown_corner_left_S";
-                case 9:
-                    return "Environment/Dirt_brown_corner_right_S";
-                case 10:
-                    return "Environment/Dirt_brown_corner_double_S";
-                case 11:
-                    return "Environment/Dirt_brown_side_left_S";
-                case 12:
-                    return "Environment/Dirt_brown_side_right_S";
-                case 13:
-                    return "Environment/Dirt_brown_side_double_S";
-                case 14:
-                    return "Environment/Block_filler_S";
-                case 15:
-                    return "Environment/Grass_blue_dirtedge_left_S";
-                case 16:
-                    return "Environment/Grass_blue_dirtedge_right_S";
-                case 17:
-                    return "Environment/Grass_blue_top_S";
-                case 18:
-                    return "Environment/Grass_blue_middle_S";
-                case 19:
-                    return "Environment/Grass_blue_corner_left_S";
-                case 20:
-                    return "Environment/Grass_blue_corner_right_S";
-                case 21:
-                    return "Environment/Dirt_blue_top_S";
-                case 22:
-                    return "Environment/Dirt_blue_corner_left_S";
-                case 23:
-                    return "Environment/Dirt_blue_corner_right_S";
-                case 24:
-                    return "Environment/Dirt_blue_corner_double_S";
-                case 25:
-                    return "Environment/Dirt_blue_side_left_S";
-                case 26:
-                    return "Environment/Dirt_blue_side_right_S";
-                case 27:
-                    return "Environment/Dirt_blue_side_double_S";
-                case 28:
-                    return "Environment/Grass_corner_left_S";
-                case 29:
-                    return "Environment/Grass_corner_right_S";
-                case 30:
-                    return "Environment/Grass_corner_left_bottom_S";
-                case 31:
-                    return "Environment/Grass_corner_right_bottom_S";
-                case 32:
-                    return "Environment/Grass_top_S";
-                case 33:
-                    return "Environment/Grass_bottom_S";
-                case 34:
-                    return "Environment/Grass_filler_S";
-                case 35:
-                    return "Environment/Grass_side_left_S";
-                case 36:
-                    return "Environment/Grass_side_right_S";
-                case 37:
-                    return "Environment/Grass_patch_S";
-                case 38:
-                    return "Environment/Grass_inside_corner_top_right_S";
-                case 39:
-                    return "Environment/Grass_inside_corner_top_left_S";
-                case 40:
-                    return "Environment/Grass_inside_corner_bottom_right_S";
-                case 41:
-                    return "Environment/Grass_inside_corner_bottom_left_S";
-                case 42:
-                    return "Environment/Grass_inside_pattern1_S";
-                case 43:
-                    return "Environment/Grass_inside_pattern2_S";
-                case 44:
-                    return "Environment/Water_top_L";
-                case 45:
-                    return "Environment/Water_inside_L";
-                case 46:
-                    return "Environment/Ladder_top_S";
-                case 47:
-                    return "Environment/Ladder_bottom_S";
-                case 48:
-                    return "Environment/Ladder_middle_S";
-                case 49:
-                    return "Environment/Box_S";
-                case 50:
-                    return "Environment/Chest_closed_T";
-                case 51:
-                    return "Environment/Chest_open_full_T";
-                case 52:
-                    return "Environment/Chest_open_empty_T";
-                case 53:
-                    return "Environment/Fence_light_left_T";
-                case 54:
-                    return "Environment/Fence_light_right_T";
-                case 55:
-                    return "Environment/Fence_ligt_middle_T";
-                case 56:
-                    return "Environment/Fence_dark_left_T";
-                case 57:
-                    return "Environment/Fence_dark_rigth_T";
-                case 58:
-                    return "Environment/Fence_dark_middle_T";
-                case 59:
-                    return "Environment/Boulder_small_T";
-                case 60:
-                    return "Environment/Boulder_big_T";
-                case 61:
-                    return "Environment/Signpost_dark_left_T";
-                case 62:
-                    return "Environment/Signpost_dark_center_mono_T";
-                case 63:
-                    return "Environment/Signpost_dark_center_shaded_T";
-                case 64:
-                    return "Environment/Signpost_light_left_T";
-                case 65:
-                    return "Environment/Signpost_light_center_mono_T";
-                case 66:
-                    return "Environment/Signpost_light_center_shaded_T";
-                case 67:
-                    return "Environment/Flower_white_1_T";
-                case 68:
-                    return "Environment/Flower_white_2_T";
-                case 69:
-                    return "Environment/Flower_orange_1_T";
-                case 70:
-                    return "Environment/Flower_orange_2_T";
+                case "1":
+                    return "Environment/Grass_brown_dirtedge_left";
+                case "2":
+                    return "Environment/Grass_brown_dirtedge_right";
+                case "3":
+                    return "Environment/Grass_brown_top";
+                case "4":
+                    return "Environment/Grass_brown_middle";
+                case "5":
+                    return "Environment/Grass_brown_corner_left";
+                case "6":
+                    return "Environment/Grass_brown_corner_right";
+                case "7":
+                    return "Environment/Dirt_brown_top";
+                case "8":
+                    return "Environment/Dirt_brown_corner_left";
+                case "9":
+                    return "Environment/Dirt_brown_corner_right";
+                case "10":
+                    return "Environment/Dirt_brown_corner_double";
+                case "11":
+                    return "Environment/Dirt_brown_side_left";
+                case "12":
+                    return "Environment/Dirt_brown_side_right";
+                case "13":
+                    return "Environment/Dirt_brown_side_double";
+                case "14":
+                    return "Environment/Block_filler";
+                case "15":
+                    return "Environment/Grass_blue_dirtedge_left";
+                case "16":
+                    return "Environment/Grass_blue_dirtedge_right";
+                case "17":
+                    return "Environment/Grass_blue_top";
+                case "18":
+                    return "Environment/Grass_blue_middle";
+                case "19":
+                    return "Environment/Grass_blue_corner_left";
+                case "20":
+                    return "Environment/Grass_blue_corner_right";
+                case "21":
+                    return "Environment/Dirt_blue_top";
+                case "22":
+                    return "Environment/Dirt_blue_corner_left";
+                case "23":
+                    return "Environment/Dirt_blue_corner_right";
+                case "24":
+                    return "Environment/Dirt_blue_corner_double";
+                case "25":
+                    return "Environment/Dirt_blue_side_left";
+                case "26":
+                    return "Environment/Dirt_blue_side_right";
+                case "27":
+                    return "Environment/Dirt_blue_side_double";
+                case "28":
+                    return "Environment/Grass_corner_left";
+                case "29":
+                    return "Environment/Grass_corner_right";
+                case "30":
+                    return "Environment/Grass_corner_left_bottom";
+                case "31":
+                    return "Environment/Grass_corner_right_bottom";
+                case "32":
+                    return "Environment/Grass_top";
+                case "33":
+                    return "Environment/Grass_bottom";
+                case "34":
+                    return "Environment/Grass_filler";
+                case "35":
+                    return "Environment/Grass_side_left";
+                case "36":
+                    return "Environment/Grass_side_right";
+                case "37":
+                    return "Environment/Grass_patch";
+                case "38":
+                    return "Environment/Grass_inside_corner_top_right";
+                case "39":
+                    return "Environment/Grass_inside_corner_top_left";
+                case "40":
+                    return "Environment/Grass_inside_corner_bottom_right";
+                case "41":
+                    return "Environment/Grass_inside_corner_bottom_left";
+                case "42":
+                    return "Environment/Grass_inside_pattern1";
+                case "43":
+                    return "Environment/Grass_inside_pattern2";
+                case "44":
+                    return "Environment/Water_top";
+                case "45":
+                    return "Environment/Water_inside";
+                case "46":
+                    return "Environment/Ladder_top";
+                case "47":
+                    return "Environment/Ladder_bottom";
+                case "48":
+                    return "Environment/Ladder_middle";
+                case "49":
+                    return "Environment/Box";
+                case "50":
+                    return "Environment/Chest_closed";
+                case "51":
+                    return "Environment/Chest_open_full";
+                case "52":
+                    return "Environment/Chest_open_empty";
+                case "53":
+                    return "Environment/Fence_light_left";
+                case "54":
+                    return "Environment/Fence_light_right";
+                case "55":
+                    return "Environment/Fence_ligt_middle";
+                case "56":
+                    return "Environment/Fence_dark_left";
+                case "57":
+                    return "Environment/Fence_dark_rigth";
+                case "58":
+                    return "Environment/Fence_dark_middle";
+                case "59":
+                    return "Environment/Boulder_small";
+                case "60":
+                    return "Environment/Boulder_big";
+                case "61":
+                    return "Environment/Signpost_dark_left";
+                case "62":
+                    return "Environment/Signpost_dark_center_mono";
+                case "63":
+                    return "Environment/Signpost_dark_center_shaded";
+                case "64":
+                    return "Environment/Signpost_light_left";
+                case "65":
+                    return "Environment/Signpost_light_center_mono";
+                case "66":
+                    return "Environment/Signpost_light_center_shaded";
+                case "67":
+                    return "Environment/Flower_white_1";
+                case "68":
+                    return "Environment/Flower_white_2";
+                case "69":
+                    return "Environment/Flower_orange_1";
+                case "70":
+                    return "Environment/Flower_orange_2";
+                case "71":
+                    return "Environment/Dirt_brown_bottom_corner_left";
+                case "72":
+                    return "Environment/Dirt_brown_bottom_corner_right";
+                case "73":
+                    return "Environment/Dirt_brown_bottom_middle";
+                case "74":
+                    return "Environment/Dirt_brown_bottom_double";
+                case "75":
+                    return "Environment/Dirt_blue_bottom_corner_left";
+                case "76":
+                    return "Environment/Dirt_blue_bottom_corner_right";
+                case "77":
+                    return "Environment/Dirt_blue_bottom_middle";
+                case "78":
+                    return "Environment/Dirt_blue_bottom_double";
 
                 default:
                     return "";
@@ -230,9 +294,9 @@ namespace GameProjectCode.Factory
         public List<GameObject> LoadStage1(Dictionary<string, Animation> animations, GraphicsDeviceManager graphics)
         {
             List<GameObject> sprites = new List<GameObject>();
-            sprites.Add(new Ground(animations, graphics.GraphicsDevice.Viewport, animations["Environment/Water_top_L"], new Vector2(0, 200)));
-            sprites.Add(new Ground(animations, graphics.GraphicsDevice.Viewport, animations["Environment/Water_top_L"], new Vector2(0, 50)));
-            sprites.Add(new Block(animations, animations["Environment/Box_S"])
+            sprites.Add(new Ground(animations, graphics.GraphicsDevice.Viewport, animations["Environment/Water_top"], new Vector2(0, 200)));
+            sprites.Add(new Ground(animations, graphics.GraphicsDevice.Viewport, animations["Environment/Water_top"], new Vector2(0, 50)));
+            sprites.Add(new Block(animations, animations["Environment/Box"])
             {
                 Position = new Vector2(200, 188)
             });

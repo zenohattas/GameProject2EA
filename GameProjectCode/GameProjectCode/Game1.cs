@@ -65,7 +65,7 @@ namespace GameProjectCode
 
             var animations = spriteLoader.GetAnimationDictionary(Content);
 
-            stageManager.AddStage(new Stage(objectInitialiser.LoadStage1(animations, graphics), new Background(Content.Load<Texture2D>("Environment/Desert"), new Rectangle(0,0, 1279, 639))));
+            stageManager.AddStage(new Stage(objectInitialiser.LoadStage(animations, objectInitialiser.Stage1, objectInitialiser.Stage1Background), new Background(Content.Load<Texture2D>("Environment/Desert"), new Rectangle(0,0, 1279, 639))));
             stageManager.AddPlayer(objectInitialiser.LoadPlayer(animations));
 
             hero = (PlayerGameObject)stageManager.GetPlayer();
