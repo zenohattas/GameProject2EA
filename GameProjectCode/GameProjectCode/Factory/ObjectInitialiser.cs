@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,11 +13,27 @@ namespace GameProjectCode.Factory
 {
     class ObjectInitialiser
     {
+        static string[] stageDataLocations =
+        {
+            @"C:\Electronica-ICT\Game Development\Projects\GameProject2EA\GameProjectCode\GameProjectCode\Content\Stages\WaterBackground.csv",
+            @"C:\Electronica-ICT\Game Development\Projects\GameProject2EA\GameProjectCode\GameProjectCode\Content\Stages\Stage1.csv"
+        };
         private Vector2 _initiasePos;
         private Vector2 _spriteSize;
         public string[,] Stage1 =
         {
             { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+
             { "","","","","","","","","","","","","","","","","","","","","","", },
             { "","","","","","","","","","","","","","","","","","","","","","", },
             { "","","","","","","","","","","","","","","","","","","","","","", },
@@ -41,8 +58,19 @@ namespace GameProjectCode.Factory
             { "","","","","","","","","","","","","","","","","","","","","","", },
             { "","","","","","","","","","","","","","","","","","","","","","", },
             { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44", },
-            { "45","45","45","45","45","45","45","45","45","45","45","45","45","45","45","45","45","45","45","45","45","45",}
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "","","","","","","","","","","","","","","","","","","","","","", },
+            { "44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L", },
+            { "45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L",}
         };
         public string[,] Stage2 =
         {
@@ -58,27 +86,27 @@ namespace GameProjectCode.Factory
             _initiasePos = initialisePos;
             _spriteSize = spriteSize;
         }
-        public List<GameObject> LoadStage(Dictionary<string, Animation> animations, string[,] Stage, string[,] StageBackground)
+        public List<GameObject> LoadStage(Dictionary<string, Animation> animations, int Stage)
         {
             List<GameObject> sprites = new List<GameObject>();
 
-            sprites.AddRange(this.LoadObjects(animations, StageBackground));
-            sprites.AddRange(this.LoadObjects(animations, Stage));
+            sprites.AddRange(this.LoadObjects(animations, LoadStageData(stageDataLocations[0])));
+            sprites.AddRange(this.LoadObjects(animations, LoadStageData(stageDataLocations[Stage])));
 
             return sprites;
         }
-        private List<GameObject> LoadObjects(Dictionary<string, Animation> animations, string[,] objects)
+        private List<GameObject> LoadObjects(Dictionary<string, Animation> animations, List<List<string>> objects)
         {
             List<GameObject> sprites = new List<GameObject>();
-            for (int i = 0; i < objects.GetLength(0); i++)
+            for (int i = 0; i < objects.Count; i++)
             {
-                for (int j = 0; j < objects.GetLength(1); j++)
+                for (int j = 0; j < objects[0].Count; j++)
                 {
-                    string[] ellement = objects[i, j].Split(',');
+                    string[] ellement = objects[i][j].Split(',');
                     if (ellement.Length > 0)
                     {
                         string animationName = GetAnimationName(ellement[0]);
-                        if (animationName != "")
+                        if (animationName != "0")
                         {
                             //Optional parameter
                             if (ellement.Length > 1)
@@ -92,8 +120,8 @@ namespace GameProjectCode.Factory
                                 //else
                                 //Do nothing
                             }
-
-                            sprites.Add(new BlockSolidGameObject(animations, animations[animationName], _initiasePos));
+                            else
+                                sprites.Add(new BlockSolidGameObject(animations, animations[animationName], _initiasePos));
                         }
 
                     }
@@ -268,7 +296,7 @@ namespace GameProjectCode.Factory
                     return "Environment/Dirt_blue_bottom_double";
 
                 default:
-                    return "";
+                    return "0";
 
             }
         }
@@ -323,6 +351,25 @@ namespace GameProjectCode.Factory
 
             return stage;
         }
+        private List<List<string>> LoadStageData(string fileLocation)
+        {
+            List<List<string>> spriteData = new List<List<string>>();
 
+            string[] lines = File.ReadAllLines(fileLocation);
+
+            for (int i = 0; i < lines.Length; i++)
+            {
+
+                spriteData.Add(new List<string>());
+                string[] split = lines[i].Split(';');
+
+                foreach (string item in split)
+                {
+                    spriteData[i].Add(item);
+                }
+            }
+
+            return spriteData;
+        }
     }
 }

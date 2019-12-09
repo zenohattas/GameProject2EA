@@ -17,7 +17,8 @@ namespace GameProjectCode.Objects
         protected float speed;
         protected float slow;
         protected float gravity;
-        protected ActionManager actionManager; 
+        protected ActionManager actionManager;
+        protected const float DefaultSlowValue = 1f;
         
         protected abstract void Move();
 
@@ -25,7 +26,7 @@ namespace GameProjectCode.Objects
         {
             actionManager = new ActionManager();
             speed = Speed;
-            slow = 0;
+            slow = 1f;
             gravity = Gravity;
         }
 
