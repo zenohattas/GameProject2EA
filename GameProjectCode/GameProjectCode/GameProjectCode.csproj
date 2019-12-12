@@ -65,6 +65,7 @@
     <Compile Include="Models\ILiquid.cs" />
     <Compile Include="Models\IMovable.cs" />
     <Compile Include="Models\Input.cs" />
+    <Compile Include="Models\ISpriteObject.cs" />
     <Compile Include="Models\MenuElement.cs" />
     <Compile Include="Models\Movement.cs" />
     <Compile Include="Models\Stage.cs" />
@@ -73,10 +74,12 @@
     <Compile Include="Objects\BlockSolidGameObject.cs" />
     <Compile Include="Objects\BlockLiquidGameObject.cs" />
     <Compile Include="Objects\BlockTransparentGameObject.cs" />
+    <Compile Include="Objects\BoundryObject.cs" />
+    <Compile Include="Objects\GameObject.cs" />
     <Compile Include="Objects\Ground.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Objects\GameObject.cs" />
+    <Compile Include="Objects\GameSpriteObject.cs" />
     <Compile Include="Objects\ControlledGameObject.cs" />
     <Compile Include="Objects\MoveableGameObject.cs" />
     <Compile Include="Objects\PlayerGameObject.cs" />

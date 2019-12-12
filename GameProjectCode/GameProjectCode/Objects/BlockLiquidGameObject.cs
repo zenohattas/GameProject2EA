@@ -12,7 +12,7 @@ namespace GameProjectCode.Objects
     {
         private float _density;
         public float Density { get { return _density; } }
-        public BlockLiquidGameObject(Dictionary<string, Animation> animations, Animation animation, Vector2 position, float density = 0.05f) : base(animations, animation, position)
+        public BlockLiquidGameObject(Dictionary<string, Animation> animations, Animation animation, Vector2 position, float density = 0.1f) : base(animations, animation, position)
         {
             _density = density;
         }

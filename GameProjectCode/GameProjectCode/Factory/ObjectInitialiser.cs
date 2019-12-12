@@ -86,12 +86,13 @@ namespace GameProjectCode.Factory
             _initiasePos = initialisePos;
             _spriteSize = spriteSize;
         }
-        public List<GameObject> LoadStage(Dictionary<string, Animation> animations, int Stage)
+        public List<GameObject> LoadStage(Dictionary<string, Animation> animations, int Stage, int StageWidth, int StageHeight)
         {
             List<GameObject> sprites = new List<GameObject>();
 
             sprites.AddRange(this.LoadObjects(animations, LoadStageData(stageDataLocations[0])));
             sprites.AddRange(this.LoadObjects(animations, LoadStageData(stageDataLocations[Stage])));
+            sprites.AddRange(this.LoadBoundaries(StageWidth, StageHeight));
 
             return sprites;
         }
@@ -102,7 +103,7 @@ namespace GameProjectCode.Factory
             {
                 for (int j = 0; j < objects[0].Count; j++)
                 {
-                    string[] ellement = objects[i][j].Split(',');
+                    string[] ellement = objects[i][j].Split('.');
                     if (ellement.Length > 0)
                     {
                         string animationName = GetAnimationName(ellement[0]);
@@ -359,9 +360,8 @@ namespace GameProjectCode.Factory
 
             for (int i = 0; i < lines.Length; i++)
             {
-
                 spriteData.Add(new List<string>());
-                string[] split = lines[i].Split(';');
+                string[] split = lines[i].Split(',');
 
                 foreach (string item in split)
                 {
@@ -370,6 +370,17 @@ namespace GameProjectCode.Factory
             }
 
             return spriteData;
+        }
+        private List<GameObject> LoadBoundaries(int StageWidth, int StageHeight)
+        {
+            List<GameObject> boundries = new List<GameObject>();
+
+            boundries.Add(new BoundryObject(new Rectangle(0, -16, StageWidth, 16)));
+            boundries.Add(new BoundryObject(new Rectangle(-16, 0, 16, StageHeight)));
+            boundries.Add(new BoundryObject(new Rectangle(0, StageHeight, StageWidth, 16)));
+            boundries.Add(new BoundryObject(new Rectangle(StageWidth, 0, 16, StageHeight)));
+
+            return boundries;
         }
     }
 }

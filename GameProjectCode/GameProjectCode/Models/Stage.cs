@@ -25,8 +25,14 @@ namespace GameProjectCode.Models
         {
             if (Background != null)
                 Background.Draw(spriteBatch);
-            foreach (var sprite in GameObjects)
-                sprite.Draw(spriteBatch);
+            foreach (var o in GameObjects)
+            {
+                if(o is ISpriteObject)
+                {
+                    ISpriteObject sprite = o as ISpriteObject;
+                    sprite.Draw(spriteBatch);
+                }
+            }
         }
     }
 }

@@ -28,6 +28,8 @@ namespace GameProjectCode
         float zoom = 1;
         Vector2 camPos;
         private SpriteFont spriteFont;
+        private int gameWidth = 1600;
+        private int gameHeight = 960;
 
         private List<GameObject> _sprites;
 
@@ -45,8 +47,8 @@ namespace GameProjectCode
             //Graphics
             //int pix = graphics.PreferredBackBufferWidth; 800
             //int pix2 = graphics.PreferredBackBufferHeight; 480
-            graphics.PreferredBackBufferWidth = 1980;
-            graphics.PreferredBackBufferHeight = 1080;
+            graphics.PreferredBackBufferWidth = gameWidth;
+            graphics.PreferredBackBufferHeight = gameHeight;
         }
 
         /// <summary>
@@ -74,7 +76,7 @@ namespace GameProjectCode
 
             var animations = spriteLoader.GetAnimationDictionary(Content);
 
-            stageManager.AddStage(new Stage(objectInitialiser.LoadStage(animations, 1), new Background(Content.Load<Texture2D>("Environment/Desert"), new Rectangle(0,0, 1279, 639))));
+            stageManager.AddStage(new Stage(objectInitialiser.LoadStage(animations, 1, gameWidth, gameHeight), new Background(Content.Load<Texture2D>("Environment/Desert"), new Rectangle(0,0, 1279, 639))));
             stageManager.AddPlayer(objectInitialiser.LoadPlayer(animations));
 
             hero = (PlayerGameObject)stageManager.GetPlayer();

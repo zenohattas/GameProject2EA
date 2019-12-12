@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace GameProjectCode.Objects
 {
-    class BlockSolidGameObject : GameObject, ICollidable
+    class BlockSolidGameObject : GameSpriteObject, ICollidable
     {
         public BlockSolidGameObject(Dictionary<string, Animation> animations, Animation animation, Vector2 position) : base(animations, animation)
         {
@@ -34,14 +34,14 @@ namespace GameProjectCode.Objects
         }
 
 
-        public override void Draw(SpriteBatch spriteBatch)
+        protected override void draw(SpriteBatch spriteBatch)
         {
-            base.Draw(spriteBatch);
+            base.draw(spriteBatch);
         }
 
-        public override void Update(GameTime gametime)
+        protected override void update(GameTime gametime)
         {
-            base.Update(gametime);
+            base.update(gametime);
         }
     }
 }

@@ -12,16 +12,16 @@ namespace GameProjectCode.Manager
 {
     class PlayerManager
     {
-        private List<GameObject> Player;
+        private List<GameSpriteObject> Player;
         public PlayerManager()
         {
-            Player = new List<GameObject>();
+            Player = new List<GameSpriteObject>();
         }
-        public GameObject GetPlayer()
+        public GameSpriteObject GetPlayer()
         {
             return Player[0];
         }
-        public void AddPlayer(GameObject player)
+        public void AddPlayer(GameSpriteObject player)
         {
             Player.Add(player);
         }

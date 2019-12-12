@@ -30,6 +30,6 @@ namespace GameProjectCode.Objects
         protected Texture2D _texture;
 
         protected abstract void Move();
-        public abstract void Update(GameTime gametime, List<GameObject> sprites);
+        public abstract void Update(GameTime gametime, List<GameSpriteObject> sprites);
     }
 }

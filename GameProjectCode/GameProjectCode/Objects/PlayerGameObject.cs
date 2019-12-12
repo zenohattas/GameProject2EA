@@ -314,9 +314,9 @@ namespace GameProjectCode.Objects
                     return false;
             }
         }
-        public override void Update(GameTime gametime)
+        protected override void update(GameTime gametime)
         {
-            base.Update(gametime);
+            base.update(gametime);
             if (!Collided)
             {
                 IsGrounded = false;

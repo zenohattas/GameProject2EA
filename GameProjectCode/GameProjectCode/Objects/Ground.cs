@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace GameProjectCode.Objects
 {
-    class Ground : GameObject, ICollidable
+    class Ground : GameSpriteObject, ICollidable
     {
         //public Ground (Dictionary<string, Animation> animations, int gameViewWidth) : base(animations)
         //{
@@ -46,7 +46,7 @@ namespace GameProjectCode.Objects
                 return _dimension;
             }
         }
-        public override void Draw(SpriteBatch spriteBatch)
+        protected override void draw(SpriteBatch spriteBatch)
         {
             Vector2 origin = Position;
             Vector2 drawWidth = new Vector2(animationWidth, 0);

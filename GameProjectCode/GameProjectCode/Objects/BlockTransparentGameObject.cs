@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace GameProjectCode.Objects
 {
-    class BlockTransparentGameObject : GameObject
+    class BlockTransparentGameObject : GameSpriteObject
     {
         public BlockTransparentGameObject(Dictionary<string, Animation> animations, Animation animation, Vector2 position) : base(animations, animation)
         {
@@ -18,14 +18,14 @@ namespace GameProjectCode.Objects
 
         public override Vector2 Position { get => base.Position; set => base.Position = value; }
                
-        public override void Draw(SpriteBatch spriteBatch)
+        protected override void draw(SpriteBatch spriteBatch)
         {
             base.Draw(spriteBatch);
         }
 
-        public override void Update(GameTime gametime)
+        protected override void update(GameTime gametime)
         {
-            base.Update(gametime);
+            base.update(gametime);
         }
     }
 }

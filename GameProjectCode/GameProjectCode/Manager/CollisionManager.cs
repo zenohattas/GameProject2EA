@@ -46,7 +46,7 @@ namespace GameProjectCode.Manager
             List<ICollidable> collidables = GetCollidableList(sprites);
             for (int i = 0; i < collidables.Count; i++)
             {
-                if (collidables[i] is IInteractable)
+                if (collidables[i] is ICollidable)
                 {
                     for (int j = 0; j < collidables.Count; j++)
                     {
@@ -54,12 +54,16 @@ namespace GameProjectCode.Manager
                         {
                             if (DetectCollision(collidables[i], collidables[j]))
                             {
-                                IInteractable x = collidables[i] as IInteractable;
-                                x.Collide(collidables[j]);
-                                if (collidables[j] is IInteractable)
+                                if (collidables[i] is IInteractable)
                                 {
-                                    IInteractable y = collidables[i] as IInteractable;
-                                    y.Collide(collidables[i]);
+                                    IInteractable x = collidables[i] as IInteractable;
+                                    x.Collide(collidables[j]);
+                                    if (collidables[j] is IInteractable)
+                                    {
+                                        IInteractable y = collidables[i] as IInteractable;
+                                        y.Collide(collidables[i]);
+                                    }
+
                                 }
                             }
                         }

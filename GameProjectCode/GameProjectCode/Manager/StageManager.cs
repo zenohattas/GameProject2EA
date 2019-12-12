@@ -30,7 +30,7 @@ namespace GameProjectCode.Manager
         }
         public void AddPlayer(GameObject player)
         {
-            playerManager.AddPlayer(player);
+            playerManager.AddPlayer(player as GameSpriteObject);
         }
         public void AddStage(Stage stage)
         {
@@ -77,9 +77,13 @@ namespace GameProjectCode.Manager
             }
             else if (Stages.Count >= SelectedStage)
             {
-                foreach (var sprite in Stages[SelectedStage].GameObjects)
+                foreach (var o in Stages[SelectedStage].GameObjects)
                 {
-                    sprite.Update(gameTime);
+                    if(o is ISpriteObject)
+                    {
+                        ISpriteObject i = o as ISpriteObject;
+                        i.Update(gameTime);
+                    }
                 }
                 playerManager.Update(gameTime);
             }

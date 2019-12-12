@@ -10,7 +10,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace GameProjectCode.Objects
 {
-    abstract class MoveableGameObject : GameObject
+    abstract class MoveableGameObject : GameSpriteObject
     {
         public Vector2 Velocity;
         public float Speed { get { return speed * slow; } }
@@ -30,11 +30,11 @@ namespace GameProjectCode.Objects
             gravity = Gravity;
         }
 
-        public override void Update(GameTime gametime)
+        protected override void update(GameTime gametime)
         {
             Move();
 
-            base.Update(gametime);
+            base.update(gametime);
 
             Position += Velocity;
         }
