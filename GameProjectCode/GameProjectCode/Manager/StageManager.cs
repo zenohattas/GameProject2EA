@@ -54,8 +54,6 @@ namespace GameProjectCode.Manager
         }
         public void Draw(SpriteBatch spriteBatch, SpriteFont spriteFont)
         {
-            if (SelectedStage > -1)
-                playerManager.Draw(spriteBatch);
             switch (SelectedStage)
             {
                 case -1:
@@ -68,6 +66,8 @@ namespace GameProjectCode.Manager
                     Stages[0].Draw(spriteBatch);
                     break;
             }
+            if (SelectedStage > -1)
+                playerManager.Draw(spriteBatch);
         }
         public void Update(GameTime gameTime)
         {
