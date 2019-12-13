@@ -76,14 +76,12 @@
     <Compile Include="Objects\BlockTransparentGameObject.cs" />
     <Compile Include="Objects\BoundryObject.cs" />
     <Compile Include="Objects\GameObject.cs" />
-    <Compile Include="Objects\Ground.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Objects\GameSpriteObject.cs" />
     <Compile Include="Objects\ControlledGameObject.cs" />
     <Compile Include="Objects\MoveableGameObject.cs" />
     <Compile Include="Objects\PlayerGameObject.cs" />
-    <Compile Include="Objects\StaticGameObject.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">
