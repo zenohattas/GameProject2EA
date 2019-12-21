@@ -6,6 +6,7 @@ using GameProjectCode.Models;
 using System;
 using GameProjectCode.Objects;
 using GameProjectCode.Manager;
+using GameProjectCode.Factory;
 
 namespace GameProjectCode
 {
@@ -21,23 +22,31 @@ namespace GameProjectCode
         ObjectInitialiser objectInitialiser;
         StageManager stageManager;
         Camera2D camera;
-        Random r = new Random();
+        Random r;
         PlayerGameObject hero;
         float rotation = 0;
         float zoom = 1;
-        Vector2 camPos = new Vector2();
+        Vector2 camPos;
         private SpriteFont spriteFont;
-
-        private List<GameObject> _sprites;
+        private int gameWidth = 1600;
+        private int gameHeight = 960;
 
         public Game1()
         {
+            camPos = new Vector2();
+            r = new Random();
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            collisionManager = new Manager.CollisionManager();
-            spriteLoader = new Manager.Sprite_Loader();
-            objectInitialiser = new Manager.ObjectInitialiser();
-            stageManager = new StageManager(new MenuManager());
+            collisionManager = new CollisionManager();
+            spriteLoader = new Sprite_Loader();
+            objectInitialiser = new ObjectInitialiser();
+            stageManager = new StageManager(new MenuManager(new Vector2(gameWidth/2-10, gameHeight/2)), new PlayerManager());
+
+            //Graphics
+            //int pix = graphics.PreferredBackBufferWidth; 800
+            //int pix2 = graphics.PreferredBackBufferHeight; 480
+            graphics.PreferredBackBufferWidth = gameWidth;
+            graphics.PreferredBackBufferHeight = gameHeight;
         }
 
         /// <summary>
@@ -50,6 +59,7 @@ namespace GameProjectCode
         {
             // TODO: Add your initialization logic here
             camera = new Camera2D(GraphicsDevice.Viewport);
+            //camera.
             base.Initialize();
         }
 
@@ -64,9 +74,11 @@ namespace GameProjectCode
 
             var animations = spriteLoader.GetAnimationDictionary(Content);
 
-            stageManager.AddStage(objectInitialiser.LoadStage1(animations, graphics));
+            stageManager.AddStage(new Stage(objectInitialiser.LoadStage(animations, 1, gameWidth, gameHeight), new Background(Content.Load<Texture2D>("Environment/Desert"), new Rectangle(0,0, 1279, 639))));
+            stageManager.AddPlayer(objectInitialiser.LoadPlayer(animations));
+            stageManager.GetPlayer().Position = new Vector2(69, 887);
 
-            hero = (PlayerGameObject)stageManager.GetStage(0)[0];
+            hero = (PlayerGameObject)stageManager.GetPlayer();
             spriteFont = Content.Load<SpriteFont>("Misc/basicFont");
             // TODO: use this.Content to load your game content here
         }
@@ -105,43 +117,48 @@ namespace GameProjectCode
             if (stageManager.SelectedStage > -1)
                 collisionManager.DetectCollisions(stageManager.GetStage());
 
+            stageManager.ResolveCollisions();
+
             // TODO: Add your update logic here
             KeyboardState stateKey = Keyboard.GetState();
 
 
 
-            if (stateKey.IsKeyDown(Keys.F1))
-            {
-                camPos.X -= 1;
-            }
-            if (stateKey.IsKeyDown(Keys.F2))
-            {
-                camPos.X += 1;
-            }
-            if (stateKey.IsKeyDown(Keys.F3))
-            {
-                rotation += .1f;
-            }
-            if (stateKey.IsKeyDown(Keys.F4))
-            {
-                rotation -= .1f;
-            }
+            //if (stateKey.IsKeyDown(Keys.F1))
+            //{
+            //    camPos.X -= 1;
+            //}
+            //if (stateKey.IsKeyDown(Keys.F2))
+            //{
+            //    camPos.X += 1;
+            //}
+            //if (stateKey.IsKeyDown(Keys.F3))
+            //{
+            //    rotation += .1f;
+            //}
+            //if (stateKey.IsKeyDown(Keys.F4))
+            //{
+            //    rotation -= .1f;
+            //}
+            //if (stateKey.IsKeyDown(Keys.F5))
+            //{
+            //    zoom += .1f;
+            //}
+            //if (stateKey.IsKeyDown(Keys.F6))
+            //{
+            //    zoom -= .1f;
+            //};
+
             if (stateKey.IsKeyDown(Keys.F5))
             {
-                zoom += .1f;
-            }
-            if (stateKey.IsKeyDown(Keys.F6))
-            {
-                zoom -= .1f;
-            };
-
-            if (hero.IsMoving)
-            {
-                camPos.X = hero.Position.X - GraphicsDevice.Viewport.Width / 2;
-                camPos.Y = hero.Position.Y - GraphicsDevice.Viewport.Height / 2;
+                graphics.ToggleFullScreen();
             }
 
-            // TODO: Add your update logic here
+            //if (hero.IsMoving)
+            //{
+            //    camPos.X = hero.Position.X - GraphicsDevice.Viewport.Width / 2;
+            //    //camPos.Y = hero.Position.Y - GraphicsDevice.Viewport.Height / 2;
+            //}
 
             base.Update(gameTime);
         }
@@ -157,9 +174,9 @@ namespace GameProjectCode
             // TODO: Add your drawing code here
             var viewMatrix = camera.GetViewMatrix();
             //_camera.Position = new Vector2(theHero.position.X - 200, theHero.position.Y - 300);// new Vector2(theHero.position.X + 200, theHero.position.Y+400);
-            camera.Position = camPos;
-            camera.Rotation = rotation;
-            camera.Zoom = zoom;
+            //camera.Origin = camPos;
+            //camera.Rotation = rotation;
+            //camera.Zoom = zoom;
 
 
             spriteBatch.Begin(transformMatrix: viewMatrix);

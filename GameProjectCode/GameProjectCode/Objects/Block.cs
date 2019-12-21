@@ -8,7 +8,7 @@ using Microsoft.Xna.Framework;
 
 namespace GameProjectCode.Objects
 {
-    class Block : GameObject, ICollidable
+    class Block : GameSpriteObject, ICollidable
     {
         public Block(Dictionary<string, Animation> animations, Animation animation) : base(animations, animation)
         {
@@ -31,15 +31,5 @@ namespace GameProjectCode.Objects
         }
         protected Vector2 _dimensions;
         public Vector2 Dimenions => _dimensions;
-
-        public void Collide(ICollidable o)
-        {
-            //nothing happens
-        }
-
-        protected override void SetAnimations()
-        {
-            //no animation
-        }
     }
 }

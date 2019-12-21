@@ -12,7 +12,7 @@ namespace GameProjectCode.Objects
     class ControlledGameObject : MoveableGameObject
     {
         public Input Input;
-        public ControlledGameObject(Dictionary<string, Animation> animations) : base(animations) { }
+        public ControlledGameObject(Dictionary<string, Animation> animations, float Speed = 0.15f) : base(animations, Speed) { }
 
         protected override void Move()
         {
@@ -20,10 +20,6 @@ namespace GameProjectCode.Objects
                 Velocity.X = -Speed;
             else if (Keyboard.GetState().IsKeyDown(Input.Right))
                 Velocity.X = Speed;
-        }
-        protected override void SetAnimations()
-        {
-            //not implemented
         }
     }
 }

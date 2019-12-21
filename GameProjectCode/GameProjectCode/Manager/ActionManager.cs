@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using GameProjectCode.Models;
+using GameProjectCode.Objects;
 using Microsoft.Xna.Framework;
 
 namespace GameProjectCode.Manager
@@ -12,6 +13,7 @@ namespace GameProjectCode.Manager
     {
         public Vector2 MoveObject(ICollidable toMove , ICollidable refference)
         {
+           
             Vector2 movement = new Vector2();
 
             //Getting the collisiondepth
@@ -69,26 +71,26 @@ namespace GameProjectCode.Manager
                 }
             }
 
-            //Touching left
-            if (collisionDepth.X > 0 && toMove.Position.X + toMove.Dimenions.X > refference.Position.X + refference.Dimenions.X)
-            {
+            ////Touching left
+            //if (collisionDepth.X > 0 && toMove.Position.X + toMove.Dimenions.X > refference.Position.X + refference.Dimenions.X)
+            //{
                 
-            }
-            //Touching right
-            if (collisionDepth.X < 0 && toMove.Position.X < refference.Position.X)
-            {
+            //}
+            ////Touching right
+            //if (collisionDepth.X < 0 && toMove.Position.X < refference.Position.X)
+            //{
                 
-            }
-            //Touching Top
-            if (collisionDepth.Y > 0 && toMove.Position.Y + toMove.Dimenions.Y > refference.Position.Y + refference.Dimenions.Y)
-            {
+            //}
+            ////Touching Top
+            //if (collisionDepth.Y > 0 && toMove.Position.Y + toMove.Dimenions.Y > refference.Position.Y + refference.Dimenions.Y)
+            //{
                 
-            }
-            ////Touching Bottom
-            if (collisionDepth.Y < 0 && toMove.Position.Y < refference.Position.Y)
-            {
+            //}
+            //////Touching Bottom
+            //if (collisionDepth.Y < 0 && toMove.Position.Y < refference.Position.Y)
+            //{
                 
-            }
+            //}
 
             return movement;
         }

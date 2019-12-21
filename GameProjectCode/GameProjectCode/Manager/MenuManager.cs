@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace GameProjectCode.Manager
 {
+    //FONT TO USE = RINGBEARER
     class MenuManager
     {
         Color color;
@@ -18,9 +19,10 @@ namespace GameProjectCode.Manager
         private int selectedElement;
         private int selectedMenu;
         private float _timer;
+        private Vector2 position;
         private Keys _perviousPressedKey;
 
-        public MenuManager()
+        public MenuManager(Vector2 Position)
         {
             Menu = new List<List<string>>();
             Menu.Add(new List<string>
@@ -34,6 +36,14 @@ namespace GameProjectCode.Manager
                 "To be implemented",
                 "Back"
             });
+            Menu.Add(new List<string>
+            {
+                "Contact",
+                "Start again"
+            });
+
+            position = Position;
+
             color = Color.White;
             colorSelected = Color.SeaGreen;
             selectedMenu = 0;
@@ -124,9 +134,9 @@ namespace GameProjectCode.Manager
                 //spriteBatch.Begin();
                 
                 if(i == selectedElement)
-                    spriteBatch.DrawString(spriteFont, menu[i], new Vector2(100, 100 + i * 20), colorSelected);
+                    spriteBatch.DrawString(spriteFont, menu[i], new Vector2(position.X, position.Y + i * 20), colorSelected);
                 else
-                    spriteBatch.DrawString(spriteFont, menu[i], new Vector2(100, 100 + i * 20), color);
+                    spriteBatch.DrawString(spriteFont, menu[i], new Vector2(position.X, position.Y + i * 20), color);
                 
                 //spriteBatch.End();
             }
