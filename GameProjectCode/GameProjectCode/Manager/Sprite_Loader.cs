@@ -61,6 +61,7 @@ namespace GameProjectCode.Manager
                 string[] split = lines[i].Split(';');
 
                 foreach (string item in split)
+
                 {
                     spriteData[i-1].Add(item);
                 }

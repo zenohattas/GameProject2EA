@@ -13,7 +13,10 @@ namespace GameProjectCode.Objects
     class PlayerGameObject : ControlledGameObject, IInteractable, IJump, IAnimated
     {
         private bool Collided;
+        private int JumpsLeft;
         private bool IsfacingRight;
+        private bool IsTouchingWall;
+        private Keys[] previousKeys;
         private bool CanJump;
         private Vector2 tomove;
         private float walkSpeed = 0.14f;
@@ -82,7 +85,9 @@ namespace GameProjectCode.Objects
             _animationRight_WallSlide = animationRight_WallSlide;
 
             IsfacingRight = true;
+            IsTouchingWall = false;
             CanJump = false;
+            JumpsLeft = 2;
         }
 
         #region animation names
@@ -231,17 +236,19 @@ namespace GameProjectCode.Objects
                 }
             }
 
-            if (Keyboard.GetState().IsKeyDown(Input.Jump) && (IsGrounded||CanJump))
+            if (Keyboard.GetState().IsKeyDown(Input.Jump) && JumpsLeft > 0&& !previousKeys.Contains(Input.Jump))
             {
                 if (Velocity.Y > jumpHeight*slow)
                     Velocity.Y = jumpHeight*slow;
                 IsGrounded = false;
-                CanJump = false;
+                JumpsLeft--;
             }
             else if (!IsGrounded)
             {
                 Velocity.Y += gravity;
             }
+
+            previousKeys = Keyboard.GetState().GetPressedKeys();
         }
         protected Rectangle _collisionRectangle;
         public Rectangle CollisionRectangle
@@ -263,8 +270,8 @@ namespace GameProjectCode.Objects
             {
                 ILiquid liquid = o as ILiquid;
                 slow = liquid.Density;
-                CanJump = true;
                 IsGrounded = false;
+                JumpsLeft = 2;
             }
             else
             {
@@ -274,6 +281,7 @@ namespace GameProjectCode.Objects
                 if (movement.Y < 0)
                 {
                     IsGrounded = true;
+                    JumpsLeft = 2;
                     Velocity.Y = 0;
                 }
                 if (movement.Y > 0 && Velocity.Y < 0)
@@ -317,7 +325,6 @@ namespace GameProjectCode.Objects
             if (!Collided)
             {
                 IsGrounded = false;
-                
             }
             Collided = false;
             SetAnimations();

@@ -248,7 +248,7 @@ namespace GameProjectCode.Factory
                 case "54":
                     return "Environment/Fence_light_right";
                 case "55":
-                    return "Environment/Fence_ligt_middle";
+                    return "Environment/Fence_light_middle";
                 case "56":
                     return "Environment/Fence_dark_left";
                 case "57":

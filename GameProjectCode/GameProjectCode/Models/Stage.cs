@@ -12,10 +12,19 @@ namespace GameProjectCode.Models
     {
         public Background Background;
         public List<GameObject> GameObjects;
+        public List<GameSpriteObject> gameSpriteObjects;
         public Stage(List<GameObject> gameObjects, Background background)
         {
             this.GameObjects = gameObjects;
             this.Background = background;
+            gameSpriteObjects = new List<GameSpriteObject>();
+            foreach (var gameObject in gameObjects)
+            {
+                if (gameObject is GameSpriteObject)
+                {
+                    gameSpriteObjects.Add(gameObject as GameSpriteObject);
+                }
+            }
         }
         public Stage(List<GameObject> gameObjects)
         {
@@ -25,13 +34,9 @@ namespace GameProjectCode.Models
         {
             if (Background != null)
                 Background.Draw(spriteBatch);
-            foreach (var o in GameObjects)
+            foreach (var o in gameSpriteObjects)
             {
-                if(o is ISpriteObject)
-                {
-                    ISpriteObject sprite = o as ISpriteObject;
-                    sprite.Draw(spriteBatch);
-                }
+                o.Draw(spriteBatch);
             }
         }
     }

@@ -77,13 +77,9 @@ namespace GameProjectCode.Manager
             }
             else if (Stages.Count >= SelectedStage)
             {
-                foreach (var o in Stages[SelectedStage].GameObjects)
+                foreach (var o in Stages[SelectedStage].gameSpriteObjects)
                 {
-                    if(o is ISpriteObject)
-                    {
-                        ISpriteObject i = o as ISpriteObject;
-                        i.Update(gameTime);
-                    }
+                    o.Update(gameTime);
                 }
                 playerManager.Update(gameTime);
             }

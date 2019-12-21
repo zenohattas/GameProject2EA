@@ -32,9 +32,9 @@ namespace GameProjectCode.Objects
 
         protected override void update(GameTime gametime)
         {
-            Move();
-
             base.update(gametime);
+
+            Move();
 
             Position += Velocity;
         }

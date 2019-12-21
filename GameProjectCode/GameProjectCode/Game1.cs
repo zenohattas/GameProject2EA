@@ -31,8 +31,6 @@ namespace GameProjectCode
         private int gameWidth = 1600;
         private int gameHeight = 960;
 
-        private List<GameObject> _sprites;
-
         public Game1()
         {
             camPos = new Vector2();
@@ -42,7 +40,7 @@ namespace GameProjectCode
             collisionManager = new CollisionManager();
             spriteLoader = new Sprite_Loader();
             objectInitialiser = new ObjectInitialiser();
-            stageManager = new StageManager(new MenuManager(), new PlayerManager());
+            stageManager = new StageManager(new MenuManager(new Vector2(gameWidth/2-10, gameHeight/2)), new PlayerManager());
 
             //Graphics
             //int pix = graphics.PreferredBackBufferWidth; 800
@@ -78,6 +76,7 @@ namespace GameProjectCode
 
             stageManager.AddStage(new Stage(objectInitialiser.LoadStage(animations, 1, gameWidth, gameHeight), new Background(Content.Load<Texture2D>("Environment/Desert"), new Rectangle(0,0, 1279, 639))));
             stageManager.AddPlayer(objectInitialiser.LoadPlayer(animations));
+            stageManager.GetPlayer().Position = new Vector2(69, 887);
 
             hero = (PlayerGameObject)stageManager.GetPlayer();
             spriteFont = Content.Load<SpriteFont>("Misc/basicFont");
