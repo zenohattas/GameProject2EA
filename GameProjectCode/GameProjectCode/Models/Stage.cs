@@ -10,6 +10,13 @@ namespace GameProjectCode.Models
 {
     class Stage
     {
+        public int Count
+        {
+            get
+            {
+                return gameSpriteObjects.Count;
+            }
+        }
         public Background Background;
         public List<GameObject> GameObjects;
         public List<GameSpriteObject> gameSpriteObjects;
@@ -29,6 +36,13 @@ namespace GameProjectCode.Models
         public Stage(List<GameObject> gameObjects)
         {
             this.GameObjects = gameObjects;
+        }
+        public void Update(Microsoft.Xna.Framework.GameTime gameTime)
+        {
+            for (int i = 0; i < gameSpriteObjects.Count; i++)
+            {
+                gameSpriteObjects[i].Update(gameTime);
+            }
         }
         public void Draw(SpriteBatch spriteBatch)
         {

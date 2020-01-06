@@ -1,0 +1,4406 @@
+Game Turn, Player, Enemy, Operation Name, Value
+5, 0, -1, Civilian Builder Capture, 0.0
+5, 0, -1, Settle New City, 109.0
+5, 1, -1, Settle New City, 128.0
+5, 1, -1, Civilian Builder Capture, 0.0
+5, 1, -1, Settle New City, 128.0
+5, 1, -1, Naval Superiority, 100.0
+5, 2, -1, Civilian Builder Capture, 0.0
+5, 2, -1, Settle New City, 67.0
+5, 2, -1, Naval Superiority, 100.0
+5, 2, -1, CITY VALUES, 326.6, LOC_CITY_NAME_BOLOGNA
+5, 2, -1, CITY VALUES, 307.8, LOC_CITY_NAME_VALLETTA
+5, 3, -1, Civilian Builder Capture, 0.0
+5, 3, -1, Settle New City, 124.0
+5, 3, -1, Naval Superiority, 100.0
+5, 3, -1, CITY VALUES, 39.8, LOC_CITY_NAME_LA_VENTA
+5, 4, -1, Settle New City, 80.0
+5, 4, -1, Civilian Builder Capture, 0.0
+5, 4, -1, Settle New City, 80.0
+5, 4, -1, Naval Superiority, 100.0
+5, 5, -1, Settle New City, 67.0
+5, 5, -1, Civilian Builder Capture, 0.0
+5, 5, -1, Settle New City, 94.0
+5, 6, -1, Settle New City, 109.0
+5, 6, -1, Civilian Builder Capture, 0.0
+5, 6, -1, Settle New City, 109.0
+5, 6, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MEXICO_CITY
+5, 7, -1, Settle New City, 39.0
+5, 7, -1, Attack Barb Camp, 100.0
+5, 7, -1, Barb Camp Tech Boost, 100.0
+5, 7, -1, Civilian Builder Capture, 0.0
+5, 7, -1, Settle New City, 93.0
+5, 7, -1, CITY VALUES, 252.9, LOC_CITY_NAME_VILNIUS
+5, 8, -1, Settle New City, 40.0
+5, 8, -1, Civilian Builder Capture, 0.0
+5, 8, -1, Settle New City, 94.0
+5, 8, -1, Naval Superiority, 100.0
+5, 8, -1, CITY VALUES, 164.9, LOC_CITY_NAME_BABYLON
+5, 8, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KABUL
+5, 9, -1, Settle New City, 35.0
+5, 9, -1, Civilian Builder Capture, 0.0
+5, 9, -1, Settle New City, 78.0
+5, 9, -1, CITY VALUES, 38.8, LOC_CITY_NAME_GRANADA
+5, 9, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MOHENJO_DARO
+5, 10, -1, Civilian Builder Capture, 0.0
+5, 10, -1, Naval Superiority, 100.0
+5, 11, -1, Civilian Builder Capture, 0.0
+5, 11, -1, Settle New City, 30.0
+5, 11, -1, Naval Superiority, 100.0
+5, 12, -1, Civilian Builder Capture, 0.0
+5, 13, -1, Civilian Builder Capture, 0.0
+5, 13, -1, Settle New City, 26.0
+5, 13, -1, Naval Superiority, 100.0
+5, 14, -1, Civilian Builder Capture, 0.0
+5, 14, -1, Naval Superiority, 100.0
+5, 15, -1, Civilian Builder Capture, 0.0
+5, 15, -1, Naval Superiority, 100.0
+5, 16, -1, Civilian Builder Capture, 0.0
+5, 16, -1, CITY VALUES, 683.1, LOC_CITY_NAME_ROME
+5, 17, -1, Civilian Builder Capture, 0.0
+5, 17, -1, Naval Superiority, 100.0
+5, 18, -1, Civilian Builder Capture, 0.0
+5, 18, -1, Naval Superiority, 100.0
+5, 19, -1, Civilian Builder Capture, 0.0
+5, 19, -1, Naval Superiority, 100.0
+5, 20, -1, Civilian Builder Capture, 0.0
+5, 20, -1, Settle New City, 38.0
+5, 20, -1, Naval Superiority, 100.0
+5, 21, -1, Civilian Builder Capture, 0.0
+5, 21, -1, Settle New City, 30.0
+5, 21, -1, Naval Superiority, 100.0
+5, 22, -1, Attack Barb Camp, 50.0
+5, 22, -1, Barb Camp Tech Boost, 50.0
+5, 22, -1, Civilian Builder Capture, 0.0
+5, 22, -1, Naval Superiority, 100.0
+5, 23, -1, Civilian Builder Capture, 0.0
+5, 23, -1, Naval Superiority, 100.0
+5, 24, -1, Civilian Builder Capture, 0.0
+5, 24, -1, Settle New City, 34.0
+5, 25, -1, Civilian Builder Capture, 0.0
+5, 25, -1, Naval Superiority, 100.0
+5, 26, -1, Civilian Builder Capture, 0.0
+5, 26, -1, Naval Superiority, 100.0
+5, 26, -1, CITY VALUES, 212.8, LOC_CITY_NAME_HONG_KONG
+5, 27, -1, Civilian Builder Capture, 0.0
+5, 27, -1, Settle New City, 30.0
+5, 27, -1, Naval Superiority, 100.0
+5, 28, -1, Civilian Builder Capture, 0.0
+5, 28, -1, Settle New City, 30.0
+5, 28, -1, Naval Superiority, 100.0
+5, 29, -1, Civilian Builder Capture, 0.0
+5, 29, -1, Naval Superiority, 100.0
+5, 30, -1, Civilian Builder Capture, 0.0
+5, 30, -1, Naval Superiority, 100.0
+5, 31, -1, Civilian Builder Capture, 0.0
+5, 63, -1, Barbarian Builder Capture, 450.0
+5, 63, -1, CITY VALUES, 472.0, LOC_CITY_NAME_ULM
+6, 0, -1, Civilian Builder Capture, 0.0
+6, 0, -1, Settle New City, 133.0
+6, 0, -1, CITY VALUES, 10.2, LOC_CITY_NAME_BOLOGNA
+6, 1, -1, Settle New City, 128.0
+6, 1, -1, Civilian Builder Capture, 0.0
+6, 1, -1, Settle New City, 128.0
+6, 1, -1, Naval Superiority, 100.0
+6, 1, -1, CITY VALUES, 612.1, LOC_CITY_NAME_MBANZA_KONGO
+6, 2, -1, Attack Barb Camp, 50.0
+6, 2, -1, Barb Camp Tech Boost, 50.0
+6, 2, -1, Civilian Builder Capture, 0.0
+6, 2, -1, Settle New City, 84.0
+6, 2, -1, Naval Superiority, 100.0
+6, 2, -1, CITY VALUES, 357.6, LOC_CITY_NAME_BOLOGNA
+6, 2, -1, CITY VALUES, 335.3, LOC_CITY_NAME_VALLETTA
+6, 3, -1, Civilian Builder Capture, 0.0
+6, 3, -1, Settle New City, 140.0
+6, 3, -1, Naval Superiority, 100.0
+6, 3, -1, CITY VALUES, 0.0, LOC_CITY_NAME_LA_VENTA
+6, 3, -1, CITY VALUES, 11.5, LOC_CITY_NAME_LISBON
+6, 4, -1, Settle New City, 93.0
+6, 4, -1, Civilian Builder Capture, 0.0
+6, 4, -1, Settle New City, 93.0
+6, 4, -1, Naval Superiority, 100.0
+6, 5, -1, Settle New City, 67.0
+6, 5, -1, Civilian Builder Capture, 0.0
+6, 5, -1, Settle New City, 94.0
+6, 6, -1, Civilian Builder Capture, 0.0
+6, 6, -1, Settle New City, 105.0
+6, 6, -1, CITY VALUES, 70.9, LOC_CITY_NAME_MEXICO_CITY
+6, 7, -1, Civilian Builder Capture, 0.0
+6, 7, -1, Settle New City, 50.0
+6, 7, -1, CITY VALUES, 522.1, LOC_CITY_NAME_VILNIUS
+6, 8, -1, Settle New City, 43.0
+6, 8, -1, Civilian Builder Capture, 0.0
+6, 8, -1, Settle New City, 98.0
+6, 8, -1, Naval Superiority, 100.0
+6, 8, -1, CITY VALUES, 114.9, LOC_CITY_NAME_BABYLON
+6, 8, -1, CITY VALUES, 14.9, LOC_CITY_NAME_KABUL
+6, 9, -1, Settle New City, 84.0
+6, 9, -1, Civilian Builder Capture, 0.0
+6, 9, -1, Settle New City, 84.0
+6, 9, -1, CITY VALUES, 86.3, LOC_CITY_NAME_GRANADA
+6, 9, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MOHENJO_DARO
+6, 10, -1, Civilian Builder Capture, 0.0
+6, 10, -1, Naval Superiority, 100.0
+6, 11, -1, Civilian Builder Capture, 0.0
+6, 11, -1, Settle New City, 30.0
+6, 11, -1, Naval Superiority, 100.0
+6, 12, -1, Civilian Builder Capture, 0.0
+6, 13, -1, Civilian Builder Capture, 0.0
+6, 13, -1, Settle New City, 30.0
+6, 13, -1, Naval Superiority, 100.0
+6, 14, -1, Civilian Builder Capture, 0.0
+6, 14, -1, Naval Superiority, 100.0
+6, 15, -1, Civilian Builder Capture, 0.0
+6, 15, -1, Naval Superiority, 100.0
+6, 16, -1, Civilian Builder Capture, 0.0
+6, 16, -1, CITY VALUES, 683.1, LOC_CITY_NAME_ROME
+6, 16, -1, CITY VALUES, 163.0, LOC_CITY_NAME_ANTIOCH
+6, 17, -1, Civilian Builder Capture, 0.0
+6, 17, -1, Naval Superiority, 100.0
+6, 18, -1, Civilian Builder Capture, 0.0
+6, 18, -1, Naval Superiority, 100.0
+6, 19, -1, Civilian Builder Capture, 0.0
+6, 19, -1, Naval Superiority, 100.0
+6, 19, -1, CITY VALUES, 286.1, LOC_CITY_NAME_KERMA
+6, 20, -1, Civilian Builder Capture, 0.0
+6, 20, -1, Settle New City, 38.0
+6, 20, -1, Naval Superiority, 100.0
+6, 21, -1, Civilian Builder Capture, 0.0
+6, 21, -1, Settle New City, 34.0
+6, 21, -1, Naval Superiority, 100.0
+6, 22, -1, Civilian Builder Capture, 0.0
+6, 22, -1, Naval Superiority, 100.0
+6, 23, -1, Civilian Builder Capture, 0.0
+6, 23, -1, Naval Superiority, 100.0
+6, 24, -1, Civilian Builder Capture, 0.0
+6, 25, -1, Civilian Builder Capture, 0.0
+6, 25, -1, Naval Superiority, 100.0
+6, 26, -1, Civilian Builder Capture, 0.0
+6, 26, -1, Naval Superiority, 100.0
+6, 26, -1, CITY VALUES, 212.8, LOC_CITY_NAME_HONG_KONG
+6, 27, -1, Civilian Builder Capture, 0.0
+6, 27, -1, Settle New City, 30.0
+6, 27, -1, Naval Superiority, 100.0
+6, 28, -1, Civilian Builder Capture, 0.0
+6, 28, -1, Settle New City, 30.0
+6, 28, -1, Naval Superiority, 100.0
+6, 29, -1, Civilian Builder Capture, 0.0
+6, 29, -1, Naval Superiority, 100.0
+6, 30, -1, Civilian Builder Capture, 0.0
+6, 30, -1, Naval Superiority, 100.0
+6, 30, -1, CITY VALUES, 69.3, LOC_CITY_NAME_MOHENJO_DARO
+6, 31, -1, Civilian Builder Capture, 0.0
+6, 31, -1, CITY VALUES, 141.2, LOC_CITY_NAME_GRANADA
+6, 63, -1, Barbarian Builder Capture, 500.0
+6, 63, -1, CITY VALUES, 472.0, LOC_CITY_NAME_ULM
+7, 0, -1, Civilian Builder Capture, 0.0
+7, 0, -1, Settle New City, 157.0
+7, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_BOLOGNA
+7, 0, -1, CITY VALUES, 445.7, LOC_CITY_NAME_ISTANBUL
+7, 0, -1, CITY VALUES, 442.9, LOC_CITY_NAME_MBUMBI
+7, 0, 12, MINOR CIV LEVY, 119.9, 79.6
+7, 1, -1, Civilian Builder Capture, 0.0
+7, 1, -1, Settle New City, 130.0
+7, 1, -1, Naval Superiority, 100.0
+7, 1, -1, CITY VALUES, 644.9, LOC_CITY_NAME_MBANZA_KONGO
+7, 2, -1, Attack Barb Camp, 50.0
+7, 2, -1, Barb Camp Tech Boost, 50.0
+7, 2, -1, Civilian Builder Capture, 0.0
+7, 2, -1, Settle New City, 94.0
+7, 2, -1, Naval Superiority, 100.0
+7, 2, -1, CITY VALUES, 248.2, LOC_CITY_NAME_BOLOGNA
+7, 2, -1, CITY VALUES, 372.8, LOC_CITY_NAME_VALLETTA
+7, 3, -1, Civilian Builder Capture, 0.0
+7, 3, -1, Settle New City, 111.0
+7, 3, -1, Naval Superiority, 100.0
+7, 3, -1, CITY VALUES, 168.0, LOC_CITY_NAME_LA_VENTA
+7, 3, -1, CITY VALUES, 11.5, LOC_CITY_NAME_LISBON
+7, 4, -1, Settle New City, 97.0
+7, 4, -1, Civilian Builder Capture, 0.0
+7, 4, -1, Settle New City, 97.0
+7, 4, -1, Naval Superiority, 100.0
+7, 4, -1, CITY VALUES, 101.5, LOC_CITY_NAME_VALLETTA
+7, 5, -1, Settle New City, 67.0
+7, 5, -1, Civilian Builder Capture, 0.0
+7, 5, -1, Settle New City, 94.0
+7, 5, -1, CITY VALUES, 358.6, LOC_CITY_NAME_LA_VENTA
+7, 6, -1, Settle New City, 91.0
+7, 6, -1, Civilian Builder Capture, 0.0
+7, 6, -1, Settle New City, 107.0
+7, 6, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MEXICO_CITY
+7, 7, -1, Settle New City, 73.0
+7, 7, -1, Civilian Builder Capture, 0.0
+7, 7, -1, Settle New City, 78.0
+7, 7, -1, CITY VALUES, 518.5, LOC_CITY_NAME_VILNIUS
+7, 8, -1, Civilian Builder Capture, 0.0
+7, 8, -1, Settle New City, 36.0
+7, 8, -1, Naval Superiority, 100.0
+7, 8, -1, CITY VALUES, 21.5, LOC_CITY_NAME_BABYLON
+7, 8, -1, CITY VALUES, 110.2, LOC_CITY_NAME_KABUL
+7, 8, -1, CITY VALUES, 57.3, LOC_CITY_NAME_ANTIOCH
+7, 9, -1, Settle New City, 125.0
+7, 9, -1, Civilian Builder Capture, 0.0
+7, 9, -1, Settle New City, 125.0
+7, 9, -1, CITY VALUES, 6.3, LOC_CITY_NAME_GRANADA
+7, 9, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MOHENJO_DARO
+7, 9, -1, CITY VALUES, 166.3, LOC_CITY_NAME_BRUSSELS
+7, 10, -1, Civilian Builder Capture, 0.0
+7, 10, -1, Naval Superiority, 100.0
+7, 11, -1, Civilian Builder Capture, 0.0
+7, 11, -1, Settle New City, 30.0
+7, 11, -1, Naval Superiority, 100.0
+7, 12, -1, Civilian Builder Capture, 0.0
+7, 13, -1, Civilian Builder Capture, 0.0
+7, 13, -1, Settle New City, 30.0
+7, 13, -1, Naval Superiority, 100.0
+7, 14, -1, Civilian Builder Capture, 0.0
+7, 14, -1, Naval Superiority, 100.0
+7, 15, -1, Civilian Builder Capture, 0.0
+7, 15, -1, Naval Superiority, 100.0
+7, 16, -1, Civilian Builder Capture, 0.0
+7, 16, -1, CITY VALUES, 607.0, LOC_CITY_NAME_ROME
+7, 16, -1, CITY VALUES, 155.2, LOC_CITY_NAME_ANTIOCH
+7, 17, -1, Civilian Builder Capture, 0.0
+7, 17, -1, Naval Superiority, 100.0
+7, 18, -1, Civilian Builder Capture, 0.0
+7, 18, -1, Naval Superiority, 100.0
+7, 19, -1, Civilian Builder Capture, 0.0
+7, 19, -1, Naval Superiority, 100.0
+7, 19, -1, CITY VALUES, 350.1, LOC_CITY_NAME_KERMA
+7, 20, -1, Civilian Builder Capture, 0.0
+7, 20, -1, Settle New City, 38.0
+7, 20, -1, Naval Superiority, 100.0
+7, 21, -1, Civilian Builder Capture, 0.0
+7, 21, -1, Settle New City, 26.0
+7, 21, -1, Naval Superiority, 100.0
+7, 22, -1, Civilian Builder Capture, 0.0
+7, 22, -1, Naval Superiority, 100.0
+7, 23, -1, Civilian Builder Capture, 0.0
+7, 23, -1, Naval Superiority, 100.0
+7, 24, -1, Civilian Builder Capture, 0.0
+7, 25, -1, Civilian Builder Capture, 0.0
+7, 25, -1, Naval Superiority, 100.0
+7, 26, -1, Civilian Builder Capture, 0.0
+7, 26, -1, Naval Superiority, 100.0
+7, 26, -1, CITY VALUES, 297.8, LOC_CITY_NAME_HONG_KONG
+7, 27, -1, Civilian Builder Capture, 0.0
+7, 27, -1, Settle New City, 30.0
+7, 27, -1, Naval Superiority, 100.0
+7, 28, -1, Civilian Builder Capture, 0.0
+7, 28, -1, Settle New City, 30.0
+7, 28, -1, Naval Superiority, 100.0
+7, 29, -1, Civilian Builder Capture, 0.0
+7, 29, -1, Naval Superiority, 100.0
+7, 30, -1, Civilian Builder Capture, 0.0
+7, 30, -1, Naval Superiority, 100.0
+7, 30, -1, CITY VALUES, 69.3, LOC_CITY_NAME_MOHENJO_DARO
+7, 31, -1, Civilian Builder Capture, 0.0
+7, 31, -1, CITY VALUES, 162.2, LOC_CITY_NAME_GRANADA
+7, 63, -1, Barbarian Builder Capture, 550.0
+7, 63, -1, CITY VALUES, 472.0, LOC_CITY_NAME_ULM
+8, 0, -1, Civilian Builder Capture, 0.0
+8, 0, -1, Settle New City, 175.0
+8, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_BOLOGNA
+8, 0, -1, CITY VALUES, 436.5, LOC_CITY_NAME_ISTANBUL
+8, 0, -1, CITY VALUES, 413.5, LOC_CITY_NAME_MBUMBI
+8, 0, 12, MINOR CIV LEVY, 119.9, 79.6
+8, 1, -1, Settle New City, 115.0
+8, 1, -1, Civilian Builder Capture, 0.0
+8, 1, -1, Settle New City, 130.0
+8, 1, -1, Naval Superiority, 100.0
+8, 1, -1, CITY VALUES, 628.3, LOC_CITY_NAME_MBANZA_KONGO
+8, 2, -1, Attack Barb Camp, 50.0
+8, 2, -1, Barb Camp Tech Boost, 50.0
+8, 2, -1, Civilian Builder Capture, 0.0
+8, 2, -1, Settle New City, 94.0
+8, 2, -1, Naval Superiority, 100.0
+8, 2, -1, CITY VALUES, 192.8, LOC_CITY_NAME_BOLOGNA
+8, 2, -1, CITY VALUES, 335.3, LOC_CITY_NAME_VALLETTA
+8, 3, -1, Civilian Builder Capture, 0.0
+8, 3, -1, Settle New City, 122.0
+8, 3, -1, Naval Superiority, 100.0
+8, 3, -1, CITY VALUES, 88.0, LOC_CITY_NAME_LA_VENTA
+8, 3, -1, CITY VALUES, 0.0, LOC_CITY_NAME_LISBON
+8, 3, -1, CITY VALUES, 13.8, LOC_CITY_NAME_GENEVA
+8, 4, -1, Settle New City, 97.0
+8, 4, -1, Civilian Builder Capture, 0.0
+8, 4, -1, Settle New City, 97.0
+8, 4, -1, Naval Superiority, 100.0
+8, 4, -1, CITY VALUES, 51.5, LOC_CITY_NAME_VALLETTA
+8, 5, -1, Settle New City, 67.0
+8, 5, -1, Civilian Builder Capture, 0.0
+8, 5, -1, Settle New City, 94.0
+8, 5, -1, CITY VALUES, 358.6, LOC_CITY_NAME_LA_VENTA
+8, 6, -1, Settle New City, 97.0
+8, 6, -1, Civilian Builder Capture, 0.0
+8, 6, -1, Settle New City, 107.0
+8, 6, -1, CITY VALUES, 85.6, LOC_CITY_NAME_MEXICO_CITY
+8, 7, -1, Settle New City, 73.0
+8, 7, -1, Civilian Builder Capture, 0.0
+8, 7, -1, Settle New City, 79.0
+8, 7, -1, CITY VALUES, 510.8, LOC_CITY_NAME_VILNIUS
+8, 8, -1, Civilian Builder Capture, 0.0
+8, 8, -1, Settle New City, 36.0
+8, 8, -1, Naval Superiority, 100.0
+8, 8, -1, CITY VALUES, 21.5, LOC_CITY_NAME_BABYLON
+8, 8, -1, CITY VALUES, 110.2, LOC_CITY_NAME_KABUL
+8, 8, -1, CITY VALUES, 57.3, LOC_CITY_NAME_ANTIOCH
+8, 9, -1, Settle New City, 135.0
+8, 9, -1, Civilian Builder Capture, 0.0
+8, 9, -1, Settle New City, 135.0
+8, 9, -1, CITY VALUES, 33.5, LOC_CITY_NAME_GRANADA
+8, 9, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MOHENJO_DARO
+8, 9, -1, CITY VALUES, 166.3, LOC_CITY_NAME_BRUSSELS
+8, 9, -1, CITY VALUES, 62.8, LOC_CITY_NAME_NGAZARGAMU
+8, 10, -1, Civilian Builder Capture, 0.0
+8, 10, -1, Naval Superiority, 100.0
+8, 11, -1, Civilian Builder Capture, 0.0
+8, 11, -1, Settle New City, 30.0
+8, 11, -1, Naval Superiority, 100.0
+8, 12, -1, Civilian Builder Capture, 0.0
+8, 12, -1, CITY VALUES, 716.1, LOC_CITY_NAME_MBANZA_KONGO
+8, 13, -1, Civilian Builder Capture, 0.0
+8, 13, -1, Settle New City, 30.0
+8, 13, -1, Naval Superiority, 100.0
+8, 14, -1, Civilian Builder Capture, 0.0
+8, 14, -1, Naval Superiority, 100.0
+8, 15, -1, Civilian Builder Capture, 0.0
+8, 15, -1, Naval Superiority, 100.0
+8, 16, -1, Civilian Builder Capture, 0.0
+8, 16, -1, CITY VALUES, 607.0, LOC_CITY_NAME_ROME
+8, 16, -1, CITY VALUES, 219.0, LOC_CITY_NAME_ANTIOCH
+8, 17, -1, Civilian Builder Capture, 0.0
+8, 17, -1, Naval Superiority, 100.0
+8, 18, -1, Civilian Builder Capture, 0.0
+8, 18, -1, Naval Superiority, 100.0
+8, 19, -1, Civilian Builder Capture, 0.0
+8, 19, -1, Naval Superiority, 100.0
+8, 19, -1, CITY VALUES, 273.9, LOC_CITY_NAME_KERMA
+8, 20, -1, Civilian Builder Capture, 0.0
+8, 20, -1, Settle New City, 38.0
+8, 20, -1, Naval Superiority, 100.0
+8, 21, -1, Civilian Builder Capture, 0.0
+8, 21, -1, Settle New City, 34.0
+8, 21, -1, Naval Superiority, 100.0
+8, 22, -1, Civilian Builder Capture, 0.0
+8, 22, -1, Naval Superiority, 100.0
+8, 23, -1, Civilian Builder Capture, 0.0
+8, 23, -1, Naval Superiority, 100.0
+8, 23, -1, CITY VALUES, 275.7, LOC_CITY_NAME_BAD_TIBIRA
+8, 24, -1, Attack Barb Camp, 50.0
+8, 24, -1, Barb Camp Tech Boost, 50.0
+8, 24, -1, Civilian Builder Capture, 0.0
+8, 25, -1, Civilian Builder Capture, 0.0
+8, 25, -1, Naval Superiority, 100.0
+8, 26, -1, Civilian Builder Capture, 0.0
+8, 26, -1, Naval Superiority, 100.0
+8, 26, -1, CITY VALUES, 297.8, LOC_CITY_NAME_HONG_KONG
+8, 26, -1, CITY VALUES, 249.4, LOC_CITY_NAME_BAD_TIBIRA
+8, 27, -1, Civilian Builder Capture, 0.0
+8, 27, -1, Settle New City, 30.0
+8, 27, -1, Naval Superiority, 100.0
+8, 28, -1, Civilian Builder Capture, 0.0
+8, 28, -1, Settle New City, 30.0
+8, 28, -1, Naval Superiority, 100.0
+8, 29, -1, Civilian Builder Capture, 0.0
+8, 29, -1, Naval Superiority, 100.0
+8, 30, -1, Civilian Builder Capture, 0.0
+8, 30, -1, Naval Superiority, 100.0
+8, 30, -1, CITY VALUES, 92.8, LOC_CITY_NAME_MOHENJO_DARO
+8, 31, -1, Civilian Builder Capture, 0.0
+8, 31, -1, CITY VALUES, 162.2, LOC_CITY_NAME_GRANADA
+8, 63, -1, Barbarian Builder Capture, 600.0
+8, 63, -1, CITY VALUES, 122.0, LOC_CITY_NAME_ULM
+9, 0, -1, Civilian Builder Capture, 0.0
+9, 0, -1, Settle New City, 183.0
+9, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_BOLOGNA
+9, 0, -1, CITY VALUES, 528.8, LOC_CITY_NAME_ISTANBUL
+9, 0, -1, CITY VALUES, 481.3, LOC_CITY_NAME_MBUMBI
+9, 0, 12, MINOR CIV LEVY, 119.9, 79.6
+9, 1, -1, Settle New City, 119.0
+9, 1, -1, Attack Barb Camp, 50.0
+9, 1, -1, Barb Camp Tech Boost, 50.0
+9, 1, -1, Civilian Builder Capture, 0.0
+9, 1, -1, Settle New City, 130.0
+9, 1, -1, Naval Superiority, 100.0
+9, 1, -1, CITY VALUES, 628.5, LOC_CITY_NAME_MBANZA_KONGO
+9, 2, 12, Attack Walled City, 192.8
+9, 2, 15, Attack Walled City, 335.3
+9, 2, -1, Attack Barb Camp, 50.0
+9, 2, -1, Barb Camp Tech Boost, 50.0
+9, 2, -1, Civilian Builder Capture, 0.0
+9, 2, -1, Settle New City, 94.0
+9, 2, -1, Naval Superiority, 100.0
+9, 2, -1, CITY VALUES, 302.1, LOC_CITY_NAME_BOLOGNA
+9, 2, -1, CITY VALUES, 444.7, LOC_CITY_NAME_VALLETTA
+9, 3, -1, Civilian Builder Capture, 0.0
+9, 3, -1, Settle New City, 129.0
+9, 3, -1, Naval Superiority, 100.0
+9, 3, -1, CITY VALUES, 116.6, LOC_CITY_NAME_LA_VENTA
+9, 3, -1, CITY VALUES, 11.5, LOC_CITY_NAME_LISBON
+9, 3, -1, CITY VALUES, 0.0, LOC_CITY_NAME_GENEVA
+9, 4, -1, Settle New City, 97.0
+9, 4, -1, Attack Barb Camp, 50.0
+9, 4, -1, Barb Camp Tech Boost, 50.0
+9, 4, -1, Civilian Builder Capture, 0.0
+9, 4, -1, Settle New City, 97.0
+9, 4, -1, Naval Superiority, 100.0
+9, 4, -1, CITY VALUES, 21.5, LOC_CITY_NAME_VALLETTA
+9, 5, -1, Settle New City, 67.0
+9, 5, -1, Civilian Builder Capture, 0.0
+9, 5, -1, Settle New City, 94.0
+9, 5, -1, CITY VALUES, 383.7, LOC_CITY_NAME_LA_VENTA
+9, 6, -1, Settle New City, 103.0
+9, 6, -1, Civilian Builder Capture, 0.0
+9, 6, -1, Settle New City, 113.0
+9, 6, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MEXICO_CITY
+9, 7, -1, Settle New City, 73.0
+9, 7, -1, Civilian Builder Capture, 0.0
+9, 7, -1, Settle New City, 91.0
+9, 7, -1, CITY VALUES, 350.0, LOC_CITY_NAME_VILNIUS
+9, 8, -1, Civilian Builder Capture, 0.0
+9, 8, -1, Settle New City, 36.0
+9, 8, -1, Naval Superiority, 100.0
+9, 8, -1, CITY VALUES, 34.9, LOC_CITY_NAME_BABYLON
+9, 8, -1, CITY VALUES, 110.2, LOC_CITY_NAME_KABUL
+9, 8, -1, CITY VALUES, 57.3, LOC_CITY_NAME_ANTIOCH
+9, 9, -1, Civilian Builder Capture, 0.0
+9, 9, -1, Settle New City, 120.0
+9, 9, -1, Naval Superiority, 100.0
+9, 9, -1, CITY VALUES, 33.5, LOC_CITY_NAME_GRANADA
+9, 9, -1, CITY VALUES, 42.7, LOC_CITY_NAME_MOHENJO_DARO
+9, 9, -1, CITY VALUES, 0.0, LOC_CITY_NAME_BRUSSELS
+9, 9, -1, CITY VALUES, 62.8, LOC_CITY_NAME_NGAZARGAMU
+9, 10, -1, Civilian Builder Capture, 0.0
+9, 10, -1, Naval Superiority, 100.0
+9, 11, -1, Civilian Builder Capture, 0.0
+9, 11, -1, Settle New City, 30.0
+9, 11, -1, Naval Superiority, 100.0
+9, 12, -1, Civilian Builder Capture, 0.0
+9, 12, -1, CITY VALUES, 653.6, LOC_CITY_NAME_MBANZA_KONGO
+9, 13, -1, Civilian Builder Capture, 0.0
+9, 13, -1, Settle New City, 30.0
+9, 13, -1, Naval Superiority, 100.0
+9, 14, -1, Civilian Builder Capture, 0.0
+9, 14, -1, Naval Superiority, 100.0
+9, 15, -1, Civilian Builder Capture, 0.0
+9, 15, -1, Naval Superiority, 100.0
+9, 16, -1, City Defense, 0.0
+9, 16, -1, Civilian Builder Capture, 0.0
+9, 16, -1, City Defense, 0.0
+9, 16, -1, CITY VALUES, 607.0, LOC_CITY_NAME_ROME
+9, 16, -1, CITY VALUES, 219.0, LOC_CITY_NAME_ANTIOCH
+9, 17, -1, Civilian Builder Capture, 0.0
+9, 17, -1, Naval Superiority, 100.0
+9, 18, -1, Civilian Builder Capture, 0.0
+9, 18, -1, Naval Superiority, 100.0
+9, 19, -1, Civilian Builder Capture, 0.0
+9, 19, -1, Naval Superiority, 100.0
+9, 19, -1, CITY VALUES, 337.9, LOC_CITY_NAME_KERMA
+9, 20, -1, Civilian Builder Capture, 0.0
+9, 20, -1, Settle New City, 38.0
+9, 20, -1, Naval Superiority, 100.0
+9, 21, -1, Civilian Builder Capture, 0.0
+9, 21, -1, Settle New City, 34.0
+9, 21, -1, Naval Superiority, 100.0
+9, 22, -1, Civilian Builder Capture, 0.0
+9, 22, -1, Naval Superiority, 100.0
+9, 23, -1, Civilian Builder Capture, 0.0
+9, 23, -1, Naval Superiority, 100.0
+9, 23, -1, CITY VALUES, 275.7, LOC_CITY_NAME_BAD_TIBIRA
+9, 24, -1, Attack Barb Camp, 50.0
+9, 24, -1, Barb Camp Tech Boost, 50.0
+9, 24, -1, Civilian Builder Capture, 0.0
+9, 25, -1, Civilian Builder Capture, 0.0
+9, 25, -1, Naval Superiority, 100.0
+9, 26, -1, Civilian Builder Capture, 0.0
+9, 26, -1, Naval Superiority, 100.0
+9, 26, -1, CITY VALUES, 297.8, LOC_CITY_NAME_HONG_KONG
+9, 26, -1, CITY VALUES, 249.4, LOC_CITY_NAME_BAD_TIBIRA
+9, 27, -1, Civilian Builder Capture, 0.0
+9, 27, -1, Settle New City, 30.0
+9, 27, -1, Naval Superiority, 100.0
+9, 28, -1, Civilian Builder Capture, 0.0
+9, 28, -1, Settle New City, 30.0
+9, 28, -1, Naval Superiority, 100.0
+9, 29, -1, Civilian Builder Capture, 0.0
+9, 29, -1, Naval Superiority, 100.0
+9, 30, -1, Civilian Builder Capture, 0.0
+9, 30, -1, Naval Superiority, 100.0
+9, 30, -1, CITY VALUES, 197.2, LOC_CITY_NAME_MOHENJO_DARO
+9, 31, -1, Civilian Builder Capture, 0.0
+9, 31, -1, CITY VALUES, 162.2, LOC_CITY_NAME_GRANADA
+9, 63, -1, Barbarian Builder Capture, 650.0
+9, 63, -1, CITY VALUES, 122.0, LOC_CITY_NAME_ULM
+10, 0, -1, Civilian Builder Capture, 0.0
+10, 0, -1, Settle New City, 198.0
+10, 0, -1, CITY VALUES, 1.3, LOC_CITY_NAME_BOLOGNA
+10, 0, -1, CITY VALUES, 502.2, LOC_CITY_NAME_ISTANBUL
+10, 0, -1, CITY VALUES, 481.3, LOC_CITY_NAME_MBUMBI
+10, 0, 12, MINOR CIV LEVY, 119.9, 79.6
+10, 1, -1, Settle New City, 119.0
+10, 1, -1, Attack Barb Camp, 50.0
+10, 1, -1, Barb Camp Tech Boost, 50.0
+10, 1, -1, Civilian Builder Capture, 0.0
+10, 1, -1, Settle New City, 133.0
+10, 1, -1, Naval Superiority, 100.0
+10, 1, -1, CITY VALUES, 644.9, LOC_CITY_NAME_MBANZA_KONGO
+10, 2, -1, Settle New City, 50.0
+10, 2, -1, Attack Barb Camp, 50.0
+10, 2, -1, Barb Camp Tech Boost, 50.0
+10, 2, -1, Civilian Builder Capture, 0.0
+10, 2, -1, Settle New City, 94.0
+10, 2, -1, Naval Superiority, 100.0
+10, 2, -1, CITY VALUES, 302.1, LOC_CITY_NAME_BOLOGNA
+10, 2, -1, CITY VALUES, 444.7, LOC_CITY_NAME_VALLETTA
+10, 3, -1, Civilian Builder Capture, 0.0
+10, 3, -1, Settle New City, 129.0
+10, 3, -1, Naval Superiority, 100.0
+10, 3, -1, CITY VALUES, 196.6, LOC_CITY_NAME_LA_VENTA
+10, 3, -1, CITY VALUES, 0.0, LOC_CITY_NAME_LISBON
+10, 3, -1, CITY VALUES, 42.5, LOC_CITY_NAME_GENEVA
+10, 4, -1, Settle New City, 97.0
+10, 4, -1, Attack Barb Camp, 50.0
+10, 4, -1, Barb Camp Tech Boost, 50.0
+10, 4, -1, Civilian Builder Capture, 0.0
+10, 4, -1, Settle New City, 97.0
+10, 4, -1, Naval Superiority, 100.0
+10, 4, -1, CITY VALUES, 21.5, LOC_CITY_NAME_VALLETTA
+10, 5, -1, Settle New City, 67.0
+10, 5, -1, Civilian Builder Capture, 0.0
+10, 5, -1, Settle New City, 94.0
+10, 5, -1, CITY VALUES, 383.7, LOC_CITY_NAME_LA_VENTA
+10, 6, -1, Settle New City, 103.0
+10, 6, -1, Civilian Builder Capture, 0.0
+10, 6, -1, Settle New City, 113.0
+10, 6, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MEXICO_CITY
+10, 7, -1, Settle New City, 73.0
+10, 7, -1, Civilian Builder Capture, 0.0
+10, 7, -1, Settle New City, 95.0
+10, 7, -1, CITY VALUES, 335.6, LOC_CITY_NAME_VILNIUS
+10, 8, -1, Civilian Builder Capture, 0.0
+10, 8, -1, Settle New City, 36.0
+10, 8, -1, Naval Superiority, 100.0
+10, 8, -1, CITY VALUES, 34.9, LOC_CITY_NAME_BABYLON
+10, 8, -1, CITY VALUES, 118.1, LOC_CITY_NAME_KABUL
+10, 8, -1, CITY VALUES, 74.8, LOC_CITY_NAME_ANTIOCH
+10, 9, -1, Settle New City, 62.0
+10, 9, -1, Civilian Builder Capture, 0.0
+10, 9, -1, Settle New City, 120.0
+10, 9, -1, Naval Superiority, 100.0
+10, 9, -1, CITY VALUES, 33.5, LOC_CITY_NAME_GRANADA
+10, 9, -1, CITY VALUES, 92.7, LOC_CITY_NAME_MOHENJO_DARO
+10, 9, -1, CITY VALUES, 0.0, LOC_CITY_NAME_BRUSSELS
+10, 9, -1, CITY VALUES, 62.8, LOC_CITY_NAME_NGAZARGAMU
+10, 10, -1, Civilian Builder Capture, 0.0
+10, 10, -1, Naval Superiority, 100.0
+10, 11, -1, Civilian Builder Capture, 0.0
+10, 11, -1, Settle New City, 30.0
+10, 11, -1, Naval Superiority, 100.0
+10, 12, -1, Civilian Builder Capture, 0.0
+10, 12, -1, CITY VALUES, 667.6, LOC_CITY_NAME_MBANZA_KONGO
+10, 13, -1, Civilian Builder Capture, 0.0
+10, 13, -1, Settle New City, 30.0
+10, 13, -1, Naval Superiority, 100.0
+10, 14, -1, Civilian Builder Capture, 0.0
+10, 14, -1, Naval Superiority, 100.0
+10, 15, -1, Civilian Builder Capture, 0.0
+10, 15, -1, Naval Superiority, 100.0
+10, 16, -1, City Defense, 0.0
+10, 16, -1, Civilian Builder Capture, 0.0
+10, 16, -1, City Defense, 0.0
+10, 16, -1, CITY VALUES, 669.1, LOC_CITY_NAME_ROME
+10, 16, -1, CITY VALUES, 239.5, LOC_CITY_NAME_ANTIOCH
+10, 17, -1, Civilian Builder Capture, 0.0
+10, 17, -1, Naval Superiority, 100.0
+10, 18, -1, Civilian Builder Capture, 0.0
+10, 18, -1, Naval Superiority, 100.0
+10, 19, -1, Civilian Builder Capture, 0.0
+10, 19, -1, Naval Superiority, 100.0
+10, 19, -1, CITY VALUES, 337.9, LOC_CITY_NAME_KERMA
+10, 20, -1, Civilian Builder Capture, 0.0
+10, 20, -1, Settle New City, 38.0
+10, 20, -1, Naval Superiority, 100.0
+10, 21, -1, Attack Barb Camp, 50.0
+10, 21, -1, Barb Camp Tech Boost, 50.0
+10, 21, -1, Civilian Builder Capture, 0.0
+10, 21, -1, Settle New City, 30.0
+10, 21, -1, Naval Superiority, 100.0
+10, 22, -1, Civilian Builder Capture, 0.0
+10, 22, -1, Naval Superiority, 100.0
+10, 23, -1, Civilian Builder Capture, 0.0
+10, 23, -1, Naval Superiority, 100.0
+10, 23, -1, CITY VALUES, 339.8, LOC_CITY_NAME_BAD_TIBIRA
+10, 23, -1, CITY VALUES, 283.0, LOC_CITY_NAME_BRUSSELS
+10, 24, -1, Attack Barb Camp, 50.0
+10, 24, -1, Barb Camp Tech Boost, 50.0
+10, 24, -1, Civilian Builder Capture, 0.0
+10, 25, -1, Civilian Builder Capture, 0.0
+10, 25, -1, Naval Superiority, 100.0
+10, 26, -1, Civilian Builder Capture, 0.0
+10, 26, -1, Naval Superiority, 100.0
+10, 26, -1, CITY VALUES, 361.9, LOC_CITY_NAME_HONG_KONG
+10, 26, -1, CITY VALUES, 249.4, LOC_CITY_NAME_BAD_TIBIRA
+10, 27, -1, Civilian Builder Capture, 0.0
+10, 27, -1, Settle New City, 30.0
+10, 27, -1, Naval Superiority, 100.0
+10, 28, -1, Civilian Builder Capture, 0.0
+10, 28, -1, Settle New City, 30.0
+10, 28, -1, Naval Superiority, 100.0
+10, 29, -1, Civilian Builder Capture, 0.0
+10, 29, -1, Naval Superiority, 100.0
+10, 30, -1, Civilian Builder Capture, 0.0
+10, 30, -1, Naval Superiority, 100.0
+10, 30, -1, CITY VALUES, 261.2, LOC_CITY_NAME_MOHENJO_DARO
+10, 31, -1, Civilian Builder Capture, 0.0
+10, 31, -1, CITY VALUES, 186.1, LOC_CITY_NAME_GRANADA
+10, 63, -1, Barbarian Builder Capture, 700.0
+10, 63, -1, CITY VALUES, 2.0, LOC_CITY_NAME_ULM
+10, 63, -1, CITY VALUES, 749.0, LOC_CITY_NAME_MEXICO_CITY
+10, 63, -1, CITY VALUES, 30.0, LOC_CITY_NAME_HEIDELBERG
+11, 0, -1, Attack Barb Camp, 50.0
+11, 0, -1, Barb Camp Tech Boost, 50.0
+11, 0, -1, Civilian Builder Capture, 0.0
+11, 0, -1, Settle New City, 201.0
+11, 0, -1, CITY VALUES, 1.3, LOC_CITY_NAME_BOLOGNA
+11, 0, -1, CITY VALUES, 487.5, LOC_CITY_NAME_ISTANBUL
+11, 0, -1, CITY VALUES, 509.6, LOC_CITY_NAME_MBUMBI
+11, 0, -1, CITY VALUES, 171.5, LOC_CITY_NAME_CAHOKIA
+11, 0, 12, MINOR CIV LEVY, 119.9, 79.6
+11, 0, 20, MINOR CIV LEVY, 119.9, 79.6
+11, 1, -1, Settle New City, 119.0
+11, 1, -1, Attack Barb Camp, 50.0
+11, 1, -1, Barb Camp Tech Boost, 50.0
+11, 1, -1, Civilian Builder Capture, 0.0
+11, 1, -1, Settle New City, 136.0
+11, 1, -1, Naval Superiority, 100.0
+11, 1, -1, CITY VALUES, 629.6, LOC_CITY_NAME_MBANZA_KONGO
+11, 2, -1, Settle New City, 60.0
+11, 2, -1, Attack Barb Camp, 50.0
+11, 2, -1, Barb Camp Tech Boost, 50.0
+11, 2, -1, Civilian Builder Capture, 0.0
+11, 2, -1, Settle New City, 98.0
+11, 2, -1, Naval Superiority, 100.0
+11, 2, -1, CITY VALUES, 445.9, LOC_CITY_NAME_BOLOGNA
+11, 2, -1, CITY VALUES, 345.3, LOC_CITY_NAME_VALLETTA
+11, 3, -1, Barb Camp Tech Boost, 50.0
+11, 3, -1, Civilian Builder Capture, 0.0
+11, 3, -1, Settle New City, 129.0
+11, 3, -1, Naval Superiority, 100.0
+11, 3, -1, CITY VALUES, 116.6, LOC_CITY_NAME_LA_VENTA
+11, 3, -1, CITY VALUES, 0.0, LOC_CITY_NAME_LISBON
+11, 3, -1, CITY VALUES, 0.0, LOC_CITY_NAME_GENEVA
+11, 4, -1, Settle New City, 97.0
+11, 4, -1, Attack Barb Camp, 50.0
+11, 4, -1, Barb Camp Tech Boost, 50.0
+11, 4, -1, Civilian Builder Capture, 0.0
+11, 4, -1, Settle New City, 97.0
+11, 4, -1, Naval Superiority, 100.0
+11, 4, -1, CITY VALUES, 21.5, LOC_CITY_NAME_VALLETTA
+11, 5, -1, Settle New City, 67.0
+11, 5, -1, Civilian Builder Capture, 0.0
+11, 5, -1, Settle New City, 94.0
+11, 5, -1, CITY VALUES, 383.7, LOC_CITY_NAME_LA_VENTA
+11, 6, -1, Civilian Builder Capture, 0.0
+11, 6, -1, Settle New City, 132.0
+11, 6, -1, CITY VALUES, 81.4, LOC_CITY_NAME_MEXICO_CITY
+11, 7, -1, Civilian Builder Capture, 0.0
+11, 7, -1, Settle New City, 73.0
+11, 7, -1, Naval Superiority, 100.0
+11, 7, -1, CITY VALUES, 379.4, LOC_CITY_NAME_VILNIUS
+11, 8, -1, Settle New City, 63.0
+11, 8, -1, Civilian Builder Capture, 0.0
+11, 8, -1, Settle New City, 63.0
+11, 8, -1, Naval Superiority, 100.0
+11, 8, -1, CITY VALUES, 34.9, LOC_CITY_NAME_BABYLON
+11, 8, -1, CITY VALUES, 135.9, LOC_CITY_NAME_KABUL
+11, 8, -1, CITY VALUES, 92.0, LOC_CITY_NAME_ANTIOCH
+11, 8, -1, CITY VALUES, 176.7, LOC_CITY_NAME_ZANZIBAR
+11, 9, -1, Settle New City, 63.0
+11, 9, -1, Civilian Builder Capture, 0.0
+11, 9, -1, Settle New City, 122.0
+11, 9, -1, Naval Superiority, 100.0
+11, 9, -1, CITY VALUES, 357.6, LOC_CITY_NAME_GRANADA
+11, 9, -1, CITY VALUES, 314.7, LOC_CITY_NAME_MOHENJO_DARO
+11, 9, -1, CITY VALUES, 191.9, LOC_CITY_NAME_BRUSSELS
+11, 9, -1, CITY VALUES, 291.3, LOC_CITY_NAME_NGAZARGAMU
+11, 10, -1, Civilian Builder Capture, 0.0
+11, 10, -1, Naval Superiority, 100.0
+11, 11, -1, Civilian Builder Capture, 0.0
+11, 11, -1, Settle New City, 30.0
+11, 11, -1, Naval Superiority, 100.0
+11, 12, -1, Civilian Builder Capture, 0.0
+11, 12, -1, CITY VALUES, 661.9, LOC_CITY_NAME_MBANZA_KONGO
+11, 13, -1, Civilian Builder Capture, 0.0
+11, 13, -1, Settle New City, 30.0
+11, 13, -1, Naval Superiority, 100.0
+11, 14, -1, Civilian Builder Capture, 0.0
+11, 14, -1, Naval Superiority, 100.0
+11, 15, -1, Civilian Builder Capture, 0.0
+11, 15, -1, Naval Superiority, 100.0
+11, 15, -1, CITY VALUES, 283.2, LOC_CITY_NAME_HALEP
+11, 16, -1, City Defense, 0.0
+11, 16, -1, Civilian Builder Capture, 0.0
+11, 16, -1, City Defense, 0.0
+11, 16, -1, CITY VALUES, 661.6, LOC_CITY_NAME_ROME
+11, 16, -1, CITY VALUES, 297.0, LOC_CITY_NAME_ANTIOCH
+11, 17, -1, Civilian Builder Capture, 0.0
+11, 17, -1, Naval Superiority, 100.0
+11, 18, -1, Civilian Builder Capture, 0.0
+11, 18, -1, Naval Superiority, 100.0
+11, 19, -1, Civilian Builder Capture, 0.0
+11, 19, -1, Naval Superiority, 100.0
+11, 19, -1, CITY VALUES, 337.9, LOC_CITY_NAME_KERMA
+11, 20, -1, Civilian Builder Capture, 0.0
+11, 20, -1, Settle New City, 38.0
+11, 20, -1, Naval Superiority, 100.0
+11, 21, -1, Attack Barb Camp, 50.0
+11, 21, -1, Barb Camp Tech Boost, 50.0
+11, 21, -1, Civilian Builder Capture, 0.0
+11, 21, -1, Settle New City, 30.0
+11, 21, -1, Naval Superiority, 100.0
+11, 22, -1, Civilian Builder Capture, 0.0
+11, 22, -1, Naval Superiority, 100.0
+11, 23, -1, Civilian Builder Capture, 0.0
+11, 23, -1, Naval Superiority, 100.0
+11, 23, -1, CITY VALUES, 307.6, LOC_CITY_NAME_BAD_TIBIRA
+11, 23, -1, CITY VALUES, 179.8, LOC_CITY_NAME_BRUSSELS
+11, 24, -1, Attack Barb Camp, 50.0
+11, 24, -1, Barb Camp Tech Boost, 50.0
+11, 24, -1, Civilian Builder Capture, 0.0
+11, 25, -1, Civilian Builder Capture, 0.0
+11, 25, -1, Naval Superiority, 100.0
+11, 26, -1, Civilian Builder Capture, 0.0
+11, 26, -1, Naval Superiority, 100.0
+11, 26, -1, CITY VALUES, 361.9, LOC_CITY_NAME_HONG_KONG
+11, 26, -1, CITY VALUES, 281.3, LOC_CITY_NAME_BAD_TIBIRA
+11, 27, -1, Civilian Builder Capture, 0.0
+11, 27, -1, Settle New City, 30.0
+11, 27, -1, Naval Superiority, 100.0
+11, 28, -1, Civilian Builder Capture, 0.0
+11, 28, -1, Settle New City, 30.0
+11, 28, -1, Naval Superiority, 100.0
+11, 29, -1, Civilian Builder Capture, 0.0
+11, 29, -1, Naval Superiority, 100.0
+11, 30, -1, Civilian Builder Capture, 0.0
+11, 30, -1, Naval Superiority, 100.0
+11, 30, -1, CITY VALUES, 261.2, LOC_CITY_NAME_MOHENJO_DARO
+11, 31, -1, Civilian Builder Capture, 0.0
+11, 31, -1, CITY VALUES, 226.0, LOC_CITY_NAME_GRANADA
+11, 63, -1, Barbarian Builder Capture, 750.0
+11, 63, -1, CITY VALUES, 16.0, LOC_CITY_NAME_ULM
+11, 63, -1, CITY VALUES, 756.0, LOC_CITY_NAME_MEXICO_CITY
+11, 63, -1, CITY VALUES, 44.0, LOC_CITY_NAME_HEIDELBERG
+11, 63, -1, CITY VALUES, 742.0, LOC_CITY_NAME_BABYLON
+12, 0, -1, Attack Barb Camp, 50.0
+12, 0, -1, Barb Camp Tech Boost, 50.0
+12, 0, -1, Civilian Builder Capture, 0.0
+12, 0, -1, Settle New City, 192.0
+12, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_BOLOGNA
+12, 0, -1, CITY VALUES, 484.7, LOC_CITY_NAME_ISTANBUL
+12, 0, -1, CITY VALUES, 60.9, LOC_CITY_NAME_MBUMBI
+12, 0, -1, CITY VALUES, 93.7, LOC_CITY_NAME_CAHOKIA
+12, 0, -1, CITY VALUES, 171.4, LOC_CITY_NAME_MBANZA_NSUNDI
+12, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KWILA
+12, 0, 12, MINOR CIV LEVY, 119.9, 79.6
+12, 0, 20, MINOR CIV LEVY, 119.9, 79.6
+12, 1, -1, Attack Barb Camp, 50.0
+12, 1, -1, Barb Camp Tech Boost, 50.0
+12, 1, -1, Civilian Builder Capture, 0.0
+12, 1, -1, Settle New City, 113.0
+12, 1, -1, Naval Superiority, 100.0
+12, 1, -1, CITY VALUES, 622.1, LOC_CITY_NAME_MBANZA_KONGO
+12, 2, -1, Settle New City, 76.0
+12, 2, -1, Attack Barb Camp, 50.0
+12, 2, -1, Barb Camp Tech Boost, 50.0
+12, 2, -1, Civilian Builder Capture, 0.0
+12, 2, -1, Settle New City, 99.0
+12, 2, -1, Naval Superiority, 100.0
+12, 2, -1, CITY VALUES, 380.9, LOC_CITY_NAME_BOLOGNA
+12, 2, -1, CITY VALUES, 444.7, LOC_CITY_NAME_VALLETTA
+12, 3, -1, Attack Barb Camp, 50.0
+12, 3, -1, Barb Camp Tech Boost, 50.0
+12, 3, -1, Civilian Builder Capture, 0.0
+12, 3, -1, Settle New City, 134.0
+12, 3, -1, Naval Superiority, 100.0
+12, 3, -1, CITY VALUES, 66.6, LOC_CITY_NAME_LA_VENTA
+12, 3, -1, CITY VALUES, 106.1, LOC_CITY_NAME_LISBON
+12, 3, -1, CITY VALUES, 42.5, LOC_CITY_NAME_GENEVA
+12, 4, -1, Settle New City, 97.0
+12, 4, -1, Attack Barb Camp, 50.0
+12, 4, -1, Barb Camp Tech Boost, 50.0
+12, 4, -1, Civilian Builder Capture, 0.0
+12, 4, -1, Settle New City, 97.0
+12, 4, -1, Naval Superiority, 100.0
+12, 4, -1, CITY VALUES, 21.5, LOC_CITY_NAME_VALLETTA
+12, 5, -1, Settle New City, 67.0
+12, 5, -1, Civilian Builder Capture, 0.0
+12, 5, -1, Settle New City, 94.0
+12, 5, -1, CITY VALUES, 346.2, LOC_CITY_NAME_LA_VENTA
+12, 6, -1, Civilian Builder Capture, 0.0
+12, 6, -1, Settle New City, 132.0
+12, 6, -1, CITY VALUES, 98.0, LOC_CITY_NAME_MEXICO_CITY
+12, 7, -1, Settle New City, 99.0
+12, 7, -1, Civilian Builder Capture, 0.0
+12, 7, -1, Settle New City, 99.0
+12, 7, -1, Naval Superiority, 100.0
+12, 7, -1, CITY VALUES, 334.9, LOC_CITY_NAME_VILNIUS
+12, 8, -1, Settle New City, 80.0
+12, 8, -1, Civilian Builder Capture, 0.0
+12, 8, -1, Settle New City, 80.0
+12, 8, -1, Naval Superiority, 100.0
+12, 8, -1, CITY VALUES, 0.0, LOC_CITY_NAME_BABYLON
+12, 8, -1, CITY VALUES, 153.4, LOC_CITY_NAME_KABUL
+12, 8, -1, CITY VALUES, 232.3, LOC_CITY_NAME_ANTIOCH
+12, 8, -1, CITY VALUES, 126.1, LOC_CITY_NAME_ZANZIBAR
+12, 9, -1, Settle New City, 63.0
+12, 9, -1, Civilian Builder Capture, 0.0
+12, 9, -1, Settle New City, 122.0
+12, 9, -1, Naval Superiority, 100.0
+12, 9, -1, CITY VALUES, 390.4, LOC_CITY_NAME_GRANADA
+12, 9, -1, CITY VALUES, 314.7, LOC_CITY_NAME_MOHENJO_DARO
+12, 9, -1, CITY VALUES, 383.8, LOC_CITY_NAME_BRUSSELS
+12, 9, -1, CITY VALUES, 291.3, LOC_CITY_NAME_NGAZARGAMU
+12, 10, -1, Civilian Builder Capture, 0.0
+12, 10, -1, Naval Superiority, 100.0
+12, 11, -1, Civilian Builder Capture, 0.0
+12, 11, -1, Settle New City, 30.0
+12, 11, -1, Naval Superiority, 100.0
+12, 12, -1, Civilian Builder Capture, 0.0
+12, 12, -1, CITY VALUES, 656.6, LOC_CITY_NAME_MBANZA_KONGO
+12, 13, -1, Civilian Builder Capture, 0.0
+12, 13, -1, Settle New City, 30.0
+12, 13, -1, Naval Superiority, 100.0
+12, 14, -1, Civilian Builder Capture, 0.0
+12, 14, -1, Naval Superiority, 100.0
+12, 15, -1, Civilian Builder Capture, 0.0
+12, 15, -1, Naval Superiority, 100.0
+12, 15, -1, CITY VALUES, 311.2, LOC_CITY_NAME_HALEP
+12, 16, -1, City Defense, 0.0
+12, 16, -1, Civilian Builder Capture, 0.0
+12, 16, -1, City Defense, 0.0
+12, 16, -1, CITY VALUES, 661.6, LOC_CITY_NAME_ROME
+12, 16, -1, CITY VALUES, 321.3, LOC_CITY_NAME_ANTIOCH
+12, 17, -1, Civilian Builder Capture, 0.0
+12, 17, -1, Naval Superiority, 100.0
+12, 18, -1, Civilian Builder Capture, 0.0
+12, 18, -1, Naval Superiority, 100.0
+12, 19, -1, Civilian Builder Capture, 0.0
+12, 19, -1, Naval Superiority, 100.0
+12, 19, -1, CITY VALUES, 332.9, LOC_CITY_NAME_KERMA
+12, 20, -1, Civilian Builder Capture, 0.0
+12, 20, -1, Settle New City, 38.0
+12, 20, -1, Naval Superiority, 100.0
+12, 21, -1, Attack Barb Camp, 50.0
+12, 21, -1, Barb Camp Tech Boost, 50.0
+12, 21, -1, Civilian Builder Capture, 0.0
+12, 21, -1, Settle New City, 30.0
+12, 21, -1, Naval Superiority, 100.0
+12, 22, -1, Civilian Builder Capture, 0.0
+12, 22, -1, Naval Superiority, 100.0
+12, 23, -1, Civilian Builder Capture, 0.0
+12, 23, -1, Naval Superiority, 100.0
+12, 23, -1, CITY VALUES, 261.9, LOC_CITY_NAME_BAD_TIBIRA
+12, 23, -1, CITY VALUES, 283.0, LOC_CITY_NAME_BRUSSELS
+12, 24, -1, Attack Barb Camp, 50.0
+12, 24, -1, Barb Camp Tech Boost, 50.0
+12, 24, -1, Civilian Builder Capture, 0.0
+12, 25, -1, Civilian Builder Capture, 0.0
+12, 25, -1, Naval Superiority, 100.0
+12, 26, -1, Civilian Builder Capture, 0.0
+12, 26, -1, Naval Superiority, 100.0
+12, 26, -1, CITY VALUES, 361.9, LOC_CITY_NAME_HONG_KONG
+12, 26, -1, CITY VALUES, 227.9, LOC_CITY_NAME_BAD_TIBIRA
+12, 27, -1, Civilian Builder Capture, 0.0
+12, 27, -1, Settle New City, 30.0
+12, 27, -1, Naval Superiority, 100.0
+12, 28, -1, Civilian Builder Capture, 0.0
+12, 28, -1, Settle New City, 30.0
+12, 28, -1, Naval Superiority, 100.0
+12, 29, -1, Civilian Builder Capture, 0.0
+12, 29, -1, Naval Superiority, 100.0
+12, 30, -1, Attack Barb Camp, 50.0
+12, 30, -1, Barb Camp Tech Boost, 50.0
+12, 30, -1, Civilian Builder Capture, 0.0
+12, 30, -1, Naval Superiority, 100.0
+12, 30, -1, CITY VALUES, 261.2, LOC_CITY_NAME_MOHENJO_DARO
+12, 31, -1, Civilian Builder Capture, 0.0
+12, 31, -1, CITY VALUES, 290.0, LOC_CITY_NAME_GRANADA
+12, 63, -1, Barbarian Builder Capture, 800.0
+12, 63, -1, CITY VALUES, 16.0, LOC_CITY_NAME_ULM
+12, 63, -1, CITY VALUES, 756.0, LOC_CITY_NAME_MEXICO_CITY
+12, 63, -1, CITY VALUES, 44.0, LOC_CITY_NAME_HEIDELBERG
+12, 63, -1, CITY VALUES, 742.0, LOC_CITY_NAME_BABYLON
+13, 0, -1, Attack Barb Camp, 50.0
+13, 0, -1, Barb Camp Tech Boost, 50.0
+13, 0, -1, Civilian Builder Capture, 0.0
+13, 0, -1, Settle New City, 192.0
+13, 0, -1, CITY VALUES, 3.7, LOC_CITY_NAME_BOLOGNA
+13, 0, -1, CITY VALUES, 540.6, LOC_CITY_NAME_ISTANBUL
+13, 0, -1, CITY VALUES, 461.5, LOC_CITY_NAME_MBUMBI
+13, 0, -1, CITY VALUES, 173.8, LOC_CITY_NAME_CAHOKIA
+13, 0, -1, CITY VALUES, 294.5, LOC_CITY_NAME_MBANZA_NSUNDI
+13, 0, -1, CITY VALUES, 291.2, LOC_CITY_NAME_KWILA
+13, 0, 12, MINOR CIV LEVY, 119.9, 79.6
+13, 0, 20, MINOR CIV LEVY, 119.9, 79.6
+13, 1, -1, Settle New City, 101.0
+13, 1, -1, Attack Barb Camp, 50.0
+13, 1, -1, Barb Camp Tech Boost, 50.0
+13, 1, -1, Civilian Builder Capture, 0.0
+13, 1, -1, Settle New City, 113.0
+13, 1, -1, Naval Superiority, 100.0
+13, 1, -1, CITY VALUES, 619.3, LOC_CITY_NAME_MBANZA_KONGO
+13, 2, -1, Settle New City, 51.0
+13, 2, -1, Attack Barb Camp, 50.0
+13, 2, -1, Barb Camp Tech Boost, 50.0
+13, 2, -1, Civilian Builder Capture, 0.0
+13, 2, -1, Settle New City, 96.0
+13, 2, -1, Naval Superiority, 100.0
+13, 2, -1, CITY VALUES, 428.9, LOC_CITY_NAME_BOLOGNA
+13, 2, -1, CITY VALUES, 314.8, LOC_CITY_NAME_VALLETTA
+13, 2, -1, CITY VALUES, 593.0, LOC_CITY_NAME_MBWILA
+13, 3, -1, Attack Barb Camp, 50.0
+13, 3, -1, Barb Camp Tech Boost, 50.0
+13, 3, -1, Civilian Builder Capture, 0.0
+13, 3, -1, Settle New City, 140.0
+13, 3, -1, Naval Superiority, 100.0
+13, 3, -1, CITY VALUES, 116.6, LOC_CITY_NAME_LA_VENTA
+13, 3, -1, CITY VALUES, 0.0, LOC_CITY_NAME_LISBON
+13, 3, -1, CITY VALUES, 42.5, LOC_CITY_NAME_GENEVA
+13, 4, -1, Settle New City, 97.0
+13, 4, -1, Attack Barb Camp, 50.0
+13, 4, -1, Barb Camp Tech Boost, 50.0
+13, 4, -1, Civilian Builder Capture, 0.0
+13, 4, -1, Settle New City, 97.0
+13, 4, -1, Naval Superiority, 100.0
+13, 4, -1, CITY VALUES, 0.0, LOC_CITY_NAME_VALLETTA
+13, 5, -1, Settle New City, 67.0
+13, 5, -1, Civilian Builder Capture, 0.0
+13, 5, -1, Settle New City, 94.0
+13, 5, -1, CITY VALUES, 383.7, LOC_CITY_NAME_LA_VENTA
+13, 6, -1, Civilian Builder Capture, 0.0
+13, 6, -1, Settle New City, 132.0
+13, 6, -1, CITY VALUES, 12.6, LOC_CITY_NAME_MEXICO_CITY
+13, 7, -1, Settle New City, 111.0
+13, 7, -1, Civilian Builder Capture, 0.0
+13, 7, -1, Settle New City, 111.0
+13, 7, -1, Naval Superiority, 100.0
+13, 7, -1, CITY VALUES, 370.2, LOC_CITY_NAME_VILNIUS
+13, 8, -1, Settle New City, 80.0
+13, 8, -1, Civilian Builder Capture, 0.0
+13, 8, -1, Settle New City, 80.0
+13, 8, -1, Naval Superiority, 100.0
+13, 8, -1, CITY VALUES, 0.0, LOC_CITY_NAME_BABYLON
+13, 8, -1, CITY VALUES, 143.3, LOC_CITY_NAME_KABUL
+13, 8, -1, CITY VALUES, 202.3, LOC_CITY_NAME_ANTIOCH
+13, 8, -1, CITY VALUES, 184.8, LOC_CITY_NAME_ZANZIBAR
+13, 9, -1, Settle New City, 63.0
+13, 9, -1, Civilian Builder Capture, 0.0
+13, 9, -1, Settle New City, 123.0
+13, 9, -1, Naval Superiority, 100.0
+13, 9, -1, CITY VALUES, 390.4, LOC_CITY_NAME_GRANADA
+13, 9, -1, CITY VALUES, 314.7, LOC_CITY_NAME_MOHENJO_DARO
+13, 9, -1, CITY VALUES, 383.8, LOC_CITY_NAME_BRUSSELS
+13, 9, -1, CITY VALUES, 291.3, LOC_CITY_NAME_NGAZARGAMU
+13, 10, -1, Attack Barb Camp, 50.0
+13, 10, -1, Barb Camp Tech Boost, 50.0
+13, 10, -1, Civilian Builder Capture, 0.0
+13, 10, -1, Naval Superiority, 100.0
+13, 11, -1, Civilian Builder Capture, 0.0
+13, 11, -1, Settle New City, 30.0
+13, 11, -1, Naval Superiority, 100.0
+13, 12, -1, Civilian Builder Capture, 0.0
+13, 12, -1, CITY VALUES, 654.8, LOC_CITY_NAME_MBANZA_KONGO
+13, 12, -1, CITY VALUES, 438.3, LOC_CITY_NAME_MBWILA
+13, 13, -1, Civilian Builder Capture, 0.0
+13, 13, -1, Settle New City, 30.0
+13, 13, -1, Naval Superiority, 100.0
+13, 14, -1, Civilian Builder Capture, 0.0
+13, 14, -1, Naval Superiority, 100.0
+13, 15, -1, Civilian Builder Capture, 0.0
+13, 15, -1, Naval Superiority, 100.0
+13, 15, -1, CITY VALUES, 324.9, LOC_CITY_NAME_HALEP
+13, 15, -1, CITY VALUES, 781.1, LOC_CITY_NAME_ISTANBUL
+13, 16, -1, City Defense, 0.0
+13, 16, -1, Civilian Builder Capture, 0.0
+13, 16, -1, City Defense, 0.0
+13, 16, -1, CITY VALUES, 661.6, LOC_CITY_NAME_ROME
+13, 16, -1, CITY VALUES, 361.1, LOC_CITY_NAME_ANTIOCH
+13, 17, -1, Civilian Builder Capture, 0.0
+13, 17, -1, Naval Superiority, 100.0
+13, 18, -1, Civilian Builder Capture, 0.0
+13, 18, -1, Naval Superiority, 100.0
+13, 19, -1, Civilian Builder Capture, 0.0
+13, 19, -1, Naval Superiority, 100.0
+13, 19, -1, CITY VALUES, 332.9, LOC_CITY_NAME_KERMA
+13, 20, -1, Civilian Builder Capture, 0.0
+13, 20, -1, Settle New City, 38.0
+13, 20, -1, Naval Superiority, 100.0
+13, 21, -1, Attack Barb Camp, 50.0
+13, 21, -1, Barb Camp Tech Boost, 50.0
+13, 21, -1, Civilian Builder Capture, 0.0
+13, 21, -1, Settle New City, 30.0
+13, 21, -1, Naval Superiority, 100.0
+13, 22, -1, Civilian Builder Capture, 0.0
+13, 22, -1, Naval Superiority, 100.0
+13, 23, -1, Civilian Builder Capture, 0.0
+13, 23, -1, Naval Superiority, 100.0
+13, 23, -1, CITY VALUES, 246.9, LOC_CITY_NAME_BAD_TIBIRA
+13, 23, -1, CITY VALUES, 219.6, LOC_CITY_NAME_BRUSSELS
+13, 24, -1, Attack Barb Camp, 50.0
+13, 24, -1, Barb Camp Tech Boost, 50.0
+13, 24, -1, Civilian Builder Capture, 0.0
+13, 24, -1, Settle New City, 30.0
+13, 25, -1, Civilian Builder Capture, 0.0
+13, 25, -1, Naval Superiority, 100.0
+13, 26, -1, Civilian Builder Capture, 0.0
+13, 26, -1, Naval Superiority, 100.0
+13, 26, -1, CITY VALUES, 238.2, LOC_CITY_NAME_HONG_KONG
+13, 26, -1, CITY VALUES, 276.9, LOC_CITY_NAME_BAD_TIBIRA
+13, 27, -1, Civilian Builder Capture, 0.0
+13, 27, -1, Settle New City, 30.0
+13, 27, -1, Naval Superiority, 100.0
+13, 27, -1, CITY VALUES, 272.6, LOC_CITY_NAME_KAWA
+13, 28, -1, Civilian Builder Capture, 0.0
+13, 28, -1, Settle New City, 30.0
+13, 28, -1, Naval Superiority, 100.0
+13, 29, -1, Civilian Builder Capture, 0.0
+13, 29, -1, Naval Superiority, 100.0
+13, 30, -1, Attack Barb Camp, 50.0
+13, 30, -1, Barb Camp Tech Boost, 50.0
+13, 30, -1, Civilian Builder Capture, 0.0
+13, 30, -1, Naval Superiority, 100.0
+13, 30, -1, CITY VALUES, 261.2, LOC_CITY_NAME_MOHENJO_DARO
+13, 31, -1, Civilian Builder Capture, 0.0
+13, 31, -1, CITY VALUES, 290.0, LOC_CITY_NAME_GRANADA
+13, 63, -1, Barbarian Builder Capture, 800.0
+13, 63, -1, CITY VALUES, 16.0, LOC_CITY_NAME_ULM
+13, 63, -1, CITY VALUES, 756.0, LOC_CITY_NAME_MEXICO_CITY
+13, 63, -1, CITY VALUES, 44.0, LOC_CITY_NAME_HEIDELBERG
+13, 63, -1, CITY VALUES, 742.0, LOC_CITY_NAME_BABYLON
+14, 0, -1, Attack Barb Camp, 50.0
+14, 0, -1, Barb Camp Tech Boost, 50.0
+14, 0, -1, Civilian Builder Capture, 0.0
+14, 0, -1, Settle New City, 188.0
+14, 0, -1, CITY VALUES, 21.6, LOC_CITY_NAME_BOLOGNA
+14, 0, -1, CITY VALUES, 748.4, LOC_CITY_NAME_ISTANBUL
+14, 0, -1, CITY VALUES, 49.9, LOC_CITY_NAME_MBUMBI
+14, 0, -1, CITY VALUES, 121.5, LOC_CITY_NAME_CAHOKIA
+14, 0, -1, CITY VALUES, 84.5, LOC_CITY_NAME_MBANZA_NSUNDI
+14, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KWILA
+14, 0, 12, MINOR CIV LEVY, 119.9, 79.6
+14, 0, 20, MINOR CIV LEVY, 119.9, 79.6
+14, 1, -1, Settle New City, 101.0
+14, 1, -1, Attack Barb Camp, 50.0
+14, 1, -1, Barb Camp Tech Boost, 50.0
+14, 1, -1, Civilian Builder Capture, 0.0
+14, 1, -1, Settle New City, 113.0
+14, 1, -1, Naval Superiority, 100.0
+14, 1, -1, CITY VALUES, 631.4, LOC_CITY_NAME_MBANZA_KONGO
+14, 2, -1, Settle New City, 97.0
+14, 2, -1, Attack Barb Camp, 50.0
+14, 2, -1, Barb Camp Tech Boost, 50.0
+14, 2, -1, Civilian Builder Capture, 0.0
+14, 2, -1, Settle New City, 97.0
+14, 2, -1, Naval Superiority, 100.0
+14, 2, -1, CITY VALUES, 374.5, LOC_CITY_NAME_BOLOGNA
+14, 2, -1, CITY VALUES, 352.3, LOC_CITY_NAME_VALLETTA
+14, 2, -1, CITY VALUES, 583.0, LOC_CITY_NAME_MBWILA
+14, 3, -1, Attack Barb Camp, 50.0
+14, 3, -1, Barb Camp Tech Boost, 50.0
+14, 3, -1, Civilian Builder Capture, 0.0
+14, 3, -1, Settle New City, 100.0
+14, 3, -1, Naval Superiority, 100.0
+14, 3, -1, CITY VALUES, 66.6, LOC_CITY_NAME_LA_VENTA
+14, 3, -1, CITY VALUES, 106.1, LOC_CITY_NAME_LISBON
+14, 3, -1, CITY VALUES, 42.5, LOC_CITY_NAME_GENEVA
+14, 4, -1, Settle New City, 97.0
+14, 4, -1, Attack Barb Camp, 50.0
+14, 4, -1, Barb Camp Tech Boost, 50.0
+14, 4, -1, Civilian Builder Capture, 0.0
+14, 4, -1, Settle New City, 97.0
+14, 4, -1, Naval Superiority, 100.0
+14, 4, -1, CITY VALUES, 101.5, LOC_CITY_NAME_VALLETTA
+14, 5, -1, Settle New City, 67.0
+14, 5, -1, Civilian Builder Capture, 0.0
+14, 5, -1, Settle New City, 94.0
+14, 5, -1, CITY VALUES, 346.2, LOC_CITY_NAME_LA_VENTA
+14, 6, -1, Barb Camp Tech Boost, 50.0
+14, 6, -1, Civilian Builder Capture, 0.0
+14, 6, -1, Settle New City, 132.0
+14, 6, -1, CITY VALUES, 184.8, LOC_CITY_NAME_MEXICO_CITY
+14, 7, -1, Settle New City, 111.0
+14, 7, -1, Civilian Builder Capture, 0.0
+14, 7, -1, Settle New City, 127.0
+14, 7, -1, Naval Superiority, 100.0
+14, 7, -1, CITY VALUES, 370.2, LOC_CITY_NAME_VILNIUS
+14, 8, -1, Settle New City, 83.0
+14, 8, -1, Civilian Builder Capture, 0.0
+14, 8, -1, Settle New City, 83.0
+14, 8, -1, Naval Superiority, 100.0
+14, 8, -1, CITY VALUES, 0.0, LOC_CITY_NAME_BABYLON
+14, 8, -1, CITY VALUES, 128.4, LOC_CITY_NAME_KABUL
+14, 8, -1, CITY VALUES, 202.3, LOC_CITY_NAME_ANTIOCH
+14, 8, -1, CITY VALUES, 104.8, LOC_CITY_NAME_ZANZIBAR
+14, 9, -1, Settle New City, 63.0
+14, 9, -1, Civilian Builder Capture, 0.0
+14, 9, -1, Settle New City, 123.0
+14, 9, -1, Naval Superiority, 100.0
+14, 9, -1, CITY VALUES, 337.2, LOC_CITY_NAME_GRANADA
+14, 9, -1, CITY VALUES, 314.7, LOC_CITY_NAME_MOHENJO_DARO
+14, 9, -1, CITY VALUES, 383.8, LOC_CITY_NAME_BRUSSELS
+14, 9, -1, CITY VALUES, 291.3, LOC_CITY_NAME_NGAZARGAMU
+14, 10, -1, Attack Barb Camp, 50.0
+14, 10, -1, Barb Camp Tech Boost, 50.0
+14, 10, -1, Civilian Builder Capture, 0.0
+14, 10, -1, Naval Superiority, 100.0
+14, 11, -1, Civilian Builder Capture, 0.0
+14, 11, -1, Settle New City, 30.0
+14, 11, -1, Naval Superiority, 100.0
+14, 12, -1, Civilian Builder Capture, 0.0
+14, 12, -1, CITY VALUES, 654.8, LOC_CITY_NAME_MBANZA_KONGO
+14, 12, -1, CITY VALUES, 438.3, LOC_CITY_NAME_MBWILA
+14, 13, -1, Civilian Builder Capture, 0.0
+14, 13, -1, Settle New City, 30.0
+14, 13, -1, Naval Superiority, 100.0
+14, 14, -1, Civilian Builder Capture, 0.0
+14, 14, -1, Naval Superiority, 100.0
+14, 15, -1, Civilian Builder Capture, 0.0
+14, 15, -1, Naval Superiority, 100.0
+14, 15, -1, CITY VALUES, 359.7, LOC_CITY_NAME_HALEP
+14, 15, -1, CITY VALUES, 781.1, LOC_CITY_NAME_ISTANBUL
+14, 16, -1, Civilian Builder Capture, 0.0
+14, 16, -1, CITY VALUES, 661.6, LOC_CITY_NAME_ROME
+14, 16, -1, CITY VALUES, 275.8, LOC_CITY_NAME_ANTIOCH
+14, 17, -1, Civilian Builder Capture, 0.0
+14, 17, -1, Naval Superiority, 100.0
+14, 18, -1, Civilian Builder Capture, 0.0
+14, 18, -1, Naval Superiority, 100.0
+14, 19, -1, Civilian Builder Capture, 0.0
+14, 19, -1, Naval Superiority, 100.0
+14, 19, -1, CITY VALUES, 379.9, LOC_CITY_NAME_KERMA
+14, 20, -1, Civilian Builder Capture, 0.0
+14, 20, -1, Settle New City, 38.0
+14, 20, -1, Naval Superiority, 100.0
+14, 21, -1, Attack Barb Camp, 50.0
+14, 21, -1, Barb Camp Tech Boost, 50.0
+14, 21, -1, Civilian Builder Capture, 0.0
+14, 21, -1, Settle New City, 30.0
+14, 21, -1, Naval Superiority, 100.0
+14, 22, -1, Civilian Builder Capture, 0.0
+14, 22, -1, Naval Superiority, 100.0
+14, 23, -1, Civilian Builder Capture, 0.0
+14, 23, -1, Naval Superiority, 100.0
+14, 23, -1, CITY VALUES, 310.9, LOC_CITY_NAME_BAD_TIBIRA
+14, 23, -1, CITY VALUES, 219.6, LOC_CITY_NAME_BRUSSELS
+14, 24, -1, Civilian Builder Capture, 0.0
+14, 24, -1, Settle New City, 30.0
+14, 25, -1, Civilian Builder Capture, 0.0
+14, 25, -1, Naval Superiority, 100.0
+14, 26, -1, Civilian Builder Capture, 0.0
+14, 26, -1, Naval Superiority, 100.0
+14, 26, -1, CITY VALUES, 308.5, LOC_CITY_NAME_HONG_KONG
+14, 26, -1, CITY VALUES, 276.9, LOC_CITY_NAME_BAD_TIBIRA
+14, 27, -1, Civilian Builder Capture, 0.0
+14, 27, -1, Settle New City, 32.0
+14, 27, -1, Naval Superiority, 100.0
+14, 27, -1, CITY VALUES, 276.6, LOC_CITY_NAME_KAWA
+14, 28, -1, Civilian Builder Capture, 0.0
+14, 28, -1, Settle New City, 30.0
+14, 28, -1, Naval Superiority, 100.0
+14, 29, -1, Civilian Builder Capture, 0.0
+14, 29, -1, Naval Superiority, 100.0
+14, 30, -1, Attack Barb Camp, 50.0
+14, 30, -1, Barb Camp Tech Boost, 50.0
+14, 30, -1, Civilian Builder Capture, 0.0
+14, 30, -1, Naval Superiority, 100.0
+14, 30, -1, CITY VALUES, 220.6, LOC_CITY_NAME_MOHENJO_DARO
+14, 31, -1, Civilian Builder Capture, 0.0
+14, 31, -1, CITY VALUES, 122.4, LOC_CITY_NAME_GRANADA
+14, 63, -1, Barbarian Builder Capture, 850.0
+14, 63, -1, CITY VALUES, 354.0, LOC_CITY_NAME_ULM
+14, 63, -1, CITY VALUES, 756.0, LOC_CITY_NAME_MEXICO_CITY
+14, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_HEIDELBERG
+14, 63, -1, CITY VALUES, 742.0, LOC_CITY_NAME_BABYLON
+15, 0, -1, Attack Barb Camp, 50.0
+15, 0, -1, Barb Camp Tech Boost, 50.0
+15, 0, -1, Civilian Builder Capture, 0.0
+15, 0, -1, Settle New City, 188.0
+15, 0, -1, CITY VALUES, 23.2, LOC_CITY_NAME_BOLOGNA
+15, 0, -1, CITY VALUES, 729.9, LOC_CITY_NAME_ISTANBUL
+15, 0, -1, CITY VALUES, 152.1, LOC_CITY_NAME_MBUMBI
+15, 0, -1, CITY VALUES, 93.1, LOC_CITY_NAME_CAHOKIA
+15, 0, -1, CITY VALUES, 172.6, LOC_CITY_NAME_MBANZA_NSUNDI
+15, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KWILA
+15, 0, 12, MINOR CIV LEVY, 119.9, 89.6
+15, 0, 20, MINOR CIV LEVY, 119.9, 89.6
+15, 1, -1, Settle New City, 101.0
+15, 1, -1, Attack Barb Camp, 50.0
+15, 1, -1, Barb Camp Tech Boost, 50.0
+15, 1, -1, Civilian Builder Capture, 0.0
+15, 1, -1, Settle New City, 113.0
+15, 1, -1, Naval Superiority, 100.0
+15, 1, -1, CITY VALUES, 634.6, LOC_CITY_NAME_MBANZA_KONGO
+15, 2, -1, Settle New City, 97.0
+15, 2, 0, Attack Enemy City, 583.0
+15, 2, -1, Civilian Builder Capture, 0.0
+15, 2, -1, Settle New City, 97.0
+15, 2, -1, Naval Superiority, 100.0
+15, 2, -1, CITY VALUES, 375.6, LOC_CITY_NAME_BOLOGNA
+15, 2, -1, CITY VALUES, 452.4, LOC_CITY_NAME_VALLETTA
+15, 2, -1, CITY VALUES, 583.7, LOC_CITY_NAME_MBWILA
+15, 3, -1, Attack Barb Camp, 50.0
+15, 3, -1, Barb Camp Tech Boost, 50.0
+15, 3, -1, Civilian Builder Capture, 0.0
+15, 3, -1, Settle New City, 100.0
+15, 3, -1, Naval Superiority, 100.0
+15, 3, -1, CITY VALUES, 116.6, LOC_CITY_NAME_LA_VENTA
+15, 3, -1, CITY VALUES, 106.1, LOC_CITY_NAME_LISBON
+15, 3, -1, CITY VALUES, 0.0, LOC_CITY_NAME_GENEVA
+15, 4, -1, Settle New City, 97.0
+15, 4, -1, Attack Barb Camp, 50.0
+15, 4, -1, Barb Camp Tech Boost, 50.0
+15, 4, -1, Civilian Builder Capture, 0.0
+15, 4, -1, Settle New City, 97.0
+15, 4, -1, Naval Superiority, 100.0
+15, 4, -1, CITY VALUES, 101.5, LOC_CITY_NAME_VALLETTA
+15, 5, -1, Settle New City, 67.0
+15, 5, -1, Civilian Builder Capture, 0.0
+15, 5, -1, Settle New City, 94.0
+15, 5, -1, CITY VALUES, 383.7, LOC_CITY_NAME_LA_VENTA
+15, 6, -1, Attack Barb Camp, 50.0
+15, 6, -1, Barb Camp Tech Boost, 50.0
+15, 6, -1, Civilian Builder Capture, 0.0
+15, 6, -1, Settle New City, 132.0
+15, 6, -1, CITY VALUES, 264.8, LOC_CITY_NAME_MEXICO_CITY
+15, 7, -1, Settle New City, 114.0
+15, 7, -1, Civilian Builder Capture, 0.0
+15, 7, -1, Settle New City, 138.0
+15, 7, -1, Naval Superiority, 100.0
+15, 7, -1, CITY VALUES, 370.2, LOC_CITY_NAME_VILNIUS
+15, 8, -1, Settle New City, 86.0
+15, 8, -1, Civilian Builder Capture, 0.0
+15, 8, -1, Settle New City, 86.0
+15, 8, -1, Naval Superiority, 100.0
+15, 8, -1, CITY VALUES, 4.9, LOC_CITY_NAME_BABYLON
+15, 8, -1, CITY VALUES, 94.7, LOC_CITY_NAME_KABUL
+15, 8, -1, CITY VALUES, 64.7, LOC_CITY_NAME_ANTIOCH
+15, 8, -1, CITY VALUES, 184.8, LOC_CITY_NAME_ZANZIBAR
+15, 9, -1, Settle New City, 63.0
+15, 9, -1, Civilian Builder Capture, 0.0
+15, 9, -1, Settle New City, 123.0
+15, 9, -1, Naval Superiority, 100.0
+15, 9, -1, CITY VALUES, 304.4, LOC_CITY_NAME_GRANADA
+15, 9, -1, CITY VALUES, 281.1, LOC_CITY_NAME_MOHENJO_DARO
+15, 9, -1, CITY VALUES, 224.7, LOC_CITY_NAME_BRUSSELS
+15, 9, -1, CITY VALUES, 291.3, LOC_CITY_NAME_NGAZARGAMU
+15, 10, -1, Attack Barb Camp, 100.0
+15, 10, -1, Attack Barb Camp, 100.0
+15, 10, -1, Barb Camp Tech Boost, 100.0
+15, 10, -1, Civilian Builder Capture, 0.0
+15, 10, -1, Naval Superiority, 100.0
+15, 11, -1, Civilian Builder Capture, 0.0
+15, 11, -1, Settle New City, 30.0
+15, 11, -1, Naval Superiority, 100.0
+15, 12, -1, Civilian Builder Capture, 0.0
+15, 12, -1, CITY VALUES, 665.7, LOC_CITY_NAME_MBANZA_KONGO
+15, 12, -1, CITY VALUES, 444.6, LOC_CITY_NAME_MBWILA
+15, 13, -1, Civilian Builder Capture, 0.0
+15, 13, -1, Settle New City, 30.0
+15, 13, -1, Naval Superiority, 100.0
+15, 14, -1, Civilian Builder Capture, 0.0
+15, 14, -1, Naval Superiority, 100.0
+15, 15, -1, Civilian Builder Capture, 0.0
+15, 15, -1, Naval Superiority, 100.0
+15, 15, -1, CITY VALUES, 387.7, LOC_CITY_NAME_HALEP
+15, 15, -1, CITY VALUES, 781.1, LOC_CITY_NAME_ISTANBUL
+15, 16, -1, Civilian Builder Capture, 0.0
+15, 16, -1, CITY VALUES, 717.6, LOC_CITY_NAME_ROME
+15, 16, -1, CITY VALUES, 286.7, LOC_CITY_NAME_ANTIOCH
+15, 17, -1, Civilian Builder Capture, 0.0
+15, 17, -1, Naval Superiority, 100.0
+15, 18, -1, Attack Barb Camp, 50.0
+15, 18, -1, Barb Camp Tech Boost, 50.0
+15, 18, -1, Civilian Builder Capture, 0.0
+15, 18, -1, Naval Superiority, 100.0
+15, 19, -1, Civilian Builder Capture, 0.0
+15, 19, -1, Naval Superiority, 100.0
+15, 19, -1, CITY VALUES, 405.9, LOC_CITY_NAME_KERMA
+15, 20, -1, Civilian Builder Capture, 0.0
+15, 20, -1, Settle New City, 38.0
+15, 20, -1, Naval Superiority, 100.0
+15, 21, -1, Attack Barb Camp, 50.0
+15, 21, -1, Barb Camp Tech Boost, 50.0
+15, 21, -1, Civilian Builder Capture, 0.0
+15, 21, -1, Settle New City, 30.0
+15, 21, -1, Naval Superiority, 100.0
+15, 22, -1, Civilian Builder Capture, 0.0
+15, 22, -1, Naval Superiority, 100.0
+15, 23, -1, Civilian Builder Capture, 0.0
+15, 23, -1, Naval Superiority, 100.0
+15, 23, -1, CITY VALUES, 246.9, LOC_CITY_NAME_BAD_TIBIRA
+15, 23, -1, CITY VALUES, 219.6, LOC_CITY_NAME_BRUSSELS
+15, 24, -1, Civilian Builder Capture, 0.0
+15, 24, -1, Settle New City, 30.0
+15, 25, -1, Civilian Builder Capture, 0.0
+15, 25, -1, Naval Superiority, 100.0
+15, 26, -1, Civilian Builder Capture, 0.0
+15, 26, -1, Naval Superiority, 100.0
+15, 26, -1, CITY VALUES, 361.9, LOC_CITY_NAME_HONG_KONG
+15, 26, -1, CITY VALUES, 276.9, LOC_CITY_NAME_BAD_TIBIRA
+15, 27, -1, Civilian Builder Capture, 0.0
+15, 27, -1, Settle New City, 32.0
+15, 27, -1, Naval Superiority, 100.0
+15, 27, -1, CITY VALUES, 399.1, LOC_CITY_NAME_KAWA
+15, 28, -1, Civilian Builder Capture, 0.0
+15, 28, -1, Settle New City, 30.0
+15, 28, -1, Naval Superiority, 100.0
+15, 29, -1, Civilian Builder Capture, 0.0
+15, 29, -1, Naval Superiority, 100.0
+15, 30, -1, Attack Barb Camp, 50.0
+15, 30, -1, Barb Camp Tech Boost, 50.0
+15, 30, -1, Civilian Builder Capture, 0.0
+15, 30, -1, Naval Superiority, 100.0
+15, 30, -1, CITY VALUES, 218.2, LOC_CITY_NAME_MOHENJO_DARO
+15, 31, -1, Civilian Builder Capture, 0.0
+15, 31, -1, CITY VALUES, 112.2, LOC_CITY_NAME_GRANADA
+15, 63, -1, Barbarian Builder Capture, 800.0
+15, 63, -1, CITY VALUES, 389.0, LOC_CITY_NAME_ULM
+15, 63, -1, CITY VALUES, 756.0, LOC_CITY_NAME_MEXICO_CITY
+15, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_HEIDELBERG
+15, 63, -1, CITY VALUES, 756.0, LOC_CITY_NAME_BABYLON
+15, 63, -1, CITY VALUES, 910.0, LOC_CITY_NAME_MEROE
+16, 0, -1, Attack Barb Camp, 100.0
+16, 0, -1, Barb Camp Tech Boost, 100.0
+16, 0, -1, Civilian Builder Capture, 0.0
+16, 0, -1, Settle New City, 188.0
+16, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_BOLOGNA
+16, 0, -1, CITY VALUES, 737.7, LOC_CITY_NAME_ISTANBUL
+16, 0, -1, CITY VALUES, 504.2, LOC_CITY_NAME_MBUMBI
+16, 0, -1, CITY VALUES, 174.7, LOC_CITY_NAME_CAHOKIA
+16, 0, -1, CITY VALUES, 382.6, LOC_CITY_NAME_MBANZA_NSUNDI
+16, 0, -1, CITY VALUES, 86.5, LOC_CITY_NAME_KWILA
+16, 0, 12, MINOR CIV LEVY, 119.9, 89.6
+16, 0, 20, MINOR CIV LEVY, 119.9, 89.6
+16, 1, -1, Settle New City, 105.0
+16, 1, -1, Attack Barb Camp, 50.0
+16, 1, -1, Barb Camp Tech Boost, 50.0
+16, 1, -1, Civilian Builder Capture, 0.0
+16, 1, -1, Settle New City, 113.0
+16, 1, -1, Naval Superiority, 100.0
+16, 1, -1, CITY VALUES, 759.6, LOC_CITY_NAME_MBANZA_KONGO
+16, 1, -1, CITY VALUES, 363.1, LOC_CITY_NAME_KINCHASSA
+16, 2, -1, Settle New City, 97.0
+16, 2, 0, Attack Enemy City, 443.7
+16, 2, -1, Civilian Builder Capture, 0.0
+16, 2, -1, Settle New City, 97.0
+16, 2, -1, Naval Superiority, 100.0
+16, 2, -1, CITY VALUES, 338.1, LOC_CITY_NAME_BOLOGNA
+16, 2, -1, CITY VALUES, 472.7, LOC_CITY_NAME_VALLETTA
+16, 2, -1, CITY VALUES, 443.7, LOC_CITY_NAME_MBWILA
+16, 3, -1, Civilian Builder Capture, 0.0
+16, 3, -1, Settle New City, 100.0
+16, 3, -1, Naval Superiority, 100.0
+16, 3, -1, CITY VALUES, 196.6, LOC_CITY_NAME_LA_VENTA
+16, 3, -1, CITY VALUES, 126.1, LOC_CITY_NAME_LISBON
+16, 3, -1, CITY VALUES, 64.9, LOC_CITY_NAME_GENEVA
+16, 4, -1, Settle New City, 97.0
+16, 4, -1, Attack Barb Camp, 50.0
+16, 4, -1, Barb Camp Tech Boost, 50.0
+16, 4, -1, Civilian Builder Capture, 0.0
+16, 4, -1, Settle New City, 97.0
+16, 4, -1, Naval Superiority, 100.0
+16, 4, -1, CITY VALUES, 130.5, LOC_CITY_NAME_VALLETTA
+16, 5, -1, Settle New City, 67.0
+16, 5, -1, Civilian Builder Capture, 0.0
+16, 5, -1, Settle New City, 94.0
+16, 5, -1, CITY VALUES, 383.7, LOC_CITY_NAME_LA_VENTA
+16, 6, -1, Attack Barb Camp, 50.0
+16, 6, -1, Barb Camp Tech Boost, 50.0
+16, 6, -1, Civilian Builder Capture, 0.0
+16, 6, -1, Settle New City, 116.0
+16, 6, -1, CITY VALUES, 264.8, LOC_CITY_NAME_MEXICO_CITY
+16, 7, -1, Settle New City, 140.0
+16, 7, -1, Civilian Builder Capture, 0.0
+16, 7, -1, Settle New City, 140.0
+16, 7, -1, Naval Superiority, 100.0
+16, 7, -1, CITY VALUES, 307.1, LOC_CITY_NAME_VILNIUS
+16, 8, -1, Settle New City, 102.0
+16, 8, 16, Attack Walled City, 4.9
+16, 8, 18, Attack Walled City, 64.7
+16, 8, 25, Attack Walled City, 184.8
+16, 8, -1, Civilian Builder Capture, 0.0
+16, 8, -1, Settle New City, 102.0
+16, 8, -1, Naval Superiority, 100.0
+16, 8, -1, CITY VALUES, 54.8, LOC_CITY_NAME_BABYLON
+16, 8, -1, CITY VALUES, 135.6, LOC_CITY_NAME_KABUL
+16, 8, -1, CITY VALUES, 64.7, LOC_CITY_NAME_ANTIOCH
+16, 8, -1, CITY VALUES, 105.5, LOC_CITY_NAME_ZANZIBAR
+16, 9, -1, Settle New City, 63.0
+16, 9, -1, Civilian Builder Capture, 0.0
+16, 9, -1, Settle New City, 123.0
+16, 9, -1, Naval Superiority, 100.0
+16, 9, -1, CITY VALUES, 411.0, LOC_CITY_NAME_GRANADA
+16, 9, -1, CITY VALUES, 344.1, LOC_CITY_NAME_MOHENJO_DARO
+16, 9, -1, CITY VALUES, 278.1, LOC_CITY_NAME_BRUSSELS
+16, 9, -1, CITY VALUES, 311.9, LOC_CITY_NAME_NGAZARGAMU
+16, 10, -1, Attack Barb Camp, 100.0
+16, 10, -1, Attack Barb Camp, 100.0
+16, 10, -1, Barb Camp Tech Boost, 100.0
+16, 10, -1, Civilian Builder Capture, 0.0
+16, 10, -1, Naval Superiority, 100.0
+16, 11, -1, Civilian Builder Capture, 0.0
+16, 11, -1, Settle New City, 30.0
+16, 11, -1, Naval Superiority, 100.0
+16, 12, -1, Civilian Builder Capture, 0.0
+16, 12, -1, CITY VALUES, 760.3, LOC_CITY_NAME_MBANZA_KONGO
+16, 12, -1, CITY VALUES, 450.5, LOC_CITY_NAME_MBWILA
+16, 13, -1, Civilian Builder Capture, 0.0
+16, 13, -1, Settle New City, 30.0
+16, 13, -1, Naval Superiority, 100.0
+16, 14, -1, Civilian Builder Capture, 0.0
+16, 14, -1, Naval Superiority, 100.0
+16, 15, -1, Civilian Builder Capture, 0.0
+16, 15, -1, Naval Superiority, 100.0
+16, 15, -1, CITY VALUES, 405.6, LOC_CITY_NAME_HALEP
+16, 15, -1, CITY VALUES, 564.9, LOC_CITY_NAME_ISTANBUL
+16, 16, -1, Civilian Builder Capture, 0.0
+16, 16, -1, CITY VALUES, 653.6, LOC_CITY_NAME_ROME
+16, 16, -1, CITY VALUES, 286.7, LOC_CITY_NAME_ANTIOCH
+16, 17, -1, Civilian Builder Capture, 0.0
+16, 17, -1, Naval Superiority, 100.0
+16, 18, -1, Attack Barb Camp, 50.0
+16, 18, -1, Barb Camp Tech Boost, 50.0
+16, 18, -1, Civilian Builder Capture, 0.0
+16, 18, -1, Naval Superiority, 100.0
+16, 19, -1, Civilian Builder Capture, 0.0
+16, 19, -1, Naval Superiority, 100.0
+16, 19, -1, CITY VALUES, 409.9, LOC_CITY_NAME_KERMA
+16, 20, -1, Civilian Builder Capture, 0.0
+16, 20, -1, Settle New City, 38.0
+16, 20, -1, Naval Superiority, 100.0
+16, 21, -1, Attack Barb Camp, 50.0
+16, 21, -1, Barb Camp Tech Boost, 50.0
+16, 21, -1, Civilian Builder Capture, 0.0
+16, 21, -1, Settle New City, 30.0
+16, 21, -1, Naval Superiority, 100.0
+16, 22, -1, Civilian Builder Capture, 0.0
+16, 22, -1, Naval Superiority, 100.0
+16, 23, -1, Civilian Builder Capture, 0.0
+16, 23, -1, Naval Superiority, 100.0
+16, 23, -1, CITY VALUES, 201.3, LOC_CITY_NAME_BAD_TIBIRA
+16, 23, -1, CITY VALUES, 283.0, LOC_CITY_NAME_BRUSSELS
+16, 24, -1, Civilian Builder Capture, 0.0
+16, 24, -1, Settle New City, 30.0
+16, 25, -1, Civilian Builder Capture, 0.0
+16, 25, -1, Naval Superiority, 100.0
+16, 26, -1, Civilian Builder Capture, 0.0
+16, 26, -1, Naval Superiority, 100.0
+16, 26, -1, CITY VALUES, 343.1, LOC_CITY_NAME_HONG_KONG
+16, 26, -1, CITY VALUES, 223.1, LOC_CITY_NAME_BAD_TIBIRA
+16, 27, -1, Civilian Builder Capture, 0.0
+16, 27, -1, Settle New City, 32.0
+16, 27, -1, Naval Superiority, 100.0
+16, 27, -1, CITY VALUES, 399.1, LOC_CITY_NAME_KAWA
+16, 28, -1, Civilian Builder Capture, 0.0
+16, 28, -1, Settle New City, 30.0
+16, 28, -1, Naval Superiority, 100.0
+16, 29, -1, Civilian Builder Capture, 0.0
+16, 29, -1, Naval Superiority, 100.0
+16, 30, -1, Attack Barb Camp, 50.0
+16, 30, -1, Barb Camp Tech Boost, 50.0
+16, 30, -1, Civilian Builder Capture, 0.0
+16, 30, -1, Naval Superiority, 100.0
+16, 30, -1, CITY VALUES, 232.2, LOC_CITY_NAME_MOHENJO_DARO
+16, 31, -1, Civilian Builder Capture, 0.0
+16, 31, -1, CITY VALUES, 119.2, LOC_CITY_NAME_GRANADA
+16, 63, -1, Barbarian Builder Capture, 800.0
+16, 63, -1, CITY VALUES, 389.0, LOC_CITY_NAME_ULM
+16, 63, -1, CITY VALUES, 756.0, LOC_CITY_NAME_MEXICO_CITY
+16, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_HEIDELBERG
+16, 63, -1, CITY VALUES, 756.0, LOC_CITY_NAME_BABYLON
+16, 63, -1, CITY VALUES, 910.0, LOC_CITY_NAME_MEROE
+16, 63, -1, CITY VALUES, 749.0, LOC_CITY_NAME_NAN_MADOL
+17, 0, -1, Attack Barb Camp, 100.0
+17, 0, -1, Barb Camp Tech Boost, 100.0
+17, 0, -1, Civilian Builder Capture, 0.0
+17, 0, -1, Settle New City, 135.0
+17, 0, -1, CITY VALUES, 50.8, LOC_CITY_NAME_BOLOGNA
+17, 0, -1, CITY VALUES, 718.3, LOC_CITY_NAME_ISTANBUL
+17, 0, -1, CITY VALUES, 242.3, LOC_CITY_NAME_MBUMBI
+17, 0, -1, CITY VALUES, 107.1, LOC_CITY_NAME_CAHOKIA
+17, 0, -1, CITY VALUES, 241.6, LOC_CITY_NAME_MBANZA_NSUNDI
+17, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KWILA
+17, 0, 12, MINOR CIV LEVY, 119.9, 89.6
+17, 0, 20, MINOR CIV LEVY, 119.9, 89.6
+17, 1, -1, Settle New City, 120.0
+17, 1, -1, Attack Barb Camp, 50.0
+17, 1, -1, Barb Camp Tech Boost, 50.0
+17, 1, -1, Civilian Builder Capture, 0.0
+17, 1, -1, Settle New City, 120.0
+17, 1, -1, Naval Superiority, 100.0
+17, 1, -1, CITY VALUES, 743.1, LOC_CITY_NAME_MBANZA_KONGO
+17, 1, -1, CITY VALUES, 354.9, LOC_CITY_NAME_KINCHASSA
+17, 2, -1, Settle New City, 97.0
+17, 2, 0, Attack Enemy City, 573.7
+17, 2, -1, Civilian Builder Capture, 0.0
+17, 2, -1, Settle New City, 97.0
+17, 2, -1, Naval Superiority, 100.0
+17, 2, -1, CITY VALUES, 406.3, LOC_CITY_NAME_BOLOGNA
+17, 2, -1, CITY VALUES, 480.4, LOC_CITY_NAME_VALLETTA
+17, 2, -1, CITY VALUES, 601.7, LOC_CITY_NAME_MBWILA
+17, 3, -1, Civilian Builder Capture, 0.0
+17, 3, -1, Settle New City, 100.0
+17, 3, -1, Naval Superiority, 100.0
+17, 3, -1, CITY VALUES, 195.2, LOC_CITY_NAME_LA_VENTA
+17, 3, -1, CITY VALUES, 79.5, LOC_CITY_NAME_LISBON
+17, 3, -1, CITY VALUES, 14.9, LOC_CITY_NAME_GENEVA
+17, 4, -1, Settle New City, 97.0
+17, 4, -1, Civilian Builder Capture, 0.0
+17, 4, -1, Settle New City, 97.0
+17, 4, -1, Naval Superiority, 100.0
+17, 4, -1, CITY VALUES, 125.8, LOC_CITY_NAME_VALLETTA
+17, 5, -1, Settle New City, 67.0
+17, 5, -1, Civilian Builder Capture, 0.0
+17, 5, -1, Settle New City, 94.0
+17, 5, -1, CITY VALUES, 384.9, LOC_CITY_NAME_LA_VENTA
+17, 6, -1, Attack Barb Camp, 50.0
+17, 6, -1, Barb Camp Tech Boost, 50.0
+17, 6, -1, Civilian Builder Capture, 0.0
+17, 6, -1, Settle New City, 126.0
+17, 6, -1, CITY VALUES, 148.9, LOC_CITY_NAME_MEXICO_CITY
+17, 7, -1, Settle New City, 144.0
+17, 7, -1, Civilian Builder Capture, 0.0
+17, 7, -1, Settle New City, 144.0
+17, 7, -1, Naval Superiority, 100.0
+17, 7, -1, CITY VALUES, 307.1, LOC_CITY_NAME_VILNIUS
+17, 8, -1, Settle New City, 102.0
+17, 8, 18, Attack Walled City, 64.7
+17, 8, 25, Attack Walled City, 184.8
+17, 8, -1, Civilian Builder Capture, 0.0
+17, 8, -1, Settle New City, 102.0
+17, 8, -1, Naval Superiority, 100.0
+17, 8, -1, CITY VALUES, 104.8, LOC_CITY_NAME_BABYLON
+17, 8, -1, CITY VALUES, 131.2, LOC_CITY_NAME_KABUL
+17, 8, -1, CITY VALUES, 224.7, LOC_CITY_NAME_ANTIOCH
+17, 8, -1, CITY VALUES, 184.8, LOC_CITY_NAME_ZANZIBAR
+17, 9, -1, Settle New City, 63.0
+17, 9, -1, Barb Camp Tech Boost, 50.0
+17, 9, -1, Civilian Builder Capture, 0.0
+17, 9, -1, Settle New City, 123.0
+17, 9, -1, Naval Superiority, 100.0
+17, 9, -1, CITY VALUES, 313.2, LOC_CITY_NAME_GRANADA
+17, 9, -1, CITY VALUES, 367.8, LOC_CITY_NAME_MOHENJO_DARO
+17, 9, -1, CITY VALUES, 224.7, LOC_CITY_NAME_BRUSSELS
+17, 9, -1, CITY VALUES, 311.9, LOC_CITY_NAME_NGAZARGAMU
+17, 10, -1, Attack Barb Camp, 100.0
+17, 10, -1, Attack Barb Camp, 100.0
+17, 10, -1, Barb Camp Tech Boost, 100.0
+17, 10, -1, Civilian Builder Capture, 0.0
+17, 10, -1, Naval Superiority, 100.0
+17, 11, -1, Civilian Builder Capture, 0.0
+17, 11, -1, Settle New City, 30.0
+17, 11, -1, Naval Superiority, 100.0
+17, 12, -1, Civilian Builder Capture, 0.0
+17, 12, -1, CITY VALUES, 756.9, LOC_CITY_NAME_MBANZA_KONGO
+17, 12, -1, CITY VALUES, 462.6, LOC_CITY_NAME_MBWILA
+17, 13, -1, Civilian Builder Capture, 0.0
+17, 13, -1, Settle New City, 30.0
+17, 13, -1, Naval Superiority, 100.0
+17, 14, -1, Civilian Builder Capture, 0.0
+17, 14, -1, Naval Superiority, 100.0
+17, 15, -1, Civilian Builder Capture, 0.0
+17, 15, -1, Naval Superiority, 100.0
+17, 15, -1, CITY VALUES, 308.7, LOC_CITY_NAME_HALEP
+17, 15, -1, CITY VALUES, 561.4, LOC_CITY_NAME_ISTANBUL
+17, 16, -1, Civilian Builder Capture, 0.0
+17, 16, -1, CITY VALUES, 617.9, LOC_CITY_NAME_ROME
+17, 16, -1, CITY VALUES, 286.7, LOC_CITY_NAME_ANTIOCH
+17, 17, -1, Civilian Builder Capture, 0.0
+17, 17, -1, Naval Superiority, 100.0
+17, 18, -1, Attack Barb Camp, 50.0
+17, 18, -1, Barb Camp Tech Boost, 50.0
+17, 18, -1, Civilian Builder Capture, 0.0
+17, 18, -1, Naval Superiority, 100.0
+17, 19, -1, Civilian Builder Capture, 0.0
+17, 19, -1, Naval Superiority, 100.0
+17, 19, -1, CITY VALUES, 112.8, LOC_CITY_NAME_KERMA
+17, 19, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KAWA
+17, 20, -1, Civilian Builder Capture, 0.0
+17, 20, -1, Settle New City, 38.0
+17, 20, -1, Naval Superiority, 100.0
+17, 21, -1, Attack Barb Camp, 50.0
+17, 21, -1, Barb Camp Tech Boost, 50.0
+17, 21, -1, Civilian Builder Capture, 0.0
+17, 21, -1, Settle New City, 30.0
+17, 21, -1, Naval Superiority, 100.0
+17, 22, -1, Civilian Builder Capture, 0.0
+17, 22, -1, Naval Superiority, 100.0
+17, 23, -1, Civilian Builder Capture, 0.0
+17, 23, -1, Naval Superiority, 100.0
+17, 23, -1, CITY VALUES, 201.3, LOC_CITY_NAME_BAD_TIBIRA
+17, 23, -1, CITY VALUES, 219.6, LOC_CITY_NAME_BRUSSELS
+17, 24, -1, Civilian Builder Capture, 0.0
+17, 24, -1, Settle New City, 30.0
+17, 24, -1, CITY VALUES, 234.9, LOC_CITY_NAME_OSTIA
+17, 25, -1, Civilian Builder Capture, 0.0
+17, 25, -1, Naval Superiority, 100.0
+17, 26, -1, Civilian Builder Capture, 0.0
+17, 26, -1, Naval Superiority, 100.0
+17, 26, -1, CITY VALUES, 343.1, LOC_CITY_NAME_HONG_KONG
+17, 26, -1, CITY VALUES, 159.1, LOC_CITY_NAME_BAD_TIBIRA
+17, 27, -1, Civilian Builder Capture, 0.0
+17, 27, -1, Settle New City, 32.0
+17, 27, -1, Naval Superiority, 100.0
+17, 27, -1, CITY VALUES, 365.1, LOC_CITY_NAME_KAWA
+17, 28, -1, Civilian Builder Capture, 0.0
+17, 28, -1, Settle New City, 30.0
+17, 28, -1, Naval Superiority, 100.0
+17, 29, -1, Civilian Builder Capture, 0.0
+17, 29, -1, Naval Superiority, 100.0
+17, 30, -1, Attack Barb Camp, 50.0
+17, 30, -1, Barb Camp Tech Boost, 50.0
+17, 30, -1, Civilian Builder Capture, 0.0
+17, 30, -1, Naval Superiority, 100.0
+17, 30, -1, CITY VALUES, 303.2, LOC_CITY_NAME_MOHENJO_DARO
+17, 31, -1, Civilian Builder Capture, 0.0
+17, 31, -1, CITY VALUES, 150.4, LOC_CITY_NAME_GRANADA
+17, 63, -1, Barbarian Builder Capture, 850.0
+17, 63, -1, CITY VALUES, 389.0, LOC_CITY_NAME_ULM
+17, 63, -1, CITY VALUES, 756.0, LOC_CITY_NAME_MEXICO_CITY
+17, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_HEIDELBERG
+17, 63, -1, CITY VALUES, 756.0, LOC_CITY_NAME_BABYLON
+17, 63, -1, CITY VALUES, 945.0, LOC_CITY_NAME_MEROE
+17, 63, -1, CITY VALUES, 749.0, LOC_CITY_NAME_NAN_MADOL
+18, 0, -1, Attack Barb Camp, 100.0
+18, 0, -1, Barb Camp Tech Boost, 100.0
+18, 0, -1, Civilian Builder Capture, 0.0
+18, 0, -1, Settle New City, 135.0
+18, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_BOLOGNA
+18, 0, -1, CITY VALUES, 741.4, LOC_CITY_NAME_ISTANBUL
+18, 0, -1, CITY VALUES, 340.8, LOC_CITY_NAME_MBUMBI
+18, 0, -1, CITY VALUES, 192.6, LOC_CITY_NAME_CAHOKIA
+18, 0, -1, CITY VALUES, 135.2, LOC_CITY_NAME_MBANZA_NSUNDI
+18, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KWILA
+18, 0, 12, MINOR CIV LEVY, 119.9, 100.3
+18, 0, 20, MINOR CIV LEVY, 119.9, 100.3
+18, 1, -1, Settle New City, 120.0
+18, 1, -1, Attack Barb Camp, 50.0
+18, 1, -1, Barb Camp Tech Boost, 50.0
+18, 1, -1, Civilian Builder Capture, 0.0
+18, 1, -1, Settle New City, 120.0
+18, 1, -1, Naval Superiority, 100.0
+18, 1, -1, CITY VALUES, 738.1, LOC_CITY_NAME_MBANZA_KONGO
+18, 1, -1, CITY VALUES, 352.4, LOC_CITY_NAME_KINCHASSA
+18, 2, -1, Settle New City, 97.0
+18, 2, 0, Attack Enemy City, 611.7
+18, 2, -1, Civilian Builder Capture, 0.0
+18, 2, -1, Settle New City, 97.0
+18, 2, -1, Naval Superiority, 100.0
+18, 2, -1, CITY VALUES, 468.5, LOC_CITY_NAME_BOLOGNA
+18, 2, -1, CITY VALUES, 381.3, LOC_CITY_NAME_VALLETTA
+18, 2, -1, CITY VALUES, 543.8, LOC_CITY_NAME_MBWILA
+18, 3, -1, Civilian Builder Capture, 0.0
+18, 3, -1, Settle New City, 100.0
+18, 3, -1, Naval Superiority, 100.0
+18, 3, -1, CITY VALUES, 115.2, LOC_CITY_NAME_LA_VENTA
+18, 3, -1, CITY VALUES, 79.5, LOC_CITY_NAME_LISBON
+18, 3, -1, CITY VALUES, 64.9, LOC_CITY_NAME_GENEVA
+18, 4, -1, Settle New City, 97.0
+18, 4, -1, Civilian Builder Capture, 0.0
+18, 4, -1, Settle New City, 97.0
+18, 4, -1, Naval Superiority, 100.0
+18, 4, -1, CITY VALUES, 121.4, LOC_CITY_NAME_VALLETTA
+18, 5, -1, Settle New City, 67.0
+18, 5, -1, Civilian Builder Capture, 0.0
+18, 5, -1, Settle New City, 94.0
+18, 5, -1, CITY VALUES, 384.9, LOC_CITY_NAME_LA_VENTA
+18, 6, -1, Attack Barb Camp, 50.0
+18, 6, -1, Barb Camp Tech Boost, 50.0
+18, 6, -1, Civilian Builder Capture, 0.0
+18, 6, -1, Settle New City, 126.0
+18, 6, -1, CITY VALUES, 276.7, LOC_CITY_NAME_MEXICO_CITY
+18, 7, -1, Settle New City, 144.0
+18, 7, -1, Civilian Builder Capture, 0.0
+18, 7, -1, Settle New City, 144.0
+18, 7, -1, Naval Superiority, 100.0
+18, 7, -1, CITY VALUES, 307.1, LOC_CITY_NAME_VILNIUS
+18, 8, -1, Settle New City, 92.0
+18, 8, 16, Attack Walled City, 104.8
+18, 8, 18, Attack Walled City, 224.7
+18, 8, 25, Attack Walled City, 104.8
+18, 8, -1, Attack Barb Camp, 50.0
+18, 8, -1, Barb Camp Tech Boost, 50.0
+18, 8, -1, Civilian Builder Capture, 0.0
+18, 8, -1, Settle New City, 92.0
+18, 8, -1, Naval Superiority, 100.0
+18, 8, -1, CITY VALUES, 24.8, LOC_CITY_NAME_BABYLON
+18, 8, -1, CITY VALUES, 76.9, LOC_CITY_NAME_KABUL
+18, 8, -1, CITY VALUES, 124.8, LOC_CITY_NAME_ANTIOCH
+18, 8, -1, CITY VALUES, 0.0, LOC_CITY_NAME_ZANZIBAR
+18, 9, -1, Settle New City, 63.0
+18, 9, -1, Attack Barb Camp, 50.0
+18, 9, -1, Barb Camp Tech Boost, 50.0
+18, 9, -1, Civilian Builder Capture, 0.0
+18, 9, -1, Settle New City, 125.0
+18, 9, -1, Naval Superiority, 100.0
+18, 9, -1, CITY VALUES, 287.0, LOC_CITY_NAME_GRANADA
+18, 9, -1, CITY VALUES, 376.6, LOC_CITY_NAME_MOHENJO_DARO
+18, 9, -1, CITY VALUES, 269.1, LOC_CITY_NAME_BRUSSELS
+18, 9, -1, CITY VALUES, 311.9, LOC_CITY_NAME_NGAZARGAMU
+18, 10, -1, Attack Barb Camp, 100.0
+18, 10, -1, Attack Barb Camp, 100.0
+18, 10, -1, Barb Camp Tech Boost, 100.0
+18, 10, -1, Civilian Builder Capture, 0.0
+18, 10, -1, Naval Superiority, 100.0
+18, 11, -1, Civilian Builder Capture, 0.0
+18, 11, -1, Settle New City, 30.0
+18, 11, -1, Naval Superiority, 100.0
+18, 12, -1, Civilian Builder Capture, 0.0
+18, 12, -1, CITY VALUES, 753.1, LOC_CITY_NAME_MBANZA_KONGO
+18, 12, -1, CITY VALUES, 460.4, LOC_CITY_NAME_MBWILA
+18, 13, -1, Civilian Builder Capture, 0.0
+18, 13, -1, Settle New City, 30.0
+18, 13, -1, Naval Superiority, 100.0
+18, 14, -1, Civilian Builder Capture, 0.0
+18, 14, -1, Naval Superiority, 100.0
+18, 15, -1, Civilian Builder Capture, 0.0
+18, 15, -1, Naval Superiority, 100.0
+18, 15, -1, CITY VALUES, 319.9, LOC_CITY_NAME_HALEP
+18, 15, -1, CITY VALUES, 537.2, LOC_CITY_NAME_ISTANBUL
+18, 16, -1, Civilian Builder Capture, 0.0
+18, 16, -1, CITY VALUES, 697.9, LOC_CITY_NAME_ROME
+18, 16, -1, CITY VALUES, 307.7, LOC_CITY_NAME_ANTIOCH
+18, 17, -1, Civilian Builder Capture, 0.0
+18, 17, -1, Naval Superiority, 100.0
+18, 18, -1, Attack Barb Camp, 50.0
+18, 18, -1, Barb Camp Tech Boost, 50.0
+18, 18, -1, Civilian Builder Capture, 0.0
+18, 18, -1, Naval Superiority, 100.0
+18, 19, -1, Civilian Builder Capture, 0.0
+18, 19, -1, Naval Superiority, 100.0
+18, 19, -1, CITY VALUES, 425.3, LOC_CITY_NAME_KERMA
+18, 19, -1, CITY VALUES, 307.6, LOC_CITY_NAME_KAWA
+18, 20, -1, Civilian Builder Capture, 0.0
+18, 20, -1, Settle New City, 38.0
+18, 20, -1, Naval Superiority, 100.0
+18, 21, -1, Attack Barb Camp, 50.0
+18, 21, -1, Barb Camp Tech Boost, 50.0
+18, 21, -1, Civilian Builder Capture, 0.0
+18, 21, -1, Settle New City, 38.0
+18, 21, -1, Naval Superiority, 100.0
+18, 22, -1, Civilian Builder Capture, 0.0
+18, 22, -1, Naval Superiority, 100.0
+18, 23, -1, Attack Barb Camp, 50.0
+18, 23, -1, Barb Camp Tech Boost, 50.0
+18, 23, -1, Civilian Builder Capture, 0.0
+18, 23, -1, Naval Superiority, 100.0
+18, 23, -1, CITY VALUES, 169.1, LOC_CITY_NAME_BAD_TIBIRA
+18, 23, -1, CITY VALUES, 257.8, LOC_CITY_NAME_BRUSSELS
+18, 24, -1, Civilian Builder Capture, 0.0
+18, 24, -1, Settle New City, 30.0
+18, 24, -1, CITY VALUES, 342.9, LOC_CITY_NAME_OSTIA
+18, 25, -1, Civilian Builder Capture, 0.0
+18, 25, -1, Naval Superiority, 100.0
+18, 26, -1, Civilian Builder Capture, 0.0
+18, 26, -1, Naval Superiority, 100.0
+18, 26, -1, CITY VALUES, 382.9, LOC_CITY_NAME_HONG_KONG
+18, 26, -1, CITY VALUES, 159.1, LOC_CITY_NAME_BAD_TIBIRA
+18, 27, -1, Civilian Builder Capture, 0.0
+18, 27, -1, Settle New City, 32.0
+18, 27, -1, Naval Superiority, 100.0
+18, 27, -1, CITY VALUES, 359.8, LOC_CITY_NAME_KAWA
+18, 28, -1, Civilian Builder Capture, 0.0
+18, 28, -1, Settle New City, 30.0
+18, 28, -1, Naval Superiority, 100.0
+18, 29, -1, Civilian Builder Capture, 0.0
+18, 29, -1, Naval Superiority, 100.0
+18, 30, -1, Attack Barb Camp, 50.0
+18, 30, -1, Barb Camp Tech Boost, 50.0
+18, 30, -1, Civilian Builder Capture, 0.0
+18, 30, -1, Naval Superiority, 100.0
+18, 30, -1, CITY VALUES, 303.2, LOC_CITY_NAME_MOHENJO_DARO
+18, 31, -1, Attack Barb Camp, 50.0
+18, 31, -1, Barb Camp Tech Boost, 50.0
+18, 31, -1, Civilian Builder Capture, 0.0
+18, 31, -1, CITY VALUES, 218.2, LOC_CITY_NAME_GRANADA
+18, 63, -1, Barbarian Builder Capture, 850.0
+18, 63, -1, CITY VALUES, 389.0, LOC_CITY_NAME_ULM
+18, 63, -1, CITY VALUES, 777.0, LOC_CITY_NAME_MEXICO_CITY
+18, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_HEIDELBERG
+18, 63, -1, CITY VALUES, 770.0, LOC_CITY_NAME_BABYLON
+18, 63, -1, CITY VALUES, 959.0, LOC_CITY_NAME_MEROE
+18, 63, -1, CITY VALUES, 749.0, LOC_CITY_NAME_NAN_MADOL
+19, 0, -1, Attack Barb Camp, 100.0
+19, 0, -1, Barb Camp Tech Boost, 100.0
+19, 0, -1, Civilian Builder Capture, 0.0
+19, 0, -1, Settle New City, 135.0
+19, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_BOLOGNA
+19, 0, -1, CITY VALUES, 784.7, LOC_CITY_NAME_ISTANBUL
+19, 0, -1, CITY VALUES, 330.1, LOC_CITY_NAME_MBUMBI
+19, 0, -1, CITY VALUES, 190.4, LOC_CITY_NAME_CAHOKIA
+19, 0, -1, CITY VALUES, 148.8, LOC_CITY_NAME_MBANZA_NSUNDI
+19, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KWILA
+19, 0, 12, MINOR CIV LEVY, 119.9, 100.3
+19, 0, 20, MINOR CIV LEVY, 119.9, 100.3
+19, 1, -1, Settle New City, 130.0
+19, 1, 0, Attack Enemy City, 750.6
+19, 1, -1, Attack Barb Camp, 50.0
+19, 1, -1, Barb Camp Tech Boost, 50.0
+19, 1, -1, Civilian Builder Capture, 0.0
+19, 1, -1, Settle New City, 130.0
+19, 1, -1, Naval Superiority, 100.0
+19, 1, -1, CITY VALUES, 750.6, LOC_CITY_NAME_MBANZA_KONGO
+19, 1, -1, CITY VALUES, 403.8, LOC_CITY_NAME_KINCHASSA
+19, 2, -1, Settle New City, 99.0
+19, 2, 0, Attack Enemy City, 533.6
+19, 2, -1, Civilian Builder Capture, 0.0
+19, 2, -1, Settle New City, 99.0
+19, 2, -1, Naval Superiority, 100.0
+19, 2, -1, CITY VALUES, 505.6, LOC_CITY_NAME_BOLOGNA
+19, 2, -1, CITY VALUES, 409.0, LOC_CITY_NAME_VALLETTA
+19, 2, -1, CITY VALUES, 533.1, LOC_CITY_NAME_MBWILA
+19, 3, -1, Civilian Builder Capture, 0.0
+19, 3, -1, Settle New City, 100.0
+19, 3, -1, Naval Superiority, 100.0
+19, 3, -1, CITY VALUES, 137.6, LOC_CITY_NAME_LA_VENTA
+19, 3, -1, CITY VALUES, 79.5, LOC_CITY_NAME_LISBON
+19, 3, -1, CITY VALUES, 14.9, LOC_CITY_NAME_GENEVA
+19, 4, -1, Settle New City, 97.0
+19, 4, -1, Civilian Builder Capture, 0.0
+19, 4, -1, Settle New City, 97.0
+19, 4, -1, Naval Superiority, 100.0
+19, 4, -1, CITY VALUES, 143.8, LOC_CITY_NAME_VALLETTA
+19, 5, -1, Settle New City, 67.0
+19, 5, -1, Civilian Builder Capture, 0.0
+19, 5, -1, Settle New City, 94.0
+19, 5, -1, CITY VALUES, 400.2, LOC_CITY_NAME_LA_VENTA
+19, 6, -1, Attack Barb Camp, 50.0
+19, 6, -1, Barb Camp Tech Boost, 50.0
+19, 6, -1, Civilian Builder Capture, 0.0
+19, 6, -1, Settle New City, 126.0
+19, 6, -1, CITY VALUES, 300.6, LOC_CITY_NAME_MEXICO_CITY
+19, 7, -1, Settle New City, 144.0
+19, 7, -1, Civilian Builder Capture, 0.0
+19, 7, -1, Settle New City, 144.0
+19, 7, -1, Naval Superiority, 100.0
+19, 7, -1, CITY VALUES, 378.9, LOC_CITY_NAME_VILNIUS
+19, 8, -1, Settle New City, 102.0
+19, 8, 16, Attack Walled City, 239.7
+19, 8, 18, Attack Walled City, 342.8
+19, 8, 25, Attack Walled City, 260.9
+19, 8, -1, Attack Barb Camp, 100.0
+19, 8, -1, Barb Camp Tech Boost, 100.0
+19, 8, -1, Civilian Builder Capture, 0.0
+19, 8, -1, Settle New City, 102.0
+19, 8, -1, Naval Superiority, 100.0
+19, 8, -1, CITY VALUES, 288.9, LOC_CITY_NAME_BABYLON
+19, 8, -1, CITY VALUES, 312.0, LOC_CITY_NAME_KABUL
+19, 8, -1, CITY VALUES, 342.8, LOC_CITY_NAME_ANTIOCH
+19, 8, -1, CITY VALUES, 319.2, LOC_CITY_NAME_ZANZIBAR
+19, 9, -1, Attack Barb Camp, 50.0
+19, 9, -1, Barb Camp Tech Boost, 50.0
+19, 9, -1, Civilian Builder Capture, 0.0
+19, 9, -1, Settle New City, 71.0
+19, 9, -1, Naval Superiority, 100.0
+19, 9, -1, CITY VALUES, 358.9, LOC_CITY_NAME_GRANADA
+19, 9, -1, CITY VALUES, 376.6, LOC_CITY_NAME_MOHENJO_DARO
+19, 9, -1, CITY VALUES, 301.9, LOC_CITY_NAME_BRUSSELS
+19, 9, -1, CITY VALUES, 397.5, LOC_CITY_NAME_NGAZARGAMU
+19, 10, -1, Attack Barb Camp, 100.0
+19, 10, -1, Attack Barb Camp, 100.0
+19, 10, -1, Barb Camp Tech Boost, 100.0
+19, 10, -1, Civilian Builder Capture, 0.0
+19, 10, -1, Naval Superiority, 100.0
+19, 11, -1, Civilian Builder Capture, 0.0
+19, 11, -1, Settle New City, 30.0
+19, 11, -1, Naval Superiority, 100.0
+19, 12, -1, Civilian Builder Capture, 0.0
+19, 12, -1, CITY VALUES, 762.2, LOC_CITY_NAME_MBANZA_KONGO
+19, 12, -1, CITY VALUES, 465.4, LOC_CITY_NAME_MBWILA
+19, 12, -1, CITY VALUES, 444.4, LOC_CITY_NAME_MBANZA_MBATA
+19, 13, -1, Civilian Builder Capture, 0.0
+19, 13, -1, Settle New City, 30.0
+19, 13, -1, Naval Superiority, 100.0
+19, 14, -1, Civilian Builder Capture, 0.0
+19, 14, -1, Naval Superiority, 100.0
+19, 15, -1, Civilian Builder Capture, 0.0
+19, 15, -1, Naval Superiority, 100.0
+19, 15, -1, CITY VALUES, 319.9, LOC_CITY_NAME_HALEP
+19, 15, -1, CITY VALUES, 537.2, LOC_CITY_NAME_ISTANBUL
+19, 16, -1, Attack Barb Camp, 50.0
+19, 16, -1, Barb Camp Tech Boost, 50.0
+19, 16, -1, Civilian Builder Capture, 0.0
+19, 16, -1, CITY VALUES, 714.3, LOC_CITY_NAME_ROME
+19, 16, -1, CITY VALUES, 316.7, LOC_CITY_NAME_ANTIOCH
+19, 17, -1, Civilian Builder Capture, 0.0
+19, 17, -1, Naval Superiority, 100.0
+19, 18, -1, Attack Barb Camp, 50.0
+19, 18, -1, Barb Camp Tech Boost, 50.0
+19, 18, -1, Civilian Builder Capture, 0.0
+19, 18, -1, Naval Superiority, 100.0
+19, 19, -1, Civilian Builder Capture, 0.0
+19, 19, -1, Naval Superiority, 100.0
+19, 19, -1, CITY VALUES, 39.9, LOC_CITY_NAME_KERMA
+19, 19, -1, CITY VALUES, 420.1, LOC_CITY_NAME_KAWA
+19, 20, -1, Civilian Builder Capture, 0.0
+19, 20, -1, Settle New City, 38.0
+19, 20, -1, Naval Superiority, 100.0
+19, 21, -1, Civilian Builder Capture, 0.0
+19, 21, -1, Settle New City, 38.0
+19, 21, -1, Naval Superiority, 100.0
+19, 22, -1, Civilian Builder Capture, 0.0
+19, 22, -1, Naval Superiority, 100.0
+19, 23, -1, Attack Barb Camp, 50.0
+19, 23, -1, Barb Camp Tech Boost, 50.0
+19, 23, -1, Civilian Builder Capture, 0.0
+19, 23, -1, Naval Superiority, 100.0
+19, 23, -1, CITY VALUES, 35.0, LOC_CITY_NAME_BAD_TIBIRA
+19, 23, -1, CITY VALUES, 233.6, LOC_CITY_NAME_BRUSSELS
+19, 24, -1, Civilian Builder Capture, 0.0
+19, 24, -1, Settle New City, 30.0
+19, 24, -1, CITY VALUES, 478.5, LOC_CITY_NAME_OSTIA
+19, 25, -1, Attack Barb Camp, 50.0
+19, 25, -1, Barb Camp Tech Boost, 50.0
+19, 25, -1, Civilian Builder Capture, 0.0
+19, 25, -1, Naval Superiority, 100.0
+19, 26, -1, Civilian Builder Capture, 0.0
+19, 26, -1, Naval Superiority, 100.0
+19, 26, -1, CITY VALUES, 382.9, LOC_CITY_NAME_HONG_KONG
+19, 26, -1, CITY VALUES, 82.5, LOC_CITY_NAME_BAD_TIBIRA
+19, 27, -1, Civilian Builder Capture, 0.0
+19, 27, -1, Settle New City, 32.0
+19, 27, -1, Naval Superiority, 100.0
+19, 27, -1, CITY VALUES, 378.9, LOC_CITY_NAME_KAWA
+19, 28, -1, Civilian Builder Capture, 0.0
+19, 28, -1, Settle New City, 30.0
+19, 28, -1, Naval Superiority, 100.0
+19, 29, -1, Civilian Builder Capture, 0.0
+19, 29, -1, Naval Superiority, 100.0
+19, 30, -1, Attack Barb Camp, 50.0
+19, 30, -1, Barb Camp Tech Boost, 50.0
+19, 30, -1, Civilian Builder Capture, 0.0
+19, 30, -1, Naval Superiority, 100.0
+19, 30, -1, CITY VALUES, 239.2, LOC_CITY_NAME_MOHENJO_DARO
+19, 31, -1, Attack Barb Camp, 50.0
+19, 31, -1, Barb Camp Tech Boost, 50.0
+19, 31, -1, Civilian Builder Capture, 0.0
+19, 31, -1, CITY VALUES, 197.2, LOC_CITY_NAME_GRANADA
+19, 63, -1, Barbarian Builder Capture, 850.0
+19, 63, -1, CITY VALUES, 539.0, LOC_CITY_NAME_ULM
+19, 63, -1, CITY VALUES, 777.0, LOC_CITY_NAME_MEXICO_CITY
+19, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_HEIDELBERG
+19, 63, -1, CITY VALUES, 770.0, LOC_CITY_NAME_BABYLON
+19, 63, -1, CITY VALUES, 959.0, LOC_CITY_NAME_MEROE
+19, 63, -1, CITY VALUES, 749.0, LOC_CITY_NAME_NAN_MADOL
+19, 63, -1, CITY VALUES, 770.0, LOC_CITY_NAME_ZANZIBAR
+20, 0, -1, Attack Barb Camp, 100.0
+20, 0, -1, Barb Camp Tech Boost, 100.0
+20, 0, -1, Civilian Builder Capture, 0.0
+20, 0, -1, Settle New City, 124.0
+20, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_BOLOGNA
+20, 0, -1, CITY VALUES, 766.8, LOC_CITY_NAME_ISTANBUL
+20, 0, -1, CITY VALUES, 561.2, LOC_CITY_NAME_MBUMBI
+20, 0, -1, CITY VALUES, 67.0, LOC_CITY_NAME_CAHOKIA
+20, 0, -1, CITY VALUES, 368.1, LOC_CITY_NAME_MBANZA_NSUNDI
+20, 0, -1, CITY VALUES, 331.2, LOC_CITY_NAME_KWILA
+20, 0, 12, MINOR CIV LEVY, 119.9, 202.6
+20, 0, 20, MINOR CIV LEVY, 119.9, 202.6
+20, 1, -1, Settle New City, 120.0
+20, 1, -1, Attack Barb Camp, 50.0
+20, 1, -1, Barb Camp Tech Boost, 50.0
+20, 1, -1, Civilian Builder Capture, 0.0
+20, 1, -1, Settle New City, 120.0
+20, 1, -1, Naval Superiority, 100.0
+20, 1, -1, CITY VALUES, 761.2, LOC_CITY_NAME_MBANZA_KONGO
+20, 1, -1, CITY VALUES, 399.1, LOC_CITY_NAME_KINCHASSA
+20, 2, -1, Settle New City, 97.0
+20, 2, 0, Attack Enemy City, 561.2
+20, 2, -1, Attack Barb Camp, 50.0
+20, 2, -1, Barb Camp Tech Boost, 50.0
+20, 2, -1, Civilian Builder Capture, 0.0
+20, 2, -1, Settle New City, 97.0
+20, 2, -1, Naval Superiority, 100.0
+20, 2, -1, CITY VALUES, 368.6, LOC_CITY_NAME_BOLOGNA
+20, 2, -1, CITY VALUES, 480.7, LOC_CITY_NAME_VALLETTA
+20, 2, -1, CITY VALUES, 586.3, LOC_CITY_NAME_MBWILA
+20, 3, -1, Civilian Builder Capture, 0.0
+20, 3, -1, Settle New City, 100.0
+20, 3, -1, Naval Superiority, 100.0
+20, 3, -1, CITY VALUES, 137.6, LOC_CITY_NAME_LA_VENTA
+20, 3, -1, CITY VALUES, 126.1, LOC_CITY_NAME_LISBON
+20, 3, -1, CITY VALUES, 90.1, LOC_CITY_NAME_GENEVA
+20, 4, -1, Settle New City, 97.0
+20, 4, -1, Civilian Builder Capture, 0.0
+20, 4, -1, Settle New City, 97.0
+20, 4, -1, Naval Superiority, 100.0
+20, 4, -1, CITY VALUES, 143.8, LOC_CITY_NAME_VALLETTA
+20, 5, -1, Settle New City, 67.0
+20, 5, -1, Civilian Builder Capture, 0.0
+20, 5, -1, Settle New City, 94.0
+20, 5, -1, CITY VALUES, 400.2, LOC_CITY_NAME_LA_VENTA
+20, 6, -1, Attack Barb Camp, 50.0
+20, 6, -1, Barb Camp Tech Boost, 50.0
+20, 6, -1, Civilian Builder Capture, 0.0
+20, 6, -1, Settle New City, 126.0
+20, 6, -1, CITY VALUES, 296.5, LOC_CITY_NAME_MEXICO_CITY
+20, 7, -1, Settle New City, 144.0
+20, 7, -1, Civilian Builder Capture, 0.0
+20, 7, -1, Settle New City, 144.0
+20, 7, -1, Naval Superiority, 100.0
+20, 7, -1, CITY VALUES, 486.4, LOC_CITY_NAME_VILNIUS
+20, 8, -1, Settle New City, 110.0
+20, 8, -1, Attack Barb Camp, 100.0
+20, 8, -1, Barb Camp Tech Boost, 100.0
+20, 8, -1, Civilian Builder Capture, 0.0
+20, 8, -1, Settle New City, 110.0
+20, 8, -1, Naval Superiority, 100.0
+20, 8, -1, CITY VALUES, 319.2, LOC_CITY_NAME_BABYLON
+20, 8, -1, CITY VALUES, 338.1, LOC_CITY_NAME_KABUL
+20, 8, -1, CITY VALUES, 363.1, LOC_CITY_NAME_ANTIOCH
+20, 8, -1, CITY VALUES, 340.5, LOC_CITY_NAME_ZANZIBAR
+20, 9, -1, Settle New City, 34.0
+20, 9, -1, Attack Barb Camp, 50.0
+20, 9, -1, Barb Camp Tech Boost, 50.0
+20, 9, -1, Civilian Builder Capture, 0.0
+20, 9, -1, Settle New City, 71.0
+20, 9, -1, Naval Superiority, 100.0
+20, 9, -1, CITY VALUES, 385.1, LOC_CITY_NAME_GRANADA
+20, 9, -1, CITY VALUES, 323.1, LOC_CITY_NAME_MOHENJO_DARO
+20, 9, -1, CITY VALUES, 301.9, LOC_CITY_NAME_BRUSSELS
+20, 9, -1, CITY VALUES, 364.7, LOC_CITY_NAME_NGAZARGAMU
+20, 10, -1, Attack Barb Camp, 100.0
+20, 10, -1, Attack Barb Camp, 100.0
+20, 10, -1, Barb Camp Tech Boost, 100.0
+20, 10, -1, Civilian Builder Capture, 0.0
+20, 10, -1, Naval Superiority, 100.0
+20, 11, -1, Civilian Builder Capture, 0.0
+20, 11, -1, Settle New City, 30.0
+20, 11, -1, Naval Superiority, 100.0
+20, 12, -1, Civilian Builder Capture, 0.0
+20, 12, -1, CITY VALUES, 760.3, LOC_CITY_NAME_MBANZA_KONGO
+20, 12, -1, CITY VALUES, 485.5, LOC_CITY_NAME_MBWILA
+20, 12, -1, CITY VALUES, 443.5, LOC_CITY_NAME_MBANZA_MBATA
+20, 13, -1, Civilian Builder Capture, 0.0
+20, 13, -1, Settle New City, 30.0
+20, 13, -1, Naval Superiority, 100.0
+20, 14, -1, Civilian Builder Capture, 0.0
+20, 14, -1, Naval Superiority, 100.0
+20, 15, -1, Attack Barb Camp, 50.0
+20, 15, -1, Barb Camp Tech Boost, 50.0
+20, 15, -1, Civilian Builder Capture, 0.0
+20, 15, -1, Naval Superiority, 100.0
+20, 15, -1, CITY VALUES, 271.8, LOC_CITY_NAME_HALEP
+20, 15, -1, CITY VALUES, 820.5, LOC_CITY_NAME_ISTANBUL
+20, 16, -1, Attack Barb Camp, 50.0
+20, 16, -1, Barb Camp Tech Boost, 50.0
+20, 16, -1, Civilian Builder Capture, 0.0
+20, 16, -1, CITY VALUES, 662.4, LOC_CITY_NAME_ROME
+20, 16, -1, CITY VALUES, 332.0, LOC_CITY_NAME_ANTIOCH
+20, 17, -1, Civilian Builder Capture, 0.0
+20, 17, -1, Naval Superiority, 100.0
+20, 18, -1, Attack Barb Camp, 50.0
+20, 18, -1, Barb Camp Tech Boost, 50.0
+20, 18, -1, Civilian Builder Capture, 0.0
+20, 18, -1, Naval Superiority, 100.0
+20, 19, -1, Civilian Builder Capture, 0.0
+20, 19, -1, Naval Superiority, 100.0
+20, 19, -1, CITY VALUES, 37.1, LOC_CITY_NAME_KERMA
+20, 19, -1, CITY VALUES, 420.1, LOC_CITY_NAME_KAWA
+20, 20, -1, Civilian Builder Capture, 0.0
+20, 20, -1, Settle New City, 38.0
+20, 20, -1, Naval Superiority, 100.0
+20, 21, -1, Civilian Builder Capture, 0.0
+20, 21, -1, Settle New City, 38.0
+20, 21, -1, Naval Superiority, 100.0
+20, 22, -1, Civilian Builder Capture, 0.0
+20, 22, -1, Naval Superiority, 100.0
+20, 23, -1, City Defense, 0.0
+20, 23, -1, Attack Barb Camp, 50.0
+20, 23, -1, Barb Camp Tech Boost, 50.0
+20, 23, -1, Civilian Builder Capture, 0.0
+20, 23, -1, City Defense, 0.0
+20, 23, -1, Naval Superiority, 100.0
+20, 23, -1, CITY VALUES, 49.0, LOC_CITY_NAME_BAD_TIBIRA
+20, 23, -1, CITY VALUES, 225.8, LOC_CITY_NAME_BRUSSELS
+20, 24, -1, Civilian Builder Capture, 0.0
+20, 24, -1, Settle New City, 30.0
+20, 24, -1, CITY VALUES, 265.4, LOC_CITY_NAME_OSTIA
+20, 25, -1, Attack Barb Camp, 50.0
+20, 25, -1, Barb Camp Tech Boost, 50.0
+20, 25, -1, Civilian Builder Capture, 0.0
+20, 25, -1, Naval Superiority, 100.0
+20, 26, -1, Civilian Builder Capture, 0.0
+20, 26, -1, Naval Superiority, 100.0
+20, 26, -1, CITY VALUES, 382.9, LOC_CITY_NAME_HONG_KONG
+20, 26, -1, CITY VALUES, 96.5, LOC_CITY_NAME_BAD_TIBIRA
+20, 27, -1, Civilian Builder Capture, 0.0
+20, 27, -1, Settle New City, 32.0
+20, 27, -1, Naval Superiority, 100.0
+20, 27, -1, CITY VALUES, 376.7, LOC_CITY_NAME_KAWA
+20, 28, -1, Civilian Builder Capture, 0.0
+20, 28, -1, Settle New City, 30.0
+20, 28, -1, Naval Superiority, 100.0
+20, 29, -1, Civilian Builder Capture, 0.0
+20, 29, -1, Naval Superiority, 100.0
+20, 30, -1, Attack Barb Camp, 50.0
+20, 30, -1, Barb Camp Tech Boost, 50.0
+20, 30, -1, Civilian Builder Capture, 0.0
+20, 30, -1, Naval Superiority, 100.0
+20, 30, -1, CITY VALUES, 303.2, LOC_CITY_NAME_MOHENJO_DARO
+20, 31, -1, Attack Barb Camp, 50.0
+20, 31, -1, Barb Camp Tech Boost, 50.0
+20, 31, -1, Civilian Builder Capture, 0.0
+20, 31, -1, CITY VALUES, 242.1, LOC_CITY_NAME_GRANADA
+20, 63, -1, Barbarian Builder Capture, 850.0
+20, 63, -1, CITY VALUES, 375.0, LOC_CITY_NAME_ULM
+20, 63, -1, CITY VALUES, 777.0, LOC_CITY_NAME_MEXICO_CITY
+20, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_HEIDELBERG
+20, 63, -1, CITY VALUES, 770.0, LOC_CITY_NAME_BABYLON
+20, 63, -1, CITY VALUES, 959.0, LOC_CITY_NAME_MEROE
+20, 63, -1, CITY VALUES, 749.0, LOC_CITY_NAME_NAN_MADOL
+20, 63, -1, CITY VALUES, 770.0, LOC_CITY_NAME_ZANZIBAR
+21, 0, -1, Attack Barb Camp, 100.0
+21, 0, -1, Barb Camp Tech Boost, 100.0
+21, 0, -1, Civilian Builder Capture, 0.0
+21, 0, -1, Settle New City, 125.0
+21, 0, -1, CITY VALUES, 147.8, LOC_CITY_NAME_BOLOGNA
+21, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_ISTANBUL
+21, 0, -1, CITY VALUES, 561.2, LOC_CITY_NAME_MBUMBI
+21, 0, -1, CITY VALUES, 117.0, LOC_CITY_NAME_CAHOKIA
+21, 0, -1, CITY VALUES, 368.1, LOC_CITY_NAME_MBANZA_NSUNDI
+21, 0, -1, CITY VALUES, 274.2, LOC_CITY_NAME_KWILA
+21, 0, 12, MINOR CIV LEVY, 119.9, 206.4
+21, 0, 20, MINOR CIV LEVY, 119.9, 206.4
+21, 1, -1, Settle New City, 120.0
+21, 1, -1, Attack Barb Camp, 50.0
+21, 1, -1, Barb Camp Tech Boost, 50.0
+21, 1, -1, Civilian Builder Capture, 0.0
+21, 1, -1, Settle New City, 120.0
+21, 1, -1, Naval Superiority, 100.0
+21, 1, -1, CITY VALUES, 815.9, LOC_CITY_NAME_MBANZA_KONGO
+21, 1, -1, CITY VALUES, 434.4, LOC_CITY_NAME_KINCHASSA
+21, 2, -1, Settle New City, 97.0
+21, 2, 0, Attack Enemy City, 600.3
+21, 2, -1, Attack Barb Camp, 50.0
+21, 2, -1, Barb Camp Tech Boost, 50.0
+21, 2, -1, Civilian Builder Capture, 0.0
+21, 2, -1, Settle New City, 97.0
+21, 2, -1, Naval Superiority, 100.0
+21, 2, -1, CITY VALUES, 502.4, LOC_CITY_NAME_BOLOGNA
+21, 2, -1, CITY VALUES, 482.7, LOC_CITY_NAME_VALLETTA
+21, 2, -1, CITY VALUES, 601.5, LOC_CITY_NAME_MBWILA
+21, 3, -1, Civilian Builder Capture, 0.0
+21, 3, -1, Settle New City, 103.0
+21, 3, -1, Naval Superiority, 100.0
+21, 3, -1, CITY VALUES, 137.6, LOC_CITY_NAME_LA_VENTA
+21, 3, -1, CITY VALUES, 126.1, LOC_CITY_NAME_LISBON
+21, 3, -1, CITY VALUES, 40.1, LOC_CITY_NAME_GENEVA
+21, 4, -1, Settle New City, 97.0
+21, 4, -1, Attack Barb Camp, 50.0
+21, 4, -1, Barb Camp Tech Boost, 50.0
+21, 4, -1, Civilian Builder Capture, 0.0
+21, 4, -1, Settle New City, 97.0
+21, 4, -1, Naval Superiority, 100.0
+21, 4, -1, CITY VALUES, 143.8, LOC_CITY_NAME_VALLETTA
+21, 5, -1, Settle New City, 67.0
+21, 5, -1, Civilian Builder Capture, 0.0
+21, 5, -1, Settle New City, 94.0
+21, 5, -1, CITY VALUES, 400.2, LOC_CITY_NAME_LA_VENTA
+21, 6, -1, Attack Barb Camp, 50.0
+21, 6, -1, Barb Camp Tech Boost, 50.0
+21, 6, -1, Civilian Builder Capture, 0.0
+21, 6, -1, Settle New City, 132.0
+21, 6, -1, CITY VALUES, 292.4, LOC_CITY_NAME_MEXICO_CITY
+21, 7, -1, Settle New City, 144.0
+21, 7, -1, Civilian Builder Capture, 0.0
+21, 7, -1, Settle New City, 144.0
+21, 7, -1, Naval Superiority, 100.0
+21, 7, -1, CITY VALUES, 414.5, LOC_CITY_NAME_VILNIUS
+21, 8, -1, Settle New City, 110.0
+21, 8, 16, Attack Walled City, 319.2
+21, 8, 18, Attack Walled City, 387.8
+21, 8, 25, Attack Walled City, 340.5
+21, 8, -1, Attack Barb Camp, 100.0
+21, 8, -1, Barb Camp Tech Boost, 100.0
+21, 8, -1, Civilian Builder Capture, 0.0
+21, 8, -1, Settle New City, 110.0
+21, 8, -1, Naval Superiority, 100.0
+21, 8, -1, CITY VALUES, 433.6, LOC_CITY_NAME_BABYLON
+21, 8, -1, CITY VALUES, 302.1, LOC_CITY_NAME_KABUL
+21, 8, -1, CITY VALUES, 387.8, LOC_CITY_NAME_ANTIOCH
+21, 8, -1, CITY VALUES, 319.2, LOC_CITY_NAME_ZANZIBAR
+21, 9, -1, Settle New City, 34.0
+21, 9, -1, Attack Barb Camp, 50.0
+21, 9, -1, Barb Camp Tech Boost, 50.0
+21, 9, -1, Civilian Builder Capture, 0.0
+21, 9, -1, Settle New City, 71.0
+21, 9, -1, Naval Superiority, 100.0
+21, 9, -1, CITY VALUES, 432.6, LOC_CITY_NAME_GRANADA
+21, 9, -1, CITY VALUES, 376.6, LOC_CITY_NAME_MOHENJO_DARO
+21, 9, -1, CITY VALUES, 295.6, LOC_CITY_NAME_BRUSSELS
+21, 9, -1, CITY VALUES, 397.5, LOC_CITY_NAME_NGAZARGAMU
+21, 10, -1, Attack Barb Camp, 100.0
+21, 10, -1, Attack Barb Camp, 100.0
+21, 10, -1, Barb Camp Tech Boost, 100.0
+21, 10, -1, Civilian Builder Capture, 0.0
+21, 10, -1, Naval Superiority, 100.0
+21, 11, -1, Civilian Builder Capture, 0.0
+21, 11, -1, Settle New City, 30.0
+21, 11, -1, Naval Superiority, 100.0
+21, 12, -1, Civilian Builder Capture, 0.0
+21, 12, -1, CITY VALUES, 772.8, LOC_CITY_NAME_MBANZA_KONGO
+21, 12, -1, CITY VALUES, 492.7, LOC_CITY_NAME_MBWILA
+21, 12, -1, CITY VALUES, 450.7, LOC_CITY_NAME_MBANZA_MBATA
+21, 13, -1, Civilian Builder Capture, 0.0
+21, 13, -1, Settle New City, 30.0
+21, 13, -1, Naval Superiority, 100.0
+21, 14, -1, Attack Barb Camp, 50.0
+21, 14, -1, Barb Camp Tech Boost, 50.0
+21, 14, -1, Civilian Builder Capture, 0.0
+21, 14, -1, Naval Superiority, 100.0
+21, 15, -1, Attack Barb Camp, 100.0
+21, 15, -1, Attack Barb Camp, 100.0
+21, 15, -1, Barb Camp Tech Boost, 100.0
+21, 15, -1, Civilian Builder Capture, 0.0
+21, 15, -1, Naval Superiority, 100.0
+21, 15, -1, CITY VALUES, 253.9, LOC_CITY_NAME_HALEP
+21, 15, -1, CITY VALUES, 820.5, LOC_CITY_NAME_ISTANBUL
+21, 16, -1, Attack Barb Camp, 50.0
+21, 16, -1, Barb Camp Tech Boost, 50.0
+21, 16, -1, Civilian Builder Capture, 0.0
+21, 16, -1, CITY VALUES, 659.0, LOC_CITY_NAME_ROME
+21, 16, -1, CITY VALUES, 350.2, LOC_CITY_NAME_ANTIOCH
+21, 17, -1, Civilian Builder Capture, 0.0
+21, 17, -1, Naval Superiority, 100.0
+21, 18, -1, Attack Barb Camp, 50.0
+21, 18, -1, Barb Camp Tech Boost, 50.0
+21, 18, -1, Civilian Builder Capture, 0.0
+21, 18, -1, Naval Superiority, 100.0
+21, 19, -1, Civilian Builder Capture, 0.0
+21, 19, -1, Naval Superiority, 100.0
+21, 19, -1, CITY VALUES, 37.1, LOC_CITY_NAME_KERMA
+21, 19, -1, CITY VALUES, 378.6, LOC_CITY_NAME_KAWA
+21, 20, -1, Civilian Builder Capture, 0.0
+21, 20, -1, Settle New City, 38.0
+21, 20, -1, Naval Superiority, 100.0
+21, 21, -1, Civilian Builder Capture, 0.0
+21, 21, -1, Settle New City, 38.0
+21, 21, -1, Naval Superiority, 100.0
+21, 22, -1, Civilian Builder Capture, 0.0
+21, 22, -1, Naval Superiority, 100.0
+21, 23, -1, Attack Barb Camp, 50.0
+21, 23, -1, Barb Camp Tech Boost, 50.0
+21, 23, -1, Civilian Builder Capture, 0.0
+21, 23, -1, Naval Superiority, 100.0
+21, 23, -1, CITY VALUES, 26.7, LOC_CITY_NAME_BAD_TIBIRA
+21, 23, -1, CITY VALUES, 225.2, LOC_CITY_NAME_BRUSSELS
+21, 24, -1, Civilian Builder Capture, 0.0
+21, 24, -1, Settle New City, 30.0
+21, 24, -1, CITY VALUES, 326.0, LOC_CITY_NAME_OSTIA
+21, 25, -1, Attack Barb Camp, 50.0
+21, 25, -1, Barb Camp Tech Boost, 50.0
+21, 25, -1, Civilian Builder Capture, 0.0
+21, 25, -1, Naval Superiority, 100.0
+21, 26, -1, Civilian Builder Capture, 0.0
+21, 26, -1, Naval Superiority, 100.0
+21, 26, -1, CITY VALUES, 362.6, LOC_CITY_NAME_HONG_KONG
+21, 26, -1, CITY VALUES, 103.6, LOC_CITY_NAME_BAD_TIBIRA
+21, 27, -1, Civilian Builder Capture, 0.0
+21, 27, -1, Settle New City, 32.0
+21, 27, -1, Naval Superiority, 100.0
+21, 27, -1, CITY VALUES, 432.7, LOC_CITY_NAME_KAWA
+21, 28, -1, Civilian Builder Capture, 0.0
+21, 28, -1, Settle New City, 30.0
+21, 28, -1, Naval Superiority, 100.0
+21, 29, -1, Civilian Builder Capture, 0.0
+21, 29, -1, Naval Superiority, 100.0
+21, 30, -1, Civilian Builder Capture, 0.0
+21, 30, -1, Naval Superiority, 100.0
+21, 30, -1, CITY VALUES, 303.2, LOC_CITY_NAME_MOHENJO_DARO
+21, 31, -1, Attack Barb Camp, 50.0
+21, 31, -1, Barb Camp Tech Boost, 50.0
+21, 31, -1, Civilian Builder Capture, 0.0
+21, 31, -1, CITY VALUES, 221.1, LOC_CITY_NAME_GRANADA
+21, 63, -1, Barbarian Builder Capture, 750.0
+21, 63, -1, CITY VALUES, 375.0, LOC_CITY_NAME_ULM
+21, 63, -1, CITY VALUES, 777.0, LOC_CITY_NAME_MEXICO_CITY
+21, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_HEIDELBERG
+21, 63, -1, CITY VALUES, 770.0, LOC_CITY_NAME_BABYLON
+21, 63, -1, CITY VALUES, 959.0, LOC_CITY_NAME_MEROE
+21, 63, -1, CITY VALUES, 770.0, LOC_CITY_NAME_NAN_MADOL
+21, 63, -1, CITY VALUES, 770.0, LOC_CITY_NAME_ZANZIBAR
+21, 63, -1, CITY VALUES, 512.0, LOC_CITY_NAME_HALEP
+21, 63, -1, CITY VALUES, 1186.0, LOC_CITY_NAME_URUK
+21, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KWILA
+22, 0, -1, Attack Barb Camp, 50.0
+22, 0, -1, Barb Camp Tech Boost, 50.0
+22, 0, -1, Civilian Builder Capture, 0.0
+22, 0, -1, Settle New City, 125.0
+22, 0, -1, CITY VALUES, 97.8, LOC_CITY_NAME_BOLOGNA
+22, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_ISTANBUL
+22, 0, -1, CITY VALUES, 141.2, LOC_CITY_NAME_MBUMBI
+22, 0, -1, CITY VALUES, 117.0, LOC_CITY_NAME_CAHOKIA
+22, 0, -1, CITY VALUES, 148.1, LOC_CITY_NAME_MBANZA_NSUNDI
+22, 0, -1, CITY VALUES, 134.2, LOC_CITY_NAME_KWILA
+22, 0, 12, MINOR CIV LEVY, 119.9, 206.4
+22, 0, 20, MINOR CIV LEVY, 119.9, 206.4
+22, 1, -1, Settle New City, 130.0
+22, 1, -1, Attack Barb Camp, 50.0
+22, 1, -1, Barb Camp Tech Boost, 50.0
+22, 1, -1, Civilian Builder Capture, 0.0
+22, 1, -1, Settle New City, 130.0
+22, 1, -1, Naval Superiority, 100.0
+22, 1, -1, CITY VALUES, 666.6, LOC_CITY_NAME_MBANZA_KONGO
+22, 1, -1, CITY VALUES, 424.4, LOC_CITY_NAME_KINCHASSA
+22, 1, -1, CITY VALUES, 280.5, LOC_CITY_NAME_SANGA
+22, 2, -1, Settle New City, 93.0
+22, 2, 12, Attack Walled City, 653.4
+22, 2, 15, Attack Walled City, 638.9
+22, 2, -1, Attack Barb Camp, 50.0
+22, 2, -1, Barb Camp Tech Boost, 50.0
+22, 2, -1, Civilian Builder Capture, 0.0
+22, 2, -1, Settle New City, 95.0
+22, 2, -1, Naval Superiority, 100.0
+22, 2, -1, CITY VALUES, 624.7, LOC_CITY_NAME_BOLOGNA
+22, 2, -1, CITY VALUES, 636.7, LOC_CITY_NAME_VALLETTA
+22, 2, -1, CITY VALUES, 755.0, LOC_CITY_NAME_MBWILA
+22, 2, -1, CITY VALUES, 548.6, LOC_CITY_NAME_SANGA
+22, 3, -1, Civilian Builder Capture, 0.0
+22, 3, -1, Settle New City, 103.0
+22, 3, -1, Naval Superiority, 100.0
+22, 3, -1, CITY VALUES, 137.6, LOC_CITY_NAME_LA_VENTA
+22, 3, -1, CITY VALUES, 46.1, LOC_CITY_NAME_LISBON
+22, 3, -1, CITY VALUES, 90.1, LOC_CITY_NAME_GENEVA
+22, 4, -1, Settle New City, 97.0
+22, 4, -1, Attack Barb Camp, 50.0
+22, 4, -1, Barb Camp Tech Boost, 50.0
+22, 4, -1, Civilian Builder Capture, 0.0
+22, 4, -1, Settle New City, 97.0
+22, 4, -1, Naval Superiority, 100.0
+22, 4, -1, CITY VALUES, 161.6, LOC_CITY_NAME_VALLETTA
+22, 5, -1, Settle New City, 67.0
+22, 5, -1, Civilian Builder Capture, 0.0
+22, 5, -1, Settle New City, 94.0
+22, 5, -1, CITY VALUES, 400.2, LOC_CITY_NAME_LA_VENTA
+22, 6, -1, Attack Barb Camp, 50.0
+22, 6, -1, Barb Camp Tech Boost, 50.0
+22, 6, -1, Civilian Builder Capture, 0.0
+22, 6, -1, Settle New City, 132.0
+22, 6, -1, CITY VALUES, 196.8, LOC_CITY_NAME_MEXICO_CITY
+22, 7, -1, Settle New City, 144.0
+22, 7, -1, Civilian Builder Capture, 0.0
+22, 7, -1, Settle New City, 144.0
+22, 7, -1, Naval Superiority, 100.0
+22, 7, -1, CITY VALUES, 495.1, LOC_CITY_NAME_VILNIUS
+22, 8, -1, Settle New City, 110.0
+22, 8, 16, Attack Walled City, 433.6
+22, 8, 18, Attack Walled City, 535.6
+22, 8, 25, Attack Walled City, 319.2
+22, 8, -1, Attack Barb Camp, 50.0
+22, 8, -1, Barb Camp Tech Boost, 50.0
+22, 8, -1, Civilian Builder Capture, 0.0
+22, 8, -1, Settle New City, 110.0
+22, 8, -1, Naval Superiority, 100.0
+22, 8, -1, CITY VALUES, 376.4, LOC_CITY_NAME_BABYLON
+22, 8, -1, CITY VALUES, 303.3, LOC_CITY_NAME_KABUL
+22, 8, -1, CITY VALUES, 535.6, LOC_CITY_NAME_ANTIOCH
+22, 8, -1, CITY VALUES, 262.0, LOC_CITY_NAME_ZANZIBAR
+22, 9, -1, Settle New City, 34.0
+22, 9, -1, Attack Barb Camp, 50.0
+22, 9, -1, Barb Camp Tech Boost, 50.0
+22, 9, -1, Civilian Builder Capture, 0.0
+22, 9, -1, Settle New City, 71.0
+22, 9, -1, Naval Superiority, 100.0
+22, 9, -1, CITY VALUES, 331.7, LOC_CITY_NAME_GRANADA
+22, 9, -1, CITY VALUES, 323.1, LOC_CITY_NAME_MOHENJO_DARO
+22, 9, -1, CITY VALUES, 272.6, LOC_CITY_NAME_BRUSSELS
+22, 9, -1, CITY VALUES, 364.7, LOC_CITY_NAME_NGAZARGAMU
+22, 10, -1, Attack Barb Camp, 50.0
+22, 10, -1, Barb Camp Tech Boost, 50.0
+22, 10, -1, Civilian Builder Capture, 0.0
+22, 10, -1, Naval Superiority, 100.0
+22, 11, -1, Civilian Builder Capture, 0.0
+22, 11, -1, Settle New City, 30.0
+22, 11, -1, Naval Superiority, 100.0
+22, 12, -1, Civilian Builder Capture, 0.0
+22, 12, -1, CITY VALUES, 550.6, LOC_CITY_NAME_MBANZA_KONGO
+22, 12, -1, CITY VALUES, 555.7, LOC_CITY_NAME_MBWILA
+22, 12, -1, CITY VALUES, 450.7, LOC_CITY_NAME_MBANZA_MBATA
+22, 12, -1, CITY VALUES, 397.7, LOC_CITY_NAME_ISTANBUL
+22, 13, -1, Civilian Builder Capture, 0.0
+22, 13, -1, Settle New City, 30.0
+22, 13, -1, Naval Superiority, 100.0
+22, 14, -1, Attack Barb Camp, 50.0
+22, 14, -1, Barb Camp Tech Boost, 50.0
+22, 14, -1, Civilian Builder Capture, 0.0
+22, 14, -1, Naval Superiority, 100.0
+22, 15, -1, Attack Barb Camp, 100.0
+22, 15, -1, Attack Barb Camp, 100.0
+22, 15, -1, Barb Camp Tech Boost, 100.0
+22, 15, -1, Civilian Builder Capture, 0.0
+22, 15, -1, Naval Superiority, 100.0
+22, 15, -1, CITY VALUES, 0.0, LOC_CITY_NAME_HALEP
+22, 15, -1, CITY VALUES, 263.3, LOC_CITY_NAME_ISTANBUL
+22, 16, -1, Attack Barb Camp, 50.0
+22, 16, -1, Barb Camp Tech Boost, 50.0
+22, 16, -1, Civilian Builder Capture, 0.0
+22, 16, -1, CITY VALUES, 557.1, LOC_CITY_NAME_ROME
+22, 16, -1, CITY VALUES, 460.2, LOC_CITY_NAME_ANTIOCH
+22, 17, -1, Civilian Builder Capture, 0.0
+22, 17, -1, Naval Superiority, 100.0
+22, 18, -1, Civilian Builder Capture, 0.0
+22, 18, -1, Naval Superiority, 100.0
+22, 19, -1, Civilian Builder Capture, 0.0
+22, 19, -1, Naval Superiority, 100.0
+22, 19, -1, CITY VALUES, 35.9, LOC_CITY_NAME_KERMA
+22, 19, -1, CITY VALUES, 377.1, LOC_CITY_NAME_KAWA
+22, 20, -1, Civilian Builder Capture, 0.0
+22, 20, -1, Settle New City, 38.0
+22, 20, -1, Naval Superiority, 100.0
+22, 21, -1, Civilian Builder Capture, 0.0
+22, 21, -1, Settle New City, 38.0
+22, 21, -1, Naval Superiority, 100.0
+22, 22, -1, Civilian Builder Capture, 0.0
+22, 22, -1, Naval Superiority, 100.0
+22, 23, -1, Attack Barb Camp, 50.0
+22, 23, -1, Barb Camp Tech Boost, 50.0
+22, 23, -1, Civilian Builder Capture, 0.0
+22, 23, -1, Naval Superiority, 100.0
+22, 23, -1, CITY VALUES, 26.7, LOC_CITY_NAME_BAD_TIBIRA
+22, 23, -1, CITY VALUES, 184.5, LOC_CITY_NAME_BRUSSELS
+22, 24, -1, Civilian Builder Capture, 0.0
+22, 24, -1, Settle New City, 30.0
+22, 24, -1, CITY VALUES, 0.7, LOC_CITY_NAME_OSTIA
+22, 25, -1, Attack Barb Camp, 50.0
+22, 25, -1, Barb Camp Tech Boost, 50.0
+22, 25, -1, Civilian Builder Capture, 0.0
+22, 25, -1, Naval Superiority, 100.0
+22, 26, -1, Civilian Builder Capture, 0.0
+22, 26, -1, Naval Superiority, 100.0
+22, 26, -1, CITY VALUES, 342.3, LOC_CITY_NAME_HONG_KONG
+22, 26, -1, CITY VALUES, 71.7, LOC_CITY_NAME_BAD_TIBIRA
+22, 27, -1, Civilian Builder Capture, 0.0
+22, 27, -1, Settle New City, 32.0
+22, 27, -1, Naval Superiority, 100.0
+22, 27, -1, CITY VALUES, 476.1, LOC_CITY_NAME_KAWA
+22, 28, -1, Civilian Builder Capture, 0.0
+22, 28, -1, Settle New City, 30.0
+22, 28, -1, Naval Superiority, 100.0
+22, 29, -1, Civilian Builder Capture, 0.0
+22, 29, -1, Naval Superiority, 100.0
+22, 30, -1, Civilian Builder Capture, 0.0
+22, 30, -1, Naval Superiority, 100.0
+22, 30, -1, CITY VALUES, 199.2, LOC_CITY_NAME_MOHENJO_DARO
+22, 31, -1, Attack Barb Camp, 50.0
+22, 31, -1, Barb Camp Tech Boost, 50.0
+22, 31, -1, Civilian Builder Capture, 0.0
+22, 31, -1, CITY VALUES, 282.0, LOC_CITY_NAME_GRANADA
+22, 63, -1, Barbarian Builder Capture, 800.0
+22, 63, -1, CITY VALUES, 375.0, LOC_CITY_NAME_ULM
+22, 63, -1, CITY VALUES, 791.0, LOC_CITY_NAME_MEXICO_CITY
+22, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_HEIDELBERG
+22, 63, -1, CITY VALUES, 770.0, LOC_CITY_NAME_BABYLON
+22, 63, -1, CITY VALUES, 945.0, LOC_CITY_NAME_MEROE
+22, 63, -1, CITY VALUES, 770.0, LOC_CITY_NAME_NAN_MADOL
+22, 63, -1, CITY VALUES, 770.0, LOC_CITY_NAME_ZANZIBAR
+22, 63, -1, CITY VALUES, 654.0, LOC_CITY_NAME_HALEP
+22, 63, -1, CITY VALUES, 1186.0, LOC_CITY_NAME_URUK
+22, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KWILA
+22, 63, -1, CITY VALUES, 162.0, LOC_CITY_NAME_BAD_TIBIRA
+23, 0, -1, Attack Barb Camp, 50.0
+23, 0, -1, Barb Camp Tech Boost, 50.0
+23, 0, -1, Civilian Builder Capture, 0.0
+23, 0, -1, Settle New City, 116.0
+23, 0, -1, Naval Superiority, 100.0
+23, 0, -1, CITY VALUES, 147.8, LOC_CITY_NAME_BOLOGNA
+23, 0, -1, CITY VALUES, 612.8, LOC_CITY_NAME_ISTANBUL
+23, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBUMBI
+23, 0, -1, CITY VALUES, 117.0, LOC_CITY_NAME_CAHOKIA
+23, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBANZA_NSUNDI
+23, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KWILA
+23, 0, 12, MINOR CIV LEVY, 119.9, 307.2
+23, 0, 20, MINOR CIV LEVY, 119.9, 307.2
+23, 1, -1, Settle New City, 130.0
+23, 1, 0, Attack Walled City, 666.6
+23, 1, -1, Attack Barb Camp, 50.0
+23, 1, -1, Barb Camp Tech Boost, 50.0
+23, 1, -1, Civilian Builder Capture, 0.0
+23, 1, -1, Settle New City, 130.0
+23, 1, -1, Naval Superiority, 100.0
+23, 1, -1, CITY VALUES, 666.1, LOC_CITY_NAME_MBANZA_KONGO
+23, 1, -1, CITY VALUES, 432.0, LOC_CITY_NAME_KINCHASSA
+23, 1, -1, CITY VALUES, 367.0, LOC_CITY_NAME_SANGA
+23, 2, -1, Settle New City, 94.0
+23, 2, 12, Attack Walled City, 624.7
+23, 2, 15, Attack Walled City, 636.7
+23, 2, -1, Attack Barb Camp, 50.0
+23, 2, -1, Barb Camp Tech Boost, 50.0
+23, 2, -1, Civilian Builder Capture, 0.0
+23, 2, -1, Settle New City, 95.0
+23, 2, -1, Naval Superiority, 100.0
+23, 2, -1, CITY VALUES, 651.9, LOC_CITY_NAME_BOLOGNA
+23, 2, -1, CITY VALUES, 637.0, LOC_CITY_NAME_VALLETTA
+23, 2, -1, CITY VALUES, 732.8, LOC_CITY_NAME_MBWILA
+23, 2, -1, CITY VALUES, 461.0, LOC_CITY_NAME_SANGA
+23, 3, -1, Civilian Builder Capture, 0.0
+23, 3, -1, Settle New City, 103.0
+23, 3, -1, Naval Superiority, 100.0
+23, 3, -1, CITY VALUES, 208.8, LOC_CITY_NAME_LA_VENTA
+23, 3, -1, CITY VALUES, 46.1, LOC_CITY_NAME_LISBON
+23, 3, -1, CITY VALUES, 90.1, LOC_CITY_NAME_GENEVA
+23, 4, -1, Settle New City, 87.0
+23, 4, -1, Attack Barb Camp, 50.0
+23, 4, -1, Barb Camp Tech Boost, 50.0
+23, 4, -1, Civilian Builder Capture, 0.0
+23, 4, -1, Settle New City, 87.0
+23, 4, -1, Naval Superiority, 100.0
+23, 4, -1, CITY VALUES, 161.6, LOC_CITY_NAME_VALLETTA
+23, 5, -1, Settle New City, 78.0
+23, 5, -1, Civilian Builder Capture, 0.0
+23, 5, -1, Settle New City, 94.0
+23, 5, -1, CITY VALUES, 391.5, LOC_CITY_NAME_LA_VENTA
+23, 6, -1, Attack Barb Camp, 50.0
+23, 6, -1, Barb Camp Tech Boost, 50.0
+23, 6, -1, Civilian Builder Capture, 0.0
+23, 6, -1, Settle New City, 122.0
+23, 6, -1, CITY VALUES, 196.9, LOC_CITY_NAME_MEXICO_CITY
+23, 7, -1, Settle New City, 144.0
+23, 7, -1, Civilian Builder Capture, 0.0
+23, 7, -1, Settle New City, 144.0
+23, 7, -1, Naval Superiority, 100.0
+23, 7, -1, CITY VALUES, 410.1, LOC_CITY_NAME_VILNIUS
+23, 8, -1, Settle New City, 141.0
+23, 8, 16, Attack Walled City, 376.4
+23, 8, 18, Attack Walled City, 406.2
+23, 8, 25, Attack Walled City, 262.0
+23, 8, -1, Attack Barb Camp, 50.0
+23, 8, -1, Barb Camp Tech Boost, 50.0
+23, 8, -1, Civilian Builder Capture, 0.0
+23, 8, -1, Settle New City, 141.0
+23, 8, -1, Naval Superiority, 100.0
+23, 8, -1, CITY VALUES, 319.2, LOC_CITY_NAME_BABYLON
+23, 8, -1, CITY VALUES, 267.3, LOC_CITY_NAME_KABUL
+23, 8, -1, CITY VALUES, 406.2, LOC_CITY_NAME_ANTIOCH
+23, 8, -1, CITY VALUES, 354.5, LOC_CITY_NAME_ZANZIBAR
+23, 9, -1, Settle New City, 34.0
+23, 9, -1, Attack Barb Camp, 50.0
+23, 9, -1, Barb Camp Tech Boost, 50.0
+23, 9, -1, Civilian Builder Capture, 0.0
+23, 9, -1, Settle New City, 71.0
+23, 9, -1, Naval Superiority, 100.0
+23, 9, -1, CITY VALUES, 391.7, LOC_CITY_NAME_GRANADA
+23, 9, -1, CITY VALUES, 289.5, LOC_CITY_NAME_MOHENJO_DARO
+23, 9, -1, CITY VALUES, 318.7, LOC_CITY_NAME_BRUSSELS
+23, 9, -1, CITY VALUES, 402.5, LOC_CITY_NAME_NGAZARGAMU
+23, 10, -1, Attack Barb Camp, 50.0
+23, 10, -1, Barb Camp Tech Boost, 50.0
+23, 10, -1, Civilian Builder Capture, 0.0
+23, 10, -1, Naval Superiority, 100.0
+23, 11, -1, Civilian Builder Capture, 0.0
+23, 11, -1, Settle New City, 30.0
+23, 11, -1, Naval Superiority, 100.0
+23, 12, -1, Civilian Builder Capture, 0.0
+23, 12, -1, CITY VALUES, 550.6, LOC_CITY_NAME_MBANZA_KONGO
+23, 12, -1, CITY VALUES, 553.5, LOC_CITY_NAME_MBWILA
+23, 12, -1, CITY VALUES, 469.5, LOC_CITY_NAME_MBANZA_MBATA
+23, 12, -1, CITY VALUES, 307.0, LOC_CITY_NAME_ISTANBUL
+23, 13, -1, Civilian Builder Capture, 0.0
+23, 13, -1, Settle New City, 30.0
+23, 13, -1, Naval Superiority, 100.0
+23, 14, -1, Attack Barb Camp, 50.0
+23, 14, -1, Barb Camp Tech Boost, 50.0
+23, 14, -1, Civilian Builder Capture, 0.0
+23, 14, -1, Naval Superiority, 100.0
+23, 15, -1, Attack Barb Camp, 100.0
+23, 15, -1, Attack Barb Camp, 100.0
+23, 15, -1, Barb Camp Tech Boost, 100.0
+23, 15, -1, Civilian Builder Capture, 0.0
+23, 15, -1, Naval Superiority, 100.0
+23, 15, -1, CITY VALUES, 0.0, LOC_CITY_NAME_HALEP
+23, 15, -1, CITY VALUES, 117.7, LOC_CITY_NAME_ISTANBUL
+23, 16, -1, Attack Barb Camp, 50.0
+23, 16, -1, Barb Camp Tech Boost, 50.0
+23, 16, -1, Civilian Builder Capture, 0.0
+23, 16, -1, CITY VALUES, 553.4, LOC_CITY_NAME_ROME
+23, 16, -1, CITY VALUES, 363.9, LOC_CITY_NAME_ANTIOCH
+23, 17, -1, Attack Barb Camp, 50.0
+23, 17, -1, Barb Camp Tech Boost, 50.0
+23, 17, -1, Civilian Builder Capture, 0.0
+23, 17, -1, Naval Superiority, 100.0
+23, 18, -1, Civilian Builder Capture, 0.0
+23, 18, -1, Naval Superiority, 100.0
+23, 19, -1, Civilian Builder Capture, 0.0
+23, 19, -1, Naval Superiority, 100.0
+23, 19, -1, CITY VALUES, 35.9, LOC_CITY_NAME_KERMA
+23, 19, -1, CITY VALUES, 377.1, LOC_CITY_NAME_KAWA
+23, 20, -1, Civilian Builder Capture, 0.0
+23, 20, -1, Settle New City, 38.0
+23, 20, -1, Naval Superiority, 100.0
+23, 21, -1, Civilian Builder Capture, 0.0
+23, 21, -1, Settle New City, 38.0
+23, 21, -1, Naval Superiority, 100.0
+23, 22, -1, Civilian Builder Capture, 0.0
+23, 22, -1, Naval Superiority, 100.0
+23, 23, -1, Attack Barb Camp, 50.0
+23, 23, -1, Barb Camp Tech Boost, 50.0
+23, 23, -1, Civilian Builder Capture, 0.0
+23, 23, -1, Naval Superiority, 100.0
+23, 23, -1, CITY VALUES, 143.6, LOC_CITY_NAME_BAD_TIBIRA
+23, 23, -1, CITY VALUES, 289.2, LOC_CITY_NAME_BRUSSELS
+23, 24, -1, Civilian Builder Capture, 0.0
+23, 24, -1, Settle New City, 30.0
+23, 24, -1, CITY VALUES, 220.4, LOC_CITY_NAME_OSTIA
+23, 25, -1, Attack Barb Camp, 50.0
+23, 25, -1, Barb Camp Tech Boost, 50.0
+23, 25, -1, Civilian Builder Capture, 0.0
+23, 25, -1, Naval Superiority, 100.0
+23, 26, -1, Civilian Builder Capture, 0.0
+23, 26, -1, Naval Superiority, 100.0
+23, 26, -1, CITY VALUES, 382.9, LOC_CITY_NAME_HONG_KONG
+23, 26, -1, CITY VALUES, 92.7, LOC_CITY_NAME_BAD_TIBIRA
+23, 27, -1, Civilian Builder Capture, 0.0
+23, 27, -1, Settle New City, 32.0
+23, 27, -1, Naval Superiority, 100.0
+23, 27, -1, CITY VALUES, 476.1, LOC_CITY_NAME_KAWA
+23, 28, -1, Civilian Builder Capture, 0.0
+23, 28, -1, Settle New City, 30.0
+23, 28, -1, Naval Superiority, 100.0
+23, 29, -1, Attack Barb Camp, 50.0
+23, 29, -1, Barb Camp Tech Boost, 50.0
+23, 29, -1, Civilian Builder Capture, 0.0
+23, 29, -1, Naval Superiority, 100.0
+23, 30, -1, Civilian Builder Capture, 0.0
+23, 30, -1, Naval Superiority, 100.0
+23, 30, -1, CITY VALUES, 303.2, LOC_CITY_NAME_MOHENJO_DARO
+23, 31, -1, Attack Barb Camp, 50.0
+23, 31, -1, Barb Camp Tech Boost, 50.0
+23, 31, -1, Civilian Builder Capture, 0.0
+23, 31, -1, CITY VALUES, 221.1, LOC_CITY_NAME_GRANADA
+23, 63, -1, Barbarian Builder Capture, 850.0
+23, 63, -1, CITY VALUES, 389.0, LOC_CITY_NAME_ULM
+23, 63, -1, CITY VALUES, 791.0, LOC_CITY_NAME_MEXICO_CITY
+23, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_HEIDELBERG
+23, 63, -1, CITY VALUES, 770.0, LOC_CITY_NAME_BABYLON
+23, 63, -1, CITY VALUES, 945.0, LOC_CITY_NAME_MEROE
+23, 63, -1, CITY VALUES, 770.0, LOC_CITY_NAME_NAN_MADOL
+23, 63, -1, CITY VALUES, 770.0, LOC_CITY_NAME_ZANZIBAR
+23, 63, -1, CITY VALUES, 661.0, LOC_CITY_NAME_HALEP
+23, 63, -1, CITY VALUES, 1186.0, LOC_CITY_NAME_URUK
+23, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KWILA
+23, 63, -1, CITY VALUES, 93.0, LOC_CITY_NAME_BAD_TIBIRA
+23, 63, -1, CITY VALUES, 931.0, LOC_CITY_NAME_ANGKOR_THOM
+23, 63, -1, CITY VALUES, 739.0, LOC_CITY_NAME_NGAZARGAMU
+23, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBAMBA
+24, 0, -1, Attack Barb Camp, 50.0
+24, 0, -1, Barb Camp Tech Boost, 50.0
+24, 0, -1, Civilian Builder Capture, 0.0
+24, 0, -1, Settle New City, 108.0
+24, 0, -1, Naval Superiority, 100.0
+24, 0, -1, CITY VALUES, 147.8, LOC_CITY_NAME_BOLOGNA
+24, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_ISTANBUL
+24, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBUMBI
+24, 0, -1, CITY VALUES, 117.0, LOC_CITY_NAME_CAHOKIA
+24, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBANZA_NSUNDI
+24, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KWILA
+24, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBAMBA
+24, 0, 12, MINOR CIV LEVY, 139.8, 319.9
+24, 0, 20, MINOR CIV LEVY, 139.8, 319.9
+24, 1, -1, Attack Barb Camp, 50.0
+24, 1, -1, Barb Camp Tech Boost, 50.0
+24, 1, -1, Civilian Builder Capture, 0.0
+24, 1, -1, Settle New City, 92.0
+24, 1, -1, Naval Superiority, 100.0
+24, 1, -1, CITY VALUES, 582.1, LOC_CITY_NAME_MBANZA_KONGO
+24, 1, -1, CITY VALUES, 563.1, LOC_CITY_NAME_KINCHASSA
+24, 1, -1, CITY VALUES, 387.0, LOC_CITY_NAME_SANGA
+24, 2, -1, Settle New City, 94.0
+24, 2, -1, Attack Barb Camp, 50.0
+24, 2, -1, Barb Camp Tech Boost, 50.0
+24, 2, -1, Civilian Builder Capture, 0.0
+24, 2, -1, Settle New City, 103.0
+24, 2, -1, Naval Superiority, 100.0
+24, 2, -1, CITY VALUES, 652.2, LOC_CITY_NAME_BOLOGNA
+24, 2, -1, CITY VALUES, 634.9, LOC_CITY_NAME_VALLETTA
+24, 2, -1, CITY VALUES, 770.0, LOC_CITY_NAME_MBWILA
+24, 2, -1, CITY VALUES, 381.1, LOC_CITY_NAME_SANGA
+24, 3, -1, Settle New City, 106.0
+24, 3, -1, Civilian Builder Capture, 0.0
+24, 3, -1, Settle New City, 106.0
+24, 3, -1, Naval Superiority, 100.0
+24, 3, -1, CITY VALUES, 338.4, LOC_CITY_NAME_LA_VENTA
+24, 3, -1, CITY VALUES, 190.6, LOC_CITY_NAME_LISBON
+24, 3, -1, CITY VALUES, 176.3, LOC_CITY_NAME_GENEVA
+24, 4, -1, Settle New City, 97.0
+24, 4, -1, Attack Barb Camp, 50.0
+24, 4, -1, Barb Camp Tech Boost, 50.0
+24, 4, -1, Civilian Builder Capture, 0.0
+24, 4, -1, Settle New City, 97.0
+24, 4, -1, Naval Superiority, 100.0
+24, 4, -1, CITY VALUES, 157.2, LOC_CITY_NAME_VALLETTA
+24, 5, -1, Civilian Builder Capture, 0.0
+24, 5, -1, Settle New City, 94.0
+24, 5, -1, CITY VALUES, 400.2, LOC_CITY_NAME_LA_VENTA
+24, 6, -1, Settle New City, 119.0
+24, 6, -1, Attack Barb Camp, 50.0
+24, 6, -1, Barb Camp Tech Boost, 50.0
+24, 6, -1, Civilian Builder Capture, 0.0
+24, 6, -1, Settle New City, 119.0
+24, 6, -1, CITY VALUES, 176.6, LOC_CITY_NAME_MEXICO_CITY
+24, 7, -1, Settle New City, 118.0
+24, 7, 22, Attack Walled City, 525.8
+24, 7, -1, Civilian Builder Capture, 0.0
+24, 7, -1, Settle New City, 140.0
+24, 7, -1, Naval Superiority, 100.0
+24, 7, -1, CITY VALUES, 468.3, LOC_CITY_NAME_VILNIUS
+24, 8, -1, Settle New City, 141.0
+24, 8, 16, Attack Walled City, 319.2
+24, 8, 18, Attack Walled City, 383.7
+24, 8, 25, Attack Walled City, 354.5
+24, 8, -1, Attack Barb Camp, 50.0
+24, 8, -1, Barb Camp Tech Boost, 50.0
+24, 8, -1, Civilian Builder Capture, 0.0
+24, 8, -1, Settle New City, 141.0
+24, 8, -1, Naval Superiority, 100.0
+24, 8, -1, CITY VALUES, 358.9, LOC_CITY_NAME_BABYLON
+24, 8, -1, CITY VALUES, 339.4, LOC_CITY_NAME_KABUL
+24, 8, -1, CITY VALUES, 362.7, LOC_CITY_NAME_ANTIOCH
+24, 8, -1, CITY VALUES, 358.9, LOC_CITY_NAME_ZANZIBAR
+24, 9, -1, Settle New City, 34.0
+24, 9, -1, Attack Barb Camp, 50.0
+24, 9, -1, Barb Camp Tech Boost, 50.0
+24, 9, -1, Civilian Builder Capture, 0.0
+24, 9, -1, Settle New City, 71.0
+24, 9, -1, Naval Superiority, 100.0
+24, 9, -1, CITY VALUES, 331.7, LOC_CITY_NAME_GRANADA
+24, 9, -1, CITY VALUES, 323.1, LOC_CITY_NAME_MOHENJO_DARO
+24, 9, -1, CITY VALUES, 327.5, LOC_CITY_NAME_BRUSSELS
+24, 9, -1, CITY VALUES, 399.1, LOC_CITY_NAME_NGAZARGAMU
+24, 10, -1, Attack Barb Camp, 50.0
+24, 10, -1, Barb Camp Tech Boost, 50.0
+24, 10, -1, Civilian Builder Capture, 0.0
+24, 10, -1, Naval Superiority, 100.0
+24, 10, -1, CITY VALUES, 305.4, LOC_CITY_NAME_FRANKFURT
+24, 11, -1, Civilian Builder Capture, 0.0
+24, 11, -1, Settle New City, 30.0
+24, 11, -1, Naval Superiority, 100.0
+24, 12, -1, Civilian Builder Capture, 0.0
+24, 12, -1, CITY VALUES, 557.6, LOC_CITY_NAME_MBANZA_KONGO
+24, 12, -1, CITY VALUES, 574.5, LOC_CITY_NAME_MBWILA
+24, 12, -1, CITY VALUES, 469.5, LOC_CITY_NAME_MBANZA_MBATA
+24, 12, -1, CITY VALUES, 312.4, LOC_CITY_NAME_ISTANBUL
+24, 13, -1, Civilian Builder Capture, 0.0
+24, 13, -1, Settle New City, 30.0
+24, 13, -1, Naval Superiority, 100.0
+24, 14, -1, Attack Barb Camp, 50.0
+24, 14, -1, Barb Camp Tech Boost, 50.0
+24, 14, -1, Civilian Builder Capture, 0.0
+24, 14, -1, Naval Superiority, 100.0
+24, 15, -1, Attack Barb Camp, 100.0
+24, 15, -1, Attack Barb Camp, 100.0
+24, 15, -1, Barb Camp Tech Boost, 100.0
+24, 15, -1, Civilian Builder Capture, 0.0
+24, 15, -1, Naval Superiority, 100.0
+24, 15, -1, CITY VALUES, 0.0, LOC_CITY_NAME_HALEP
+24, 15, -1, CITY VALUES, 171.2, LOC_CITY_NAME_ISTANBUL
+24, 16, -1, Attack Barb Camp, 50.0
+24, 16, -1, Barb Camp Tech Boost, 50.0
+24, 16, -1, Civilian Builder Capture, 0.0
+24, 16, -1, CITY VALUES, 501.5, LOC_CITY_NAME_ROME
+24, 16, -1, CITY VALUES, 347.3, LOC_CITY_NAME_ANTIOCH
+24, 17, -1, Attack Barb Camp, 50.0
+24, 17, -1, Barb Camp Tech Boost, 50.0
+24, 17, -1, Civilian Builder Capture, 0.0
+24, 17, -1, Naval Superiority, 100.0
+24, 18, -1, Civilian Builder Capture, 0.0
+24, 18, -1, Naval Superiority, 100.0
+24, 19, -1, Attack Barb Camp, 50.0
+24, 19, -1, Barb Camp Tech Boost, 50.0
+24, 19, -1, Civilian Builder Capture, 0.0
+24, 19, -1, Naval Superiority, 100.0
+24, 19, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KERMA
+24, 19, -1, CITY VALUES, 127.8, LOC_CITY_NAME_KAWA
+24, 20, -1, Civilian Builder Capture, 0.0
+24, 20, -1, Settle New City, 38.0
+24, 20, -1, Naval Superiority, 100.0
+24, 21, -1, Civilian Builder Capture, 0.0
+24, 21, -1, Settle New City, 38.0
+24, 21, -1, Naval Superiority, 100.0
+24, 22, -1, Civilian Builder Capture, 0.0
+24, 22, -1, Naval Superiority, 100.0
+24, 23, -1, Attack Barb Camp, 50.0
+24, 23, -1, Barb Camp Tech Boost, 50.0
+24, 23, -1, Civilian Builder Capture, 0.0
+24, 23, -1, Naval Superiority, 100.0
+24, 23, -1, CITY VALUES, 183.3, LOC_CITY_NAME_BAD_TIBIRA
+24, 23, -1, CITY VALUES, 296.2, LOC_CITY_NAME_BRUSSELS
+24, 24, -1, Civilian Builder Capture, 0.0
+24, 24, -1, Settle New City, 30.0
+24, 24, -1, CITY VALUES, 79.1, LOC_CITY_NAME_OSTIA
+24, 25, -1, Attack Barb Camp, 50.0
+24, 25, -1, Barb Camp Tech Boost, 50.0
+24, 25, -1, Civilian Builder Capture, 0.0
+24, 25, -1, Naval Superiority, 100.0
+24, 26, -1, Civilian Builder Capture, 0.0
+24, 26, -1, Naval Superiority, 100.0
+24, 26, -1, CITY VALUES, 382.9, LOC_CITY_NAME_HONG_KONG
+24, 26, -1, CITY VALUES, 101.4, LOC_CITY_NAME_BAD_TIBIRA
+24, 27, -1, Civilian Builder Capture, 0.0
+24, 27, -1, Settle New City, 32.0
+24, 27, -1, Naval Superiority, 100.0
+24, 27, -1, CITY VALUES, 416.3, LOC_CITY_NAME_KAWA
+24, 28, -1, Civilian Builder Capture, 0.0
+24, 28, -1, Settle New City, 30.0
+24, 28, -1, Naval Superiority, 100.0
+24, 29, -1, Attack Barb Camp, 50.0
+24, 29, -1, Barb Camp Tech Boost, 50.0
+24, 29, -1, Civilian Builder Capture, 0.0
+24, 29, -1, Naval Superiority, 100.0
+24, 30, -1, Civilian Builder Capture, 0.0
+24, 30, -1, Naval Superiority, 100.0
+24, 30, -1, CITY VALUES, 303.2, LOC_CITY_NAME_MOHENJO_DARO
+24, 31, -1, Attack Barb Camp, 50.0
+24, 31, -1, Barb Camp Tech Boost, 50.0
+24, 31, -1, Civilian Builder Capture, 0.0
+24, 31, -1, CITY VALUES, 242.1, LOC_CITY_NAME_GRANADA
+24, 63, -1, Barbarian Builder Capture, 850.0
+24, 63, -1, CITY VALUES, 259.0, LOC_CITY_NAME_ULM
+24, 63, -1, CITY VALUES, 791.0, LOC_CITY_NAME_MEXICO_CITY
+24, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_HEIDELBERG
+24, 63, -1, CITY VALUES, 777.0, LOC_CITY_NAME_BABYLON
+24, 63, -1, CITY VALUES, 1001.0, LOC_CITY_NAME_MEROE
+24, 63, -1, CITY VALUES, 784.0, LOC_CITY_NAME_NAN_MADOL
+24, 63, -1, CITY VALUES, 770.0, LOC_CITY_NAME_ZANZIBAR
+24, 63, -1, CITY VALUES, 661.0, LOC_CITY_NAME_HALEP
+24, 63, -1, CITY VALUES, 1144.0, LOC_CITY_NAME_URUK
+24, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KWILA
+24, 63, -1, CITY VALUES, 383.0, LOC_CITY_NAME_BAD_TIBIRA
+24, 63, -1, CITY VALUES, 931.0, LOC_CITY_NAME_ANGKOR_THOM
+24, 63, -1, CITY VALUES, 763.0, LOC_CITY_NAME_NGAZARGAMU
+24, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBAMBA
+24, 63, -1, CITY VALUES, 332.0, LOC_CITY_NAME_QARAQOTO
+24, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_FRANKFURT
+25, 0, -1, Attack Barb Camp, 100.0
+25, 0, -1, Barb Camp Tech Boost, 100.0
+25, 0, -1, Civilian Builder Capture, 0.0
+25, 0, -1, Settle New City, 108.0
+25, 0, -1, Naval Superiority, 100.0
+25, 0, -1, CITY VALUES, 97.8, LOC_CITY_NAME_BOLOGNA
+25, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_ISTANBUL
+25, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBUMBI
+25, 0, -1, CITY VALUES, 67.0, LOC_CITY_NAME_CAHOKIA
+25, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBANZA_NSUNDI
+25, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KWILA
+25, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBAMBA
+25, 0, 12, MINOR CIV LEVY, 139.8, 319.9
+25, 0, 20, MINOR CIV LEVY, 139.8, 319.9
+25, 1, -1, Settle New City, 91.0
+25, 1, -1, Attack Barb Camp, 50.0
+25, 1, -1, Barb Camp Tech Boost, 50.0
+25, 1, -1, Civilian Builder Capture, 0.0
+25, 1, -1, Settle New City, 102.0
+25, 1, -1, Naval Superiority, 100.0
+25, 1, -1, CITY VALUES, 572.1, LOC_CITY_NAME_MBANZA_KONGO
+25, 1, -1, CITY VALUES, 553.1, LOC_CITY_NAME_KINCHASSA
+25, 1, -1, CITY VALUES, 387.0, LOC_CITY_NAME_SANGA
+25, 1, -1, CITY VALUES, 79.8, LOC_CITY_NAME_BOLOGNA
+25, 2, -1, Settle New City, 104.0
+25, 2, -1, Attack Barb Camp, 50.0
+25, 2, -1, Barb Camp Tech Boost, 50.0
+25, 2, -1, Civilian Builder Capture, 0.0
+25, 2, -1, Settle New City, 104.0
+25, 2, -1, Naval Superiority, 100.0
+25, 2, -1, CITY VALUES, 593.3, LOC_CITY_NAME_BOLOGNA
+25, 2, -1, CITY VALUES, 635.7, LOC_CITY_NAME_VALLETTA
+25, 2, -1, CITY VALUES, 769.4, LOC_CITY_NAME_MBWILA
+25, 2, -1, CITY VALUES, 354.1, LOC_CITY_NAME_SANGA
+25, 3, -1, Settle New City, 106.0
+25, 3, -1, Civilian Builder Capture, 0.0
+25, 3, -1, Settle New City, 106.0
+25, 3, -1, Naval Superiority, 100.0
+25, 3, -1, CITY VALUES, 329.6, LOC_CITY_NAME_LA_VENTA
+25, 3, -1, CITY VALUES, 126.9, LOC_CITY_NAME_LISBON
+25, 3, -1, CITY VALUES, 367.3, LOC_CITY_NAME_GENEVA
+25, 4, -1, Settle New City, 97.0
+25, 4, -1, Attack Barb Camp, 50.0
+25, 4, -1, Barb Camp Tech Boost, 50.0
+25, 4, -1, Civilian Builder Capture, 0.0
+25, 4, -1, Settle New City, 97.0
+25, 4, -1, Naval Superiority, 100.0
+25, 4, -1, CITY VALUES, 159.4, LOC_CITY_NAME_VALLETTA
+25, 5, -1, Settle New City, 78.0
+25, 5, -1, Civilian Builder Capture, 0.0
+25, 5, -1, Settle New City, 94.0
+25, 5, -1, CITY VALUES, 391.5, LOC_CITY_NAME_LA_VENTA
+25, 6, -1, Settle New City, 102.0
+25, 6, 10, Attack Walled City, 209.4
+25, 6, -1, Attack Barb Camp, 50.0
+25, 6, -1, Barb Camp Tech Boost, 50.0
+25, 6, -1, Civilian Builder Capture, 0.0
+25, 6, -1, Settle New City, 102.0
+25, 6, -1, Naval Superiority, 100.0
+25, 6, -1, CITY VALUES, 189.8, LOC_CITY_NAME_MEXICO_CITY
+25, 7, -1, Civilian Builder Capture, 0.0
+25, 7, -1, Settle New City, 118.0
+25, 7, -1, Naval Superiority, 100.0
+25, 7, -1, CITY VALUES, 576.3, LOC_CITY_NAME_VILNIUS
+25, 8, -1, Settle New City, 141.0
+25, 8, 16, Attack Walled City, 358.9
+25, 8, 18, Attack Walled City, 344.3
+25, 8, 25, Attack Walled City, 358.9
+25, 8, -1, Attack Barb Camp, 50.0
+25, 8, -1, Barb Camp Tech Boost, 50.0
+25, 8, -1, Civilian Builder Capture, 0.0
+25, 8, -1, Settle New City, 141.0
+25, 8, -1, Naval Superiority, 100.0
+25, 8, -1, CITY VALUES, 310.5, LOC_CITY_NAME_BABYLON
+25, 8, -1, CITY VALUES, 339.4, LOC_CITY_NAME_KABUL
+25, 8, -1, CITY VALUES, 344.3, LOC_CITY_NAME_ANTIOCH
+25, 8, -1, CITY VALUES, 380.2, LOC_CITY_NAME_ZANZIBAR
+25, 9, -1, Settle New City, 34.0
+25, 9, -1, Attack Barb Camp, 50.0
+25, 9, -1, Barb Camp Tech Boost, 50.0
+25, 9, -1, Civilian Builder Capture, 0.0
+25, 9, -1, Settle New City, 71.0
+25, 9, -1, Naval Superiority, 100.0
+25, 9, -1, CITY VALUES, 358.9, LOC_CITY_NAME_GRANADA
+25, 9, -1, CITY VALUES, 323.1, LOC_CITY_NAME_MOHENJO_DARO
+25, 9, -1, CITY VALUES, 463.4, LOC_CITY_NAME_BRUSSELS
+25, 9, -1, CITY VALUES, 419.4, LOC_CITY_NAME_NGAZARGAMU
+25, 10, -1, Attack Barb Camp, 50.0
+25, 10, -1, Barb Camp Tech Boost, 50.0
+25, 10, -1, Civilian Builder Capture, 0.0
+25, 10, -1, Naval Superiority, 100.0
+25, 10, -1, CITY VALUES, 353.3, LOC_CITY_NAME_FRANKFURT
+25, 11, -1, Civilian Builder Capture, 0.0
+25, 11, -1, Settle New City, 30.0
+25, 11, -1, Naval Superiority, 100.0
+25, 12, -1, Civilian Builder Capture, 0.0
+25, 12, -1, CITY VALUES, 557.6, LOC_CITY_NAME_MBANZA_KONGO
+25, 12, -1, CITY VALUES, 574.5, LOC_CITY_NAME_MBWILA
+25, 12, -1, CITY VALUES, 469.5, LOC_CITY_NAME_MBANZA_MBATA
+25, 12, -1, CITY VALUES, 312.4, LOC_CITY_NAME_ISTANBUL
+25, 13, -1, Civilian Builder Capture, 0.0
+25, 13, -1, Settle New City, 30.0
+25, 13, -1, Naval Superiority, 100.0
+25, 14, -1, Civilian Builder Capture, 0.0
+25, 14, -1, Naval Superiority, 100.0
+25, 15, -1, Attack Barb Camp, 100.0
+25, 15, -1, Attack Barb Camp, 100.0
+25, 15, -1, Barb Camp Tech Boost, 100.0
+25, 15, -1, Civilian Builder Capture, 0.0
+25, 15, -1, Naval Superiority, 100.0
+25, 15, -1, CITY VALUES, 0.0, LOC_CITY_NAME_HALEP
+25, 15, -1, CITY VALUES, 171.2, LOC_CITY_NAME_ISTANBUL
+25, 16, -1, City Defense, 0.0
+25, 16, -1, Attack Barb Camp, 50.0
+25, 16, -1, Barb Camp Tech Boost, 50.0
+25, 16, -1, Civilian Builder Capture, 0.0
+25, 16, -1, City Defense, 0.0
+25, 16, -1, CITY VALUES, 0.0, LOC_CITY_NAME_ROME
+25, 16, -1, CITY VALUES, 333.6, LOC_CITY_NAME_ANTIOCH
+25, 17, -1, Attack Barb Camp, 50.0
+25, 17, -1, Barb Camp Tech Boost, 50.0
+25, 17, -1, Civilian Builder Capture, 0.0
+25, 17, -1, Naval Superiority, 100.0
+25, 18, -1, Civilian Builder Capture, 0.0
+25, 18, -1, Naval Superiority, 100.0
+25, 19, -1, Attack Barb Camp, 50.0
+25, 19, -1, Barb Camp Tech Boost, 50.0
+25, 19, -1, Civilian Builder Capture, 0.0
+25, 19, -1, Naval Superiority, 100.0
+25, 19, -1, CITY VALUES, 141.2, LOC_CITY_NAME_KERMA
+25, 19, -1, CITY VALUES, 32.5, LOC_CITY_NAME_KAWA
+25, 20, -1, Civilian Builder Capture, 0.0
+25, 20, -1, Settle New City, 38.0
+25, 20, -1, Naval Superiority, 100.0
+25, 21, -1, Civilian Builder Capture, 0.0
+25, 21, -1, Settle New City, 38.0
+25, 21, -1, Naval Superiority, 100.0
+25, 22, -1, Civilian Builder Capture, 0.0
+25, 22, -1, Naval Superiority, 100.0
+25, 23, -1, Attack Barb Camp, 50.0
+25, 23, -1, Barb Camp Tech Boost, 50.0
+25, 23, -1, Civilian Builder Capture, 0.0
+25, 23, -1, Naval Superiority, 100.0
+25, 23, -1, CITY VALUES, 188.0, LOC_CITY_NAME_BAD_TIBIRA
+25, 23, -1, CITY VALUES, 360.3, LOC_CITY_NAME_BRUSSELS
+25, 24, -1, Civilian Builder Capture, 0.0
+25, 24, -1, Settle New City, 30.0
+25, 24, -1, CITY VALUES, 25.4, LOC_CITY_NAME_OSTIA
+25, 25, -1, City Defense, 0.0
+25, 25, -1, Attack Barb Camp, 50.0
+25, 25, -1, Barb Camp Tech Boost, 50.0
+25, 25, -1, Civilian Builder Capture, 0.0
+25, 25, -1, City Defense, 0.0
+25, 25, -1, Naval Superiority, 100.0
+25, 26, -1, Civilian Builder Capture, 0.0
+25, 26, -1, Naval Superiority, 100.0
+25, 26, -1, CITY VALUES, 382.9, LOC_CITY_NAME_HONG_KONG
+25, 26, -1, CITY VALUES, 138.9, LOC_CITY_NAME_BAD_TIBIRA
+25, 27, -1, City Defense, 0.0
+25, 27, -1, Civilian Builder Capture, 0.0
+25, 27, -1, Settle New City, 32.0
+25, 27, -1, City Defense, 0.0
+25, 27, -1, Naval Superiority, 100.0
+25, 27, -1, CITY VALUES, 416.3, LOC_CITY_NAME_KAWA
+25, 28, -1, Civilian Builder Capture, 0.0
+25, 28, -1, Settle New City, 30.0
+25, 28, -1, Naval Superiority, 100.0
+25, 29, -1, Attack Barb Camp, 50.0
+25, 29, -1, Barb Camp Tech Boost, 50.0
+25, 29, -1, Civilian Builder Capture, 0.0
+25, 29, -1, Naval Superiority, 100.0
+25, 30, -1, Civilian Builder Capture, 0.0
+25, 30, -1, Naval Superiority, 100.0
+25, 30, -1, CITY VALUES, 303.2, LOC_CITY_NAME_MOHENJO_DARO
+25, 31, -1, Attack Barb Camp, 50.0
+25, 31, -1, Barb Camp Tech Boost, 50.0
+25, 31, -1, Civilian Builder Capture, 0.0
+25, 31, -1, CITY VALUES, 261.0, LOC_CITY_NAME_GRANADA
+25, 63, -1, Barbarian Builder Capture, 850.0
+25, 63, -1, CITY VALUES, 259.0, LOC_CITY_NAME_ULM
+25, 63, -1, CITY VALUES, 791.0, LOC_CITY_NAME_MEXICO_CITY
+25, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_HEIDELBERG
+25, 63, -1, CITY VALUES, 777.0, LOC_CITY_NAME_BABYLON
+25, 63, -1, CITY VALUES, 1001.0, LOC_CITY_NAME_MEROE
+25, 63, -1, CITY VALUES, 784.0, LOC_CITY_NAME_NAN_MADOL
+25, 63, -1, CITY VALUES, 770.0, LOC_CITY_NAME_ZANZIBAR
+25, 63, -1, CITY VALUES, 661.0, LOC_CITY_NAME_HALEP
+25, 63, -1, CITY VALUES, 1116.0, LOC_CITY_NAME_URUK
+25, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KWILA
+25, 63, -1, CITY VALUES, 383.0, LOC_CITY_NAME_BAD_TIBIRA
+25, 63, -1, CITY VALUES, 931.0, LOC_CITY_NAME_ANGKOR_THOM
+25, 63, -1, CITY VALUES, 763.0, LOC_CITY_NAME_NGAZARGAMU
+25, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBAMBA
+25, 63, -1, CITY VALUES, 332.0, LOC_CITY_NAME_QARAQOTO
+25, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_FRANKFURT
+25, 63, -1, CITY VALUES, 690.0, LOC_CITY_NAME_VALLETTA
+25, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MPINDA
+26, 0, -1, Attack Barb Camp, 100.0
+26, 0, -1, Barb Camp Tech Boost, 100.0
+26, 0, -1, Civilian Builder Capture, 0.0
+26, 0, -1, Settle New City, 125.0
+26, 0, -1, Naval Superiority, 100.0
+26, 0, -1, CITY VALUES, 67.8, LOC_CITY_NAME_BOLOGNA
+26, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_ISTANBUL
+26, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBUMBI
+26, 0, -1, CITY VALUES, 117.0, LOC_CITY_NAME_CAHOKIA
+26, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBANZA_NSUNDI
+26, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KWILA
+26, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBAMBA
+26, 0, 12, MINOR CIV LEVY, 139.8, 419.1
+26, 0, 20, MINOR CIV LEVY, 139.8, 419.1
+26, 1, -1, Settle New City, 91.0
+26, 1, -1, Attack Barb Camp, 50.0
+26, 1, -1, Barb Camp Tech Boost, 50.0
+26, 1, -1, Civilian Builder Capture, 0.0
+26, 1, -1, Settle New City, 91.0
+26, 1, -1, Naval Superiority, 100.0
+26, 1, -1, CITY VALUES, 481.3, LOC_CITY_NAME_MBANZA_KONGO
+26, 1, -1, CITY VALUES, 570.5, LOC_CITY_NAME_KINCHASSA
+26, 1, -1, CITY VALUES, 436.8, LOC_CITY_NAME_SANGA
+26, 1, -1, CITY VALUES, 179.0, LOC_CITY_NAME_BOLOGNA
+26, 2, -1, Settle New City, 104.0
+26, 2, -1, Attack Barb Camp, 50.0
+26, 2, -1, Barb Camp Tech Boost, 50.0
+26, 2, -1, Civilian Builder Capture, 0.0
+26, 2, -1, Settle New City, 104.0
+26, 2, -1, Naval Superiority, 100.0
+26, 2, -1, CITY VALUES, 620.2, LOC_CITY_NAME_BOLOGNA
+26, 2, -1, CITY VALUES, 641.9, LOC_CITY_NAME_VALLETTA
+26, 2, -1, CITY VALUES, 728.2, LOC_CITY_NAME_MBWILA
+26, 2, -1, CITY VALUES, 386.5, LOC_CITY_NAME_SANGA
+26, 3, -1, Settle New City, 106.0
+26, 3, 17, Attack Walled City, 367.3
+26, 3, -1, Civilian Builder Capture, 0.0
+26, 3, -1, Settle New City, 106.0
+26, 3, -1, Naval Superiority, 100.0
+26, 3, -1, CITY VALUES, 329.6, LOC_CITY_NAME_LA_VENTA
+26, 3, -1, CITY VALUES, 126.9, LOC_CITY_NAME_LISBON
+26, 3, -1, CITY VALUES, 255.7, LOC_CITY_NAME_GENEVA
+26, 4, -1, Settle New City, 72.0
+26, 4, -1, Attack Barb Camp, 50.0
+26, 4, -1, Barb Camp Tech Boost, 50.0
+26, 4, -1, Civilian Builder Capture, 0.0
+26, 4, -1, Settle New City, 72.0
+26, 4, -1, Naval Superiority, 100.0
+26, 4, -1, CITY VALUES, 269.7, LOC_CITY_NAME_VALLETTA
+26, 5, -1, Civilian Builder Capture, 0.0
+26, 5, -1, Settle New City, 94.0
+26, 5, -1, CITY VALUES, 391.5, LOC_CITY_NAME_LA_VENTA
+26, 6, -1, Attack Barb Camp, 50.0
+26, 6, -1, Barb Camp Tech Boost, 50.0
+26, 6, -1, Civilian Builder Capture, 0.0
+26, 6, -1, Settle New City, 102.0
+26, 6, -1, Naval Superiority, 100.0
+26, 6, -1, CITY VALUES, 164.4, LOC_CITY_NAME_MEXICO_CITY
+26, 7, -1, Settle New City, 53.0
+26, 7, -1, Civilian Builder Capture, 0.0
+26, 7, -1, Settle New City, 118.0
+26, 7, -1, Naval Superiority, 100.0
+26, 7, -1, CITY VALUES, 576.3, LOC_CITY_NAME_VILNIUS
+26, 8, -1, Settle New City, 146.0
+26, 8, 16, Attack Walled City, 310.5
+26, 8, 18, Attack Walled City, 329.9
+26, 8, 25, Attack Walled City, 265.8
+26, 8, -1, Civilian Builder Capture, 0.0
+26, 8, -1, Settle New City, 146.0
+26, 8, -1, Naval Superiority, 100.0
+26, 8, -1, CITY VALUES, 274.5, LOC_CITY_NAME_BABYLON
+26, 8, -1, CITY VALUES, 339.4, LOC_CITY_NAME_KABUL
+26, 8, -1, CITY VALUES, 388.7, LOC_CITY_NAME_ANTIOCH
+26, 8, -1, CITY VALUES, 265.8, LOC_CITY_NAME_ZANZIBAR
+26, 9, -1, Settle New City, 34.0
+26, 9, -1, Attack Barb Camp, 50.0
+26, 9, -1, Barb Camp Tech Boost, 50.0
+26, 9, -1, Civilian Builder Capture, 0.0
+26, 9, -1, Settle New City, 66.0
+26, 9, -1, Naval Superiority, 100.0
+26, 9, -1, CITY VALUES, 424.2, LOC_CITY_NAME_GRANADA
+26, 9, -1, CITY VALUES, 323.1, LOC_CITY_NAME_MOHENJO_DARO
+26, 9, -1, CITY VALUES, 410.0, LOC_CITY_NAME_BRUSSELS
+26, 9, -1, CITY VALUES, 419.4, LOC_CITY_NAME_NGAZARGAMU
+26, 10, -1, Attack Barb Camp, 50.0
+26, 10, -1, Barb Camp Tech Boost, 50.0
+26, 10, -1, Civilian Builder Capture, 0.0
+26, 10, -1, Naval Superiority, 100.0
+26, 10, -1, CITY VALUES, 353.3, LOC_CITY_NAME_FRANKFURT
+26, 11, -1, Civilian Builder Capture, 0.0
+26, 11, -1, Settle New City, 30.0
+26, 11, -1, Naval Superiority, 100.0
+26, 12, -1, Civilian Builder Capture, 0.0
+26, 12, -1, CITY VALUES, 211.1, LOC_CITY_NAME_MBANZA_KONGO
+26, 12, -1, CITY VALUES, 442.6, LOC_CITY_NAME_MBWILA
+26, 12, -1, CITY VALUES, 497.0, LOC_CITY_NAME_MBANZA_MBATA
+26, 12, -1, CITY VALUES, 175.8, LOC_CITY_NAME_ISTANBUL
+26, 13, -1, Civilian Builder Capture, 0.0
+26, 13, -1, Settle New City, 30.0
+26, 13, -1, Naval Superiority, 100.0
+26, 14, -1, Civilian Builder Capture, 0.0
+26, 14, -1, Naval Superiority, 100.0
+26, 15, -1, Attack Barb Camp, 100.0
+26, 15, -1, Attack Barb Camp, 100.0
+26, 15, -1, Barb Camp Tech Boost, 100.0
+26, 15, -1, Civilian Builder Capture, 0.0
+26, 15, -1, Naval Superiority, 100.0
+26, 15, -1, CITY VALUES, 0.0, LOC_CITY_NAME_HALEP
+26, 15, -1, CITY VALUES, 171.2, LOC_CITY_NAME_ISTANBUL
+26, 16, -1, City Defense, 0.0
+26, 16, -1, Civilian Builder Capture, 0.0
+26, 16, -1, City Defense, 0.0
+26, 16, -1, CITY VALUES, 0.0, LOC_CITY_NAME_ROME
+26, 16, -1, CITY VALUES, 380.0, LOC_CITY_NAME_ANTIOCH
+26, 17, -1, Attack Barb Camp, 50.0
+26, 17, -1, Barb Camp Tech Boost, 50.0
+26, 17, -1, Civilian Builder Capture, 0.0
+26, 17, -1, Naval Superiority, 100.0
+26, 18, -1, Civilian Builder Capture, 0.0
+26, 18, -1, Naval Superiority, 100.0
+26, 19, -1, Attack Barb Camp, 100.0
+26, 19, -1, Attack Barb Camp, 100.0
+26, 19, -1, Barb Camp Tech Boost, 100.0
+26, 19, -1, Civilian Builder Capture, 0.0
+26, 19, -1, Naval Superiority, 100.0
+26, 19, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KERMA
+26, 19, -1, CITY VALUES, 80.6, LOC_CITY_NAME_KAWA
+26, 20, -1, Civilian Builder Capture, 0.0
+26, 20, -1, Settle New City, 38.0
+26, 20, -1, Naval Superiority, 100.0
+26, 21, -1, Civilian Builder Capture, 0.0
+26, 21, -1, Settle New City, 38.0
+26, 21, -1, Naval Superiority, 100.0
+26, 22, -1, Civilian Builder Capture, 0.0
+26, 22, -1, Naval Superiority, 100.0
+26, 23, -1, Attack Barb Camp, 50.0
+26, 23, -1, Barb Camp Tech Boost, 50.0
+26, 23, -1, Civilian Builder Capture, 0.0
+26, 23, -1, Naval Superiority, 100.0
+26, 23, -1, CITY VALUES, 180.5, LOC_CITY_NAME_BAD_TIBIRA
+26, 23, -1, CITY VALUES, 296.2, LOC_CITY_NAME_BRUSSELS
+26, 24, -1, Civilian Builder Capture, 0.0
+26, 24, -1, Settle New City, 30.0
+26, 24, -1, CITY VALUES, 0.0, LOC_CITY_NAME_OSTIA
+26, 25, -1, City Defense, 0.0
+26, 25, -1, Civilian Builder Capture, 0.0
+26, 25, -1, City Defense, 0.0
+26, 25, -1, Naval Superiority, 100.0
+26, 26, -1, Civilian Builder Capture, 0.0
+26, 26, -1, Naval Superiority, 100.0
+26, 26, -1, CITY VALUES, 337.2, LOC_CITY_NAME_HONG_KONG
+26, 26, -1, CITY VALUES, 129.9, LOC_CITY_NAME_BAD_TIBIRA
+26, 27, -1, City Defense, 0.0
+26, 27, -1, Civilian Builder Capture, 0.0
+26, 27, -1, Settle New City, 32.0
+26, 27, -1, City Defense, 0.0
+26, 27, -1, Naval Superiority, 100.0
+26, 27, -1, CITY VALUES, 245.9, LOC_CITY_NAME_KAWA
+26, 28, -1, Civilian Builder Capture, 0.0
+26, 28, -1, Settle New City, 30.0
+26, 28, -1, Naval Superiority, 100.0
+26, 29, -1, Attack Barb Camp, 50.0
+26, 29, -1, Barb Camp Tech Boost, 50.0
+26, 29, -1, Civilian Builder Capture, 0.0
+26, 29, -1, Naval Superiority, 100.0
+26, 30, -1, Civilian Builder Capture, 0.0
+26, 30, -1, Naval Superiority, 100.0
+26, 30, -1, CITY VALUES, 303.2, LOC_CITY_NAME_MOHENJO_DARO
+26, 31, -1, Civilian Builder Capture, 0.0
+26, 31, -1, CITY VALUES, 282.0, LOC_CITY_NAME_GRANADA
+26, 63, -1, Barbarian Builder Capture, 800.0
+26, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_ULM
+26, 63, -1, CITY VALUES, 791.0, LOC_CITY_NAME_MEXICO_CITY
+26, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_HEIDELBERG
+26, 63, -1, CITY VALUES, 777.0, LOC_CITY_NAME_BABYLON
+26, 63, -1, CITY VALUES, 1001.0, LOC_CITY_NAME_MEROE
+26, 63, -1, CITY VALUES, 784.0, LOC_CITY_NAME_NAN_MADOL
+26, 63, -1, CITY VALUES, 770.0, LOC_CITY_NAME_ZANZIBAR
+26, 63, -1, CITY VALUES, 661.0, LOC_CITY_NAME_HALEP
+26, 63, -1, CITY VALUES, 1116.0, LOC_CITY_NAME_URUK
+26, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KWILA
+26, 63, -1, CITY VALUES, 383.0, LOC_CITY_NAME_BAD_TIBIRA
+26, 63, -1, CITY VALUES, 931.0, LOC_CITY_NAME_ANGKOR_THOM
+26, 63, -1, CITY VALUES, 763.0, LOC_CITY_NAME_NGAZARGAMU
+26, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBAMBA
+26, 63, -1, CITY VALUES, 2.0, LOC_CITY_NAME_QARAQOTO
+26, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_FRANKFURT
+26, 63, -1, CITY VALUES, 690.0, LOC_CITY_NAME_VALLETTA
+26, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MPINDA
+27, 0, -1, Attack Barb Camp, 100.0
+27, 0, -1, Barb Camp Tech Boost, 100.0
+27, 0, -1, Civilian Builder Capture, 0.0
+27, 0, -1, Settle New City, 127.0
+27, 0, -1, Naval Superiority, 100.0
+27, 0, -1, CITY VALUES, 286.0, LOC_CITY_NAME_BOLOGNA
+27, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_ISTANBUL
+27, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBUMBI
+27, 0, -1, CITY VALUES, 319.3, LOC_CITY_NAME_CAHOKIA
+27, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBANZA_NSUNDI
+27, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KWILA
+27, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBAMBA
+27, 0, 12, MINOR CIV LEVY, 139.8, 433.5
+27, 0, 20, MINOR CIV LEVY, 139.8, 433.5
+27, 1, -1, Settle New City, 99.0
+27, 1, -1, Attack Barb Camp, 50.0
+27, 1, -1, Barb Camp Tech Boost, 50.0
+27, 1, -1, Civilian Builder Capture, 0.0
+27, 1, -1, Settle New City, 102.0
+27, 1, -1, Naval Superiority, 100.0
+27, 1, -1, CITY VALUES, 467.1, LOC_CITY_NAME_MBANZA_KONGO
+27, 1, -1, CITY VALUES, 528.6, LOC_CITY_NAME_KINCHASSA
+27, 1, -1, CITY VALUES, 447.3, LOC_CITY_NAME_SANGA
+27, 1, -1, CITY VALUES, 164.8, LOC_CITY_NAME_BOLOGNA
+27, 2, -1, Settle New City, 104.0
+27, 2, -1, Naval Superiority, 100.0
+27, 2, -1, Attack Barb Camp, 50.0
+27, 2, -1, Barb Camp Tech Boost, 50.0
+27, 2, -1, Civilian Builder Capture, 0.0
+27, 2, -1, Settle New City, 104.0
+27, 2, -1, Naval Superiority, 100.0
+27, 2, -1, CITY VALUES, 620.5, LOC_CITY_NAME_BOLOGNA
+27, 2, -1, CITY VALUES, 646.9, LOC_CITY_NAME_VALLETTA
+27, 2, -1, CITY VALUES, 728.8, LOC_CITY_NAME_MBWILA
+27, 2, -1, CITY VALUES, 394.3, LOC_CITY_NAME_SANGA
+27, 3, -1, Settle New City, 106.0
+27, 3, -1, Civilian Builder Capture, 0.0
+27, 3, -1, Settle New City, 106.0
+27, 3, -1, Naval Superiority, 100.0
+27, 3, -1, CITY VALUES, 329.6, LOC_CITY_NAME_LA_VENTA
+27, 3, -1, CITY VALUES, 142.2, LOC_CITY_NAME_LISBON
+27, 3, -1, CITY VALUES, 191.7, LOC_CITY_NAME_GENEVA
+27, 4, -1, Settle New City, 72.0
+27, 4, -1, Attack Barb Camp, 50.0
+27, 4, -1, Barb Camp Tech Boost, 50.0
+27, 4, -1, Civilian Builder Capture, 0.0
+27, 4, -1, Settle New City, 72.0
+27, 4, -1, Naval Superiority, 100.0
+27, 4, -1, CITY VALUES, 376.1, LOC_CITY_NAME_VALLETTA
+27, 5, -1, Settle New City, 78.0
+27, 5, -1, Civilian Builder Capture, 0.0
+27, 5, -1, Settle New City, 94.0
+27, 5, -1, CITY VALUES, 391.5, LOC_CITY_NAME_LA_VENTA
+27, 6, -1, Attack Barb Camp, 50.0
+27, 6, -1, Barb Camp Tech Boost, 50.0
+27, 6, -1, Civilian Builder Capture, 0.0
+27, 6, -1, Settle New City, 102.0
+27, 6, -1, Naval Superiority, 100.0
+27, 6, -1, CITY VALUES, 156.9, LOC_CITY_NAME_MEXICO_CITY
+27, 7, -1, Settle New City, 53.0
+27, 7, -1, Civilian Builder Capture, 0.0
+27, 7, -1, Settle New City, 118.0
+27, 7, -1, Naval Superiority, 100.0
+27, 7, -1, CITY VALUES, 461.4, LOC_CITY_NAME_VILNIUS
+27, 8, -1, Settle New City, 149.0
+27, 8, 16, Attack Walled City, 274.5
+27, 8, 18, Attack Walled City, 378.3
+27, 8, 25, Attack Walled City, 265.8
+27, 8, -1, Civilian Builder Capture, 0.0
+27, 8, -1, Settle New City, 149.0
+27, 8, -1, Naval Superiority, 100.0
+27, 8, -1, CITY VALUES, 223.0, LOC_CITY_NAME_BABYLON
+27, 8, -1, CITY VALUES, 303.5, LOC_CITY_NAME_KABUL
+27, 8, -1, CITY VALUES, 378.3, LOC_CITY_NAME_ANTIOCH
+27, 8, -1, CITY VALUES, 265.8, LOC_CITY_NAME_ZANZIBAR
+27, 9, -1, Settle New City, 34.0
+27, 9, -1, Civilian Builder Capture, 0.0
+27, 9, -1, Settle New City, 66.0
+27, 9, -1, Naval Superiority, 100.0
+27, 9, -1, CITY VALUES, 465.5, LOC_CITY_NAME_GRANADA
+27, 9, -1, CITY VALUES, 323.1, LOC_CITY_NAME_MOHENJO_DARO
+27, 9, -1, CITY VALUES, 410.0, LOC_CITY_NAME_BRUSSELS
+27, 9, -1, CITY VALUES, 419.4, LOC_CITY_NAME_NGAZARGAMU
+27, 10, -1, Attack Barb Camp, 50.0
+27, 10, -1, Barb Camp Tech Boost, 50.0
+27, 10, -1, Civilian Builder Capture, 0.0
+27, 10, -1, Naval Superiority, 100.0
+27, 10, -1, CITY VALUES, 344.0, LOC_CITY_NAME_FRANKFURT
+27, 11, -1, Civilian Builder Capture, 0.0
+27, 11, -1, Settle New City, 30.0
+27, 11, -1, Naval Superiority, 100.0
+27, 12, -1, Civilian Builder Capture, 0.0
+27, 12, -1, CITY VALUES, 211.1, LOC_CITY_NAME_MBANZA_KONGO
+27, 12, -1, CITY VALUES, 442.6, LOC_CITY_NAME_MBWILA
+27, 12, -1, CITY VALUES, 497.0, LOC_CITY_NAME_MBANZA_MBATA
+27, 12, -1, CITY VALUES, 128.0, LOC_CITY_NAME_ISTANBUL
+27, 12, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KINCHASSA
+27, 13, -1, Civilian Builder Capture, 0.0
+27, 13, -1, Settle New City, 30.0
+27, 13, -1, Naval Superiority, 100.0
+27, 14, -1, Civilian Builder Capture, 0.0
+27, 14, -1, Naval Superiority, 100.0
+27, 15, -1, Attack Barb Camp, 100.0
+27, 15, -1, Attack Barb Camp, 100.0
+27, 15, -1, Barb Camp Tech Boost, 100.0
+27, 15, -1, Civilian Builder Capture, 0.0
+27, 15, -1, Naval Superiority, 100.0
+27, 15, -1, CITY VALUES, 59.7, LOC_CITY_NAME_HALEP
+27, 15, -1, CITY VALUES, 434.4, LOC_CITY_NAME_ISTANBUL
+27, 16, -1, City Defense, 0.0
+27, 16, -1, Civilian Builder Capture, 0.0
+27, 16, -1, City Defense, 0.0
+27, 16, -1, CITY VALUES, 0.0, LOC_CITY_NAME_ROME
+27, 16, -1, CITY VALUES, 372.2, LOC_CITY_NAME_ANTIOCH
+27, 17, -1, Attack Barb Camp, 50.0
+27, 17, -1, Barb Camp Tech Boost, 50.0
+27, 17, -1, Civilian Builder Capture, 0.0
+27, 17, -1, Naval Superiority, 100.0
+27, 18, -1, Civilian Builder Capture, 0.0
+27, 18, -1, Naval Superiority, 100.0
+27, 19, -1, Attack Barb Camp, 100.0
+27, 19, -1, Attack Barb Camp, 100.0
+27, 19, -1, Barb Camp Tech Boost, 100.0
+27, 19, -1, Civilian Builder Capture, 0.0
+27, 19, -1, Naval Superiority, 100.0
+27, 19, -1, CITY VALUES, 100.3, LOC_CITY_NAME_KERMA
+27, 19, -1, CITY VALUES, 79.1, LOC_CITY_NAME_KAWA
+27, 20, -1, Civilian Builder Capture, 0.0
+27, 20, -1, Settle New City, 38.0
+27, 20, -1, Naval Superiority, 100.0
+27, 21, -1, Civilian Builder Capture, 0.0
+27, 21, -1, Settle New City, 38.0
+27, 21, -1, Naval Superiority, 100.0
+27, 22, -1, Civilian Builder Capture, 0.0
+27, 22, -1, Naval Superiority, 100.0
+27, 23, -1, Civilian Builder Capture, 0.0
+27, 23, -1, Naval Superiority, 100.0
+27, 23, -1, CITY VALUES, 217.8, LOC_CITY_NAME_BAD_TIBIRA
+27, 23, -1, CITY VALUES, 360.3, LOC_CITY_NAME_BRUSSELS
+27, 24, -1, Civilian Builder Capture, 0.0
+27, 24, -1, Settle New City, 30.0
+27, 24, -1, CITY VALUES, 0.0, LOC_CITY_NAME_OSTIA
+27, 25, -1, City Defense, 0.0
+27, 25, -1, Civilian Builder Capture, 0.0
+27, 25, -1, City Defense, 0.0
+27, 25, -1, Naval Superiority, 100.0
+27, 26, -1, Civilian Builder Capture, 0.0
+27, 26, -1, Naval Superiority, 100.0
+27, 26, -1, CITY VALUES, 334.7, LOC_CITY_NAME_HONG_KONG
+27, 26, -1, CITY VALUES, 166.6, LOC_CITY_NAME_BAD_TIBIRA
+27, 27, -1, City Defense, 0.0
+27, 27, -1, Civilian Builder Capture, 0.0
+27, 27, -1, Settle New City, 32.0
+27, 27, -1, City Defense, 0.0
+27, 27, -1, Naval Superiority, 100.0
+27, 27, -1, CITY VALUES, 325.0, LOC_CITY_NAME_KAWA
+27, 28, -1, Civilian Builder Capture, 0.0
+27, 28, -1, Settle New City, 30.0
+27, 28, -1, Naval Superiority, 100.0
+27, 29, -1, Attack Barb Camp, 50.0
+27, 29, -1, Barb Camp Tech Boost, 50.0
+27, 29, -1, Civilian Builder Capture, 0.0
+27, 29, -1, Naval Superiority, 100.0
+27, 30, -1, Civilian Builder Capture, 0.0
+27, 30, -1, Naval Superiority, 100.0
+27, 30, -1, CITY VALUES, 303.2, LOC_CITY_NAME_MOHENJO_DARO
+27, 31, -1, Civilian Builder Capture, 0.0
+27, 31, -1, CITY VALUES, 197.2, LOC_CITY_NAME_GRANADA
+27, 63, -1, Barbarian Builder Capture, 800.0
+27, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_ULM
+27, 63, -1, CITY VALUES, 791.0, LOC_CITY_NAME_MEXICO_CITY
+27, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_HEIDELBERG
+27, 63, -1, CITY VALUES, 777.0, LOC_CITY_NAME_BABYLON
+27, 63, -1, CITY VALUES, 1001.0, LOC_CITY_NAME_MEROE
+27, 63, -1, CITY VALUES, 784.0, LOC_CITY_NAME_NAN_MADOL
+27, 63, -1, CITY VALUES, 791.0, LOC_CITY_NAME_ZANZIBAR
+27, 63, -1, CITY VALUES, 780.0, LOC_CITY_NAME_HALEP
+27, 63, -1, CITY VALUES, 1116.0, LOC_CITY_NAME_URUK
+27, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KWILA
+27, 63, -1, CITY VALUES, 585.0, LOC_CITY_NAME_BAD_TIBIRA
+27, 63, -1, CITY VALUES, 931.0, LOC_CITY_NAME_ANGKOR_THOM
+27, 63, -1, CITY VALUES, 763.0, LOC_CITY_NAME_NGAZARGAMU
+27, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBAMBA
+27, 63, -1, CITY VALUES, 2.0, LOC_CITY_NAME_QARAQOTO
+27, 63, -1, CITY VALUES, 224.0, LOC_CITY_NAME_FRANKFURT
+27, 63, -1, CITY VALUES, 680.0, LOC_CITY_NAME_VALLETTA
+27, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MPINDA
+28, 0, -1, Attack Barb Camp, 100.0
+28, 0, -1, Barb Camp Tech Boost, 100.0
+28, 0, -1, Civilian Builder Capture, 0.0
+28, 0, -1, Settle New City, 97.0
+28, 0, -1, Naval Superiority, 100.0
+28, 0, -1, CITY VALUES, 118.4, LOC_CITY_NAME_BOLOGNA
+28, 0, -1, CITY VALUES, 373.7, LOC_CITY_NAME_ISTANBUL
+28, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBUMBI
+28, 0, -1, CITY VALUES, 279.5, LOC_CITY_NAME_CAHOKIA
+28, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBANZA_NSUNDI
+28, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KWILA
+28, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBAMBA
+28, 0, 12, MINOR CIV LEVY, 167.8, 431.6
+28, 0, 20, MINOR CIV LEVY, 139.8, 359.7
+28, 1, -1, Settle New City, 99.0
+28, 1, -1, Attack Barb Camp, 50.0
+28, 1, -1, Barb Camp Tech Boost, 50.0
+28, 1, -1, Civilian Builder Capture, 0.0
+28, 1, -1, Settle New City, 99.0
+28, 1, -1, Naval Superiority, 100.0
+28, 1, -1, CITY VALUES, 358.8, LOC_CITY_NAME_MBANZA_KONGO
+28, 1, -1, CITY VALUES, 431.2, LOC_CITY_NAME_KINCHASSA
+28, 1, -1, CITY VALUES, 427.7, LOC_CITY_NAME_SANGA
+28, 1, -1, CITY VALUES, 39.6, LOC_CITY_NAME_BOLOGNA
+28, 1, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBANZA_MPANGU
+28, 2, -1, Settle New City, 104.0
+28, 2, -1, Naval Superiority, 100.0
+28, 2, 12, Attack Walled City, 600.5
+28, 2, 15, Attack Walled City, 650.9
+28, 2, -1, Attack Barb Camp, 50.0
+28, 2, -1, Barb Camp Tech Boost, 50.0
+28, 2, -1, Civilian Builder Capture, 0.0
+28, 2, -1, Settle New City, 104.0
+28, 2, -1, Naval Superiority, 100.0
+28, 2, -1, CITY VALUES, 470.3, LOC_CITY_NAME_BOLOGNA
+28, 2, -1, CITY VALUES, 650.3, LOC_CITY_NAME_VALLETTA
+28, 2, -1, CITY VALUES, 778.1, LOC_CITY_NAME_MBWILA
+28, 2, -1, CITY VALUES, 290.3, LOC_CITY_NAME_SANGA
+28, 3, -1, Settle New City, 114.0
+28, 3, -1, Civilian Builder Capture, 0.0
+28, 3, -1, Settle New City, 114.0
+28, 3, -1, Naval Superiority, 100.0
+28, 3, -1, CITY VALUES, 393.1, LOC_CITY_NAME_LA_VENTA
+28, 3, -1, CITY VALUES, 206.0, LOC_CITY_NAME_LISBON
+28, 3, -1, CITY VALUES, 376.4, LOC_CITY_NAME_GENEVA
+28, 4, -1, Settle New City, 72.0
+28, 4, -1, Attack Barb Camp, 50.0
+28, 4, -1, Barb Camp Tech Boost, 50.0
+28, 4, -1, Civilian Builder Capture, 0.0
+28, 4, -1, Settle New City, 72.0
+28, 4, -1, Naval Superiority, 100.0
+28, 4, -1, CITY VALUES, 376.1, LOC_CITY_NAME_VALLETTA
+28, 5, -1, Civilian Builder Capture, 0.0
+28, 5, -1, Settle New City, 94.0
+28, 5, -1, CITY VALUES, 421.2, LOC_CITY_NAME_LA_VENTA
+28, 6, -1, Attack Barb Camp, 50.0
+28, 6, -1, Barb Camp Tech Boost, 50.0
+28, 6, -1, Civilian Builder Capture, 0.0
+28, 6, -1, Settle New City, 102.0
+28, 6, -1, Naval Superiority, 100.0
+28, 6, -1, CITY VALUES, 150.9, LOC_CITY_NAME_MEXICO_CITY
+28, 7, -1, Settle New City, 53.0
+28, 7, -1, Civilian Builder Capture, 0.0
+28, 7, -1, Settle New City, 118.0
+28, 7, -1, Naval Superiority, 100.0
+28, 7, -1, CITY VALUES, 488.3, LOC_CITY_NAME_VILNIUS
+28, 8, -1, Settle New City, 150.0
+28, 8, 16, Attack Walled City, 280.2
+28, 8, 18, Attack Walled City, 315.2
+28, 8, 25, Attack Walled City, 214.2
+28, 8, -1, Civilian Builder Capture, 0.0
+28, 8, -1, Settle New City, 150.0
+28, 8, -1, Naval Superiority, 100.0
+28, 8, -1, CITY VALUES, 277.4, LOC_CITY_NAME_BABYLON
+28, 8, -1, CITY VALUES, 339.4, LOC_CITY_NAME_KABUL
+28, 8, -1, CITY VALUES, 459.3, LOC_CITY_NAME_ANTIOCH
+28, 8, -1, CITY VALUES, 235.5, LOC_CITY_NAME_ZANZIBAR
+28, 9, -1, Settle New City, 34.0
+28, 9, -1, Civilian Builder Capture, 0.0
+28, 9, -1, Settle New City, 70.0
+28, 9, -1, Naval Superiority, 100.0
+28, 9, -1, CITY VALUES, 426.7, LOC_CITY_NAME_GRANADA
+28, 9, -1, CITY VALUES, 376.6, LOC_CITY_NAME_MOHENJO_DARO
+28, 9, -1, CITY VALUES, 356.9, LOC_CITY_NAME_BRUSSELS
+28, 9, -1, CITY VALUES, 424.4, LOC_CITY_NAME_NGAZARGAMU
+28, 10, -1, Attack Barb Camp, 50.0
+28, 10, -1, Barb Camp Tech Boost, 50.0
+28, 10, -1, Civilian Builder Capture, 0.0
+28, 10, -1, Naval Superiority, 100.0
+28, 10, -1, CITY VALUES, 344.0, LOC_CITY_NAME_FRANKFURT
+28, 11, -1, Civilian Builder Capture, 0.0
+28, 11, -1, Settle New City, 30.0
+28, 11, -1, Naval Superiority, 100.0
+28, 12, -1, City Defense, 0.0
+28, 12, -1, Civilian Builder Capture, 0.0
+28, 12, -1, City Defense, 0.0
+28, 12, -1, CITY VALUES, 204.1, LOC_CITY_NAME_MBANZA_KONGO
+28, 12, -1, CITY VALUES, 481.8, LOC_CITY_NAME_MBWILA
+28, 12, -1, CITY VALUES, 465.5, LOC_CITY_NAME_MBANZA_MBATA
+28, 12, -1, CITY VALUES, 217.7, LOC_CITY_NAME_ISTANBUL
+28, 12, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KINCHASSA
+28, 13, -1, Civilian Builder Capture, 0.0
+28, 13, -1, Settle New City, 30.0
+28, 13, -1, Naval Superiority, 100.0
+28, 14, -1, Civilian Builder Capture, 0.0
+28, 14, -1, Naval Superiority, 100.0
+28, 15, -1, Attack Barb Camp, 100.0
+28, 15, -1, Attack Barb Camp, 100.0
+28, 15, -1, Barb Camp Tech Boost, 100.0
+28, 15, -1, Civilian Builder Capture, 0.0
+28, 15, -1, Naval Superiority, 100.0
+28, 15, -1, CITY VALUES, 0.0, LOC_CITY_NAME_HALEP
+28, 15, -1, CITY VALUES, 211.0, LOC_CITY_NAME_ISTANBUL
+28, 16, -1, City Defense, 0.0
+28, 16, -1, Civilian Builder Capture, 0.0
+28, 16, -1, City Defense, 0.0
+28, 16, -1, CITY VALUES, 0.0, LOC_CITY_NAME_ROME
+28, 16, -1, CITY VALUES, 367.8, LOC_CITY_NAME_ANTIOCH
+28, 17, -1, Attack Barb Camp, 50.0
+28, 17, -1, Barb Camp Tech Boost, 50.0
+28, 17, -1, Civilian Builder Capture, 0.0
+28, 17, -1, Naval Superiority, 100.0
+28, 18, -1, Civilian Builder Capture, 0.0
+28, 18, -1, Naval Superiority, 100.0
+28, 19, -1, Attack Barb Camp, 100.0
+28, 19, -1, Attack Barb Camp, 100.0
+28, 19, -1, Barb Camp Tech Boost, 100.0
+28, 19, -1, Civilian Builder Capture, 0.0
+28, 19, -1, Naval Superiority, 100.0
+28, 19, -1, CITY VALUES, 99.0, LOC_CITY_NAME_KERMA
+28, 19, -1, CITY VALUES, 34.4, LOC_CITY_NAME_KAWA
+28, 20, -1, Civilian Builder Capture, 0.0
+28, 20, -1, Settle New City, 38.0
+28, 20, -1, Naval Superiority, 100.0
+28, 21, -1, Civilian Builder Capture, 0.0
+28, 21, -1, Settle New City, 38.0
+28, 21, -1, Naval Superiority, 100.0
+28, 22, -1, Civilian Builder Capture, 0.0
+28, 22, -1, Naval Superiority, 100.0
+28, 23, -1, Civilian Builder Capture, 0.0
+28, 23, -1, Naval Superiority, 100.0
+28, 23, -1, CITY VALUES, 217.8, LOC_CITY_NAME_BAD_TIBIRA
+28, 23, -1, CITY VALUES, 296.2, LOC_CITY_NAME_BRUSSELS
+28, 24, -1, Civilian Builder Capture, 0.0
+28, 24, -1, Settle New City, 30.0
+28, 24, -1, CITY VALUES, 0.0, LOC_CITY_NAME_OSTIA
+28, 25, -1, Civilian Builder Capture, 0.0
+28, 25, -1, Naval Superiority, 100.0
+28, 26, -1, Civilian Builder Capture, 0.0
+28, 26, -1, Naval Superiority, 100.0
+28, 26, -1, CITY VALUES, 269.4, LOC_CITY_NAME_HONG_KONG
+28, 26, -1, CITY VALUES, 166.6, LOC_CITY_NAME_BAD_TIBIRA
+28, 27, -1, Civilian Builder Capture, 0.0
+28, 27, -1, Settle New City, 32.0
+28, 27, -1, Naval Superiority, 100.0
+28, 27, -1, CITY VALUES, 281.0, LOC_CITY_NAME_KAWA
+28, 28, -1, Civilian Builder Capture, 0.0
+28, 28, -1, Settle New City, 30.0
+28, 28, -1, Naval Superiority, 100.0
+28, 29, -1, Attack Barb Camp, 50.0
+28, 29, -1, Barb Camp Tech Boost, 50.0
+28, 29, -1, Civilian Builder Capture, 0.0
+28, 29, -1, Naval Superiority, 100.0
+28, 30, -1, Civilian Builder Capture, 0.0
+28, 30, -1, Naval Superiority, 100.0
+28, 30, -1, CITY VALUES, 303.2, LOC_CITY_NAME_MOHENJO_DARO
+28, 31, -1, Civilian Builder Capture, 0.0
+28, 31, -1, CITY VALUES, 218.2, LOC_CITY_NAME_GRANADA
+28, 63, -1, Barbarian Builder Capture, 800.0
+28, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_ULM
+28, 63, -1, CITY VALUES, 848.0, LOC_CITY_NAME_MEXICO_CITY
+28, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_HEIDELBERG
+28, 63, -1, CITY VALUES, 777.0, LOC_CITY_NAME_BABYLON
+28, 63, -1, CITY VALUES, 1001.0, LOC_CITY_NAME_MEROE
+28, 63, -1, CITY VALUES, 841.0, LOC_CITY_NAME_NAN_MADOL
+28, 63, -1, CITY VALUES, 791.0, LOC_CITY_NAME_ZANZIBAR
+28, 63, -1, CITY VALUES, 780.0, LOC_CITY_NAME_HALEP
+28, 63, -1, CITY VALUES, 1172.0, LOC_CITY_NAME_URUK
+28, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KWILA
+28, 63, -1, CITY VALUES, 585.0, LOC_CITY_NAME_BAD_TIBIRA
+28, 63, -1, CITY VALUES, 931.0, LOC_CITY_NAME_ANGKOR_THOM
+28, 63, -1, CITY VALUES, 763.0, LOC_CITY_NAME_NGAZARGAMU
+28, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBAMBA
+28, 63, -1, CITY VALUES, 2.0, LOC_CITY_NAME_QARAQOTO
+28, 63, -1, CITY VALUES, 224.0, LOC_CITY_NAME_FRANKFURT
+28, 63, -1, CITY VALUES, 680.0, LOC_CITY_NAME_VALLETTA
+28, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MPINDA
+28, 63, -1, CITY VALUES, 805.0, LOC_CITY_NAME_CAHOKIA
+29, 0, -1, Attack Barb Camp, 100.0
+29, 0, -1, Barb Camp Tech Boost, 100.0
+29, 0, -1, Civilian Builder Capture, 0.0
+29, 0, -1, Settle New City, 97.0
+29, 0, -1, Naval Superiority, 100.0
+29, 0, -1, CITY VALUES, 168.4, LOC_CITY_NAME_BOLOGNA
+29, 0, -1, CITY VALUES, 415.6, LOC_CITY_NAME_ISTANBUL
+29, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBUMBI
+29, 0, -1, CITY VALUES, 347.6, LOC_CITY_NAME_CAHOKIA
+29, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBANZA_NSUNDI
+29, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KWILA
+29, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBAMBA
+29, 0, 12, MINOR CIV LEVY, 167.8, 456.4
+29, 0, 20, MINOR CIV LEVY, 139.8, 380.4
+29, 1, -1, Settle New City, 95.0
+29, 1, -1, Attack Barb Camp, 50.0
+29, 1, -1, Barb Camp Tech Boost, 50.0
+29, 1, -1, Civilian Builder Capture, 0.0
+29, 1, -1, Settle New City, 95.0
+29, 1, -1, Naval Superiority, 100.0
+29, 1, -1, CITY VALUES, 333.0, LOC_CITY_NAME_MBANZA_KONGO
+29, 1, -1, CITY VALUES, 434.6, LOC_CITY_NAME_KINCHASSA
+29, 1, -1, CITY VALUES, 391.4, LOC_CITY_NAME_SANGA
+29, 1, -1, CITY VALUES, 150.5, LOC_CITY_NAME_BOLOGNA
+29, 1, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBANZA_MPANGU
+29, 2, -1, Settle New City, 104.0
+29, 2, -1, Naval Superiority, 100.0
+29, 2, 12, Attack Walled City, 490.3
+29, 2, 15, Attack Walled City, 654.0
+29, 2, -1, Civilian Builder Capture, 0.0
+29, 2, -1, Settle New City, 104.0
+29, 2, -1, Naval Superiority, 100.0
+29, 2, -1, CITY VALUES, 540.5, LOC_CITY_NAME_BOLOGNA
+29, 2, -1, CITY VALUES, 654.2, LOC_CITY_NAME_VALLETTA
+29, 2, -1, CITY VALUES, 601.4, LOC_CITY_NAME_MBWILA
+29, 2, -1, CITY VALUES, 4.1, LOC_CITY_NAME_SANGA
+29, 2, -1, CITY VALUES, 854.1, LOC_CITY_NAME_ANGKOR_THOM
+29, 3, -1, Settle New City, 114.0
+29, 3, -1, Civilian Builder Capture, 0.0
+29, 3, -1, Settle New City, 114.0
+29, 3, -1, Naval Superiority, 100.0
+29, 3, -1, CITY VALUES, 393.1, LOC_CITY_NAME_LA_VENTA
+29, 3, -1, CITY VALUES, 270.0, LOC_CITY_NAME_LISBON
+29, 3, -1, CITY VALUES, 376.4, LOC_CITY_NAME_GENEVA
+29, 4, -1, Settle New City, 97.0
+29, 4, -1, Attack Barb Camp, 50.0
+29, 4, -1, Barb Camp Tech Boost, 50.0
+29, 4, -1, Civilian Builder Capture, 0.0
+29, 4, -1, Settle New City, 97.0
+29, 4, -1, Naval Superiority, 100.0
+29, 4, -1, CITY VALUES, 308.6, LOC_CITY_NAME_VALLETTA
+29, 5, -1, Settle New City, 68.0
+29, 5, -1, Civilian Builder Capture, 0.0
+29, 5, -1, Settle New City, 94.0
+29, 5, -1, CITY VALUES, 432.8, LOC_CITY_NAME_LA_VENTA
+29, 6, -1, Attack Barb Camp, 50.0
+29, 6, -1, Barb Camp Tech Boost, 50.0
+29, 6, -1, Civilian Builder Capture, 0.0
+29, 6, -1, Settle New City, 102.0
+29, 6, -1, Naval Superiority, 100.0
+29, 6, -1, CITY VALUES, 205.9, LOC_CITY_NAME_MEXICO_CITY
+29, 7, -1, Settle New City, 53.0
+29, 7, -1, Civilian Builder Capture, 0.0
+29, 7, -1, Settle New City, 125.0
+29, 7, -1, Naval Superiority, 100.0
+29, 7, -1, CITY VALUES, 518.7, LOC_CITY_NAME_VILNIUS
+29, 8, -1, Settle New City, 150.0
+29, 8, 16, Attack Walled City, 277.4
+29, 8, 18, Attack Walled City, 459.3
+29, 8, 25, Attack Walled City, 235.5
+29, 8, -1, Civilian Builder Capture, 0.0
+29, 8, -1, Settle New City, 150.0
+29, 8, -1, Naval Superiority, 100.0
+29, 8, -1, CITY VALUES, 274.5, LOC_CITY_NAME_BABYLON
+29, 8, -1, CITY VALUES, 303.5, LOC_CITY_NAME_KABUL
+29, 8, -1, CITY VALUES, 423.3, LOC_CITY_NAME_ANTIOCH
+29, 8, -1, CITY VALUES, 268.7, LOC_CITY_NAME_ZANZIBAR
+29, 9, -1, Settle New City, 34.0
+29, 9, -1, Civilian Builder Capture, 0.0
+29, 9, -1, Settle New City, 74.0
+29, 9, -1, Naval Superiority, 100.0
+29, 9, -1, CITY VALUES, 451.4, LOC_CITY_NAME_GRANADA
+29, 9, -1, CITY VALUES, 376.6, LOC_CITY_NAME_MOHENJO_DARO
+29, 9, -1, CITY VALUES, 253.1, LOC_CITY_NAME_BRUSSELS
+29, 9, -1, CITY VALUES, 436.3, LOC_CITY_NAME_NGAZARGAMU
+29, 10, -1, Attack Barb Camp, 50.0
+29, 10, -1, Barb Camp Tech Boost, 50.0
+29, 10, -1, Civilian Builder Capture, 0.0
+29, 10, -1, Naval Superiority, 100.0
+29, 10, -1, CITY VALUES, 356.8, LOC_CITY_NAME_FRANKFURT
+29, 11, -1, Civilian Builder Capture, 0.0
+29, 11, -1, Settle New City, 30.0
+29, 11, -1, Naval Superiority, 100.0
+29, 12, -1, City Defense, 0.0
+29, 12, -1, Civilian Builder Capture, 0.0
+29, 12, -1, City Defense, 0.0
+29, 12, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBANZA_KONGO
+29, 12, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBWILA
+29, 12, -1, CITY VALUES, 264.2, LOC_CITY_NAME_MBANZA_MBATA
+29, 12, -1, CITY VALUES, 279.4, LOC_CITY_NAME_ISTANBUL
+29, 12, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KINCHASSA
+29, 13, -1, Civilian Builder Capture, 0.0
+29, 13, -1, Settle New City, 30.0
+29, 13, -1, Naval Superiority, 100.0
+29, 14, -1, Civilian Builder Capture, 0.0
+29, 14, -1, Naval Superiority, 100.0
+29, 15, -1, Civilian Builder Capture, 0.0
+29, 15, -1, Naval Superiority, 100.0
+29, 15, -1, CITY VALUES, 0.0, LOC_CITY_NAME_HALEP
+29, 15, -1, CITY VALUES, 190.5, LOC_CITY_NAME_ISTANBUL
+29, 16, -1, City Defense, 0.0
+29, 16, -1, Civilian Builder Capture, 0.0
+29, 16, -1, City Defense, 0.0
+29, 16, -1, CITY VALUES, 0.0, LOC_CITY_NAME_ROME
+29, 16, -1, CITY VALUES, 324.8, LOC_CITY_NAME_ANTIOCH
+29, 17, -1, Attack Barb Camp, 50.0
+29, 17, -1, Barb Camp Tech Boost, 50.0
+29, 17, -1, Civilian Builder Capture, 0.0
+29, 17, -1, Naval Superiority, 100.0
+29, 18, -1, Civilian Builder Capture, 0.0
+29, 18, -1, Naval Superiority, 100.0
+29, 19, -1, Attack Barb Camp, 100.0
+29, 19, -1, Attack Barb Camp, 100.0
+29, 19, -1, Barb Camp Tech Boost, 100.0
+29, 19, -1, Civilian Builder Capture, 0.0
+29, 19, -1, Naval Superiority, 100.0
+29, 19, -1, CITY VALUES, 3.7, LOC_CITY_NAME_KERMA
+29, 19, -1, CITY VALUES, 98.5, LOC_CITY_NAME_KAWA
+29, 20, -1, Civilian Builder Capture, 0.0
+29, 20, -1, Settle New City, 38.0
+29, 20, -1, Naval Superiority, 100.0
+29, 21, -1, Civilian Builder Capture, 0.0
+29, 21, -1, Settle New City, 38.0
+29, 21, -1, Naval Superiority, 100.0
+29, 22, -1, Civilian Builder Capture, 0.0
+29, 22, -1, Naval Superiority, 100.0
+29, 23, -1, Civilian Builder Capture, 0.0
+29, 23, -1, Naval Superiority, 100.0
+29, 23, -1, CITY VALUES, 224.8, LOC_CITY_NAME_BAD_TIBIRA
+29, 23, -1, CITY VALUES, 296.2, LOC_CITY_NAME_BRUSSELS
+29, 24, -1, Civilian Builder Capture, 0.0
+29, 24, -1, Settle New City, 30.0
+29, 24, -1, CITY VALUES, 0.0, LOC_CITY_NAME_OSTIA
+29, 25, -1, Civilian Builder Capture, 0.0
+29, 25, -1, Naval Superiority, 100.0
+29, 26, -1, Attack Barb Camp, 50.0
+29, 26, -1, Barb Camp Tech Boost, 50.0
+29, 26, -1, Civilian Builder Capture, 0.0
+29, 26, -1, Naval Superiority, 100.0
+29, 26, -1, CITY VALUES, 269.4, LOC_CITY_NAME_HONG_KONG
+29, 26, -1, CITY VALUES, 173.6, LOC_CITY_NAME_BAD_TIBIRA
+29, 27, -1, Civilian Builder Capture, 0.0
+29, 27, -1, Settle New City, 32.0
+29, 27, -1, Naval Superiority, 100.0
+29, 27, -1, CITY VALUES, 281.0, LOC_CITY_NAME_KAWA
+29, 28, -1, Civilian Builder Capture, 0.0
+29, 28, -1, Settle New City, 30.0
+29, 28, -1, Naval Superiority, 100.0
+29, 29, -1, Civilian Builder Capture, 0.0
+29, 29, -1, Naval Superiority, 100.0
+29, 30, -1, Civilian Builder Capture, 0.0
+29, 30, -1, Naval Superiority, 100.0
+29, 30, -1, CITY VALUES, 317.2, LOC_CITY_NAME_MOHENJO_DARO
+29, 31, -1, Civilian Builder Capture, 0.0
+29, 31, -1, CITY VALUES, 339.0, LOC_CITY_NAME_GRANADA
+29, 63, -1, Barbarian Builder Capture, 750.0
+29, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_ULM
+29, 63, -1, CITY VALUES, 848.0, LOC_CITY_NAME_MEXICO_CITY
+29, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_HEIDELBERG
+29, 63, -1, CITY VALUES, 777.0, LOC_CITY_NAME_BABYLON
+29, 63, -1, CITY VALUES, 1001.0, LOC_CITY_NAME_MEROE
+29, 63, -1, CITY VALUES, 841.0, LOC_CITY_NAME_NAN_MADOL
+29, 63, -1, CITY VALUES, 791.0, LOC_CITY_NAME_ZANZIBAR
+29, 63, -1, CITY VALUES, 780.0, LOC_CITY_NAME_HALEP
+29, 63, -1, CITY VALUES, 1221.0, LOC_CITY_NAME_URUK
+29, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KWILA
+29, 63, -1, CITY VALUES, 452.0, LOC_CITY_NAME_BAD_TIBIRA
+29, 63, -1, CITY VALUES, 931.0, LOC_CITY_NAME_ANGKOR_THOM
+29, 63, -1, CITY VALUES, 743.0, LOC_CITY_NAME_NGAZARGAMU
+29, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBAMBA
+29, 63, -1, CITY VALUES, 504.0, LOC_CITY_NAME_QARAQOTO
+29, 63, -1, CITY VALUES, 224.0, LOC_CITY_NAME_FRANKFURT
+29, 63, -1, CITY VALUES, 680.0, LOC_CITY_NAME_VALLETTA
+29, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MPINDA
+29, 63, -1, CITY VALUES, 805.0, LOC_CITY_NAME_CAHOKIA
+29, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBANZA_MBATA
+30, 0, -1, Attack Barb Camp, 100.0
+30, 0, -1, Barb Camp Tech Boost, 100.0
+30, 0, -1, Civilian Builder Capture, 0.0
+30, 0, -1, Settle New City, 97.0
+30, 0, -1, Naval Superiority, 100.0
+30, 0, -1, CITY VALUES, 255.9, LOC_CITY_NAME_BOLOGNA
+30, 0, -1, CITY VALUES, 509.1, LOC_CITY_NAME_ISTANBUL
+30, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBUMBI
+30, 0, -1, CITY VALUES, 364.8, LOC_CITY_NAME_CAHOKIA
+30, 0, -1, CITY VALUES, 250.8, LOC_CITY_NAME_MBANZA_NSUNDI
+30, 0, -1, CITY VALUES, 0.3, LOC_CITY_NAME_KWILA
+30, 0, -1, CITY VALUES, 238.8, LOC_CITY_NAME_MBAMBA
+30, 0, 12, MINOR CIV LEVY, 167.8, 471.8
+30, 0, 20, MINOR CIV LEVY, 139.8, 393.1
+30, 1, -1, Settle New City, 88.0
+30, 1, -1, Attack Barb Camp, 50.0
+30, 1, -1, Barb Camp Tech Boost, 50.0
+30, 1, -1, Civilian Builder Capture, 0.0
+30, 1, -1, Settle New City, 88.0
+30, 1, -1, Naval Superiority, 100.0
+30, 1, -1, CITY VALUES, 163.4, LOC_CITY_NAME_MBANZA_KONGO
+30, 1, -1, CITY VALUES, 344.8, LOC_CITY_NAME_KINCHASSA
+30, 1, -1, CITY VALUES, 386.7, LOC_CITY_NAME_SANGA
+30, 1, -1, CITY VALUES, 146.2, LOC_CITY_NAME_BOLOGNA
+30, 1, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBANZA_MPANGU
+30, 2, -1, Settle New City, 104.0
+30, 2, -1, Naval Superiority, 100.0
+30, 2, 0, Attack Walled City, 458.2
+30, 2, 12, Attack Walled City, 540.5
+30, 2, 15, Attack Walled City, 648.1
+30, 2, -1, Civilian Builder Capture, 0.0
+30, 2, -1, Settle New City, 104.0
+30, 2, -1, Naval Superiority, 100.0
+30, 2, -1, CITY VALUES, 549.3, LOC_CITY_NAME_BOLOGNA
+30, 2, -1, CITY VALUES, 648.1, LOC_CITY_NAME_VALLETTA
+30, 2, -1, CITY VALUES, 432.3, LOC_CITY_NAME_MBWILA
+30, 2, -1, CITY VALUES, 39.3, LOC_CITY_NAME_SANGA
+30, 2, -1, CITY VALUES, 681.7, LOC_CITY_NAME_ANGKOR_THOM
+30, 3, -1, Settle New City, 128.0
+30, 3, -1, Civilian Builder Capture, 0.0
+30, 3, -1, Settle New City, 128.0
+30, 3, -1, Naval Superiority, 100.0
+30, 3, -1, CITY VALUES, 437.8, LOC_CITY_NAME_LA_VENTA
+30, 3, -1, CITY VALUES, 267.5, LOC_CITY_NAME_LISBON
+30, 3, -1, CITY VALUES, 285.0, LOC_CITY_NAME_GENEVA
+30, 3, -1, CITY VALUES, 377.9, LOC_CITY_NAME_NGAZARGAMU
+30, 4, -1, Settle New City, 97.0
+30, 4, -1, Civilian Builder Capture, 0.0
+30, 4, -1, Settle New City, 97.0
+30, 4, -1, Naval Superiority, 100.0
+30, 4, -1, CITY VALUES, 376.1, LOC_CITY_NAME_VALLETTA
+30, 5, -1, Civilian Builder Capture, 0.0
+30, 5, -1, Settle New City, 94.0
+30, 5, -1, CITY VALUES, 428.0, LOC_CITY_NAME_LA_VENTA
+30, 6, -1, Attack Barb Camp, 50.0
+30, 6, -1, Barb Camp Tech Boost, 50.0
+30, 6, -1, Civilian Builder Capture, 0.0
+30, 6, -1, Settle New City, 102.0
+30, 6, -1, Naval Superiority, 100.0
+30, 6, -1, CITY VALUES, 205.9, LOC_CITY_NAME_MEXICO_CITY
+30, 7, -1, Settle New City, 53.0
+30, 7, -1, Civilian Builder Capture, 0.0
+30, 7, -1, Settle New City, 125.0
+30, 7, -1, Naval Superiority, 100.0
+30, 7, -1, CITY VALUES, 450.8, LOC_CITY_NAME_VILNIUS
+30, 8, -1, Settle New City, 150.0
+30, 8, 16, Attack Walled City, 274.5
+30, 8, 18, Attack Walled City, 366.2
+30, 8, 25, Attack Walled City, 268.7
+30, 8, -1, Civilian Builder Capture, 0.0
+30, 8, -1, Settle New City, 150.0
+30, 8, -1, Naval Superiority, 100.0
+30, 8, -1, CITY VALUES, 274.5, LOC_CITY_NAME_BABYLON
+30, 8, -1, CITY VALUES, 369.9, LOC_CITY_NAME_KABUL
+30, 8, -1, CITY VALUES, 303.3, LOC_CITY_NAME_ANTIOCH
+30, 8, -1, CITY VALUES, 268.7, LOC_CITY_NAME_ZANZIBAR
+30, 9, -1, Civilian Builder Capture, 0.0
+30, 9, -1, Settle New City, 49.0
+30, 9, -1, Naval Superiority, 100.0
+30, 9, -1, CITY VALUES, 445.4, LOC_CITY_NAME_GRANADA
+30, 9, -1, CITY VALUES, 391.9, LOC_CITY_NAME_MOHENJO_DARO
+30, 9, -1, CITY VALUES, 250.9, LOC_CITY_NAME_BRUSSELS
+30, 9, -1, CITY VALUES, 432.9, LOC_CITY_NAME_NGAZARGAMU
+30, 10, -1, Attack Barb Camp, 50.0
+30, 10, -1, Barb Camp Tech Boost, 50.0
+30, 10, -1, Civilian Builder Capture, 0.0
+30, 10, -1, Naval Superiority, 100.0
+30, 10, -1, CITY VALUES, 356.8, LOC_CITY_NAME_FRANKFURT
+30, 11, -1, Civilian Builder Capture, 0.0
+30, 11, -1, Settle New City, 30.0
+30, 11, -1, Naval Superiority, 100.0
+30, 12, -1, City Defense, 0.0
+30, 12, -1, Civilian Builder Capture, 0.0
+30, 12, -1, City Defense, 0.0
+30, 12, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBANZA_KONGO
+30, 12, -1, CITY VALUES, 25.5, LOC_CITY_NAME_MBWILA
+30, 12, -1, CITY VALUES, 400.4, LOC_CITY_NAME_MBANZA_MBATA
+30, 12, -1, CITY VALUES, 15.0, LOC_CITY_NAME_ISTANBUL
+30, 12, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KINCHASSA
+30, 13, -1, Civilian Builder Capture, 0.0
+30, 13, -1, Settle New City, 30.0
+30, 13, -1, Naval Superiority, 100.0
+30, 14, -1, Civilian Builder Capture, 0.0
+30, 14, -1, Naval Superiority, 100.0
+30, 15, -1, Civilian Builder Capture, 0.0
+30, 15, -1, Naval Superiority, 100.0
+30, 15, -1, CITY VALUES, 0.0, LOC_CITY_NAME_HALEP
+30, 15, -1, CITY VALUES, 110.8, LOC_CITY_NAME_ISTANBUL
+30, 16, -1, City Defense, 0.0
+30, 16, -1, Civilian Builder Capture, 0.0
+30, 16, -1, City Defense, 0.0
+30, 16, -1, CITY VALUES, 0.0, LOC_CITY_NAME_ROME
+30, 16, -1, CITY VALUES, 406.7, LOC_CITY_NAME_ANTIOCH
+30, 17, -1, Civilian Builder Capture, 0.0
+30, 17, -1, Naval Superiority, 100.0
+30, 18, -1, Civilian Builder Capture, 0.0
+30, 18, -1, Naval Superiority, 100.0
+30, 18, -1, CITY VALUES, 502.3, LOC_CITY_NAME_BABYLON
+30, 19, -1, Attack Barb Camp, 100.0
+30, 19, -1, Attack Barb Camp, 100.0
+30, 19, -1, Barb Camp Tech Boost, 100.0
+30, 19, -1, Civilian Builder Capture, 0.0
+30, 19, -1, Naval Superiority, 100.0
+30, 19, -1, CITY VALUES, 80.6, LOC_CITY_NAME_KERMA
+30, 19, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KAWA
+30, 20, -1, Civilian Builder Capture, 0.0
+30, 20, -1, Settle New City, 38.0
+30, 20, -1, Naval Superiority, 100.0
+30, 21, -1, Civilian Builder Capture, 0.0
+30, 21, -1, Settle New City, 38.0
+30, 21, -1, Naval Superiority, 100.0
+30, 22, -1, Civilian Builder Capture, 0.0
+30, 22, -1, Naval Superiority, 100.0
+30, 23, -1, Civilian Builder Capture, 0.0
+30, 23, -1, Naval Superiority, 100.0
+30, 23, -1, CITY VALUES, 376.0, LOC_CITY_NAME_BAD_TIBIRA
+30, 23, -1, CITY VALUES, 232.8, LOC_CITY_NAME_BRUSSELS
+30, 24, -1, Civilian Builder Capture, 0.0
+30, 24, -1, Settle New City, 30.0
+30, 24, -1, CITY VALUES, 0.0, LOC_CITY_NAME_OSTIA
+30, 25, -1, Civilian Builder Capture, 0.0
+30, 25, -1, Naval Superiority, 100.0
+30, 26, -1, Attack Barb Camp, 50.0
+30, 26, -1, Barb Camp Tech Boost, 50.0
+30, 26, -1, Civilian Builder Capture, 0.0
+30, 26, -1, Naval Superiority, 100.0
+30, 26, -1, CITY VALUES, 332.8, LOC_CITY_NAME_HONG_KONG
+30, 26, -1, CITY VALUES, 187.6, LOC_CITY_NAME_BAD_TIBIRA
+30, 27, -1, Civilian Builder Capture, 0.0
+30, 27, -1, Settle New City, 32.0
+30, 27, -1, Naval Superiority, 100.0
+30, 27, -1, CITY VALUES, 353.8, LOC_CITY_NAME_KAWA
+30, 28, -1, Civilian Builder Capture, 0.0
+30, 28, -1, Settle New City, 30.0
+30, 28, -1, Naval Superiority, 100.0
+30, 29, -1, Civilian Builder Capture, 0.0
+30, 29, -1, Naval Superiority, 100.0
+30, 30, -1, Civilian Builder Capture, 0.0
+30, 30, -1, Naval Superiority, 100.0
+30, 30, -1, CITY VALUES, 253.8, LOC_CITY_NAME_MOHENJO_DARO
+30, 31, -1, Civilian Builder Capture, 0.0
+30, 31, -1, CITY VALUES, 360.0, LOC_CITY_NAME_GRANADA
+30, 63, -1, Barbarian Builder Capture, 800.0
+30, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_ULM
+30, 63, -1, CITY VALUES, 848.0, LOC_CITY_NAME_MEXICO_CITY
+30, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_HEIDELBERG
+30, 63, -1, CITY VALUES, 791.0, LOC_CITY_NAME_BABYLON
+30, 63, -1, CITY VALUES, 1036.0, LOC_CITY_NAME_MEROE
+30, 63, -1, CITY VALUES, 841.0, LOC_CITY_NAME_NAN_MADOL
+30, 63, -1, CITY VALUES, 791.0, LOC_CITY_NAME_ZANZIBAR
+30, 63, -1, CITY VALUES, 780.0, LOC_CITY_NAME_HALEP
+30, 63, -1, CITY VALUES, 1186.0, LOC_CITY_NAME_URUK
+30, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KWILA
+30, 63, -1, CITY VALUES, 466.0, LOC_CITY_NAME_BAD_TIBIRA
+30, 63, -1, CITY VALUES, 931.0, LOC_CITY_NAME_ANGKOR_THOM
+30, 63, -1, CITY VALUES, 743.0, LOC_CITY_NAME_NGAZARGAMU
+30, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBAMBA
+30, 63, -1, CITY VALUES, 504.0, LOC_CITY_NAME_QARAQOTO
+30, 63, -1, CITY VALUES, 224.0, LOC_CITY_NAME_FRANKFURT
+30, 63, -1, CITY VALUES, 680.0, LOC_CITY_NAME_VALLETTA
+30, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MPINDA
+30, 63, -1, CITY VALUES, 826.0, LOC_CITY_NAME_CAHOKIA
+30, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBANZA_MBATA
+31, 0, -1, Attack Barb Camp, 100.0
+31, 0, -1, Barb Camp Tech Boost, 100.0
+31, 0, -1, Civilian Builder Capture, 0.0
+31, 0, -1, Settle New City, 97.0
+31, 0, -1, Naval Superiority, 100.0
+31, 0, -1, CITY VALUES, 255.9, LOC_CITY_NAME_BOLOGNA
+31, 0, -1, CITY VALUES, 437.3, LOC_CITY_NAME_ISTANBUL
+31, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBUMBI
+31, 0, -1, CITY VALUES, 371.9, LOC_CITY_NAME_CAHOKIA
+31, 0, -1, CITY VALUES, 95.1, LOC_CITY_NAME_MBANZA_NSUNDI
+31, 0, -1, CITY VALUES, 45.9, LOC_CITY_NAME_KWILA
+31, 0, -1, CITY VALUES, 258.2, LOC_CITY_NAME_MBAMBA
+31, 0, 12, MINOR CIV LEVY, 167.8, 460.3
+31, 0, 20, MINOR CIV LEVY, 139.8, 383.6
+31, 1, -1, Settle New City, 97.0
+31, 1, -1, Attack Barb Camp, 50.0
+31, 1, -1, Barb Camp Tech Boost, 50.0
+31, 1, -1, Civilian Builder Capture, 0.0
+31, 1, -1, Settle New City, 97.0
+31, 1, -1, Naval Superiority, 100.0
+31, 1, -1, CITY VALUES, 160.4, LOC_CITY_NAME_MBANZA_KONGO
+31, 1, -1, CITY VALUES, 353.0, LOC_CITY_NAME_KINCHASSA
+31, 1, -1, CITY VALUES, 423.2, LOC_CITY_NAME_SANGA
+31, 1, -1, CITY VALUES, 148.0, LOC_CITY_NAME_BOLOGNA
+31, 1, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBANZA_MPANGU
+31, 2, -1, Settle New City, 104.0
+31, 2, -1, Naval Superiority, 100.0
+31, 2, 0, Attack Walled City, 469.5
+31, 2, 4, Attack Enemy City, 663.4
+31, 2, 4, Attack Walled City, 663.4
+31, 2, 15, Attack Walled City, 641.9
+31, 2, -1, Civilian Builder Capture, 0.0
+31, 2, -1, Settle New City, 104.0
+31, 2, -1, Naval Superiority, 100.0
+31, 2, -1, CITY VALUES, 703.5, LOC_CITY_NAME_BOLOGNA
+31, 2, -1, CITY VALUES, 642.0, LOC_CITY_NAME_VALLETTA
+31, 2, -1, CITY VALUES, 492.7, LOC_CITY_NAME_MBWILA
+31, 2, -1, CITY VALUES, 128.1, LOC_CITY_NAME_SANGA
+31, 2, -1, CITY VALUES, 636.6, LOC_CITY_NAME_ANGKOR_THOM
+31, 3, -1, Settle New City, 128.0
+31, 3, -1, Civilian Builder Capture, 0.0
+31, 3, -1, Settle New City, 128.0
+31, 3, -1, Naval Superiority, 100.0
+31, 3, -1, CITY VALUES, 437.8, LOC_CITY_NAME_LA_VENTA
+31, 3, -1, CITY VALUES, 267.5, LOC_CITY_NAME_LISBON
+31, 3, -1, CITY VALUES, 213.4, LOC_CITY_NAME_GENEVA
+31, 3, -1, CITY VALUES, 374.7, LOC_CITY_NAME_NGAZARGAMU
+31, 4, -1, Settle New City, 97.0
+31, 4, -1, Civilian Builder Capture, 0.0
+31, 4, -1, Settle New City, 97.0
+31, 4, -1, Naval Superiority, 100.0
+31, 4, -1, CITY VALUES, 272.7, LOC_CITY_NAME_VALLETTA
+31, 5, -1, Settle New City, 78.0
+31, 5, -1, Civilian Builder Capture, 0.0
+31, 5, -1, Settle New City, 94.0
+31, 5, -1, CITY VALUES, 421.2, LOC_CITY_NAME_LA_VENTA
+31, 6, -1, City Defense, 0.0
+31, 6, -1, Attack Barb Camp, 50.0
+31, 6, -1, Barb Camp Tech Boost, 50.0
+31, 6, -1, Civilian Builder Capture, 0.0
+31, 6, -1, Settle New City, 102.0
+31, 6, -1, City Defense, 0.0
+31, 6, -1, Naval Superiority, 100.0
+31, 6, -1, CITY VALUES, 241.9, LOC_CITY_NAME_MEXICO_CITY
+31, 7, -1, Settle New City, 53.0
+31, 7, -1, Attack Barb Camp, 100.0
+31, 7, -1, Barb Camp Tech Boost, 100.0
+31, 7, -1, Civilian Builder Capture, 0.0
+31, 7, -1, Settle New City, 125.0
+31, 7, -1, Naval Superiority, 100.0
+31, 7, -1, CITY VALUES, 450.8, LOC_CITY_NAME_VILNIUS
+31, 8, -1, Settle New City, 150.0
+31, 8, 16, Attack Walled City, 274.5
+31, 8, 18, Attack Walled City, 303.3
+31, 8, -1, Civilian Builder Capture, 0.0
+31, 8, -1, Settle New City, 150.0
+31, 8, -1, Naval Superiority, 100.0
+31, 8, -1, CITY VALUES, 347.1, LOC_CITY_NAME_BABYLON
+31, 8, -1, CITY VALUES, 421.2, LOC_CITY_NAME_KABUL
+31, 8, -1, CITY VALUES, 339.3, LOC_CITY_NAME_ANTIOCH
+31, 8, -1, CITY VALUES, 325.8, LOC_CITY_NAME_ZANZIBAR
+31, 9, -1, Settle New City, 22.0
+31, 9, -1, Civilian Builder Capture, 0.0
+31, 9, -1, Settle New City, 49.0
+31, 9, -1, Naval Superiority, 100.0
+31, 9, -1, CITY VALUES, 416.7, LOC_CITY_NAME_GRANADA
+31, 9, -1, CITY VALUES, 391.9, LOC_CITY_NAME_MOHENJO_DARO
+31, 9, -1, CITY VALUES, 250.9, LOC_CITY_NAME_BRUSSELS
+31, 9, -1, CITY VALUES, 429.7, LOC_CITY_NAME_NGAZARGAMU
+31, 10, -1, Civilian Builder Capture, 0.0
+31, 10, -1, Naval Superiority, 100.0
+31, 10, -1, CITY VALUES, 356.8, LOC_CITY_NAME_FRANKFURT
+31, 11, -1, Civilian Builder Capture, 0.0
+31, 11, -1, Settle New City, 30.0
+31, 11, -1, Naval Superiority, 100.0
+31, 12, -1, City Defense, 0.0
+31, 12, -1, Civilian Builder Capture, 0.0
+31, 12, -1, City Defense, 0.0
+31, 12, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBANZA_KONGO
+31, 12, -1, CITY VALUES, 37.6, LOC_CITY_NAME_MBWILA
+31, 12, -1, CITY VALUES, 404.9, LOC_CITY_NAME_MBANZA_MBATA
+31, 12, -1, CITY VALUES, 187.8, LOC_CITY_NAME_ISTANBUL
+31, 12, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KINCHASSA
+31, 12, -1, CITY VALUES, 0.0, LOC_CITY_NAME_SANGA
+31, 13, -1, Civilian Builder Capture, 0.0
+31, 13, -1, Settle New City, 30.0
+31, 13, -1, Naval Superiority, 100.0
+31, 14, -1, Civilian Builder Capture, 0.0
+31, 14, -1, Naval Superiority, 100.0
+31, 15, -1, Civilian Builder Capture, 0.0
+31, 15, -1, Naval Superiority, 100.0
+31, 15, -1, CITY VALUES, 0.0, LOC_CITY_NAME_HALEP
+31, 15, -1, CITY VALUES, 209.8, LOC_CITY_NAME_ISTANBUL
+31, 16, -1, City Defense, 0.0
+31, 16, -1, Civilian Builder Capture, 0.0
+31, 16, -1, City Defense, 0.0
+31, 16, -1, CITY VALUES, 0.0, LOC_CITY_NAME_ROME
+31, 16, -1, CITY VALUES, 382.8, LOC_CITY_NAME_ANTIOCH
+31, 17, -1, Civilian Builder Capture, 0.0
+31, 17, -1, Naval Superiority, 100.0
+31, 18, -1, Civilian Builder Capture, 0.0
+31, 18, -1, Naval Superiority, 100.0
+31, 18, -1, CITY VALUES, 563.2, LOC_CITY_NAME_BABYLON
+31, 19, -1, Attack Barb Camp, 100.0
+31, 19, -1, Barb Camp Tech Boost, 100.0
+31, 19, -1, Civilian Builder Capture, 0.0
+31, 19, -1, Naval Superiority, 100.0
+31, 19, -1, CITY VALUES, 4.3, LOC_CITY_NAME_KERMA
+31, 19, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KAWA
+31, 20, -1, Civilian Builder Capture, 0.0
+31, 20, -1, Settle New City, 38.0
+31, 20, -1, Naval Superiority, 100.0
+31, 21, -1, Civilian Builder Capture, 0.0
+31, 21, -1, Settle New City, 38.0
+31, 21, -1, Naval Superiority, 100.0
+31, 22, -1, Attack Barb Camp, 50.0
+31, 22, -1, Barb Camp Tech Boost, 50.0
+31, 22, -1, Civilian Builder Capture, 0.0
+31, 22, -1, Naval Superiority, 100.0
+31, 23, -1, Civilian Builder Capture, 0.0
+31, 23, -1, Naval Superiority, 100.0
+31, 23, -1, CITY VALUES, 446.0, LOC_CITY_NAME_BAD_TIBIRA
+31, 23, -1, CITY VALUES, 296.2, LOC_CITY_NAME_BRUSSELS
+31, 24, -1, Civilian Builder Capture, 0.0
+31, 24, -1, Settle New City, 30.0
+31, 24, -1, CITY VALUES, 0.0, LOC_CITY_NAME_OSTIA
+31, 25, -1, Civilian Builder Capture, 0.0
+31, 25, -1, Naval Superiority, 100.0
+31, 26, -1, Attack Barb Camp, 50.0
+31, 26, -1, Barb Camp Tech Boost, 50.0
+31, 26, -1, Civilian Builder Capture, 0.0
+31, 26, -1, Naval Superiority, 100.0
+31, 26, -1, CITY VALUES, 332.8, LOC_CITY_NAME_HONG_KONG
+31, 26, -1, CITY VALUES, 257.6, LOC_CITY_NAME_BAD_TIBIRA
+31, 27, -1, City Defense, 0.0
+31, 27, -1, Civilian Builder Capture, 0.0
+31, 27, -1, Settle New City, 32.0
+31, 27, -1, City Defense, 0.0
+31, 27, -1, Naval Superiority, 100.0
+31, 27, -1, CITY VALUES, 123.2, LOC_CITY_NAME_KAWA
+31, 28, -1, Civilian Builder Capture, 0.0
+31, 28, -1, Settle New City, 30.0
+31, 28, -1, Naval Superiority, 100.0
+31, 29, -1, Civilian Builder Capture, 0.0
+31, 29, -1, Naval Superiority, 100.0
+31, 30, -1, Civilian Builder Capture, 0.0
+31, 30, -1, Naval Superiority, 100.0
+31, 30, -1, CITY VALUES, 317.8, LOC_CITY_NAME_MOHENJO_DARO
+31, 31, -1, Civilian Builder Capture, 0.0
+31, 31, -1, CITY VALUES, 339.0, LOC_CITY_NAME_GRANADA
+31, 63, -1, Barbarian Builder Capture, 750.0
+31, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_ULM
+31, 63, -1, CITY VALUES, 848.0, LOC_CITY_NAME_MEXICO_CITY
+31, 63, -1, CITY VALUES, 86.0, LOC_CITY_NAME_HEIDELBERG
+31, 63, -1, CITY VALUES, 791.0, LOC_CITY_NAME_BABYLON
+31, 63, -1, CITY VALUES, 1036.0, LOC_CITY_NAME_MEROE
+31, 63, -1, CITY VALUES, 841.0, LOC_CITY_NAME_NAN_MADOL
+31, 63, -1, CITY VALUES, 805.0, LOC_CITY_NAME_ZANZIBAR
+31, 63, -1, CITY VALUES, 822.0, LOC_CITY_NAME_HALEP
+31, 63, -1, CITY VALUES, 1186.0, LOC_CITY_NAME_URUK
+31, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KWILA
+31, 63, -1, CITY VALUES, 676.0, LOC_CITY_NAME_BAD_TIBIRA
+31, 63, -1, CITY VALUES, 931.0, LOC_CITY_NAME_ANGKOR_THOM
+31, 63, -1, CITY VALUES, 743.0, LOC_CITY_NAME_NGAZARGAMU
+31, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBAMBA
+31, 63, -1, CITY VALUES, 504.0, LOC_CITY_NAME_QARAQOTO
+31, 63, -1, CITY VALUES, 224.0, LOC_CITY_NAME_FRANKFURT
+31, 63, -1, CITY VALUES, 594.0, LOC_CITY_NAME_VALLETTA
+31, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MPINDA
+31, 63, -1, CITY VALUES, 826.0, LOC_CITY_NAME_CAHOKIA
+31, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBANZA_MBATA
+32, 0, -1, Attack Barb Camp, 100.0
+32, 0, -1, Barb Camp Tech Boost, 100.0
+32, 0, -1, Civilian Builder Capture, 0.0
+32, 0, -1, Settle New City, 97.0
+32, 0, -1, Naval Superiority, 100.0
+32, 0, -1, CITY VALUES, 313.1, LOC_CITY_NAME_BOLOGNA
+32, 0, -1, CITY VALUES, 623.2, LOC_CITY_NAME_ISTANBUL
+32, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBUMBI
+32, 0, -1, CITY VALUES, 392.8, LOC_CITY_NAME_CAHOKIA
+32, 0, -1, CITY VALUES, 150.5, LOC_CITY_NAME_MBANZA_NSUNDI
+32, 0, -1, CITY VALUES, 88.7, LOC_CITY_NAME_KWILA
+32, 0, -1, CITY VALUES, 242.9, LOC_CITY_NAME_MBAMBA
+32, 0, 12, MINOR CIV LEVY, 167.8, 439.3
+32, 0, 20, MINOR CIV LEVY, 139.8, 366.1
+32, 1, -1, Settle New City, 103.0
+32, 1, -1, Attack Barb Camp, 50.0
+32, 1, -1, Barb Camp Tech Boost, 50.0
+32, 1, -1, Civilian Builder Capture, 0.0
+32, 1, -1, Settle New City, 103.0
+32, 1, -1, Naval Superiority, 100.0
+32, 1, -1, CITY VALUES, 215.7, LOC_CITY_NAME_MBANZA_KONGO
+32, 1, -1, CITY VALUES, 442.8, LOC_CITY_NAME_KINCHASSA
+32, 1, -1, CITY VALUES, 436.6, LOC_CITY_NAME_SANGA
+32, 1, -1, CITY VALUES, 66.9, LOC_CITY_NAME_BOLOGNA
+32, 1, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBANZA_MPANGU
+32, 2, -1, Settle New City, 104.0
+32, 2, -1, Naval Superiority, 100.0
+32, 2, 0, Attack Walled City, 432.7
+32, 2, 4, Attack Enemy City, 632.4
+32, 2, 4, Attack Walled City, 632.4
+32, 2, 15, Attack Walled City, 637.3
+32, 2, -1, Civilian Builder Capture, 0.0
+32, 2, -1, Settle New City, 104.0
+32, 2, -1, Naval Superiority, 100.0
+32, 2, -1, CITY VALUES, 641.9, LOC_CITY_NAME_BOLOGNA
+32, 2, -1, CITY VALUES, 713.6, LOC_CITY_NAME_VALLETTA
+32, 2, -1, CITY VALUES, 432.0, LOC_CITY_NAME_MBWILA
+32, 2, -1, CITY VALUES, 43.6, LOC_CITY_NAME_SANGA
+32, 2, -1, CITY VALUES, 632.0, LOC_CITY_NAME_ANGKOR_THOM
+32, 3, -1, Settle New City, 51.0
+32, 3, -1, Civilian Builder Capture, 0.0
+32, 3, -1, Settle New City, 128.0
+32, 3, -1, Naval Superiority, 100.0
+32, 3, -1, CITY VALUES, 437.8, LOC_CITY_NAME_LA_VENTA
+32, 3, -1, CITY VALUES, 324.7, LOC_CITY_NAME_LISBON
+32, 3, -1, CITY VALUES, 213.4, LOC_CITY_NAME_GENEVA
+32, 3, -1, CITY VALUES, 371.9, LOC_CITY_NAME_NGAZARGAMU
+32, 4, -1, Settle New City, 97.0
+32, 4, -1, Civilian Builder Capture, 0.0
+32, 4, -1, Settle New City, 97.0
+32, 4, -1, Naval Superiority, 100.0
+32, 4, -1, CITY VALUES, 371.5, LOC_CITY_NAME_VALLETTA
+32, 5, -1, Civilian Builder Capture, 0.0
+32, 5, -1, Settle New City, 94.0
+32, 5, -1, CITY VALUES, 437.8, LOC_CITY_NAME_LA_VENTA
+32, 6, -1, Civilian Builder Capture, 0.0
+32, 6, -1, Settle New City, 72.0
+32, 6, -1, Naval Superiority, 100.0
+32, 6, -1, CITY VALUES, 288.5, LOC_CITY_NAME_MEXICO_CITY
+32, 7, -1, Settle New City, 53.0
+32, 7, -1, Attack Barb Camp, 100.0
+32, 7, -1, Barb Camp Tech Boost, 100.0
+32, 7, -1, Civilian Builder Capture, 0.0
+32, 7, -1, Settle New City, 115.0
+32, 7, -1, Naval Superiority, 100.0
+32, 7, -1, CITY VALUES, 519.3, LOC_CITY_NAME_VILNIUS
+32, 8, -1, Settle New City, 150.0
+32, 8, 16, Attack Walled City, 289.9
+32, 8, 18, Attack Walled City, 339.3
+32, 8, -1, Civilian Builder Capture, 0.0
+32, 8, -1, Settle New City, 150.0
+32, 8, -1, Naval Superiority, 100.0
+32, 8, -1, CITY VALUES, 347.1, LOC_CITY_NAME_BABYLON
+32, 8, -1, CITY VALUES, 421.2, LOC_CITY_NAME_KABUL
+32, 8, -1, CITY VALUES, 231.8, LOC_CITY_NAME_ANTIOCH
+32, 8, -1, CITY VALUES, 149.6, LOC_CITY_NAME_ZANZIBAR
+32, 9, -1, Settle New City, 22.0
+32, 9, -1, Civilian Builder Capture, 0.0
+32, 9, -1, Settle New City, 49.0
+32, 9, -1, Naval Superiority, 100.0
+32, 9, -1, CITY VALUES, 441.6, LOC_CITY_NAME_GRANADA
+32, 9, -1, CITY VALUES, 391.9, LOC_CITY_NAME_MOHENJO_DARO
+32, 9, -1, CITY VALUES, 250.9, LOC_CITY_NAME_BRUSSELS
+32, 9, -1, CITY VALUES, 426.3, LOC_CITY_NAME_NGAZARGAMU
+32, 10, -1, Civilian Builder Capture, 0.0
+32, 10, -1, Naval Superiority, 100.0
+32, 10, -1, CITY VALUES, 285.8, LOC_CITY_NAME_FRANKFURT
+32, 11, -1, Civilian Builder Capture, 0.0
+32, 11, -1, Settle New City, 30.0
+32, 11, -1, Naval Superiority, 100.0
+32, 12, -1, Civilian Builder Capture, 0.0
+32, 12, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBANZA_KONGO
+32, 12, -1, CITY VALUES, 69.5, LOC_CITY_NAME_MBWILA
+32, 12, -1, CITY VALUES, 405.6, LOC_CITY_NAME_MBANZA_MBATA
+32, 12, -1, CITY VALUES, 300.5, LOC_CITY_NAME_ISTANBUL
+32, 12, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KINCHASSA
+32, 12, -1, CITY VALUES, 0.0, LOC_CITY_NAME_SANGA
+32, 13, -1, Civilian Builder Capture, 0.0
+32, 13, -1, Settle New City, 30.0
+32, 13, -1, Naval Superiority, 100.0
+32, 14, -1, Civilian Builder Capture, 0.0
+32, 14, -1, Naval Superiority, 100.0
+32, 15, -1, Civilian Builder Capture, 0.0
+32, 15, -1, Naval Superiority, 100.0
+32, 15, -1, CITY VALUES, 0.0, LOC_CITY_NAME_HALEP
+32, 15, -1, CITY VALUES, 258.8, LOC_CITY_NAME_ISTANBUL
+32, 16, -1, City Defense, 0.0
+32, 16, -1, Civilian Builder Capture, 0.0
+32, 16, -1, City Defense, 0.0
+32, 16, -1, CITY VALUES, 0.0, LOC_CITY_NAME_ROME
+32, 16, -1, CITY VALUES, 278.9, LOC_CITY_NAME_ANTIOCH
+32, 17, -1, Civilian Builder Capture, 0.0
+32, 17, -1, Naval Superiority, 100.0
+32, 18, -1, Civilian Builder Capture, 0.0
+32, 18, -1, Naval Superiority, 100.0
+32, 18, -1, CITY VALUES, 496.3, LOC_CITY_NAME_BABYLON
+32, 19, -1, Attack Barb Camp, 100.0
+32, 19, -1, Attack Barb Camp, 100.0
+32, 19, -1, Barb Camp Tech Boost, 100.0
+32, 19, -1, Civilian Builder Capture, 0.0
+32, 19, -1, Naval Superiority, 100.0
+32, 19, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KERMA
+32, 19, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KAWA
+32, 19, -1, CITY VALUES, 122.4, LOC_CITY_NAME_LISBON
+32, 20, -1, Civilian Builder Capture, 0.0
+32, 20, -1, Settle New City, 38.0
+32, 20, -1, Naval Superiority, 100.0
+32, 21, -1, Civilian Builder Capture, 0.0
+32, 21, -1, Settle New City, 38.0
+32, 21, -1, Naval Superiority, 100.0
+32, 22, -1, Attack Barb Camp, 50.0
+32, 22, -1, Barb Camp Tech Boost, 50.0
+32, 22, -1, Civilian Builder Capture, 0.0
+32, 22, -1, Naval Superiority, 100.0
+32, 23, -1, Civilian Builder Capture, 0.0
+32, 23, -1, Naval Superiority, 100.0
+32, 23, -1, CITY VALUES, 216.8, LOC_CITY_NAME_BAD_TIBIRA
+32, 23, -1, CITY VALUES, 296.2, LOC_CITY_NAME_BRUSSELS
+32, 24, -1, Civilian Builder Capture, 0.0
+32, 24, -1, Settle New City, 30.0
+32, 24, -1, CITY VALUES, 0.0, LOC_CITY_NAME_OSTIA
+32, 25, -1, City Defense, 0.0
+32, 25, -1, Civilian Builder Capture, 0.0
+32, 25, -1, City Defense, 0.0
+32, 25, -1, Naval Superiority, 100.0
+32, 26, -1, Attack Barb Camp, 50.0
+32, 26, -1, Barb Camp Tech Boost, 50.0
+32, 26, -1, Civilian Builder Capture, 0.0
+32, 26, -1, Naval Superiority, 100.0
+32, 26, -1, CITY VALUES, 332.8, LOC_CITY_NAME_HONG_KONG
+32, 26, -1, CITY VALUES, 293.6, LOC_CITY_NAME_BAD_TIBIRA
+32, 27, -1, City Defense, 0.0
+32, 27, -1, Civilian Builder Capture, 0.0
+32, 27, -1, Settle New City, 32.0
+32, 27, -1, City Defense, 0.0
+32, 27, -1, Naval Superiority, 100.0
+32, 27, -1, CITY VALUES, 92.9, LOC_CITY_NAME_KAWA
+32, 27, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KERMA
+32, 28, -1, Civilian Builder Capture, 0.0
+32, 28, -1, Settle New City, 30.0
+32, 28, -1, Naval Superiority, 100.0
+32, 29, -1, Civilian Builder Capture, 0.0
+32, 29, -1, Naval Superiority, 100.0
+32, 30, -1, Civilian Builder Capture, 0.0
+32, 30, -1, Naval Superiority, 100.0
+32, 30, -1, CITY VALUES, 327.8, LOC_CITY_NAME_MOHENJO_DARO
+32, 31, -1, Civilian Builder Capture, 0.0
+32, 31, -1, CITY VALUES, 320.2, LOC_CITY_NAME_GRANADA
+32, 63, -1, Barbarian Builder Capture, 750.0
+32, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_ULM
+32, 63, -1, CITY VALUES, 862.0, LOC_CITY_NAME_MEXICO_CITY
+32, 63, -1, CITY VALUES, 170.0, LOC_CITY_NAME_HEIDELBERG
+32, 63, -1, CITY VALUES, 791.0, LOC_CITY_NAME_BABYLON
+32, 63, -1, CITY VALUES, 1036.0, LOC_CITY_NAME_MEROE
+32, 63, -1, CITY VALUES, 841.0, LOC_CITY_NAME_NAN_MADOL
+32, 63, -1, CITY VALUES, 805.0, LOC_CITY_NAME_ZANZIBAR
+32, 63, -1, CITY VALUES, 829.0, LOC_CITY_NAME_HALEP
+32, 63, -1, CITY VALUES, 1242.0, LOC_CITY_NAME_URUK
+32, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KWILA
+32, 63, -1, CITY VALUES, 648.0, LOC_CITY_NAME_BAD_TIBIRA
+32, 63, -1, CITY VALUES, 931.0, LOC_CITY_NAME_ANGKOR_THOM
+32, 63, -1, CITY VALUES, 743.0, LOC_CITY_NAME_NGAZARGAMU
+32, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBAMBA
+32, 63, -1, CITY VALUES, 504.0, LOC_CITY_NAME_QARAQOTO
+32, 63, -1, CITY VALUES, 252.0, LOC_CITY_NAME_FRANKFURT
+32, 63, -1, CITY VALUES, 594.0, LOC_CITY_NAME_VALLETTA
+32, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MPINDA
+32, 63, -1, CITY VALUES, 826.0, LOC_CITY_NAME_CAHOKIA
+32, 63, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBANZA_MBATA
+33, 0, -1, Attack Barb Camp, 100.0
+33, 0, -1, Barb Camp Tech Boost, 100.0
+33, 0, -1, Civilian Builder Capture, 0.0
+33, 0, -1, Settle New City, 100.0
+33, 0, -1, Naval Superiority, 100.0
+33, 0, -1, CITY VALUES, 357.4, LOC_CITY_NAME_BOLOGNA
+33, 0, -1, CITY VALUES, 529.5, LOC_CITY_NAME_ISTANBUL
+33, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBUMBI
+33, 0, -1, CITY VALUES, 428.7, LOC_CITY_NAME_CAHOKIA
+33, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_MBANZA_NSUNDI
+33, 0, -1, CITY VALUES, 0.0, LOC_CITY_NAME_KWILA
+33, 0, -1, CITY VALUES, 245.7, LOC_CITY_NAME_MBAMBA
+33, 0, 12, MINOR CIV LEVY, 167.8, 450.1
+33, 0, 20, MINOR CIV LEVY, 139.8, 375.1

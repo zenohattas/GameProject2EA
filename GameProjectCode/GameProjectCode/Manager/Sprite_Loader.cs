@@ -37,13 +37,26 @@ namespace GameProjectCode.Manager
             //Create a Dictonary to return
             var dictonary = new Dictionary<string, Animation>();
 
-            //Loading all sprite data from difrent sheets
+            //Loading all sprite data from diffrent sheets
             for (int i = 0; i < spriteDataLocations.Length; i++)
             {
                 spriteData = LoadSpriteData(spriteDataLocations[i]);
 
                 LoadDictonary(dictonary, content, spriteData, i);
             }
+            //Rest of Dictionary
+            dictonary.Add("Title", new Animation(content.Load<Texture2D>("Environment/Menu/GameTitle"), 0, 0, 740, 300));
+            dictonary.Add("DefeatTitle", new Animation(content.Load<Texture2D>("Environment/Menu/Endscreen"), 0, 0, 740, 125));
+            dictonary.Add("Start", new Animation(content.Load<Texture2D>("Environment/Menu/StartTextBox"), 0, 0, 205,77, true, 0));
+            dictonary["Start"].AddFrame(0,77);
+            dictonary.Add("Options", new Animation(content.Load<Texture2D>("Environment/Menu/OptionsTextBox"), 0, 0, 205, 77, true, 0));
+            dictonary["Options"].AddFrame(0, 77);
+            dictonary.Add("Quit", new Animation(content.Load<Texture2D>("Environment/Menu/QuitTextBox"), 0, 0, 205, 77, true, 0));
+            dictonary["Quit"].AddFrame(0, 77);
+            dictonary.Add("Restart", new Animation(content.Load<Texture2D>("Environment/Menu/RestartTextBox"), 0, 0, 205, 77, true, 0));
+            dictonary["Restart"].AddFrame(0, 77);
+            dictonary.Add("Return", new Animation(content.Load<Texture2D>("Environment/Menu/ReturnTextBox"), 0, 0, 205, 77, true, 0));
+            dictonary["Return"].AddFrame(0, 77);
 
             //Returning the Dictonary
             return dictonary;

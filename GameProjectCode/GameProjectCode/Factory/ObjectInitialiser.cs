@@ -13,78 +13,52 @@ namespace GameProjectCode.Factory
 {
     class ObjectInitialiser
     {
-        static string[] stageDataLocations =
-        {
-            @"C:\Electronica-ICT\Game Development\Projects\GameProject2EA\GameProjectCode\GameProjectCode\Content\Stages\WaterBackground.csv",
-            @"C:\Electronica-ICT\Game Development\Projects\GameProject2EA\GameProjectCode\GameProjectCode\Content\Stages\Stage1.csv"
-        };
+        List<string> menuDataLocations;
+        List<string> stageDataLocations;
+        
+        //    @"C:\Electronica-ICT\Game Development\Projects\GameProject2EA\GameProjectCode\GameProjectCode\Content\Stages\WaterBackground.csv",
+        //    @"C:\Electronica-ICT\Game Development\Projects\GameProject2EA\GameProjectCode\GameProjectCode\Content\Stages\Stage1.csv"
+        
         private Vector2 _initiasePos;
         private Vector2 _spriteSize;
-        public string[,] Stage1 =
-        {
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "3","3","3","6","0","0","0","5","3","3","3","6","0","0","0","0","0","0","0","0","0","0"},
-            { "4","4","4","12","0","0","0","11","4","4","4","12","0","0","0","0","0","0","0","0","0","0"},
-            { "4","4","4","12","0","0","0","11","4","4","4","12","0","0","0","0","0","0","0","0","0","0" }
-        };
-        public string[,] Stage1Background =
-        {
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "","","","","","","","","","","","","","","","","","","","","","", },
-            { "44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L","44,L", },
-            { "45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L","45,L",}
-        };
-        public string[,] Stage2 =
-        {
-            { },
-        };
         public ObjectInitialiser()
         {
             _initiasePos = new Vector2(0, 0);
             _spriteSize = new Vector2(16,16);
+            LoadStageDataLocations();
         }
         public ObjectInitialiser(Vector2 initialisePos, Vector2 spriteSize)
         {
             _initiasePos = initialisePos;
             _spriteSize = spriteSize;
+            LoadStageDataLocations();
+        }
+        private void LoadStageDataLocations()
+        {
+            menuDataLocations = new List<string>();
+            stageDataLocations = new List<string>();
+
+            string basePath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+            basePath = basePath.Replace(@"\bin\Windows\x86\Debug", "");
+
+            //Menu
+            menuDataLocations.Add(basePath + @"\Content\Menus\MenuStart.csv");
+            menuDataLocations.Add(basePath + @"\Content\Menus\MenuOptions.csv");
+            menuDataLocations.Add(basePath + @"\Content\Menus\MenuEndScreen.csv");
+
+            //Stage
+            stageDataLocations.Add(basePath + @"\Content\Stages\WaterBackground.csv");
+            stageDataLocations.Add(basePath + @"\Content\Stages\Stage1.csv");
+
+        }
+        public List<GameObject> LoadMenu(Dictionary<string, Animation> animations, int Menu, int StageWidth, int StageHeight)
+        {
+            List<GameObject> sprites = new List<GameObject>();
+
+            sprites.AddRange(this.LoadMenuObjects(animations, LoadStageData(menuDataLocations[Menu])));
+            sprites.AddRange(this.LoadBoundaries(StageWidth, StageHeight));
+
+            return sprites;
         }
         public List<GameObject> LoadStage(Dictionary<string, Animation> animations, int Stage, int StageWidth, int StageHeight)
         {
@@ -94,6 +68,15 @@ namespace GameProjectCode.Factory
             sprites.AddRange(this.LoadObjects(animations, LoadStageData(stageDataLocations[Stage])));
             sprites.AddRange(this.LoadBoundaries(StageWidth, StageHeight));
 
+            return sprites;
+        }
+        private List<GameObject> LoadMenuObjects(Dictionary<string, Animation> animations, List<List<string>> objects)
+        {
+            List<GameObject> sprites = new List<GameObject>();
+            for (int i = 0; i < objects.Count; i++)
+            {
+                sprites.Add(new MenuObject(animations, animations[objects[i][0]], new Vector2(float.Parse(objects[i][1]), float.Parse(objects[i][2]))));
+            }
             return sprites;
         }
         private List<GameObject> LoadObjects(Dictionary<string, Animation> animations, List<List<string>> objects)

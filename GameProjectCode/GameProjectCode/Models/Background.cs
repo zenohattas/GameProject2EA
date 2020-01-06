@@ -13,11 +13,17 @@ namespace GameProjectCode.Models
         public Texture2D Texture;
         public Rectangle Rectangle;
         public int ScaleFactor;
+        public Background(Texture2D texture, Rectangle rectangle, int scaleFactor)
+        {
+            this.Texture = texture;
+            this.Rectangle = rectangle;
+            ScaleFactor = scaleFactor;
+        }
         public Background(Texture2D texture, Rectangle rectangle)
         {
             this.Texture = texture;
             this.Rectangle = rectangle;
-            ScaleFactor = 2;
+            ScaleFactor = 1;
         }
         public void Draw(SpriteBatch spritebatch)
         {

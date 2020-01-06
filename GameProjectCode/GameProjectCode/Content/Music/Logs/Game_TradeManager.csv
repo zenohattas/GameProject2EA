@@ -1,0 +1,5 @@
+Turn, Event, Origin City, Destination City, Attached Resource, Origin Yields
+16, Route Started, LOC_CITY_NAME_MBANZA_KONGO, LOC_CITY_NAME_BOLOGNA,Resource -1 (x0),Origin Yields,0.00,0.00,3.00,0.00,0.00,0.00,Destination Yields,0.00,0.00,0.00,0.00,0.00,0.00
+23, Route Started, LOC_CITY_NAME_AACHEN, LOC_CITY_NAME_ULM,Resource -1 (x0),Origin Yields,2.00,1.00,0.00,0.00,0.00,0.00,Destination Yields,0.00,0.00,0.00,0.00,0.00,0.00
+32, Route Started, LOC_CITY_NAME_MBANZA_NSUNDI, LOC_CITY_NAME_MBANZA_KONGO,Resource -1 (x0),Origin Yields,2.00,0.00,3.00,1.00,0.00,0.00,Destination Yields,0.00,0.00,0.00,0.00,0.00,0.00
+32, Route Started, LOC_CITY_NAME_HALEP, LOC_CITY_NAME_MBWILA,Resource -1 (x0),Origin Yields,0.00,0.00,3.00,1.00,0.00,0.00,Destination Yields,0.00,0.00,0.00,0.00,0.00,0.00

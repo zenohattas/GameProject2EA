@@ -37,7 +37,7 @@ namespace GameProjectCode.Manager
         public void Update(GameTime gameTime)
         {
             _timer += (float)gameTime.ElapsedGameTime.TotalSeconds;
-            if (_timer > _animation.FrameSpeed)
+            if (_timer >= _animation.FrameSpeed)
             {
                 _timer = 0;
                 _animation.CurrentFrame++;

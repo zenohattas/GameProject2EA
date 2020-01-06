@@ -1,0 +1,46 @@
+Game Turn, Realism, Total CO2, CO2 Bldgs, CO2 Projects, CO2 Routes, CO2 Units, Deforestation, ClimateChange, Volcanoes (Total), NW Volcanoes, Volcanoes (Active), Eruptions, Floodable Rivers, Floods, NaturalWonderEruptions
+5, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 11, 1, 0
+6, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 13, 1, 0
+6, STORM, Severity = 1, Tornado Family, Center at: (5 - 24), Tiles Damaged = 0, Pop Lost = 0, Units Killed = 0, Fertility Added = 0
+7, STORM, Severity = 1, Tornado Family, Center at: (0 - 23), Tiles Damaged = 0, Pop Lost = 0, Units Killed = 0, Fertility Added = 0
+7, STORM MOVEMENT, 2308,2307,2210,2209,2113,2208,
+8, STORM, Severity = 1, Tornado Family, Center at: (93 - 22), Tiles Damaged = 0, Pop Lost = 0, Units Killed = 0, Fertility Added = 0
+8, STORM MOVEMENT, 2303,2207,2206,2205,
+9, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 15, 1, 0
+10, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 15, 1, 0
+10, FLOOD, Severity = 1, Murat River, Floodplain at: (59 - 18), Tiles Damaged = 1, Pop Lost = 1, Units Killed = 0, Fertility Added = 2
+11, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 15, 2, 0
+12, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 15, 2, 0
+13, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 16, 2, 0
+14, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 16, 2, 0
+15, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 16, 2, 0
+15, FLOOD, Severity = 0, Kasai River, Floodplain at: (55 - 35), Tiles Damaged = 1, Pop Lost = 0, Units Killed = 0, Fertility Added = 1
+16, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 16, 3, 0
+16, DROUGHT, Severity = 0, Major Drought, Center at: (15 - 44), Tiles Damaged = 0
+17, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 16, 3, 0
+17, FLOOD, Severity = 1, Atbarah River, Floodplain at: (8 - 26), Tiles Damaged = 1, Pop Lost = 0, Units Killed = 0, Fertility Added = 1
+18, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 16, 4, 0
+19, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 16, 4, 0
+20, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 16, 4, 0
+20, DROUGHT, Severity = 0, Major Drought, Center at: (63 - 17), Tiles Damaged = 0
+21, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 16, 4, 0
+21, FLOOD, Severity = 1, Ofanto River, Floodplain at: (26 - 19), Tiles Damaged = 2, Pop Lost = 0, Units Killed = 0, Fertility Added = 2
+22, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 16, 5, 0
+23, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 16, 5, 0
+24, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 16, 5, 0
+24, DROUGHT, Severity = 0, Major Drought, Center at: (34 - 38), Tiles Damaged = 0
+25, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 16, 5, 0
+26, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 16, 5, 0
+26, FLOOD, Severity = 0, Rubicon River, Floodplain at: (26 - 15), Tiles Damaged = 0, Pop Lost = 0, Units Killed = 0, Fertility Added = 3
+27, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 16, 6, 0
+27, FLOOD, Severity = 0, Zavkhan River, Floodplain at: (43 - 46), Tiles Damaged = 4, Pop Lost = 0, Units Killed = 0, Fertility Added = 3
+28, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 0, 0, 16, 7, 0
+28, STORM, Severity = 1, Category-4 Hurricane, Center at: (7 - 33), Tiles Damaged = 0, Pop Lost = 0, Units Killed = 0, Fertility Added = 0
+29, STORM, Severity = 1, Category-4 Hurricane, Center at: (2 - 34), Tiles Damaged = 0, Pop Lost = 0, Units Killed = 0, Fertility Added = 0
+29, STORM MOVEMENT, 3079,2982,2981,3077,3172,3171,3267,3266,
+30, ENHANCED TILES, At plot: 3169, 3073,
+30, STORM, Severity = 1, Category-4 Hurricane, Center at: (95 - 33), Tiles Damaged = 0, Pop Lost = 0, Units Killed = 0, Fertility Added = 1
+30, STORM MOVEMENT, 3169,3265,3168,3263,
+32, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 0, 16, 7, 0
+33, 2, 0, 0, 0, 0, 0, 0, 0, 7, 1, 1, 0, 16, 7, 0
+33, FLOOD, Severity = 1, Kızılırmak River, Floodplain at: (60 - 26), Tiles Damaged = 2, Pop Lost = 0, Units Killed = 0, Fertility Added = 5

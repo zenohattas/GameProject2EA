@@ -1,6 +1,7 @@
 ﻿using GameProjectCode.Models;
 using GameProjectCode.Objects;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
@@ -13,16 +14,20 @@ namespace GameProjectCode.Manager
     class StageManager
     {
         PlayerManager playerManager;
-        public MenuManager Menu;
+        SoundEffectManager soundEffectManager;
+        public MenuManager menuManager; 
         List<Stage> Stages;
+        int prevStage;
         public int SelectedStage { get; set; }
 
-        public StageManager(MenuManager menuManager, PlayerManager playerManager)
+        public StageManager(MenuManager menuManager, PlayerManager playerManager, SoundEffectManager soundEffectManager)
         {
             Stages = new List<Stage>();
-            Menu = menuManager;
+            this.menuManager = menuManager;
             SelectedStage = -1;
+            prevStage = SelectedStage;
             this.playerManager = playerManager;
+            this.soundEffectManager = soundEffectManager;
         }
         public GameObject GetPlayer()
         {
@@ -31,6 +36,10 @@ namespace GameProjectCode.Manager
         public void AddPlayer(GameObject player)
         {
             playerManager.AddPlayer(player as GameSpriteObject);
+        }
+        public void AddMenu(Stage menu)
+        {
+            menuManager.AddMenu(menu);
         }
         public void AddStage(Stage stage)
         {
@@ -57,7 +66,7 @@ namespace GameProjectCode.Manager
             switch (SelectedStage)
             {
                 case -1:
-                    Menu.Draw(spriteBatch, spriteFont);
+                    menuManager.Draw(spriteBatch);
                     break;
                 case 0:
                     Stages[0].Draw(spriteBatch);
@@ -73,7 +82,7 @@ namespace GameProjectCode.Manager
         {
             if (SelectedStage == -1)
             {
-                Menu.Update(gameTime, this);
+                menuManager.Update(gameTime, this);
             }
             else if (Stages.Count >= SelectedStage)
             {

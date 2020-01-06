@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GameProjectCode.Objects;
 
 namespace GameProjectCode.Manager
 {
@@ -15,7 +16,8 @@ namespace GameProjectCode.Manager
     {
         Color color;
         Color colorSelected;
-        List<List<string>> Menu;
+        List<Stage> Menu;
+        List<List<MenuObject>> menuObjects;
         private int selectedElement;
         private int selectedMenu;
         private float _timer;
@@ -24,31 +26,28 @@ namespace GameProjectCode.Manager
 
         public MenuManager(Vector2 Position)
         {
-            Menu = new List<List<string>>();
-            Menu.Add(new List<string>
-            {
-                "Start",
-                "Options",
-                "Quit"
-            });
-            Menu.Add(new List<string>
-            {
-                "To be implemented",
-                "Back"
-            });
-            Menu.Add(new List<string>
-            {
-                "Contact",
-                "Start again"
-            });
+            Menu = new List<Stage>();
+            menuObjects = new List<List<MenuObject>>();
 
             position = Position;
 
             color = Color.White;
             colorSelected = Color.SeaGreen;
             selectedMenu = 0;
-            selectedElement = 0;
+            selectedElement = 1;
             _timer = 0;
+        }
+        public void AddMenu(Stage menu)
+        {
+            Menu.Add(menu);
+            menuObjects.Add(new List<MenuObject>());
+            foreach (var item in menu.gameSpriteObjects)
+            {
+                if (item is MenuObject)
+                {
+                    menuObjects[menuObjects.Count-1].Add(item as MenuObject);
+                }
+            }
         }
         public void Update(GameTime gameTime, StageManager stageManager)
         {
@@ -60,10 +59,11 @@ namespace GameProjectCode.Manager
                 {
                     if(Keys.Up != _perviousPressedKey)
                     {
-                        if (selectedElement > 0)
+                        if (selectedElement > 1)
+                        {
+                            menuObjects[selectedMenu][selectedElement].Revert();
                             selectedElement--;
-                        else
-                            selectedElement = 0;
+                        }
                     }
                     _perviousPressedKey = Keys.Up;
                 }
@@ -71,8 +71,12 @@ namespace GameProjectCode.Manager
                 {
                     if(Keys.Down != _perviousPressedKey)
                     {
-                        if (selectedElement < Menu[selectedMenu].Count - 1)
+                        if (selectedElement < menuObjects[selectedMenu].Count-1)
+                        {
+                            menuObjects[selectedMenu][selectedElement].Revert();
                             selectedElement++;
+
+                        }
                     }
                     _perviousPressedKey = Keys.Down;
                 }
@@ -85,14 +89,15 @@ namespace GameProjectCode.Manager
                             case 0:
                                 switch (selectedElement)
                                 {
-                                    case 0:
+                                    case 1:
                                         stageManager.SelectedStage = 0;
                                         break;
-                                    case 1:
-                                        selectedMenu = 1;
-                                        selectedElement = 0;
-                                        break;
                                     case 2:
+                                        menuObjects[selectedMenu][selectedElement].Revert();
+                                        selectedMenu = 1;
+                                        selectedElement = 1;
+                                        break;
+                                    case 3:
                                         stageManager.SelectedStage = -2;
                                         break;
                                     default:
@@ -102,11 +107,10 @@ namespace GameProjectCode.Manager
                             case 1:
                                 switch (selectedElement)
                                 {
-                                    case 0:
-                                        break;
                                     case 1:
+                                        menuObjects[selectedMenu][selectedElement].Revert();
                                         selectedMenu = 0;
-                                        selectedElement = 0;
+                                        selectedElement = 1;
                                         break;
                                     default:
                                         break;
@@ -121,25 +125,13 @@ namespace GameProjectCode.Manager
                 else
                     _perviousPressedKey = Keys.End;
             }
+            menuObjects[selectedMenu][selectedElement].Invert();
+            Menu[selectedMenu].Update(gameTime);
         }
-        public void Draw(SpriteBatch spriteBatch, SpriteFont spriteFont)
+        public void Draw(SpriteBatch spriteBatch)
         {
             if(selectedMenu >= 0 && selectedMenu < Menu.Count)
-                Draw(Menu[selectedMenu], spriteBatch, spriteFont);
-        }
-        private void Draw(List<string> menu, SpriteBatch spriteBatch, SpriteFont spriteFont)
-        {
-            for (int i = 0; i < menu.Count; i++)
-            {
-                //spriteBatch.Begin();
-                
-                if(i == selectedElement)
-                    spriteBatch.DrawString(spriteFont, menu[i], new Vector2(position.X, position.Y + i * 20), colorSelected);
-                else
-                    spriteBatch.DrawString(spriteFont, menu[i], new Vector2(position.X, position.Y + i * 20), color);
-                
-                //spriteBatch.End();
-            }
+                    Menu[selectedMenu].Draw(spriteBatch);
         }
     }
 }
