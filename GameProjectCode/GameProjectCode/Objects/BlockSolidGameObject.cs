@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace GameProjectCode.Objects
 {
-    class BlockSolidGameObject : GameSpriteObject, ICollidable
+    class BlockSolidGameObject : GameSpriteObject, IHasCollision
     {
         public BlockSolidGameObject(Dictionary<string, Animation> animations, Animation animation, Vector2 position) : base(animations, animation)
         {

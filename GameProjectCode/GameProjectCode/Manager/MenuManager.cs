@@ -98,7 +98,7 @@ namespace GameProjectCode.Manager
                                         selectedElement = 1;
                                         break;
                                     case 3:
-                                        stageManager.SelectedStage = -2;
+                                        stageManager.SelectedStage = -3;
                                         break;
                                     default:
                                         break;
@@ -111,6 +111,19 @@ namespace GameProjectCode.Manager
                                         menuObjects[selectedMenu][selectedElement].Revert();
                                         selectedMenu = 0;
                                         selectedElement = 1;
+                                        break;
+                                    default:
+                                        break;
+                                }
+                                break;
+                            case 2:
+                                switch (selectedElement)
+                                {
+                                    case 1:
+                                        stageManager.SelectedStage = -2; 
+                                        break;
+                                    case 2:
+                                        stageManager.SelectedStage = -3;
                                         break;
                                     default:
                                         break;
@@ -132,6 +145,10 @@ namespace GameProjectCode.Manager
         {
             if(selectedMenu >= 0 && selectedMenu < Menu.Count)
                     Menu[selectedMenu].Draw(spriteBatch);
+        }
+        public void ShowEndScreen()
+        {
+            selectedMenu = 2;
         }
     }
 }

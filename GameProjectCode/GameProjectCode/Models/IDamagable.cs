@@ -8,5 +8,7 @@ namespace GameProjectCode.Models
 {
     interface IDamagable
     {
+        int HP { get; set; }
+        void Damage(int damage);
     }
 }

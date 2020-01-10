@@ -21,6 +21,13 @@ namespace GameProjectCode.Manager
         {
             return Player[0];
         }
+        public bool IsPlayerAlive()
+        {
+            PlayerGameObject player = Player[0] as PlayerGameObject;
+            if (player.HP <= 0)
+                return false;
+            return true;
+        }
         public void AddPlayer(GameSpriteObject player)
         {
             Player.Add(player);
@@ -35,7 +42,7 @@ namespace GameProjectCode.Manager
         }
         public void ResolveCollision()
         {
-            IInteractable i = Player[0] as IInteractable;
+            ICollidable i = Player[0] as ICollidable;
             i.ResolveCollisions();
         }
     }

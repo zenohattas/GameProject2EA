@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace GameProjectCode.Models
 {
-    interface IInteractable : ICollidable
+    interface IInteractable
     {
-        void Collide(ICollidable o);
-        void ResolveCollisions();
+        void Interact();
     }
 }

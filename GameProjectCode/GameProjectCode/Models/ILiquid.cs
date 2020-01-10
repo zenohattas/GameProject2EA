@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameProjectCode.Models
 {
-    interface ILiquid: ICollidable
+    interface ILiquid: IHasCollision
     {
         float Density { get; }
     }

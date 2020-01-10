@@ -78,10 +78,10 @@ namespace GameProjectCode
             var animations = spriteLoader.GetAnimationDictionary(Content);
 
             stageManager.AddPlayer(objectInitialiser.LoadPlayer(animations));
-            stageManager.AddMenu(new Stage(objectInitialiser.LoadMenu(animations, 0, gameWidth, gameHeight), new Background(Content.Load<Texture2D>("Environment/MysticalForestMain"), new Rectangle(0, 0, 1601, 961))));
-            stageManager.AddMenu(new Stage(objectInitialiser.LoadMenu(animations, 1, gameWidth, gameHeight), new Background(Content.Load<Texture2D>("Environment/MysticalForestMain"), new Rectangle(0, 0, 1601, 961))));
-            stageManager.AddMenu(new Stage(objectInitialiser.LoadMenu(animations, 2, gameWidth, gameHeight), new Background(Content.Load<Texture2D>("Environment/MysticalDeadForest"), new Rectangle(0, 0, 1600, 965))));
-            stageManager.AddStage(new Stage(objectInitialiser.LoadStage(animations, 1, gameWidth, gameHeight), new Background(Content.Load<Texture2D>("Environment/MysticalForest"), new Rectangle(0,0, 1613, 1008))));
+            stageManager.AddMenu(new Stage(objectInitialiser.LoadMenu(animations, 0, gameWidth, gameHeight), new Background(Content.Load<Texture2D>("Environment/MysticalForestMain"), new Rectangle(0, 0, 1601, 961)), stageManager.playerManager, false));
+            stageManager.AddMenu(new Stage(objectInitialiser.LoadMenu(animations, 1, gameWidth, gameHeight), new Background(Content.Load<Texture2D>("Environment/MysticalForestMain"), new Rectangle(0, 0, 1601, 961)), stageManager.playerManager, false));
+            stageManager.AddMenu(new Stage(objectInitialiser.LoadMenu(animations, 2, gameWidth, gameHeight), new Background(Content.Load<Texture2D>("Environment/MysticalDeadForest"), new Rectangle(0, 0, 1600, 965)), stageManager.playerManager, false));
+            stageManager.AddStage(new Stage(objectInitialiser.LoadStage(animations, 1, gameWidth, gameHeight), new Background(Content.Load<Texture2D>("Environment/MysticalForest"), new Rectangle(0,0, 1613, 1008)), stageManager.playerManager));
             stageManager.GetPlayer().Position = new Vector2(69, 887);
 
             soundEffectManager.LoadSounds(Content);
@@ -115,13 +115,13 @@ namespace GameProjectCode
 
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
             {
-                if (stageManager.SelectedStage == -2)
+                if (stageManager.SelectedStage == -3)
                     Exit();
                 else
                     stageManager.SelectedStage = -1;
             }
 
-            if (stageManager.SelectedStage == -2)
+            if (stageManager.SelectedStage == -3)
                 Exit();
             
             //Implement in stagemanager

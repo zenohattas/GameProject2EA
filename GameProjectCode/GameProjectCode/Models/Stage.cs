@@ -1,4 +1,5 @@
-﻿using GameProjectCode.Objects;
+﻿using GameProjectCode.Manager;
+using GameProjectCode.Objects;
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,8 @@ namespace GameProjectCode.Models
 {
     class Stage
     {
+        PlayerManager playerManager;
+        bool showPlayer;
         public int Count
         {
             get
@@ -20,7 +23,7 @@ namespace GameProjectCode.Models
         public Background Background;
         public List<GameObject> GameObjects;
         public List<GameSpriteObject> gameSpriteObjects;
-        public Stage(List<GameObject> gameObjects, Background background)
+        public Stage(List<GameObject> gameObjects, Background background, PlayerManager playerManager, bool ShowPlayer = true)
         {
             this.GameObjects = gameObjects;
             this.Background = background;
@@ -32,6 +35,8 @@ namespace GameProjectCode.Models
                     gameSpriteObjects.Add(gameObject as GameSpriteObject);
                 }
             }
+            showPlayer = ShowPlayer;
+            this.playerManager = playerManager;
         }
         public Stage(List<GameObject> gameObjects)
         {
@@ -48,6 +53,10 @@ namespace GameProjectCode.Models
         {
             if (Background != null)
                 Background.Draw(spriteBatch);
+            
+            if(showPlayer)
+                playerManager.Draw(spriteBatch);
+
             foreach (var o in gameSpriteObjects)
             {
                 o.Draw(spriteBatch);

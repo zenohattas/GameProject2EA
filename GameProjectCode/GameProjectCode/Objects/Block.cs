@@ -8,7 +8,7 @@ using Microsoft.Xna.Framework;
 
 namespace GameProjectCode.Objects
 {
-    class Block : GameSpriteObject, ICollidable
+    class Block : GameSpriteObject, IHasCollision
     {
         public Block(Dictionary<string, Animation> animations, Animation animation) : base(animations, animation)
         {

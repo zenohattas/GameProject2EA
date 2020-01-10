@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace GameProjectCode.Objects
 {
-    class BoundryObject : GameObject, ICollidable
+    class BoundryObject : GameObject, IHasCollision
     {
         private Rectangle collisionRectangle;
         private Vector2 position;

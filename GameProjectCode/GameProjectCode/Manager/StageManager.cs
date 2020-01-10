@@ -13,7 +13,7 @@ namespace GameProjectCode.Manager
 {
     class StageManager
     {
-        PlayerManager playerManager;
+        public PlayerManager playerManager;
         SoundEffectManager soundEffectManager;
         public MenuManager menuManager; 
         List<Stage> Stages;
@@ -75,11 +75,16 @@ namespace GameProjectCode.Manager
                     Stages[0].Draw(spriteBatch);
                     break;
             }
-            if (SelectedStage > -1)
-                playerManager.Draw(spriteBatch);
         }
         public void Update(GameTime gameTime)
         {
+            if (!playerManager.IsPlayerAlive())
+            {
+                SelectedStage = -1;
+                menuManager.ShowEndScreen();
+            }
+            if (SelectedStage == -2)
+                this.Reset();
             if (SelectedStage == -1)
             {
                 menuManager.Update(gameTime, this);
@@ -99,14 +104,18 @@ namespace GameProjectCode.Manager
             {
                 foreach (GameObject o in Stages[SelectedStage].GameObjects)
                 {
-                    if (o is IInteractable)
+                    if (o is ICollidable)
                     {
-                        IInteractable interactable = o as IInteractable;
+                        ICollidable interactable = o as ICollidable;
                         interactable.ResolveCollisions();
                     }
                 }
                 playerManager.ResolveCollision();
             }
+        }
+        private void Reset()
+        {
+            //Implement later
         }
     }
 }

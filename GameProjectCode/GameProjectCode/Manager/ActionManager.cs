@@ -11,7 +11,7 @@ namespace GameProjectCode.Manager
 {
     class ActionManager
     {
-        public Vector2 MoveObject(ICollidable toMove , ICollidable refference)
+        public Vector2 MoveObject(IHasCollision toMove , IHasCollision refference)
         {
            
             Vector2 movement = new Vector2();

@@ -12,24 +12,36 @@ namespace GameProjectCode.Manager
 {
     class Sprite_Loader
     {
-        static string[] spriteDataLocations =
-        {
-            @"C:\Electronica-ICT\Game Development\Projects\GameProject2EA\GameProjectCode\GameProjectCode\Content\Spritesheet_Adventurer_Right.csv",
-            @"C:\Electronica-ICT\Game Development\Projects\GameProject2EA\GameProjectCode\GameProjectCode\Content\Spritesheet_Adventurer_Left.csv",
-            @"C:\Electronica-ICT\Game Development\Projects\GameProject2EA\GameProjectCode\GameProjectCode\Content\Environment_Blocks.csv"
-        };
+        List<string> spriteDataLocations;
+        //static string[] spriteDataLocations =
+        //{
+        //    @"C:\Electronica-ICT\Game Development\Projects\GameProject2EA\GameProjectCode\GameProjectCode\Content\Spritesheet_Adventurer_Right.csv",
+        //    @"C:\Electronica-ICT\Game Development\Projects\GameProject2EA\GameProjectCode\GameProjectCode\Content\Spritesheet_Adventurer_Left.csv",
+        //    @"C:\Electronica-ICT\Game Development\Projects\GameProject2EA\GameProjectCode\GameProjectCode\Content\Environment_Blocks.csv"
+        //};
         static string[] spriteNames =
         {
             "Adventurer/adventurer-SheetRight",
             "Adventurer/adventurer-SheetLeft",
             "Environment/sheet"
         };
-        //static string[] spritePrefix =
-        //{
-        //    "Adventurer/",
-        //    "Adventurer/",
-        //    "Environment/"
-        //}; //Redundant
+        public Sprite_Loader()
+        {
+            LoadSpriteDataLocation();
+        }
+        private void LoadSpriteDataLocation()
+        {
+            spriteDataLocations = new List<string>();
+
+            string basePath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+            basePath = basePath.Replace(@"\bin\Windows\x86\Debug", "");
+
+            spriteDataLocations.Add(basePath + @"\Content\Spritesheet_Adventurer_Right.csv");
+            spriteDataLocations.Add(basePath + @"\Content\Spritesheet_Adventurer_Left.csv");
+            spriteDataLocations.Add(basePath + @"\Content\Environment_Blocks.csv");
+
+        }
+
         public Dictionary<string, Animation> GetAnimationDictionary(ContentManager content)
         {
             //Create a Datastring containing all information about each sprite
@@ -38,7 +50,7 @@ namespace GameProjectCode.Manager
             var dictonary = new Dictionary<string, Animation>();
 
             //Loading all sprite data from diffrent sheets
-            for (int i = 0; i < spriteDataLocations.Length; i++)
+            for (int i = 0; i < spriteDataLocations.Count; i++)
             {
                 spriteData = LoadSpriteData(spriteDataLocations[i]);
 
