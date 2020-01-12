@@ -20,9 +20,10 @@ namespace GameProjectCode
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         CollisionManager collisionManager;
-        Sprite_Loader spriteLoader;
+        Content_Loader contentLoader;
         ObjectInitialiser objectInitialiser;
         StageManager stageManager;
+        MusicManager musicManager;
         Camera2D camera;
         Random r;
         PlayerGameObject hero;
@@ -34,6 +35,7 @@ namespace GameProjectCode
         private int gameHeight = 960;
         SoundEffectManager soundEffectManager;
         Song backgroundSong;
+        Song EndSong;
 
         public Game1()
         {
@@ -42,10 +44,11 @@ namespace GameProjectCode
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             collisionManager = new CollisionManager();
-            spriteLoader = new Sprite_Loader();
+            contentLoader = new Content_Loader();
             objectInitialiser = new ObjectInitialiser();
             soundEffectManager = new SoundEffectManager();
-            stageManager = new StageManager(new MenuManager(new Vector2(gameWidth/2-10, gameHeight/2)), new PlayerManager(), soundEffectManager);
+            musicManager = new MusicManager();
+            stageManager = new StageManager(new MenuManager(new Vector2(gameWidth/2-10, gameHeight/2)), new PlayerManager(), soundEffectManager, musicManager);
 
             //Graphics
             graphics.PreferredBackBufferWidth = gameWidth;
@@ -75,7 +78,7 @@ namespace GameProjectCode
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            var animations = spriteLoader.GetAnimationDictionary(Content);
+            var animations = contentLoader.GetAnimationDictionary(Content);
 
             stageManager.AddPlayer(objectInitialiser.LoadPlayer(animations));
             stageManager.AddMenu(new Stage(objectInitialiser.LoadMenu(animations, 0, gameWidth, gameHeight), new Background(Content.Load<Texture2D>("Environment/MysticalForestMain"), new Rectangle(0, 0, 1601, 961)), stageManager.playerManager, false));
@@ -85,10 +88,11 @@ namespace GameProjectCode
             stageManager.GetPlayer().Position = new Vector2(69, 887);
 
             soundEffectManager.LoadSounds(Content);
-            backgroundSong = Content.Load<Song>("Music/Frozen_Forest");
+            musicManager.AddSongs(contentLoader.LoadSongs(Content));
+            //backgroundSong = Content.Load<Song>("Music/Frozen_Forest");
 
-            MediaPlayer.Play(backgroundSong);
-            MediaPlayer.IsRepeating = true;
+            //MediaPlayer.Play(backgroundSong);
+            //MediaPlayer.IsRepeating = true;
 
             hero = (PlayerGameObject)stageManager.GetPlayer();
             spriteFont = Content.Load<SpriteFont>("Misc/basicFont");

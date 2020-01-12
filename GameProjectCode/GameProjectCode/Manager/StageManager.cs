@@ -15,12 +15,13 @@ namespace GameProjectCode.Manager
     {
         public PlayerManager playerManager;
         SoundEffectManager soundEffectManager;
-        public MenuManager menuManager; 
+        public MenuManager menuManager;
+        MusicManager musicManager;
         List<Stage> Stages;
         int prevStage;
         public int SelectedStage { get; set; }
 
-        public StageManager(MenuManager menuManager, PlayerManager playerManager, SoundEffectManager soundEffectManager)
+        public StageManager(MenuManager menuManager, PlayerManager playerManager, SoundEffectManager soundEffectManager, MusicManager musicManager)
         {
             Stages = new List<Stage>();
             this.menuManager = menuManager;
@@ -28,6 +29,7 @@ namespace GameProjectCode.Manager
             prevStage = SelectedStage;
             this.playerManager = playerManager;
             this.soundEffectManager = soundEffectManager;
+            this.musicManager = musicManager;
         }
         public GameObject GetPlayer()
         {
@@ -82,6 +84,11 @@ namespace GameProjectCode.Manager
             {
                 SelectedStage = -1;
                 menuManager.ShowEndScreen();
+                musicManager.PlaySong("End");
+            }
+            else
+            {
+                musicManager.PlaySong("Main");
             }
             if (SelectedStage == -2)
                 this.Reset();

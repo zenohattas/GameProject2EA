@@ -279,6 +279,15 @@ namespace GameProjectCode.Factory
                 case "78":
                     return "Environment/Dirt_blue_bottom_double";
 
+                case "100":
+                    return "Lucifer";
+                case "101":
+                    return "Ghlef";
+                case "102":
+                    return "Frogol";
+                case "103":
+                    return "Skeletor"; 
+
                 default:
                     return "0";
 

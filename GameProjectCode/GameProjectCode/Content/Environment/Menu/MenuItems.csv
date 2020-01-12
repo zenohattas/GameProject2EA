@@ -1,0 +1,15 @@
+Name;xPos;yPos;Width;Height;IsLooping;Framespeed
+BlankTextBox;0;0;205;77;true;0;
+BlankTextBox;0;77;
+Title;205;0;740;300;
+DefeatTitle;205;301;740;125;
+Start;0;154;205;77;true;0;
+Start;0;231;
+Options;0;308;205;77;true;0;
+Options;0;385;
+Quit;0;462;205;77;true;0;
+Quit;0;539;
+Restart;0;616;205;77;true;0;
+Restart;0;693;
+Return;0;770;205;77;true;0;
+Return;0;847;
