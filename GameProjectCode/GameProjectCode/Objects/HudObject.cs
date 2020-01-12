@@ -9,20 +9,32 @@ using System.Threading.Tasks;
 
 namespace GameProjectCode.Objects
 {
-    class HudObject
+    class HudObject : GameSpriteObject
     {
-        public HudObject()
+        public bool ShouldUpdate { get; set; }
+        private Animation _animation;
+        public HudObject(Dictionary<string, Animation> animations, Animation animation, Vector2 position) : base(animations, animation)
         {
+            _animation = animation;
+            Position = position;
+            ShouldUpdate = false;
+        }
+        public void Reset()
+        {
+            _animationManager.Reset();
         }
 
-        publicS void Draw(SpriteBatch spriteBatch)
+        protected override void draw(SpriteBatch spriteBatch)
         {
-            
+            base.draw(spriteBatch);
         }
 
-        public void Date(GameTime gametime)
+        protected override void update(GameTime gametime)
         {
-           
+            if (ShouldUpdate)
+            {
+                base.update(gametime);
+            }
         }
     }
 }

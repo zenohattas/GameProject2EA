@@ -29,7 +29,7 @@ namespace GameProjectCode.Manager
 
             //_timer = 0;
         }
-        public void Stop()
+        public void Reset()
         {
             _timer = 0;
             _animation.CurrentFrame = 0;

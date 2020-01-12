@@ -48,7 +48,8 @@ namespace GameProjectCode
             objectInitialiser = new ObjectInitialiser();
             soundEffectManager = new SoundEffectManager();
             musicManager = new MusicManager();
-            stageManager = new StageManager(new MenuManager(new Vector2(gameWidth/2-10, gameHeight/2)), new PlayerManager(), soundEffectManager, musicManager);
+            PlayerManager playerManager = new PlayerManager();
+            stageManager = new StageManager(new MenuManager(new Vector2(gameWidth/2-10, gameHeight/2)), playerManager, soundEffectManager, musicManager, new HudManager(new Hud(), playerManager));
 
             //Graphics
             graphics.PreferredBackBufferWidth = gameWidth;
@@ -85,6 +86,7 @@ namespace GameProjectCode
             stageManager.AddMenu(new Stage(objectInitialiser.LoadMenu(animations, 1, gameWidth, gameHeight), new Background(Content.Load<Texture2D>("Environment/MysticalForestMain"), new Rectangle(0, 0, 1601, 961)), stageManager.playerManager, false));
             stageManager.AddMenu(new Stage(objectInitialiser.LoadMenu(animations, 2, gameWidth, gameHeight), new Background(Content.Load<Texture2D>("Environment/MysticalDeadForest"), new Rectangle(0, 0, 1600, 965)), stageManager.playerManager, false));
             stageManager.AddStage(new Stage(objectInitialiser.LoadStage(animations, 1, gameWidth, gameHeight), new Background(Content.Load<Texture2D>("Environment/MysticalForest"), new Rectangle(0,0, 1613, 1008)), stageManager.playerManager));
+            stageManager.hudManager.AddHudEllements(objectInitialiser.LoadHud(animations));
             stageManager.GetPlayer().Position = new Vector2(69, 887);
 
             soundEffectManager.LoadSounds(Content);

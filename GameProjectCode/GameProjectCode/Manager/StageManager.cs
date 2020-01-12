@@ -14,6 +14,7 @@ namespace GameProjectCode.Manager
     class StageManager
     {
         public PlayerManager playerManager;
+        public HudManager hudManager;
         SoundEffectManager soundEffectManager;
         public MenuManager menuManager;
         MusicManager musicManager;
@@ -21,7 +22,7 @@ namespace GameProjectCode.Manager
         int prevStage;
         public int SelectedStage { get; set; }
 
-        public StageManager(MenuManager menuManager, PlayerManager playerManager, SoundEffectManager soundEffectManager, MusicManager musicManager)
+        public StageManager(MenuManager menuManager, PlayerManager playerManager, SoundEffectManager soundEffectManager, MusicManager musicManager, HudManager hudManager)
         {
             Stages = new List<Stage>();
             this.menuManager = menuManager;
@@ -30,6 +31,7 @@ namespace GameProjectCode.Manager
             this.playerManager = playerManager;
             this.soundEffectManager = soundEffectManager;
             this.musicManager = musicManager;
+            this.hudManager = hudManager;
         }
         public GameObject GetPlayer()
         {
@@ -77,6 +79,9 @@ namespace GameProjectCode.Manager
                     Stages[0].Draw(spriteBatch);
                     break;
             }
+            if (SelectedStage > -1)
+                hudManager.Draw(spriteBatch);
+           
         }
         public void Update(GameTime gameTime)
         {
@@ -104,6 +109,9 @@ namespace GameProjectCode.Manager
                 }
                 playerManager.Update(gameTime);
             }
+            //Needs to be updated after player
+            if (SelectedStage > -1)
+                hudManager.Update(gameTime);
         }
         public void ResolveCollisions()
         {

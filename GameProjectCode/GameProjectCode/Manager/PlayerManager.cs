@@ -17,9 +17,9 @@ namespace GameProjectCode.Manager
         {
             Player = new List<GameSpriteObject>();
         }
-        public GameSpriteObject GetPlayer()
+        public PlayerGameObject GetPlayer()
         {
-            return Player[0];
+            return Player[0] as PlayerGameObject;
         }
         public bool IsPlayerAlive()
         {

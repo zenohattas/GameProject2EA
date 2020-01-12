@@ -1,3 +1,5 @@
 AnimationName;xPoint;yPoint;Width;Height;IsLooping;Framespeed;xOffset;yOffset;
-AirBubble;4;2;30;30;false;
-Hearth;36;2;44;40;false;
+AirBubble;0;0;30;30;false;
+AirBubble;0;40;
+Hearth;32;0;44;40;false;
+Hearth;32;40;
