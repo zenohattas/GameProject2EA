@@ -19,6 +19,14 @@ namespace GameProjectCode.Models
         public float FrameSpeed { get; set; }
         //public int FrameWidth { get; set; }
         public bool IsLooping { get; set; }
+        public Animation(Texture2D texture, List<AnimationFrame> frames, bool isLooping, float framespeed, Vector2 offset)
+        {
+            this.Texture = texture;
+            Frames = frames;
+            IsLooping = isLooping;
+            FrameSpeed = framespeed;
+            Offset = offset;
+        }
         public Animation(Texture2D texture, int framePositionX, int framePositionY, int frameWidth, int frameHeight, bool isLooping = true, float framespeed = 0.14f)
         {
 
@@ -67,6 +75,9 @@ namespace GameProjectCode.Models
         {
             Frames.Add(new AnimationFrame(framePositionX, framePositionY, Frames[0].Frame.Width, Frames[0].Frame.Height));
         }
-
+        public Animation Duplicate()
+        {
+            return new Animation(Texture, Frames, IsLooping, FrameSpeed, Offset);
+        }
     }
 }

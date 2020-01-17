@@ -16,7 +16,8 @@ namespace GameProjectCode.Factory
         List<string> menuDataLocations;
         List<string> stageDataLocations;
         List<string> hudDataLocations;
-
+        List<Movement> movements;
+        string movementDataLocation;
 
         private Vector2 _initiasePos;
         private Vector2 _spriteSize;
@@ -25,6 +26,7 @@ namespace GameProjectCode.Factory
             _initiasePos = new Vector2(0, 0);
             _spriteSize = new Vector2(16,16);
             LoadDataLocations();
+            LoadMovements();
         }
         public ObjectInitialiser(Vector2 initialisePos, Vector2 spriteSize)
         {
@@ -52,12 +54,15 @@ namespace GameProjectCode.Factory
 
             //Hud
             hudDataLocations.Add(basePath + @"\Content\Misc\Hud.csv");
+
+            //Movement
+            movementDataLocation = basePath + @"\Content\Stages\Movements.csv";
         }
         public List<GameObject> LoadMenu(Dictionary<string, Animation> animations, int Menu, int StageWidth, int StageHeight)
         {
             List<GameObject> sprites = new List<GameObject>();
 
-            sprites.AddRange(this.LoadMenuObjects(animations, LoadStageData(menuDataLocations[Menu])));
+            sprites.AddRange(this.LoadMenuObjects(animations, LoadData(menuDataLocations[Menu])));
             sprites.AddRange(this.LoadBoundaries(StageWidth, StageHeight));
 
             return sprites;
@@ -66,8 +71,8 @@ namespace GameProjectCode.Factory
         {
             List<GameObject> sprites = new List<GameObject>();
 
-            sprites.AddRange(this.LoadObjects(animations, LoadStageData(stageDataLocations[0])));
-            sprites.AddRange(this.LoadObjects(animations, LoadStageData(stageDataLocations[Stage])));
+            sprites.AddRange(this.LoadObjects(animations, LoadData(stageDataLocations[0])));
+            sprites.AddRange(this.LoadObjects(animations, LoadData(stageDataLocations[Stage])));
             sprites.AddRange(this.LoadBoundaries(StageWidth, StageHeight));
 
             return sprites;
@@ -97,12 +102,18 @@ namespace GameProjectCode.Factory
                             //Optional parameter
                             if (ellement.Length > 1)
                             {
-                                if (ellement[1] == "L")
-                                    sprites.Add(new BlockLiquidGameObject(animations, animations[animationName], _initiasePos));
-                                else if (ellement[1] == "T")
-                                    sprites.Add(new BlockTransparentGameObject(animations, animations[animationName], _initiasePos));
-                                else if (ellement[1] == "F")
-                                    sprites.Add(new BlockFallThroughGameObject(animations, animations[animationName], _initiasePos));
+                                switch (ellement[1])
+                                {
+                                    case "L":
+                                        sprites.Add(new BlockLiquidGameObject(animations, animations[animationName], _initiasePos));
+                                        break;
+                                    case "T":
+                                        sprites.Add(new BlockTransparentGameObject(animations, animations[animationName], _initiasePos));
+                                        break;
+                                    case "F":
+                                        sprites.Add(new BlockFallThroughGameObject(animations, animations[animationName], _initiasePos));
+                                        break;
+                                }
                                 //else
                                 //Do nothing
                             }
@@ -297,7 +308,7 @@ namespace GameProjectCode.Factory
         }
         public GameObject LoadPlayer(Dictionary<string, Animation> animations)
         {
-            return new PlayerGameObject(animations)
+            return new PlayerGameObject(animations, animations.First().Value)
             {
                 Position = new Vector2(100, 100),
                 Input = new Input()
@@ -314,7 +325,7 @@ namespace GameProjectCode.Factory
                 },
             };
         }
-        private List<List<string>> LoadStageData(string fileLocation)
+        private List<List<string>> LoadData(string fileLocation)
         {
             List<List<string>> spriteData = new List<List<string>>();
 
@@ -347,7 +358,7 @@ namespace GameProjectCode.Factory
 
         public List<List<HudObject>> LoadHud(Dictionary<string, Animation> animations, int Hud = 0)
         {
-            List<List<string>> objects = LoadStageData(hudDataLocations[Hud]);
+            List<List<string>> objects = LoadData(hudDataLocations[Hud]);
             List<List<HudObject>> sprites = new List<List<HudObject>>();
             string checkString = "";
             int hudEllement = -1;
@@ -360,10 +371,22 @@ namespace GameProjectCode.Factory
                     hudEllement++;
                     checkString = objects[i][0];
                 }
-                sprites[hudEllement].Add(new HudObject(animations, animations[objects[i][0]], new Vector2(float.Parse(objects[i][1]), float.Parse(objects[i][2]))));
+                sprites[hudEllement].Add(new HudObject(animations, animations[objects[i][0]].Duplicate(), new Vector2(float.Parse(objects[i][1]), float.Parse(objects[i][2]))));
             }
 
             return sprites;
+        }
+        private List<Movement> LoadMovements()
+        {
+            List<Movement> movements = new List<Movement>();
+            List<List<string>> data = LoadData(movementDataLocation);
+
+            foreach (var line in data)
+            {
+                
+            }
+
+            return movements;
         }
     }
 }

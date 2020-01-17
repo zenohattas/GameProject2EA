@@ -64,6 +64,7 @@
     <Compile Include="Models\IDamagable.cs" />
     <Compile Include="Models\IFallThrough.cs" />
     <Compile Include="Models\ICollidable.cs" />
+    <Compile Include="Models\IHasGravity.cs" />
     <Compile Include="Models\IInteractable.cs" />
     <Compile Include="Models\IJump.cs" />
     <Compile Include="Models\ILiquid.cs" />
@@ -71,7 +72,7 @@
     <Compile Include="Models\Input.cs" />
     <Compile Include="Models\ISpriteObject.cs" />
     <Compile Include="Models\MenuElement.cs" />
-    <Compile Include="Models\Movement.cs" />
+    <Compile Include="Models\MovementPatern.cs" />
     <Compile Include="Models\Stage.cs" />
     <Compile Include="Objects\Block.cs" />
     <Compile Include="Objects\BlockFallThroughGameObject.cs" />
@@ -81,6 +82,7 @@
     <Compile Include="Objects\BoundryObject.cs" />
     <Compile Include="Objects\GameObject.cs" />
     <Compile Include="Objects\HudObject.cs" />
+    <Compile Include="Models\IKillable.cs" />
     <Compile Include="Objects\MenuObject.cs" />
     <Compile Include="Objects\MonsterGameObject.cs" />
     <Compile Include="Objects\SignObject.cs" />

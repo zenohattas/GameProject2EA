@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace GameProjectCode.Models
 {
-    class Movement
+    interface IHasGravity
     {
-        public void Jump()
-        {
-
-        }
+        float Gravity { get; set; }
     }
 }

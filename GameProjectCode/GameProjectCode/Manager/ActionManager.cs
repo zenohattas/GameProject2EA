@@ -94,5 +94,13 @@ namespace GameProjectCode.Manager
 
             return movement;
         }
+        public void DealDamage(GameObject damageReceiver, int damage)
+        {
+            if (damageReceiver is IDamagable)
+            {
+                IDamagable d = damageReceiver as IDamagable;
+                d.Damage(damage);
+            }
+        }
     }
 }
