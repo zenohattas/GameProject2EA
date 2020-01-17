@@ -10,7 +10,7 @@ using Microsoft.Xna.Framework.Input;
 
 namespace GameProjectCode.Objects
 {
-    class PlayerGameObject : ControlledGameObject, ICollidable, IJump, IAnimated, IDamagable, IHasGravity
+    class PlayerGameObject : ControlledGameObject, ICollidable, ICanJump, IAnimated, IDamagable, ICanFall
     {
         private bool Collided;
         private int JumpsLeft;
@@ -22,8 +22,10 @@ namespace GameProjectCode.Objects
         private Vector2 tomove;
         private float walkSpeed = 0.14f;
         private float runSpeed = 0.07f;
-        private float jumpHeight = -5f;
         private Vector2 crouchOffset;
+        private bool IsHurt;
+        protected float _damageStunTimer = 0;
+        protected float _damageStunTime = 0.4f;
         private float _timer;
         private float breathTime = 1;
         private int lungCapacity;
@@ -31,7 +33,7 @@ namespace GameProjectCode.Objects
         public int Breath { get; private set; }
         public int HP { get; set; }
 
-        public PlayerGameObject(Dictionary<string, Animation> animations, Animation animation, float Speed = 1f, int LungCapacity = 8, float Gravity = 0.15f, string animationLeft_AirAttack1 = "Adventurer/Left_AirAttack1", string animationLeft_AirAttack2 = "Adventurer/Left_AirAttack2", string animationLeft_AirAttack3End = "Adventurer/Left_AirAttack3", string animationLeft_AirAttack3Loop = "Adventurer/Left_AirAttack3Loop", string animationLeft_AirAttack3Ready = "Adventurer/Left_AirAttack3Ready", string animationLeft_Attack1 = "Adventurer/Left_Attack1", string animationLeft_Attack2 = "Adventurer/Left_Attack2", string animationLeft_Attack3 = "Adventurer/Left_Attack3", string animationLeft_Cast = "Adventurer/Left_Cast", string animationLeft_CastLoop = "Adventurer/Left_CastLoop", string animationLeft_CornerClimb = "Adventurer/Left_CornerClimb", string animationLeft_CornerGrab = "Adventurer/Left_CornerGrab", string animationLeft_CornerJump = "Adventurer/Left_CornerJump", string animationLeft_Crouch = "Adventurer/Left_Crouch", string animationLeft_Die = "Adventurer/Left_Die", string animationLeft_Fall = "Adventurer/Left_Fall", string animationLeft_Hurt = "Adventurer/Left_Hurt", string animationLeft_Idle = "Adventurer/Left_Idle", string animationLeft_Idle2 = "Adventurer/Left_Idle2", string animationLeft_Items = "Adventurer/Left_Items", string animationLeft_Jump = "Adventurer/Left_Jump", string animationLeft_LadderClimb = "Adventurer/Left_LadderClimb", string animationLeft_Run = "Adventurer/Left_Run", string animationLeft_Slide = "Adventurer/Left_Slide", string animationLeft_RollDodge = "Adventurer/Left_RollDodge", string animationLeft_Stand = "Adventurer/Left_Stand", string animationLeft_SwordDraw = "Adventurer/Left_SwordDraw", string animationLeft_SwordSheat = "Adventurer/Left_SwordSheat", string animationLeft_WallSlide = "Adventurer/Left_WallSlide", string animationRight_AirAttack1 = "Adventurer/Right_AirAttack1", string animationRight_AirAttack2 = "Adventurer/Right_AirAttack2", string animationRight_AirAttack3End = "Adventurer/Right_AirAttack3", string animationRight_AirAttack3Loop = "Adventurer/Right_AirAttack3Loop", string animationRight_AirAttack3Ready = "Adventurer/Right_AirAttack3Ready", string animationRight_Attack1 = "Adventurer/Right_Attack1", string animationRight_Attack2 = "Adventurer/Right_Attack2", string animationRight_Attack3 = "Adventurer/Right_Attack3", string animationRight_Cast = "Adventurer/Right_Cast", string animationRight_CastLoop = "Adventurer/Right_CastLoop", string animationRight_CornerClimb = "Adventurer/Right_CornerClimb", string animationRight_CornerGrab = "Adventurer/Right_CornerGrab", string animationRight_CornerJump = "Adventurer/Right_CornerJump", string animationRight_Crouch = "Adventurer/Right_Crouch", string animationRight_Die = "Adventurer/Right_Die", string animationRight_Fall = "Adventurer/Right_Fall", string animationRight_Hurt = "Adventurer/Right_Hurt", string animationRight_Idle = "Adventurer/Right_Idle", string animationRight_Idle2 = "Adventurer/Right_Idle2", string animationRight_Items = "Adventurer/Right_Items", string animationRight_Jump = "Adventurer/Right_Jump", string animationRight_LadderClimb = "Adventurer/Right_LadderClimb", string animationRight_Run = "Adventurer/Right_Run", string animationRight_Slide = "Adventurer/Right_Slide", string animationRight_RollDodge = "Adventurer/Right_RollDodge", string animationRight_Stand = "Adventurer/Right_Stand", string animationRight_SwordDraw = "Adventurer/Right_SwordDraw", string animationRight_SwordSheat = "Adventurer/Right_SwordSheat", string animationRight_WallSlide = "Adventurer/Right_WallSlide") : base(animations, animation, Speed)
+        public PlayerGameObject(Dictionary<string, Animation> animations, Animation animation, float Speed = 1f, int LungCapacity = 8, float jumpHeight = -5f, float Gravity = 0.15f, string animationLeft_AirAttack1 = "Adventurer/Left_AirAttack1", string animationLeft_AirAttack2 = "Adventurer/Left_AirAttack2", string animationLeft_AirAttack3End = "Adventurer/Left_AirAttack3", string animationLeft_AirAttack3Loop = "Adventurer/Left_AirAttack3Loop", string animationLeft_AirAttack3Ready = "Adventurer/Left_AirAttack3Ready", string animationLeft_Attack1 = "Adventurer/Left_Attack1", string animationLeft_Attack2 = "Adventurer/Left_Attack2", string animationLeft_Attack3 = "Adventurer/Left_Attack3", string animationLeft_Cast = "Adventurer/Left_Cast", string animationLeft_CastLoop = "Adventurer/Left_CastLoop", string animationLeft_CornerClimb = "Adventurer/Left_CornerClimb", string animationLeft_CornerGrab = "Adventurer/Left_CornerGrab", string animationLeft_CornerJump = "Adventurer/Left_CornerJump", string animationLeft_Crouch = "Adventurer/Left_Crouch", string animationLeft_Die = "Adventurer/Left_Die", string animationLeft_Fall = "Adventurer/Left_Fall", string animationLeft_Hurt = "Adventurer/Left_Hurt", string animationLeft_Idle = "Adventurer/Left_Idle", string animationLeft_Idle2 = "Adventurer/Left_Idle2", string animationLeft_Items = "Adventurer/Left_Items", string animationLeft_Jump = "Adventurer/Left_Jump", string animationLeft_LadderClimb = "Adventurer/Left_LadderClimb", string animationLeft_Run = "Adventurer/Left_Run", string animationLeft_Slide = "Adventurer/Left_Slide", string animationLeft_RollDodge = "Adventurer/Left_RollDodge", string animationLeft_Stand = "Adventurer/Left_Stand", string animationLeft_SwordDraw = "Adventurer/Left_SwordDraw", string animationLeft_SwordSheat = "Adventurer/Left_SwordSheat", string animationLeft_WallSlide = "Adventurer/Left_WallSlide", string animationRight_AirAttack1 = "Adventurer/Right_AirAttack1", string animationRight_AirAttack2 = "Adventurer/Right_AirAttack2", string animationRight_AirAttack3End = "Adventurer/Right_AirAttack3", string animationRight_AirAttack3Loop = "Adventurer/Right_AirAttack3Loop", string animationRight_AirAttack3Ready = "Adventurer/Right_AirAttack3Ready", string animationRight_Attack1 = "Adventurer/Right_Attack1", string animationRight_Attack2 = "Adventurer/Right_Attack2", string animationRight_Attack3 = "Adventurer/Right_Attack3", string animationRight_Cast = "Adventurer/Right_Cast", string animationRight_CastLoop = "Adventurer/Right_CastLoop", string animationRight_CornerClimb = "Adventurer/Right_CornerClimb", string animationRight_CornerGrab = "Adventurer/Right_CornerGrab", string animationRight_CornerJump = "Adventurer/Right_CornerJump", string animationRight_Crouch = "Adventurer/Right_Crouch", string animationRight_Die = "Adventurer/Right_Die", string animationRight_Fall = "Adventurer/Right_Fall", string animationRight_Hurt = "Adventurer/Right_Hurt", string animationRight_Idle = "Adventurer/Right_Idle", string animationRight_Idle2 = "Adventurer/Right_Idle2", string animationRight_Items = "Adventurer/Right_Items", string animationRight_Jump = "Adventurer/Right_Jump", string animationRight_LadderClimb = "Adventurer/Right_LadderClimb", string animationRight_Run = "Adventurer/Right_Run", string animationRight_Slide = "Adventurer/Right_Slide", string animationRight_RollDodge = "Adventurer/Right_RollDodge", string animationRight_Stand = "Adventurer/Right_Stand", string animationRight_SwordDraw = "Adventurer/Right_SwordDraw", string animationRight_SwordSheat = "Adventurer/Right_SwordSheat", string animationRight_WallSlide = "Adventurer/Right_WallSlide") : base(animations, animation, Speed)
         {
             _animationLeft_AirAttack1 = animationLeft_AirAttack1;
             _animationLeft_AirAttack2 = animationLeft_AirAttack2;
@@ -96,6 +98,7 @@ namespace GameProjectCode.Objects
             previousKeys = Keyboard.GetState().GetPressedKeys();
             IsfacingRight = true;
             IsTouchingWall = false;
+            IsHurt = false;
             CanJump = false;
             JumpsLeft = 2;
             crouchOffset = new Vector2(0,_animations[_animationLeft_Crouch].Offset.Y);
@@ -104,6 +107,7 @@ namespace GameProjectCode.Objects
             lungCapacity = LungCapacity;
             Breath = lungCapacity;
             this.Gravity = Gravity;
+            JumpHeight = jumpHeight;
         }
 
         #region animation names
@@ -171,107 +175,122 @@ namespace GameProjectCode.Objects
 
         public void SetAnimations()
         {
-            if (IsGrounded)
+            if (!IsHurt)
             {
-                if (Keyboard.GetState().IsKeyDown(Input.Left))
+                if (IsGrounded)
                 {
-                    if (Keyboard.GetState().IsKeyDown(Input.Down))
-                        _animationManager.Play(_animations[_animationLeft_Crouch]);
-                    else
-                        _animationManager.Play(_animations[_animationLeft_Run]);
-                    IsfacingRight = false;
-                }
-                else if (Keyboard.GetState().IsKeyDown(Input.Right))
-                {
-                    if (Keyboard.GetState().IsKeyDown(Input.Down))
-                        _animationManager.Play(_animations[_animationRight_Crouch]);
-                    else
-                        _animationManager.Play(_animations[_animationRight_Run]);
-                    IsfacingRight = true;
+                    if (Keyboard.GetState().IsKeyDown(Input.Left))
+                    {
+                        if (Keyboard.GetState().IsKeyDown(Input.Down))
+                            _animationManager.Play(_animations[_animationLeft_Crouch]);
+                        else
+                            _animationManager.Play(_animations[_animationLeft_Run]);
+                        IsfacingRight = false;
+                    }
+                    else if (Keyboard.GetState().IsKeyDown(Input.Right))
+                    {
+                        if (Keyboard.GetState().IsKeyDown(Input.Down))
+                            _animationManager.Play(_animations[_animationRight_Crouch]);
+                        else
+                            _animationManager.Play(_animations[_animationRight_Run]);
+                        IsfacingRight = true;
 
+                    }
+                    else if (IsfacingRight)
+                        if (Keyboard.GetState().IsKeyDown(Input.Down))
+                            _animationManager.Play(_animations[_animationRight_Crouch]);
+                        else
+                            _animationManager.Play(_animations[_animationRight_Idle]);
+                    else if (!IsfacingRight)
+                        if (Keyboard.GetState().IsKeyDown(Input.Down))
+                            _animationManager.Play(_animations[_animationLeft_Crouch]);
+                        else
+                            _animationManager.Play(_animations[_animationLeft_Idle]);
+                    if (Keyboard.GetState().IsKeyDown(Input.Sprint))
+                        _animationManager._animation.FrameSpeed = runSpeed;
+                    else
+                        _animationManager._animation.FrameSpeed = walkSpeed;
                 }
-                else if (IsfacingRight)
-                    if (Keyboard.GetState().IsKeyDown(Input.Down))
-                        _animationManager.Play(_animations[_animationRight_Crouch]);
-                    else
-                        _animationManager.Play(_animations[_animationRight_Idle]);
-                else if (!IsfacingRight)
-                    if (Keyboard.GetState().IsKeyDown(Input.Down))
-                        _animationManager.Play(_animations[_animationLeft_Crouch]);
-                    else
-                        _animationManager.Play(_animations[_animationLeft_Idle]);
-                if (Keyboard.GetState().IsKeyDown(Input.Sprint))
-                    _animationManager._animation.FrameSpeed = runSpeed;
                 else
-                    _animationManager._animation.FrameSpeed = walkSpeed;
+                {
+                    if (IsfacingRight)
+                    {
+                        if (Keyboard.GetState().IsKeyDown(Input.Jump))
+                            _animationManager.Play(_animations[_animationRight_Jump]);
+                        else if(Velocity.Y>1)
+                            _animationManager.Play(_animations[_animationRight_Fall]);
+                    }
+                    else
+                    {
+                        if (Keyboard.GetState().IsKeyDown(Input.Jump))
+                            _animationManager.Play(_animations[_animationLeft_Jump]);
+                        else if (Velocity.Y > 1)
+                            _animationManager.Play(_animations[_animationLeft_Fall]);
+                    }
+                    if (Keyboard.GetState().IsKeyDown(Input.Left))
+                        IsfacingRight = false;
+                    if (Keyboard.GetState().IsKeyDown(Input.Right))
+                        IsfacingRight = true;
+                }
+
             }
             else
             {
                 if (IsfacingRight)
                 {
-                    if (Keyboard.GetState().IsKeyDown(Input.Jump))
-                        _animationManager.Play(_animations[_animationRight_Jump]);
-                    else if(Velocity.Y>1)
-                        _animationManager.Play(_animations[_animationRight_Fall]);
+                    _animationManager.Play(_animations[_animationRight_Hurt]);
                 }
                 else
                 {
-                    if (Keyboard.GetState().IsKeyDown(Input.Jump))
-                        _animationManager.Play(_animations[_animationLeft_Jump]);
-                    else if (Velocity.Y > 1)
-                        _animationManager.Play(_animations[_animationLeft_Fall]);
+                    _animationManager.Play(_animations[_animationLeft_Hurt]);
                 }
-                if (Keyboard.GetState().IsKeyDown(Input.Left))
-                    IsfacingRight = false;
-                if (Keyboard.GetState().IsKeyDown(Input.Right))
-                    IsfacingRight = true;
             }
         }
         protected override void Move()
         {
-            
-            if (Keyboard.GetState().IsKeyDown(Input.Sprint))
+            if (!IsHurt)
             {
-                if(Keyboard.GetState().IsKeyDown(Input.Left))
-                    Velocity.X = -Speed * 2;
-                else if (Keyboard.GetState().IsKeyDown(Input.Right))
-                    Velocity.X = Speed * 2;
+                if (Keyboard.GetState().IsKeyDown(Input.Sprint))
+                {
+                    if(Keyboard.GetState().IsKeyDown(Input.Left))
+                        Velocity.X = -Speed * 2;
+                    else if (Keyboard.GetState().IsKeyDown(Input.Right))
+                        Velocity.X = Speed * 2;
+                    else
+                    {
+                        Velocity.X = Velocity.X / 1.2f;
+                    }
+                }
                 else
                 {
-                    Velocity.X = Velocity.X / 1.2f;
+                    if (Keyboard.GetState().IsKeyDown(Input.Left))
+                        Velocity.X = -Speed;
+                    else if (Keyboard.GetState().IsKeyDown(Input.Right))
+                        Velocity.X = Speed;
+                    else
+                    {
+                        Velocity.X = Velocity.X / 1.2f;
+                    }
                 }
-            }
-            else
-            {
-                if (Keyboard.GetState().IsKeyDown(Input.Left))
-                    Velocity.X = -Speed;
-                else if (Keyboard.GetState().IsKeyDown(Input.Right))
-                    Velocity.X = Speed;
-                else
+
+                if (Keyboard.GetState().IsKeyDown(Input.Down) && !previousKeys.Contains(Input.Down))
                 {
-                    Velocity.X = Velocity.X / 1.2f;
+                    Position -= crouchOffset;
                 }
-            }
+                if(!Keyboard.GetState().IsKeyDown(Input.Down) && previousKeys.Contains(Input.Down))
+                {
+                    Position += crouchOffset;
+                }
 
-            if (Keyboard.GetState().IsKeyDown(Input.Down) && !previousKeys.Contains(Input.Down))
-            {
-                Position -= crouchOffset;
-            }
-            if(!Keyboard.GetState().IsKeyDown(Input.Down) && previousKeys.Contains(Input.Down))
-            {
-                Position += crouchOffset;
-            }
+                if (Keyboard.GetState().IsKeyDown(Input.Jump) && JumpsLeft > 0&& !previousKeys.Contains(Input.Jump))
+                {
+                    Jump();
+                }
 
-            if (Keyboard.GetState().IsKeyDown(Input.Jump) && JumpsLeft > 0&& !previousKeys.Contains(Input.Jump))
-            {
-                if (Velocity.Y > jumpHeight*slow)
-                    Velocity.Y = jumpHeight*slow;
-                IsGrounded = false;
-                JumpsLeft--;
             }
-            else if (!IsGrounded)
+            if (!IsGrounded)
             {
-                Velocity.Y += Gravity;
+                Fall();
             }
 
             previousKeys = Keyboard.GetState().GetPressedKeys();
@@ -342,7 +361,11 @@ namespace GameProjectCode.Objects
             }
             else
             {
-                Damage(1);
+                if (_damageStunTimer > _damageStunTime)
+                {
+                    Damage(1);
+
+                }
             }
         }
 
@@ -357,7 +380,6 @@ namespace GameProjectCode.Objects
             }
         }
         private Vector2 _dimension;
-        public bool IsGrounded = false;
         public bool IsMoving
         {
             get
@@ -371,6 +393,9 @@ namespace GameProjectCode.Objects
 
         public float Gravity { get; set; }
 
+        public float JumpHeight { get; private set; }
+        public bool IsGrounded { get; set; }
+
         protected override void update(GameTime gametime)
         {
             base.update(gametime);
@@ -380,6 +405,7 @@ namespace GameProjectCode.Objects
             }
             Collided = false;
             SetAnimations();
+
             _timer += (float)gametime.ElapsedGameTime.TotalSeconds;
             if (_timer >= breathTime)
             {
@@ -394,11 +420,37 @@ namespace GameProjectCode.Objects
                 }
                 _timer = 0;
             }
+
+            if (IsHurt)
+            {
+                _damageStunTimer = 0;
+            }
+            if (_damageStunTimer > _damageStunTime)
+            {
+                IsHurt = false;
+            }
+            else
+            {
+                _damageStunTimer += (float)gametime.TotalGameTime.TotalSeconds;
+            }
         }
 
         public void Damage(int damage)
         {
             HP -= damage;
+        }
+
+        public void Fall()
+        {
+            Velocity.Y += Gravity;
+        }
+
+        public void Jump()
+        {
+            if (Velocity.Y > JumpHeight * slow)
+                Velocity.Y = JumpHeight * slow;
+            IsGrounded = false;
+            JumpsLeft--;
         }
     }
 }

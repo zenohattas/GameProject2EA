@@ -2,7 +2,7 @@
 {
     internal interface IKillable
     {
-        bool IsAllive { get; set; }
+        bool IsAlive { get; set; }
         void Die();
     }
 }

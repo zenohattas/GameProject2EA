@@ -10,14 +10,19 @@ namespace GameProjectCode.Objects
     {
         protected Rectangle _collisionRectangle;
         private Vector2 _dimension;
+        protected Animation LeftAnimation;
+        protected Animation RightAnimation;
         private bool _isAlive;
         protected MovementPatern MovementPatern;
         protected int power;
         protected double _timer;
-        public MonsterGameObject(Dictionary<string, Animation> animations, Animation animation, MovementPatern movementPatern, int Power, float Speed = 0.15F) : base(animations, animation, Speed)
+        public MonsterGameObject(Dictionary<string, Animation> animations, Animation LeftAnimation, Animation RightAnimation, MovementPatern movementPatern, int Power = 1, int BaseHP = 3, float Speed = 0.15F) : base(animations, LeftAnimation, Speed)
         {
             MovementPatern = movementPatern;
             power = Power;
+            this.RightAnimation = RightAnimation;
+            this.LeftAnimation = LeftAnimation;
+            HP = BaseHP;
         }
 
         public Rectangle CollisionRectangle
@@ -43,31 +48,61 @@ namespace GameProjectCode.Objects
         }
         public int HP { get; private set; }
         public override Vector2 Position { get => base.Position; set => base.Position = value; }
-        public bool IsAllive { get => _isAlive; set => _isAlive = value; }
+        public bool IsAlive { get => _isAlive; set => _isAlive = value; }
 
         public void Collide(IHasCollision o)
         {
-            actionManager.DealDamage(o as GameObject, power);
+            if (o is PlayerGameObject)
+            {
+                actionManager.DealDamage(o as GameObject, power);
+
+            }
         }
 
         public void Damage(int damage)
         {
             HP -= damage;
+            Die();
         }
 
         public void ResolveCollisions()
         {
-            
+           //Nothing to do yet 
         }
 
         public void SetAnimations()
         {
-            
+            switch (MovementPatern.GetMovement())
+            {
+                case Movement.RIGHT:
+                    _animationManager.Play(RightAnimation);
+                    break;
+                case Movement.LEFT:
+                    _animationManager.Play(LeftAnimation);
+                    break;
+                case Movement.JUMP:
+                    _animationManager._animation.CurrentFrame = 1;
+                    break;
+                case Movement.JUMPLEFT:
+                    _animationManager.Play(LeftAnimation);
+                    _animationManager._animation.CurrentFrame = 1;
+                    break;
+                case Movement.JUMPRIGHT:
+                    _animationManager.Play(RightAnimation);
+                    _animationManager._animation.CurrentFrame = 1;
+                    break;
+                default:
+                    break;
+            }
         }
 
         protected override void draw(SpriteBatch spriteBatch)
         {
-            base.draw(spriteBatch);
+            if (IsAlive)
+            {
+                base.draw(spriteBatch);
+
+            }
         }
 
         protected override void Move()
@@ -80,12 +115,11 @@ namespace GameProjectCode.Objects
                 case Movement.LEFT:
                     Velocity.X -= Speed;
                     break;
-                case Movement.JUMP:
-
-                    break;
                 case Movement.JUMPRIGHT:
+                    Velocity.X += Speed;
                     break;
                 case Movement.JUMPLEFT:
+                    Velocity.X -= Speed;
                     break;
                 default:
                     break;
@@ -94,18 +128,22 @@ namespace GameProjectCode.Objects
 
         protected override void update(GameTime gametime)
         {
-            _timer += gametime.ElapsedGameTime.TotalSeconds;
-            if (_timer > 1)
+            if (IsAlive)
             {
-                _timer = 0;
-                MovementPatern.Next();
+                base.update(gametime);
+                _timer += gametime.ElapsedGameTime.TotalSeconds;
+                if (_timer > 1)
+                {
+                    _timer = 0;
+                    MovementPatern.Next();
+                }
+                SetAnimations();
             }
-            base.update(gametime);
         }
 
         public void Die()
         {
-            throw new NotImplementedException();
+            IsAlive = false;
         }
     }
 }

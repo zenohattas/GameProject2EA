@@ -16,7 +16,7 @@ namespace GameProjectCode.Factory
         List<string> menuDataLocations;
         List<string> stageDataLocations;
         List<string> hudDataLocations;
-        List<Movement> movements;
+        List<MovementPatern> movements;
         string movementDataLocation;
 
         private Vector2 _initiasePos;
@@ -26,13 +26,14 @@ namespace GameProjectCode.Factory
             _initiasePos = new Vector2(0, 0);
             _spriteSize = new Vector2(16,16);
             LoadDataLocations();
-            LoadMovements();
+            movements = LoadMovements();
         }
         public ObjectInitialiser(Vector2 initialisePos, Vector2 spriteSize)
         {
             _initiasePos = initialisePos;
             _spriteSize = spriteSize;
             LoadDataLocations();
+            movements = LoadMovements();
         }
         private void LoadDataLocations()
         {
@@ -112,6 +113,12 @@ namespace GameProjectCode.Factory
                                         break;
                                     case "F":
                                         sprites.Add(new BlockFallThroughGameObject(animations, animations[animationName], _initiasePos));
+                                        break;
+                                    case "M":
+                                        if (ellement.Length > 3)
+                                        {
+                                            sprites.Add(new MonsterGameObject(animations, animations[animationName], animations[GetAnimationName(ellement[3])], movements[Convert.ToInt32(ellement[2])]));
+                                        }
                                         break;
                                 }
                                 //else
@@ -293,13 +300,21 @@ namespace GameProjectCode.Factory
                     return "Environment/Dirt_blue_bottom_double";
 
                 case "100":
-                    return "Lucifer";
+                    return "Lucifer_Left";
                 case "101":
-                    return "Ghlef";
+                    return "Lucifer_Right";
                 case "102":
-                    return "Frogol";
+                    return "Ghlef_Left";
                 case "103":
-                    return "Skeletor"; 
+                    return "Ghlef_Right";
+                case "104":
+                    return "Frogol_Left";
+                case "105":
+                    return "Frogol_Right";
+                case "106":
+                    return "Skeletor_Left";
+                case "107":
+                    return "Skeletor_Right";
 
                 default:
                     return "0";
@@ -376,14 +391,40 @@ namespace GameProjectCode.Factory
 
             return sprites;
         }
-        private List<Movement> LoadMovements()
+        private List<MovementPatern> LoadMovements()
         {
-            List<Movement> movements = new List<Movement>();
+            List<MovementPatern> movements = new List<MovementPatern>();
             List<List<string>> data = LoadData(movementDataLocation);
 
             foreach (var line in data)
             {
-                
+                List<Movement> movementSet = new List<Movement>();
+                foreach (var character in line)
+                {
+                    Movement movement;
+                    switch (character)
+                    {
+                        case "R":
+                            movement = Movement.RIGHT;
+                            break;
+                        case "L":
+                            movement = Movement.LEFT;
+                            break;
+                        case "J":
+                            movement = Movement.JUMP;
+                            break;
+                        case "JR":
+                            movement = Movement.JUMPRIGHT;
+                            break;
+                        case "JL":
+                            movement = Movement.JUMPLEFT;
+                            break;
+                        default:
+                            movement = Movement.STILL;
+                            break;
+                    }
+                    movementSet.Add(movement);
+                }
             }
 
             return movements;

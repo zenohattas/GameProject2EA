@@ -35,6 +35,7 @@ namespace GameProjectCode.Models
         LEFT,
         JUMP,
         JUMPLEFT,
-        JUMPRIGHT
+        JUMPRIGHT,
+        STILL
     }
 }
