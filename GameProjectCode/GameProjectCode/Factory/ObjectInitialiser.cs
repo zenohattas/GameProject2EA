@@ -57,7 +57,7 @@ namespace GameProjectCode.Factory
             hudDataLocations.Add(basePath + @"\Content\Misc\Hud.csv");
 
             //Movement
-            movementDataLocation = basePath + @"\Content\Stages\Movements.csv";
+            movementDataLocation = basePath + @"\Content\Monsters\Movements.csv";
         }
         public List<GameObject> LoadMenu(Dictionary<string, Animation> animations, int Menu, int StageWidth, int StageHeight)
         {
@@ -117,7 +117,7 @@ namespace GameProjectCode.Factory
                                     case "M":
                                         if (ellement.Length > 3)
                                         {
-                                            sprites.Add(new MonsterGameObject(animations, animations[animationName], animations[GetAnimationName(ellement[3])], movements[Convert.ToInt32(ellement[2])]));
+                                            sprites.Add(new MonsterGameObject(animations, animations[animationName], animations[GetAnimationName(ellement[3])], movements[Convert.ToInt32(ellement[2])], _initiasePos));
                                         }
                                         break;
                                 }
@@ -425,6 +425,7 @@ namespace GameProjectCode.Factory
                     }
                     movementSet.Add(movement);
                 }
+                movements.Add(new MovementPatern(movementSet));
             }
 
             return movements;

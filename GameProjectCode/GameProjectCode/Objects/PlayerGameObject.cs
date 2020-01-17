@@ -12,7 +12,6 @@ namespace GameProjectCode.Objects
 {
     class PlayerGameObject : ControlledGameObject, ICollidable, ICanJump, IAnimated, IDamagable, ICanFall
     {
-        private bool Collided;
         private int JumpsLeft;
         private bool IsfacingRight;
         private bool IsDrowning;
@@ -25,7 +24,7 @@ namespace GameProjectCode.Objects
         private Vector2 crouchOffset;
         private bool IsHurt;
         protected float _damageStunTimer = 0;
-        protected float _damageStunTime = 0.4f;
+        protected float _damageStunTime = 1f;
         private float _timer;
         private float breathTime = 1;
         private int lungCapacity;
@@ -288,6 +287,10 @@ namespace GameProjectCode.Objects
                 }
 
             }
+            else
+            {
+                Velocity.X = Velocity.X / 1.2f;
+            }
             if (!IsGrounded)
             {
                 Fall();
@@ -361,11 +364,7 @@ namespace GameProjectCode.Objects
             }
             else
             {
-                if (_damageStunTimer > _damageStunTime)
-                {
-                    Damage(1);
-
-                }
+                Damage(1);
             }
         }
 
@@ -395,6 +394,7 @@ namespace GameProjectCode.Objects
 
         public float JumpHeight { get; private set; }
         public bool IsGrounded { get; set; }
+        public bool Collided { get; set; }
 
         protected override void update(GameTime gametime)
         {
@@ -421,23 +421,31 @@ namespace GameProjectCode.Objects
                 _timer = 0;
             }
 
-            if (IsHurt)
+            if (IsHurt && _damageStunTimer > _damageStunTime*2)
             {
                 _damageStunTimer = 0;
             }
-            if (_damageStunTimer > _damageStunTime)
+
+            if (_damageStunTimer > _damageStunTime && IsHurt)
             {
                 IsHurt = false;
             }
-            else
+
+
+            if (_damageStunTimer < _damageStunTime*4 )
             {
-                _damageStunTimer += (float)gametime.TotalGameTime.TotalSeconds;
+                _damageStunTimer += (float)gametime.ElapsedGameTime.TotalSeconds;
+
             }
         }
 
         public void Damage(int damage)
         {
-            HP -= damage;
+            if (_damageStunTimer > _damageStunTime && !IsHurt)
+            {
+                HP -= damage;
+                IsHurt = true;
+            }
         }
 
         public void Fall()

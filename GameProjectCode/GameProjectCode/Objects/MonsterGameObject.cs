@@ -16,13 +16,15 @@ namespace GameProjectCode.Objects
         protected MovementPatern MovementPatern;
         protected int power;
         protected double _timer;
-        public MonsterGameObject(Dictionary<string, Animation> animations, Animation LeftAnimation, Animation RightAnimation, MovementPatern movementPatern, int Power = 1, int BaseHP = 3, float Speed = 0.15F) : base(animations, LeftAnimation, Speed)
+        public MonsterGameObject(Dictionary<string, Animation> animations, Animation LeftAnimation, Animation RightAnimation, MovementPatern movementPatern, Vector2 position, int Power = 1, int BaseHP = 3, float Speed = 0.8F) : base(animations, LeftAnimation, Speed)
         {
             MovementPatern = movementPatern;
             power = Power;
             this.RightAnimation = RightAnimation;
             this.LeftAnimation = LeftAnimation;
             HP = BaseHP;
+            IsAlive = true;
+            Position = position;
         }
 
         public Rectangle CollisionRectangle
@@ -50,7 +52,7 @@ namespace GameProjectCode.Objects
         public override Vector2 Position { get => base.Position; set => base.Position = value; }
         public bool IsAlive { get => _isAlive; set => _isAlive = value; }
 
-        public void Collide(IHasCollision o)
+        public virtual void Collide(IHasCollision o)
         {
             if (o is PlayerGameObject)
             {
@@ -62,10 +64,13 @@ namespace GameProjectCode.Objects
         public void Damage(int damage)
         {
             HP -= damage;
-            Die();
+            if (HP < 1)
+            {
+                Die();
+            }
         }
 
-        public void ResolveCollisions()
+        public virtual void ResolveCollisions()
         {
            //Nothing to do yet 
         }
@@ -130,14 +135,16 @@ namespace GameProjectCode.Objects
         {
             if (IsAlive)
             {
-                base.update(gametime);
                 _timer += gametime.ElapsedGameTime.TotalSeconds;
                 if (_timer > 1)
                 {
                     _timer = 0;
                     MovementPatern.Next();
                 }
+                base.update(gametime);
                 SetAnimations();
+                Velocity.X = 0;
+
             }
         }
 

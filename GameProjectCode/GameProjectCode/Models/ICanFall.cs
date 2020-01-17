@@ -9,5 +9,6 @@ namespace GameProjectCode.Models
     interface ICanFall:IHasGravity
     {
         void Fall();
+        bool Collided { get; set; }
     }
 }
