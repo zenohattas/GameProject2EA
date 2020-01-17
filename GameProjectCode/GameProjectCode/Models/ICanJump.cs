@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace GameProjectCode.Models
 {
-    interface IJump
+    interface ICanJump : IGrounded
     {
+        float JumpHeight { get; }
         bool HasJumped { get; set; }
+        void Jump();
     }
 }

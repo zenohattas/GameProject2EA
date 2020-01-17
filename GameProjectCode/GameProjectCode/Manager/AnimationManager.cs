@@ -34,6 +34,13 @@ namespace GameProjectCode.Manager
             _timer = 0;
             _animation.CurrentFrame = 0;
         }
+        public void Update(int ToFrame)
+        {
+            if (_animation.Frames.Count > ToFrame)
+            {
+                _animation.CurrentFrame = ToFrame;
+            }
+        }
         public void Update(GameTime gameTime)
         {
             _timer += (float)gameTime.ElapsedGameTime.TotalSeconds;

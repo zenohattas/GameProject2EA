@@ -14,12 +14,6 @@ namespace GameProjectCode.Manager
     class Content_Loader
     {
         List<string> spriteDataLocations;
-        //static string[] spriteDataLocations =
-        //{
-        //    @"C:\Electronica-ICT\Game Development\Projects\GameProject2EA\GameProjectCode\GameProjectCode\Content\Spritesheet_Adventurer_Right.csv",
-        //    @"C:\Electronica-ICT\Game Development\Projects\GameProject2EA\GameProjectCode\GameProjectCode\Content\Spritesheet_Adventurer_Left.csv",
-        //    @"C:\Electronica-ICT\Game Development\Projects\GameProject2EA\GameProjectCode\GameProjectCode\Content\Environment_Blocks.csv"
-        //};
         static string[] spriteNames =
         {
             "Adventurer/adventurer-SheetRight",
@@ -64,19 +58,6 @@ namespace GameProjectCode.Manager
                 LoadDictonary(dictonary, content, spriteData, i);
             }
             //Rest of Dictionary
-            //dictonary.Add("Title", new Animation(content.Load<Texture2D>("Environment/Menu/GameTitle"), 0, 0, 740, 300));
-            //dictonary.Add("DefeatTitle", new Animation(content.Load<Texture2D>("Environment/Menu/Endscreen"), 0, 0, 740, 125));
-            //dictonary.Add("Start", new Animation(content.Load<Texture2D>("Environment/Menu/StartTextBox"), 0, 0, 205,77, true, 0));
-            //dictonary["Start"].AddFrame(0,77);
-            //dictonary.Add("Options", new Animation(content.Load<Texture2D>("Environment/Menu/OptionsTextBox"), 0, 0, 205, 77, true, 0));
-            //dictonary["Options"].AddFrame(0, 77);
-            //dictonary.Add("Quit", new Animation(content.Load<Texture2D>("Environment/Menu/QuitTextBox"), 0, 0, 205, 77, true, 0));
-            //dictonary["Quit"].AddFrame(0, 77);
-            //dictonary.Add("Restart", new Animation(content.Load<Texture2D>("Environment/Menu/RestartTextBox"), 0, 0, 205, 77, true, 0));
-            //dictonary["Restart"].AddFrame(0, 77);
-            //dictonary.Add("Return", new Animation(content.Load<Texture2D>("Environment/Menu/ReturnTextBox"), 0, 0, 205, 77, true, 0));
-            //dictonary["Return"].AddFrame(0, 77);
-
             //Returning the Dictonary
             return dictonary;
         }
@@ -145,7 +126,11 @@ namespace GameProjectCode.Manager
                             {
                                 dictonary[item[0]].AddFrame(Convert.ToInt32(item[1]), Convert.ToInt32(item[2]), Convert.ToInt32(item[3]), Convert.ToInt32(item[4]));
                             }
-                            dictonary[item[0]].AddFrame(Convert.ToInt32(item[1]), Convert.ToInt32(item[2]));
+                            else
+                            {
+                                dictonary[item[0]].AddFrame(Convert.ToInt32(item[1]), Convert.ToInt32(item[2]));
+
+                            }
                         }
                     }
 

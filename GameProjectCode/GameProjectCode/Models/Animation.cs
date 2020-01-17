@@ -41,7 +41,7 @@ namespace GameProjectCode.Models
 
             FrameSpeed = framespeed;
         }
-        public Animation(Texture2D texture, int framePositionX, int framePositionY, int frameWidth, int frameHeight, int OffsetX, int OffsetY, bool isLooping = true, float framespeed = 0.1f)
+        public Animation(Texture2D texture, int framePositionX, int framePositionY, int frameWidth, int frameHeight, int OffsetX, int OffsetY, bool isLooping = true, float framespeed = 0.14f)
         {
 
             Texture = texture;
