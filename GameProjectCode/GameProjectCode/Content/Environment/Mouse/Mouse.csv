@@ -1,0 +1,3 @@
+AnimationName;xPoint;yPoint;Width;Height;IsLooping;Framespeed;
+mouse_unclicked;0;0;30;30;true;;-15;-15;
+mouse_clicked;0;30;30;30;true;;-15;-15;

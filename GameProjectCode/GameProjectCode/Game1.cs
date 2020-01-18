@@ -37,6 +37,11 @@ namespace GameProjectCode
         Song backgroundSong;
         Song EndSong;
 
+        Dictionary<string, Animation> animations;
+        MouseState mouse;
+        AnimationManager MousePointer;
+        
+
         public Game1()
         {
             camPos = new Vector2();
@@ -54,6 +59,8 @@ namespace GameProjectCode
             //Graphics
             graphics.PreferredBackBufferWidth = gameWidth;
             graphics.PreferredBackBufferHeight = gameHeight;
+
+            
         }
 
         /// <summary>
@@ -79,7 +86,7 @@ namespace GameProjectCode
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            var animations = contentLoader.GetAnimationDictionary(Content);
+            animations = contentLoader.GetAnimationDictionary(Content);
 
             stageManager.AddPlayer(objectInitialiser.LoadPlayer(animations));
             stageManager.AddMenu(new Stage(objectInitialiser.LoadMenu(animations, 0, gameWidth, gameHeight), new Background(Content.Load<Texture2D>("Environment/MysticalForestMain"), new Rectangle(0, 0, 1601, 961)), stageManager.playerManager, false));
@@ -95,6 +102,10 @@ namespace GameProjectCode
 
             //MediaPlayer.Play(backgroundSong);
             //MediaPlayer.IsRepeating = true;
+
+            //Mouse
+            MousePointer = new AnimationManager(animations["mouse_unclicked"]);
+
 
             hero = (PlayerGameObject)stageManager.GetPlayer();
             spriteFont = Content.Load<SpriteFont>("Misc/basicFont");
@@ -177,6 +188,19 @@ namespace GameProjectCode
             //    //camPos.Y = hero.Position.Y - GraphicsDevice.Viewport.Height / 2;
             //}
 
+            mouse = Mouse.GetState();
+
+            if (mouse.LeftButton == ButtonState.Pressed || mouse.RightButton == ButtonState.Pressed)
+            {
+                MousePointer.Play(animations["mouse_clicked"]);
+            }
+            else
+            {
+                MousePointer.Play(animations["mouse_unclicked"]);
+
+            }
+            MousePointer.Position = new Vector2(mouse.X, mouse.Y);
+
             base.Update(gameTime);
         }
 
@@ -203,6 +227,8 @@ namespace GameProjectCode
 
             //spriteBatch.DrawString(spriteFont, "Hello World", new Vector2(200, 300), Color.White);
             stageManager.Draw(spriteBatch, spriteFont);
+
+            MousePointer.Draw(spriteBatch);
 
             spriteBatch.End();
 

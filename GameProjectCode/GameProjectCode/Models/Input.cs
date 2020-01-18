@@ -18,5 +18,6 @@ namespace GameProjectCode.Models
         public Keys Spell { get; set; }
         public Keys Sprint { get; set; }
         public Keys Dodge { get; set; }
+        
     }
 }

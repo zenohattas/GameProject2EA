@@ -21,7 +21,9 @@ namespace GameProjectCode.Manager
             "Environment/sheet",
             "Environment/Menu/MenuItems",
             "Monsters/Monsters",
-            "Misc/ObjectAssets"
+            "Misc/ObjectAssets",
+            "Environment/Mouse/Mouse",
+            "Misc/GrapplingHook"
         };
         public Content_Loader()
         {
@@ -40,6 +42,8 @@ namespace GameProjectCode.Manager
             spriteDataLocations.Add(basePath + @"\Content\Environment\Menu\MenuItems.csv");
             spriteDataLocations.Add(basePath + @"\Content\Monsters\Monsters.csv");
             spriteDataLocations.Add(basePath + @"\Content\Misc\ObjectAssets.csv");
+            spriteDataLocations.Add(basePath + @"\Content\Environment\Mouse\Mouse.csv");
+            spriteDataLocations.Add(basePath + @"\Content\Misc\GrapplingHook.csv");
 
         }
 

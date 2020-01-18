@@ -58,6 +58,7 @@
     <Compile Include="Models\AnimationFrame.cs" />
     <Compile Include="Models\Background.cs" />
     <Compile Include="Models\Camera2D.cs" />
+    <Compile Include="Objects\GrapplingHook.cs" />
     <Compile Include="Models\Hud.cs" />
     <Compile Include="Models\IAnimated.cs" />
     <Compile Include="Models\ICanFall.cs" />

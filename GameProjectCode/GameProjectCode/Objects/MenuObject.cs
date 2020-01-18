@@ -9,10 +9,12 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace GameProjectCode.Objects
 {
-    class MenuObject : GameSpriteObject
+    class MenuObject : GameSpriteObject, IHasCollision
     {
         bool ShouldInvert;
         bool IsInverted;
+        Vector2 _dimension;
+        Rectangle _collisionRectangle;
         public MenuObject(Dictionary<string, Animation> animations, Animation animation, Vector2 position) : base(animations, animation)
         {
             Position = position;
@@ -21,6 +23,29 @@ namespace GameProjectCode.Objects
         }
 
         public override Vector2 Position { get => base.Position; set => base.Position = value; }
+
+        public Rectangle CollisionRectangle
+        {
+            get
+            {
+                _collisionRectangle.X = (int)Position.X;
+                _collisionRectangle.Y = (int)Position.Y;
+                _collisionRectangle.Width = (int)Dimenions.X;
+                _collisionRectangle.Height = (int)Dimenions.Y;
+                return _collisionRectangle;
+                //return _animationManager._animation.Frames[_animationManager._animation.CurrentFrame].Frame;
+            }
+        }
+
+        public Vector2 Dimenions
+        {
+            get
+            {
+                _dimension.X = _animationManager._animation.Frames[_animationManager._animation.CurrentFrame].Frame.Width;
+                _dimension.Y = _animationManager._animation.Frames[_animationManager._animation.CurrentFrame].Frame.Height;
+                return _dimension;
+            }
+        }
 
         public void Invert()
         {
