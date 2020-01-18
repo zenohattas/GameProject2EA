@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GameProjectCode.Models
+namespace GameProjectCode.Models.Interfaces
 {
-    interface ILiquid: IHasCollision
+    interface IWeighted
     {
-        float Density { get; }
+        Mass Mass { get; set; }
     }
 }

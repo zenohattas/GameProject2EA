@@ -12,13 +12,13 @@ namespace GameProjectCode.Manager
     class AnimationManager
     { 
         public Animation _animation;
-        private float _timer;
+        private Timer _timer;
 
         public Vector2 Position { get; set; }
         public AnimationManager(Animation animation)
         {
             _animation = animation;
-            _timer = 0;
+            _timer = new Timer();
         }
         public void Play(Animation animation)
         {
@@ -31,7 +31,7 @@ namespace GameProjectCode.Manager
         }
         public void Reset()
         {
-            _timer = 0;
+            _timer.Time = 0;
             _animation.CurrentFrame = 0;
         }
         public void Update(int ToFrame)
@@ -43,10 +43,10 @@ namespace GameProjectCode.Manager
         }
         public void Update(GameTime gameTime)
         {
-            _timer += (float)gameTime.ElapsedGameTime.TotalSeconds;
-            if (_timer >= _animation.FrameSpeed)
+            _timer.Time += (float)gameTime.ElapsedGameTime.TotalSeconds;
+            if (_timer.Time >= _animation.FrameSpeed)
             {
-                _timer = 0;
+                _timer.Time = 0;
                 _animation.CurrentFrame++;
 
                 if (_animation.CurrentFrame >= _animation.Frames.Count)

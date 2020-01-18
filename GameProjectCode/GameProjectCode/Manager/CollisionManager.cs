@@ -73,7 +73,7 @@ namespace GameProjectCode.Manager
         /// <param name="o1"></param>
         /// <param name="o2"></param>
         /// <returns></returns>
-        public Rectangle GetCollisionEdge(IHasCollision o1, IHasCollision o2)
+        public Rectangle GetCollisionEdge(ICollidable o1, ICollidable o2)
         {
             Rectangle collisionSide = new Rectangle();
 

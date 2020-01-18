@@ -12,18 +12,16 @@ namespace GameProjectCode.Objects
 {
     abstract class MoveableGameObject : GameSpriteObject
     {
-        public Vector2 Velocity;
-        public float Speed { get { return speed * slow; } }
+        public virtual Vector2 Velocity { get; set; }
+        public Vector2 Speed { get { return new Vector2(speed * slow, 0); } }
         protected float speed;
         protected float slow;
-        protected ActionManager actionManager;
         protected const float DefaultSlowValue = 1f;
         
         protected abstract void Move();
 
         protected MoveableGameObject(Dictionary<string, Animation> animations, Animation animation, float Speed = 0.15f):base(animations, animation)
         {
-            actionManager = new ActionManager();
             speed = Speed;
             slow = 1f;
         }

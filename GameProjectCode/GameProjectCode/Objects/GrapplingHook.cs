@@ -1,4 +1,7 @@
 ﻿using GameProjectCode.Extensions;
+using GameProjectCode.Models.Classes.Simulations;
+using GameProjectCode.Models.Classes;
+using GameProjectCode.Models.Interfaces;
 using GameProjectCode.Objects;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -14,21 +17,43 @@ namespace GameProjectCode.Models
     class GrapplingHook : MoveableGameObject, ICollidable
     {
         MouseState mouse;
+        GrapplingHookSimulation GrapplingHookSimulation;
         bool IsShot;
+        bool IsExtended;
+        bool IsRetracting;
         
-        Vector2 _position;
         IHasCollision OriginObject;
         IHasCollision HookedObject;
         Animation GrapplingHookHead;
-        List<Animation> GrapplingHookChain;
+        Animation GrapplingHookChain;
 
         public GrapplingHook(Dictionary<string, Animation> animations, Animation grapplingHookHead, Animation grapplingHookChain, IHasCollision origin) : base(animations, grapplingHookHead)
         {
             OriginObject = origin;
             Dimenions = new Vector2(5, 5);
-            GrapplingHookChain = new List<Animation>();
-            GrapplingHookChain.Add(grapplingHookChain);
+            GrapplingHookChain = grapplingHookChain;
             GrapplingHookHead = grapplingHookHead;
+
+            Mass originMass;
+            //Rope simulation setup
+            if (origin is IWeighted)
+            {
+                originMass = (origin as IWeighted).Mass;
+            
+                GrapplingHookSimulation = new GrapplingHookSimulation(
+                originMass,
+                0.2f,                              // Each Particle Has A Weight Of 200 Grams
+                1f,                                 // The grapplingHook weighs 1kg
+                10000.0f,                           // springConstant In The Rope
+                0.05f,                              // Normal Length Of Springs In The Rope
+                0.2f,                               // Spring Inner Friction Constant
+                new Vector3D(0, -9.81f, 0),         // Gravitational Acceleration
+                0.02f,                              // Air Friction Constant
+                100.0f,                             // Ground Repel Constant
+                0.2f,                               // Ground Slide Friction Constant
+                2.0f);                               // Ground Absoption Constant
+               
+            }
         }
 
         public Rectangle CollisionRectangle
@@ -42,10 +67,10 @@ namespace GameProjectCode.Models
         {
             get
             {
-                return RectangleExtension.GetBottomCenter(OriginObject.CollisionRectangle);
+                return RectangleExtension.GetCenter(OriginObject.CollisionRectangle);
             }
         }
-        public Vector2 Position 
+        public override Vector2 Position 
         {
             get
             {
@@ -55,13 +80,25 @@ namespace GameProjectCode.Models
                 }
                 else
                 {
-                    return _position;
+                    return GrapplingHookSimulation.masses.Last<Mass>().Position;
                 }
             }
 
             set
             {
-                _position = value;
+                GrapplingHookSimulation.masses.Last<Mass>().Position = value;
+            }
+        }
+        public override Vector2 Velocity 
+        {
+            get
+            {
+                return new Vector2(GrapplingHookSimulation.ropeConnectionVel.x, GrapplingHookSimulation.ropeConnectionVel.y);
+            }
+            set
+            {
+                GrapplingHookSimulation.ropeConnectionVel.x = value.X;
+                GrapplingHookSimulation.ropeConnectionVel.y = value.Y;
             }
         }
 
@@ -71,7 +108,12 @@ namespace GameProjectCode.Models
         {
             if(!(o is ILiquid) && mouse.RightButton == ButtonState.Pressed)
             {
-                HookedObject = o as IHasCollision;
+                if (IsExtended && !IsRetracting)
+                {
+                    HookedObject = o as IHasCollision;
+                    GrapplingHookSimulation.Invert();
+
+                }
             }
         }
 
@@ -83,6 +125,7 @@ namespace GameProjectCode.Models
         public void Shoot()
         {
             IsShot = true;
+            IsExtended = true;
         }
         public void Release()
         {
@@ -90,43 +133,98 @@ namespace GameProjectCode.Models
         }
         protected override void draw(SpriteBatch spriteBatch)
         {
+            if (Position != OriginPoint)
+            {
+                _animationManager.Position = OriginPoint;
+                _animationManager.Play(GrapplingHookChain);
+                base.draw(spriteBatch);
+                for (int i = 1; i < GrapplingHookSimulation.masses.Count; i++)
+                {
+                    _animationManager.Position = GrapplingHookSimulation.masses[i].Position;
+                    _animationManager.Play(GrapplingHookChain);
+                    base.draw(spriteBatch);
+                }
+                if (HookedObject != null)
+                {
+                    _animationManager.Position = Position;
+                }
+                else
+                {
+                    _animationManager.Position = GrapplingHookSimulation.masses.Last<Mass>().Position;
+                }
+                _animationManager.Play(GrapplingHookHead);
+                base.draw(spriteBatch);
 
-            base.draw(spriteBatch);
+            }
         }
         protected override void update(GameTime gametime)
         {
-            mouse = Mouse.GetState();
-            base.update(gametime);
-            UpdateChain();
+            if (mouse.RightButton != Mouse.GetState().RightButton)
+            {
+                mouse = Mouse.GetState();
+                if (mouse.LeftButton == ButtonState.Pressed)
+                {
+                    Shoot();
+                }
+                else
+                {
+                    Retract();
+                    Release();
+                }
+            }
+            if (Position != OriginPoint)
+            {
+                base.update(gametime);
+                UpdateChain();
+                GrapplingHookSimulation.operate((float)gametime.ElapsedGameTime.TotalSeconds);
+            }
+        }
+
+        private void Retract()
+        {
+            IsRetracting = true;
         }
 
         private void UpdateChain()
         {
-            if (Math.Abs(OriginPoint.X - Position.X) > GrapplingHookChain.Count*GrapplingHookChain[0].Frames[GrapplingHookChain[0].CurrentFrame].Frame.Width||Math.Abs(OriginPoint.Y - Position.Y) > GrapplingHookChain.Count * GrapplingHookChain[0].Frames[GrapplingHookChain[0].CurrentFrame].Frame.Height)
+            if (Math.Abs(OriginPoint.X - Position.X) > GrapplingHookSimulation.masses.Count * GrapplingHookChain.Frames[GrapplingHookChain.CurrentFrame].Frame.Width ||Math.Abs(OriginPoint.Y - Position.Y) > GrapplingHookSimulation.masses.Count * GrapplingHookChain.Frames[GrapplingHookChain.CurrentFrame].Frame.Height)
             {
-                GrapplingHookChain.Add(GrapplingHookChain[0].Duplicate());
+                GrapplingHookSimulation.AddMass();
             }
-            if (Math.Abs(OriginPoint.X - Position.X) > GrapplingHookChain.Count * GrapplingHookChain[0].Frames[GrapplingHookChain[0].CurrentFrame].Frame.Width || Math.Abs(OriginPoint.Y - Position.Y) > GrapplingHookChain.Count * GrapplingHookChain[0].Frames[GrapplingHookChain[0].CurrentFrame].Frame.Height)
+            if (Math.Abs(OriginPoint.X - Position.X) < GrapplingHookSimulation.masses.Count * GrapplingHookChain.Frames[GrapplingHookChain.CurrentFrame].Frame.Width || Math.Abs(OriginPoint.Y - Position.Y) < GrapplingHookSimulation.masses.Count * GrapplingHookChain.Frames[GrapplingHookChain.CurrentFrame].Frame.Height)
             {
-                GrapplingHookChain.Add(GrapplingHookChain[0].Duplicate());
+                GrapplingHookSimulation.RemoveMass();
+            }
+            if (OriginPoint == Position)
+            {
+                IsExtended = false;
+                IsRetracting = false;
             }
         }
 
         protected override void Move()
         {
-            if (IsShot)
-            {
-                Velocity += new Vector2((mouse.X - Position.X) * 0.3f, (mouse.Y - Position.Y) * 0.3f);
-            }
-            else if (HookedObject != null)
+            if (HookedObject != null)
             {
                 Velocity = new Vector2(0, 0);
             }
-            else
+            else if (IsShot)
             {
-                Position += new Vector2((OriginPoint.X - Position.X) * 0.3f, (OriginPoint.Y - Position.Y) * 0.3f);
+                Velocity += new Vector2((mouse.X - Position.X) * 0.3f, (mouse.Y - Position.Y) * 0.3f);
+                IsShot = false;
             }
-            Position += Velocity;
+            else if(IsRetracting)
+            {
+                if (Math.Abs(OriginPoint.X - Position.X) < 1 && Math.Abs(OriginPoint.Y - Position.Y) < 1)
+                {
+                    Position = OriginPoint;
+                    IsRetracting = false;
+                }
+                else
+                {
+                    Position += new Vector2((OriginPoint.X - Position.X) * 0.3f, (OriginPoint.Y - Position.Y) * 0.3f);
+                }
+            }
 
         }
     }

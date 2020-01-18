@@ -54,5 +54,9 @@ namespace GameProjectCode.Extensions
         {
             return new Vector2(rect.X + rect.Width / 2.0f, rect.Bottom);
         }
+        public static Vector2 GetCenter(this Rectangle rect)
+        {
+            return new Vector2(rect.X + rect.Width / 2.0f, rect.Y + rect.Height / 2.0f);
+        }
     }
 }

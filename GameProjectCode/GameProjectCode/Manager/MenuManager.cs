@@ -22,7 +22,7 @@ namespace GameProjectCode.Manager
         List<List<MenuObject>> menuObjects;
         private int selectedElement;
         private int selectedMenu;
-        private float _timer;
+        private Timer _timer;
         private Vector2 position;
         private Keys _previousPressedKey;
         private MouseState _previousMouseState;
@@ -38,7 +38,7 @@ namespace GameProjectCode.Manager
             colorSelected = Color.SeaGreen;
             selectedMenu = 0;
             selectedElement = 1;
-            _timer = 0;
+            _timer = new Timer();
             UpdateMenu = false;
             _previousMouseState = Mouse.GetState();
         }
@@ -56,13 +56,13 @@ namespace GameProjectCode.Manager
         }
         public void Update(GameTime gameTime, StageManager stageManager)
         {
-            _timer += (float)gameTime.ElapsedGameTime.TotalSeconds;
-            if (_timer > 0.05f )
+            _timer.Time += (float)gameTime.ElapsedGameTime.TotalSeconds;
+            if (_timer.Time > 0.05f )
             {
                 int _itemToSelect = selectedElement;
-                _timer = 0;
+                _timer.Time = 0;
                 
-                for (int i = 0; i < menuObjects[selectedMenu].Count; i++)
+                for (int i = 1; i < menuObjects[selectedMenu].Count; i++)
                 {
                     var depth = RectangleExtension.GetIntersectionDepth(menuObjects[selectedMenu][i].CollisionRectangle, new Rectangle(Mouse.GetState().X - 15, Mouse.GetState().Y - 15, 30, 30));
                     if (depth.X > 0 || depth.Y > 0)

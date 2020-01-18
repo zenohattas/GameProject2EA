@@ -9,9 +9,9 @@ using Microsoft.Xna.Framework;
 
 namespace GameProjectCode.Manager
 {
-    class ActionManager
+    static class Actions
     {
-        public Vector2 MoveObject(IHasCollision toMove , IHasCollision refference)
+        public static Vector2 MoveObject(IHasCollision toMove , IHasCollision refference)
         {
            
             Vector2 movement = new Vector2();
@@ -94,7 +94,7 @@ namespace GameProjectCode.Manager
 
             return movement;
         }
-        public void DealDamage(GameObject damageReceiver, int damage)
+        public static void DealDamage(GameObject damageReceiver, int damage)
         {
             if (damageReceiver is IDamagable)
             {

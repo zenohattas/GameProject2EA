@@ -21,7 +21,7 @@ namespace GameProjectCode.Objects
 
         public Rectangle CollisionRectangle => collisionRectangle;
 
-        public Vector2 Position
+        public override Vector2 Position
         {
             get
             {

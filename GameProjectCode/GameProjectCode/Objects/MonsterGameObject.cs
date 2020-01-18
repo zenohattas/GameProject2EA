@@ -1,4 +1,5 @@
-﻿using GameProjectCode.Models;
+﻿using GameProjectCode.Manager;
+using GameProjectCode.Models;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
@@ -15,7 +16,7 @@ namespace GameProjectCode.Objects
         private bool _isAlive;
         protected MovementPatern MovementPatern;
         protected int power;
-        protected double _timer;
+        protected Timer _timer;
         public MonsterGameObject(Dictionary<string, Animation> animations, Animation LeftAnimation, Animation RightAnimation, MovementPatern movementPatern, Vector2 position, int Power = 1, int BaseHP = 3, float Speed = 0.8F) : base(animations, LeftAnimation, Speed)
         {
             MovementPatern = movementPatern;
@@ -25,6 +26,7 @@ namespace GameProjectCode.Objects
             HP = BaseHP;
             IsAlive = true;
             Position = position;
+            _timer = new Timer();
         }
 
         public Rectangle CollisionRectangle
@@ -56,7 +58,7 @@ namespace GameProjectCode.Objects
         {
             if (o is PlayerGameObject)
             {
-                actionManager.DealDamage(o as GameObject, power);
+                Actions.DealDamage(o as GameObject, power);
 
             }
         }
@@ -115,16 +117,16 @@ namespace GameProjectCode.Objects
             switch (MovementPatern.GetMovement())
             {
                 case Movement.RIGHT:
-                    Velocity.X += Speed;
+                    Velocity += Speed;
                     break;
                 case Movement.LEFT:
-                    Velocity.X -= Speed;
+                    Velocity -= Speed;
                     break;
                 case Movement.JUMPRIGHT:
-                    Velocity.X += Speed;
+                    Velocity += Speed;
                     break;
                 case Movement.JUMPLEFT:
-                    Velocity.X -= Speed;
+                    Velocity -= Speed;
                     break;
                 default:
                     break;
@@ -135,15 +137,15 @@ namespace GameProjectCode.Objects
         {
             if (IsAlive)
             {
-                _timer += gametime.ElapsedGameTime.TotalSeconds;
-                if (_timer > 1)
+                _timer.Time += (float)gametime.ElapsedGameTime.TotalSeconds;
+                if (_timer.Time > 1)
                 {
-                    _timer = 0;
+                    _timer.Time = 0;
                     MovementPatern.Next();
                 }
                 base.update(gametime);
                 SetAnimations();
-                Velocity.X = 0;
+                Velocity = new Vector2(0, Velocity.Y);
 
             }
         }

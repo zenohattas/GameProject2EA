@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GameProjectCode.Manager;
 using GameProjectCode.Models;
 using Microsoft.Xna.Framework;
 
@@ -30,16 +31,16 @@ namespace GameProjectCode.Objects
         public override void Collide(IHasCollision o)
         {
             base.Collide(o);
-            Vector2 movement = actionManager.MoveObject((IHasCollision)this, o);
+            Vector2 movement = Actions.MoveObject((ICollidable)this, o);
             slow = DefaultSlowValue;
 
             if (movement.Y < 0)
             {
                 IsGrounded = true;
-                Velocity.Y = 0;
+                Velocity = new Vector2(Velocity.X,0);
             }
             if (movement.Y > 0 && Velocity.Y < 0)
-                Velocity.Y = 0;
+                Velocity = new Vector2(Velocity.X,0);
 
             if (o is PlayerGameObject)
             {
@@ -56,12 +57,12 @@ namespace GameProjectCode.Objects
         }
         public void Fall()
         {
-            Velocity.Y += Gravity;
+            Velocity += new Vector2(0,Gravity);
         }
 
         public void Jump()
         {
-            Velocity.Y += JumpHeight;
+            Velocity += new Vector2(JumpHeight, 0);
             IsGrounded = false;
         }
         
