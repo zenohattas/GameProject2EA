@@ -9,12 +9,18 @@ namespace GameProjectCode.Models.Classes.Simulations
     // class Simulation      ---> A container object for simulating masses
     class Simulation
     {
-	    public int numOfMasses;                                     // number of masses in this container
+	    public int numOfMasses                                     // number of masses in this container
+        {
+            get
+            {
+                return masses.Count;
+            }
+        }
         public List<Mass> masses;                                   // masses are held by List of Mass
 
         public Simulation(int numOfMasses, float m)                        // Constructor creates some masses with mass values m
         {
-            this.numOfMasses = numOfMasses;
+            //this.numOfMasses = numOfMasses;
 
             masses = new List<Mass>();                              // Create an List container for Masses
 

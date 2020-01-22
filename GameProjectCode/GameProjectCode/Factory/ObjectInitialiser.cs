@@ -92,7 +92,7 @@ namespace GameProjectCode.Factory
             List<GameObject> sprites = new List<GameObject>();
             for (int i = 0; i < objects.Count; i++)
             {
-                for (int j = 0; j < objects[0].Count; j++)
+                for (int j = 0; j < objects[i].Count; j++)
                 {
                     string[] ellement = objects[i][j].Split('.');
                     if (ellement.Length > 0)
@@ -118,6 +118,12 @@ namespace GameProjectCode.Factory
                                         if (ellement.Length > 3)
                                         {
                                             sprites.Add(new MonsterGameObject(animations, animations[animationName], animations[GetAnimationName(ellement[3])], movements[Convert.ToInt32(ellement[2])], _initiasePos));
+                                        }
+                                        break;
+                                    case "MJ":
+                                        if (ellement.Length > 3)
+                                        {
+                                            sprites.Add(new JumpingMonsterGameObject(animations, animations[animationName], animations[GetAnimationName(ellement[3])], movements[Convert.ToInt32(ellement[2])], _initiasePos));
                                         }
                                         break;
                                 }

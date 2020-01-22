@@ -19,6 +19,7 @@ namespace GameProjectCode.Models
         public float FrameSpeed { get; set; }
         //public int FrameWidth { get; set; }
         public bool IsLooping { get; set; }
+        public Vector2 Scale = new Vector2(1);
         public Animation(Texture2D texture, List<AnimationFrame> frames, bool isLooping, float framespeed, Vector2 offset)
         {
             this.Texture = texture;

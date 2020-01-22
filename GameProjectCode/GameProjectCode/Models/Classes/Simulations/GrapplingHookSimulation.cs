@@ -14,8 +14,6 @@ namespace GameProjectCode.Models.Classes.Simulations
             masses.Insert(0, AttachedOrigin);
             masses.Insert(1, new Mass(massOfHook));
 
-            numOfMasses += 2;
-
             springs.Insert(0,new Spring(AttachedOrigin, masses[1],
                     springConstant, springLength, springFrictionConstant));
             if (masses.Count > 2)

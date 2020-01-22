@@ -13,6 +13,7 @@ namespace GameProjectCode.Objects
     {
         public Input Input;
         public ControlledGameObject(Dictionary<string, Animation> animations, Animation animation, float Speed = 0.15f) : base(animations, animation, Speed) { }
+        public ControlledGameObject(Dictionary<string, Animation> animations, Animation animation, float Speed = 0.15f, float maxVelocityX = 0.15f, float maxVelocityY = 0.20f) : base(animations, animation, Speed, maxVelocityX, maxVelocityY) { }
 
     }
 }

@@ -9,6 +9,7 @@ namespace GameProjectCode.Objects
 {
     class MonsterGameObject : MoveableGameObject, ICollidable, IAnimated, IDamagable, IKillable
     {
+        protected Vector2 tomove;
         protected Rectangle _collisionRectangle;
         private Vector2 _dimension;
         protected Animation LeftAnimation;
@@ -17,12 +18,14 @@ namespace GameProjectCode.Objects
         protected MovementPatern MovementPatern;
         protected int power;
         protected Timer _timer;
-        public MonsterGameObject(Dictionary<string, Animation> animations, Animation LeftAnimation, Animation RightAnimation, MovementPatern movementPatern, Vector2 position, int Power = 1, int BaseHP = 3, float Speed = 0.8F) : base(animations, LeftAnimation, Speed)
+        public MonsterGameObject(Dictionary<string, Animation> animations, Animation LeftAnimation, Animation RightAnimation, MovementPatern movementPatern, Vector2 position, int Power = 1, int BaseHP = 3, float Speed = 1F, float scale = 2) : base(animations, LeftAnimation, Speed)
         {
             MovementPatern = movementPatern;
             power = Power;
             this.RightAnimation = RightAnimation;
             this.LeftAnimation = LeftAnimation;
+            this.RightAnimation.Scale = new Vector2(scale);
+            this.LeftAnimation.Scale = new Vector2(scale);
             HP = BaseHP;
             IsAlive = true;
             Position = position;
@@ -45,8 +48,8 @@ namespace GameProjectCode.Objects
         {
             get
             {
-                _dimension.X = _animationManager._animation.Frames [_animationManager._animation.CurrentFrame].Frame.Width;
-                _dimension.Y = _animationManager._animation.Frames [_animationManager._animation.CurrentFrame].Frame.Height;
+                _dimension.X = _animationManager._animation.Frames [_animationManager._animation.CurrentFrame].Frame.Width * _animationManager._animation.Scale.X;
+                _dimension.Y = _animationManager._animation.Frames [_animationManager._animation.CurrentFrame].Frame.Height * _animationManager._animation.Scale.Y;
                     return _dimension;
             }
         }
@@ -61,6 +64,8 @@ namespace GameProjectCode.Objects
                 Actions.DealDamage(o as GameObject, power);
 
             }
+            Vector2 movement = Actions.MoveObject((ICollidable)this, o);
+            tomove = movement;
         }
 
         public void Damage(int damage)
@@ -74,7 +79,9 @@ namespace GameProjectCode.Objects
 
         public virtual void ResolveCollisions()
         {
-           //Nothing to do yet 
+            Position += tomove;
+            tomove.X = 0;
+            tomove.Y = 0;
         }
 
         public void SetAnimations()
@@ -146,7 +153,6 @@ namespace GameProjectCode.Objects
                 base.update(gametime);
                 SetAnimations();
                 Velocity = new Vector2(0, Velocity.Y);
-
             }
         }
 

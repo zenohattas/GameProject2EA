@@ -89,7 +89,7 @@ namespace GameProjectCode.Models
                 GrapplingHookSimulation.masses.Last<Mass>().Position = value;
             }
         }
-        public override Vector2 Velocity 
+        public override Vector2 Velocity
         {
             get
             {
@@ -162,7 +162,8 @@ namespace GameProjectCode.Models
             if (mouse.RightButton != Mouse.GetState().RightButton)
             {
                 mouse = Mouse.GetState();
-                if (mouse.LeftButton == ButtonState.Pressed)
+                
+                if (mouse.RightButton == ButtonState.Pressed)
                 {
                     Shoot();
                 }
@@ -176,8 +177,8 @@ namespace GameProjectCode.Models
             {
                 base.update(gametime);
                 UpdateChain();
-                GrapplingHookSimulation.operate((float)gametime.ElapsedGameTime.TotalSeconds);
             }
+                //GrapplingHookSimulation.operate((float)gametime.ElapsedGameTime.TotalSeconds);
         }
 
         private void Retract()
@@ -210,7 +211,7 @@ namespace GameProjectCode.Models
             }
             else if (IsShot)
             {
-                Velocity += new Vector2((mouse.X - Position.X) * 0.3f, (mouse.Y - Position.Y) * 0.3f);
+                Velocity += new Vector2((mouse.X - Position.X) * 0.3f, (mouse.Y - Position.Y) * .3f);
                 IsShot = false;
             }
             else if(IsRetracting)
@@ -222,7 +223,7 @@ namespace GameProjectCode.Models
                 }
                 else
                 {
-                    Position += new Vector2((OriginPoint.X - Position.X) * 0.3f, (OriginPoint.Y - Position.Y) * 0.3f);
+                    Velocity = new Vector2((OriginPoint.X - Position.X) * 0.3f, (OriginPoint.Y - Position.Y) * 0.3f);
                 }
             }
 

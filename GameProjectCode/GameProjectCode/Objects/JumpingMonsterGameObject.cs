@@ -11,13 +11,11 @@ namespace GameProjectCode.Objects
 {
     class JumpingMonsterGameObject : MonsterGameObject, ICanFall, ICanJump
     {
-        Vector2 tomove;
-        bool collided;
-        public JumpingMonsterGameObject(Dictionary<string, Animation> animations, Animation LeftAnimation, Animation RightAnimation, MovementPatern movementPatern, Vector2 position, int Power = 2, int BaseHP = 3, float Speed = 0.8F, float jumpHeight = 0.3f, float Gravity = 0.15f) : base(animations, LeftAnimation, RightAnimation, movementPatern, position, Power, BaseHP, Speed)
+        public JumpingMonsterGameObject(Dictionary<string, Animation> animations, Animation LeftAnimation, Animation RightAnimation, MovementPatern movementPatern, Vector2 position, int Power = 2, int BaseHP = 3, float Speed = 1F, float jumpHeight = -3f, float Gravity = 5.15f) : base(animations, LeftAnimation, RightAnimation, movementPatern, position, Power, BaseHP, Speed)
         {
             this.Gravity = Gravity;
             JumpHeight = jumpHeight;
-            collided = false;
+            Collided = false;
         }
 
         public float Gravity { get ; set; }
@@ -33,6 +31,7 @@ namespace GameProjectCode.Objects
             base.Collide(o);
             Vector2 movement = Actions.MoveObject((ICollidable)this, o);
             slow = DefaultSlowValue;
+            Collided = true;
 
             if (movement.Y < 0)
             {
@@ -42,10 +41,10 @@ namespace GameProjectCode.Objects
             if (movement.Y > 0 && Velocity.Y < 0)
                 Velocity = new Vector2(Velocity.X,0);
 
-            if (o is PlayerGameObject)
-            {
-                movement.X = 0;
-            }
+            //if (o is PlayerGameObject)
+            //{
+            //    movement.X = 0;
+            //}
 
             tomove = movement;
             //Position += movement;
@@ -53,7 +52,7 @@ namespace GameProjectCode.Objects
         public override void ResolveCollisions()
         {
             base.ResolveCollisions();
-            Position = tomove;
+            Position += tomove;
         }
         public void Fall()
         {
@@ -62,8 +61,11 @@ namespace GameProjectCode.Objects
 
         public void Jump()
         {
-            Velocity += new Vector2(JumpHeight, 0);
-            IsGrounded = false;
+            if (IsGrounded)
+            {
+                Velocity += new Vector2(JumpHeight, 0);
+                IsGrounded = false;
+            }
         }
         
 
