@@ -17,11 +17,7 @@ namespace GameProjectCode.Objects
         }
 
         public override Vector2 Position { get => base.Position; set => base.Position = value; }
-               
-        protected override void draw(SpriteBatch spriteBatch)
-        {
-            base.Draw(spriteBatch);
-        }
+        
 
         protected override void update(GameTime gametime)
         {

@@ -18,7 +18,7 @@ namespace GameProjectCode.Objects
         protected MovementPatern MovementPatern;
         protected int power;
         protected Timer _timer;
-        public MonsterGameObject(Dictionary<string, Animation> animations, Animation LeftAnimation, Animation RightAnimation, MovementPatern movementPatern, Vector2 position, int Power = 1, int BaseHP = 3, float Speed = 1F, float scale = 2) : base(animations, LeftAnimation, Speed)
+        public MonsterGameObject(Dictionary<string, Animation> animations, Animation LeftAnimation, Animation RightAnimation, MovementPatern movementPatern, Vector2 position, int Power = 1, int BaseHP = 3, float Speed = 1F, float scale = 1) : base(animations, LeftAnimation, Speed)
         {
             MovementPatern = movementPatern;
             power = Power;

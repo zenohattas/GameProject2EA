@@ -304,6 +304,10 @@ namespace GameProjectCode.Factory
                     return "Environment/Dirt_blue_bottom_middle";
                 case "78":
                     return "Environment/Dirt_blue_bottom_double";
+                case "79":
+                    return "Environment/Background_tree";
+                case "80":
+                    return "Environment/Background_vines";
 
                 case "100":
                     return "Lucifer_Left";
