@@ -42,7 +42,7 @@ namespace GameProjectCode.Manager
         }
         public void ResolveCollision()
         {
-            ICollidable i = Player[0] as ICollidable;
+            ICanCollide i = Player[0] as ICanCollide;
             i.ResolveCollisions();
         }
     }

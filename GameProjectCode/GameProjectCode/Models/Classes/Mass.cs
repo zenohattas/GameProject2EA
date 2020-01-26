@@ -8,7 +8,7 @@ using Microsoft.Xna.Framework;
 
 namespace GameProjectCode.Models
 {
-    class Mass : ICollidable
+    class Mass : ICanCollide
     {
         public float m;                                    // The mass value
         public Vector3D pos;                               // Position in space

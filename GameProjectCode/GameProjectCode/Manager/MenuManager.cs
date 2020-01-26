@@ -46,7 +46,7 @@ namespace GameProjectCode.Manager
         {
             Menu.Add(menu);
             menuObjects.Add(new List<MenuObject>());
-            foreach (var item in menu.gameSpriteObjects)
+            foreach (var item in menu.GameObjects)
             {
                 if (item is MenuObject)
                 {

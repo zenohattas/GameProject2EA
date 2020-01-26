@@ -12,9 +12,10 @@ using Microsoft.Xna.Framework.Input;
 
 namespace GameProjectCode.Objects
 {
-    class PlayerGameObject : ControlledGameObject, ICollidable, ICanJump, IAnimated, IDamagable, ICanFall, IWeighted
+    class PlayerGameObject : ControlledGameObject, ICanCollide, ICanJump, IAnimated, IDamagable, ICanFall, IWeighted
     {
         private int JumpsLeft;
+        private int maxJumps;
         private bool IsfacingRight;
         private bool IsDrowning;
         private bool IsTouchingWall;
@@ -24,10 +25,11 @@ namespace GameProjectCode.Objects
         private Vector2 tomove;
         private float walkSpeed = 0.14f;
         private float runSpeed = 0.07f;
+        private float ClimbingSpeed;
         private Vector2 crouchOffset;
         private bool IsHurt;
         protected Timer _damageStunTimer;
-        protected float _damageStunTime = 1f;
+        protected float _damageStunTime = 2;
         private Timer _timer;
         private float breathTime = 1;
         private int lungCapacity;
@@ -37,7 +39,7 @@ namespace GameProjectCode.Objects
         public int Breath { get; private set; }
         public int HP { get; set; }
 
-        public PlayerGameObject(Dictionary<string, Animation> animations, Animation animation, float Speed = 0.1f, int LungCapacity = 8, float jumpHeight = -4f, float Gravity = 0.15f, float Weight = 70, float maxVelocityX = 1f, float maxVelocityY = 5f, string animationLeft_AirAttack1 = "Adventurer/Left_AirAttack1", string animationLeft_AirAttack2 = "Adventurer/Left_AirAttack2", string animationLeft_AirAttack3End = "Adventurer/Left_AirAttack3", string animationLeft_AirAttack3Loop = "Adventurer/Left_AirAttack3Loop", string animationLeft_AirAttack3Ready = "Adventurer/Left_AirAttack3Ready", string animationLeft_Attack1 = "Adventurer/Left_Attack1", string animationLeft_Attack2 = "Adventurer/Left_Attack2", string animationLeft_Attack3 = "Adventurer/Left_Attack3", string animationLeft_Cast = "Adventurer/Left_Cast", string animationLeft_CastLoop = "Adventurer/Left_CastLoop", string animationLeft_CornerClimb = "Adventurer/Left_CornerClimb", string animationLeft_CornerGrab = "Adventurer/Left_CornerGrab", string animationLeft_CornerJump = "Adventurer/Left_CornerJump", string animationLeft_Crouch = "Adventurer/Left_Crouch", string animationLeft_Die = "Adventurer/Left_Die", string animationLeft_Fall = "Adventurer/Left_Fall", string animationLeft_Hurt = "Adventurer/Left_Hurt", string animationLeft_Idle = "Adventurer/Left_Idle", string animationLeft_Idle2 = "Adventurer/Left_Idle2", string animationLeft_Items = "Adventurer/Left_Items", string animationLeft_Jump = "Adventurer/Left_Jump", string animationLeft_LadderClimb = "Adventurer/Left_LadderClimb", string animationLeft_Run = "Adventurer/Left_Run", string animationLeft_Slide = "Adventurer/Left_Slide", string animationLeft_RollDodge = "Adventurer/Left_RollDodge", string animationLeft_Stand = "Adventurer/Left_Stand", string animationLeft_SwordDraw = "Adventurer/Left_SwordDraw", string animationLeft_SwordSheat = "Adventurer/Left_SwordSheat", string animationLeft_WallSlide = "Adventurer/Left_WallSlide", string animationRight_AirAttack1 = "Adventurer/Right_AirAttack1", string animationRight_AirAttack2 = "Adventurer/Right_AirAttack2", string animationRight_AirAttack3End = "Adventurer/Right_AirAttack3", string animationRight_AirAttack3Loop = "Adventurer/Right_AirAttack3Loop", string animationRight_AirAttack3Ready = "Adventurer/Right_AirAttack3Ready", string animationRight_Attack1 = "Adventurer/Right_Attack1", string animationRight_Attack2 = "Adventurer/Right_Attack2", string animationRight_Attack3 = "Adventurer/Right_Attack3", string animationRight_Cast = "Adventurer/Right_Cast", string animationRight_CastLoop = "Adventurer/Right_CastLoop", string animationRight_CornerClimb = "Adventurer/Right_CornerClimb", string animationRight_CornerGrab = "Adventurer/Right_CornerGrab", string animationRight_CornerJump = "Adventurer/Right_CornerJump", string animationRight_Crouch = "Adventurer/Right_Crouch", string animationRight_Die = "Adventurer/Right_Die", string animationRight_Fall = "Adventurer/Right_Fall", string animationRight_Hurt = "Adventurer/Right_Hurt", string animationRight_Idle = "Adventurer/Right_Idle", string animationRight_Idle2 = "Adventurer/Right_Idle2", string animationRight_Items = "Adventurer/Right_Items", string animationRight_Jump = "Adventurer/Right_Jump", string animationRight_LadderClimb = "Adventurer/Right_LadderClimb", string animationRight_Run = "Adventurer/Right_Run", string animationRight_Slide = "Adventurer/Right_Slide", string animationRight_RollDodge = "Adventurer/Right_RollDodge", string animationRight_Stand = "Adventurer/Right_Stand", string animationRight_SwordDraw = "Adventurer/Right_SwordDraw", string animationRight_SwordSheat = "Adventurer/Right_SwordSheat", string animationRight_WallSlide = "Adventurer/Right_WallSlide") : base(animations, animation, Speed, maxVelocityX, maxVelocityY)
+        public PlayerGameObject(Dictionary<string, Animation> animations, Animation animation, float Speed = 0.1f, int LungCapacity = 8, float jumpHeight = -4f, float Gravity = 0.15f, float Weight = 70, float maxVelocityX = 1f, float maxVelocityY = 5f, float climbingSpeed = -2,string animationLeft_AirAttack1 = "Adventurer/Left_AirAttack1", string animationLeft_AirAttack2 = "Adventurer/Left_AirAttack2", string animationLeft_AirAttack3End = "Adventurer/Left_AirAttack3", string animationLeft_AirAttack3Loop = "Adventurer/Left_AirAttack3Loop", string animationLeft_AirAttack3Ready = "Adventurer/Left_AirAttack3Ready", string animationLeft_Attack1 = "Adventurer/Left_Attack1", string animationLeft_Attack2 = "Adventurer/Left_Attack2", string animationLeft_Attack3 = "Adventurer/Left_Attack3", string animationLeft_Cast = "Adventurer/Left_Cast", string animationLeft_CastLoop = "Adventurer/Left_CastLoop", string animationLeft_CornerClimb = "Adventurer/Left_CornerClimb", string animationLeft_CornerGrab = "Adventurer/Left_CornerGrab", string animationLeft_CornerJump = "Adventurer/Left_CornerJump", string animationLeft_Crouch = "Adventurer/Left_Crouch", string animationLeft_Die = "Adventurer/Left_Die", string animationLeft_Fall = "Adventurer/Left_Fall", string animationLeft_Hurt = "Adventurer/Left_Hurt", string animationLeft_Idle = "Adventurer/Left_Idle", string animationLeft_Idle2 = "Adventurer/Left_Idle2", string animationLeft_Items = "Adventurer/Left_Items", string animationLeft_Jump = "Adventurer/Left_Jump", string animationLeft_LadderClimb = "Adventurer/Left_LadderClimb", string animationLeft_Run = "Adventurer/Left_Run", string animationLeft_Slide = "Adventurer/Left_Slide", string animationLeft_RollDodge = "Adventurer/Left_RollDodge", string animationLeft_Stand = "Adventurer/Left_Stand", string animationLeft_SwordDraw = "Adventurer/Left_SwordDraw", string animationLeft_SwordSheat = "Adventurer/Left_SwordSheat", string animationLeft_WallSlide = "Adventurer/Left_WallSlide", string animationRight_AirAttack1 = "Adventurer/Right_AirAttack1", string animationRight_AirAttack2 = "Adventurer/Right_AirAttack2", string animationRight_AirAttack3End = "Adventurer/Right_AirAttack3", string animationRight_AirAttack3Loop = "Adventurer/Right_AirAttack3Loop", string animationRight_AirAttack3Ready = "Adventurer/Right_AirAttack3Ready", string animationRight_Attack1 = "Adventurer/Right_Attack1", string animationRight_Attack2 = "Adventurer/Right_Attack2", string animationRight_Attack3 = "Adventurer/Right_Attack3", string animationRight_Cast = "Adventurer/Right_Cast", string animationRight_CastLoop = "Adventurer/Right_CastLoop", string animationRight_CornerClimb = "Adventurer/Right_CornerClimb", string animationRight_CornerGrab = "Adventurer/Right_CornerGrab", string animationRight_CornerJump = "Adventurer/Right_CornerJump", string animationRight_Crouch = "Adventurer/Right_Crouch", string animationRight_Die = "Adventurer/Right_Die", string animationRight_Fall = "Adventurer/Right_Fall", string animationRight_Hurt = "Adventurer/Right_Hurt", string animationRight_Idle = "Adventurer/Right_Idle", string animationRight_Idle2 = "Adventurer/Right_Idle2", string animationRight_Items = "Adventurer/Right_Items", string animationRight_Jump = "Adventurer/Right_Jump", string animationRight_LadderClimb = "Adventurer/Right_LadderClimb", string animationRight_Run = "Adventurer/Right_Run", string animationRight_Slide = "Adventurer/Right_Slide", string animationRight_RollDodge = "Adventurer/Right_RollDodge", string animationRight_Stand = "Adventurer/Right_Stand", string animationRight_SwordDraw = "Adventurer/Right_SwordDraw", string animationRight_SwordSheat = "Adventurer/Right_SwordSheat", string animationRight_WallSlide = "Adventurer/Right_WallSlide") : base(animations, animation, Speed, maxVelocityX, maxVelocityY)
         {
             _animationLeft_AirAttack1 = animationLeft_AirAttack1;
             _animationLeft_AirAttack2 = animationLeft_AirAttack2;
@@ -104,7 +106,8 @@ namespace GameProjectCode.Objects
             IsTouchingWall = false;
             IsHurt = false;
             CanJump = false;
-            JumpsLeft = 2;
+            maxJumps = 1;
+            JumpsLeft = maxJumps;
             crouchOffset = new Vector2(0,_animations[_animationLeft_Crouch].Offset.Y);
             HP = 10;
             IsDrowning = false;
@@ -114,6 +117,7 @@ namespace GameProjectCode.Objects
             JumpHeight = jumpHeight;
             Mass = new Mass(Weight);
             isRunning = false;
+            ClimbingSpeed = climbingSpeed;
 
             //GrapplingHook
             //GrapplingHook = new GrapplingHook(animations, animations["GrapplingHook_Head"], animations["GrapplingHook_Chain"], this);
@@ -358,34 +362,56 @@ namespace GameProjectCode.Objects
         }
         public void Collide(IHasCollision o)
         {
-            Collided = true;
-            Vector2 movement = Actions.MoveObject(this, o);
-            if(o is ILiquid)
+            if (o is IClimbable )
             {
-                ILiquid liquid = o as ILiquid;
-                slow = liquid.Density;
-                IsGrounded = false;
-                JumpsLeft = 1;
-                if (movement.Y > 10)
+                if (Keyboard.GetState().IsKeyDown(Input.Up))
                 {
-                    IsDrowning = true;
+                    Velocity = new Vector2(0, ClimbingSpeed);
                 }
+                else if (Keyboard.GetState().IsKeyDown(Input.Down))
+                {
+                    Velocity = new Vector2(0, -ClimbingSpeed);
+                }
+                else if(Keyboard.GetState().GetPressedKeys().Length < 1)
+                {
+                    Velocity = new Vector2(0, 0);
+                }
+
+                IsGrounded = true;
+                Collided = true;
             }
-            else
+            if(o is ICollidable)
             {
-                slow = DefaultSlowValue;
-
-                if (movement.Y < 0)
+                Collided = true;
+                Vector2 movement = Actions.MoveObject(this, o);
+                if(o is ILiquid)
                 {
-                    IsGrounded = true;
-                    JumpsLeft = 2;
-                    Velocity = new Vector2(Velocity.X, 0);
+                    ILiquid liquid = o as ILiquid;
+                    slow = liquid.Density;
+                    IsGrounded = false;
+                    JumpsLeft = 1;
+                    if (movement.Y > 10)
+                    {
+                        IsDrowning = true;
+                    }
                 }
-                if (movement.Y > 0 && Velocity.Y < 0)
-                    Velocity = new Vector2(Velocity.X,0);
+                else
+                {
+                    slow = DefaultSlowValue;
 
-                tomove = movement;
-                //Position += movement;
+                    if (movement.Y < 0)
+                    {
+                        IsGrounded = true;
+                        JumpsLeft = maxJumps;
+                        Velocity = new Vector2(Velocity.X, 0);
+                    }
+                    if (movement.Y > 0 && Velocity.Y < 0)
+                        Velocity = new Vector2(Velocity.X,0);
+
+                    tomove = movement;
+                    //Position += movement;
+                }
+
             }
         }
         public void ResolveCollisions()
@@ -485,26 +511,31 @@ namespace GameProjectCode.Objects
                 _timer.Time = 0;
             }
 
-            if (IsHurt && _damageStunTimer.Time > _damageStunTime*2)
-            {
-                _damageStunTimer.Time = 0;
-            }
-
-            if (_damageStunTimer.Time > _damageStunTime && IsHurt)
-            {
-                IsHurt = false;
-            }
 
 
-            if (_damageStunTimer.Time < _damageStunTime*4 )
+            if (_damageStunTimer.Time < _damageStunTime*4 && IsHurt )
             {
                 _damageStunTimer.Time += (float)gametime.ElapsedGameTime.TotalSeconds;
 
             }
+
+            if (IsHurt && _damageStunTimer.Time > _damageStunTime)
+            {
+                _damageStunTimer.Time = 0;
+                IsHurt = false;
+            }
+
             if (GrapplingHook != null)
             {
                 GrapplingHook.Update(gametime);
 
+            }
+
+            if (Keyboard.GetState().IsKeyDown(Input.Spell)){
+                maxJumps++;
+            }
+            if (Keyboard.GetState().IsKeyDown(Input.Dodge)){
+                maxJumps--;
             }
         }
         protected override void draw(SpriteBatch spriteBatch)
@@ -518,7 +549,7 @@ namespace GameProjectCode.Objects
         }
         public void Damage(int damage)
         {
-            if (_damageStunTimer.Time > _damageStunTime && !IsHurt)
+            if (!IsHurt)
             {
                 HP -= damage;
                 IsHurt = true;

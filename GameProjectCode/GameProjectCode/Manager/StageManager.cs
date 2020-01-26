@@ -103,10 +103,7 @@ namespace GameProjectCode.Manager
             }
             else if (Stages.Count >= SelectedStage)
             {
-                foreach (var o in Stages[SelectedStage].gameSpriteObjects)
-                {
-                    o.Update(gameTime);
-                }
+                Stages[SelectedStage].Update(gameTime);
                 playerManager.Update(gameTime);
             }
             //Needs to be updated after player
@@ -119,9 +116,9 @@ namespace GameProjectCode.Manager
             {
                 foreach (GameObject o in Stages[SelectedStage].GameObjects)
                 {
-                    if (o is ICollidable)
+                    if (o is ICanCollide)
                     {
-                        ICollidable interactable = o as ICollidable;
+                        ICanCollide interactable = o as ICanCollide;
                         interactable.ResolveCollisions();
                     }
                 }

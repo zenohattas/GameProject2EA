@@ -46,7 +46,7 @@ namespace GameProjectCode.Manager
             List<IHasCollision> collidables = GetCollidableList(sprites);
             for (int i = 0; i < collidables.Count; i++)
             {
-                if (collidables[i] is ICollidable)
+                if (collidables[i] is ICanCollide)
                 {
                     for (int j = 0; j < collidables.Count; j++)
                     {
@@ -54,11 +54,11 @@ namespace GameProjectCode.Manager
                         {
                             if (DetectCollision(collidables[i], collidables[j]))
                             {
-                                    ICollidable x = collidables[i] as ICollidable;
+                                    ICanCollide x = collidables[i] as ICanCollide;
                                     x.Collide(collidables[j]);
-                                    if (collidables[j] is ICollidable)
+                                    if (collidables[j] is ICanCollide)
                                     {
-                                        ICollidable y = collidables[i] as ICollidable;
+                                        ICanCollide y = collidables[i] as ICanCollide;
                                         y.Collide(collidables[i]);
                                     }
                             }
@@ -73,7 +73,7 @@ namespace GameProjectCode.Manager
         /// <param name="o1"></param>
         /// <param name="o2"></param>
         /// <returns></returns>
-        public Rectangle GetCollisionEdge(ICollidable o1, ICollidable o2)
+        public Rectangle GetCollisionEdge(ICanCollide o1, ICanCollide o2)
         {
             Rectangle collisionSide = new Rectangle();
 

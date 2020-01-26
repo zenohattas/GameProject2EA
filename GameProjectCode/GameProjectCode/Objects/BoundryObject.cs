@@ -1,4 +1,5 @@
 ﻿using GameProjectCode.Models;
+using GameProjectCode.Models.Interfaces;
 using Microsoft.Xna.Framework;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace GameProjectCode.Objects
 {
-    class BoundryObject : GameObject, IHasCollision
+    class BoundryObject : GameObject, ICollidable
     {
         private Rectangle collisionRectangle;
         private Vector2 position;

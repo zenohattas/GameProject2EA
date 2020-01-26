@@ -15,6 +15,7 @@ namespace GameProjectCode.Factory
     {
         List<string> menuDataLocations;
         List<string> stageDataLocations;
+        List<string> stageBackgroundDataLocations;
         List<string> hudDataLocations;
         List<MovementPatern> movements;
         string movementDataLocation;
@@ -39,6 +40,7 @@ namespace GameProjectCode.Factory
         {
             menuDataLocations = new List<string>();
             stageDataLocations = new List<string>();
+            stageBackgroundDataLocations = new List<string>();
             hudDataLocations = new List<string>();
 
             string basePath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
@@ -51,7 +53,8 @@ namespace GameProjectCode.Factory
 
             //Stage
             stageDataLocations.Add(basePath + @"\Content\Stages\WaterBackground.csv");
-            stageDataLocations.Add(basePath + @"\Content\Stages\Stage1.csv");
+            stageDataLocations.Add(basePath + @"\Content\Stages\Stage2.csv");
+            stageBackgroundDataLocations.Add(basePath + @"\Content\Stages\Stage2Background.csv");
 
             //Hud
             hudDataLocations.Add(basePath + @"\Content\Misc\Hud.csv");
@@ -75,6 +78,14 @@ namespace GameProjectCode.Factory
             sprites.AddRange(this.LoadObjects(animations, LoadData(stageDataLocations[0])));
             sprites.AddRange(this.LoadObjects(animations, LoadData(stageDataLocations[Stage])));
             sprites.AddRange(this.LoadBoundaries(StageWidth, StageHeight));
+
+            return sprites;
+        }
+        public List<GameObject> LoadStageBackground(Dictionary<string, Animation> animations, int Stage)
+        {
+            List<GameObject> sprites = new List<GameObject>();
+
+            sprites.AddRange(this.LoadObjects(animations, LoadData(stageBackgroundDataLocations[Stage-1])));
 
             return sprites;
         }
@@ -113,6 +124,9 @@ namespace GameProjectCode.Factory
                                         break;
                                     case "F":
                                         sprites.Add(new BlockFallThroughGameObject(animations, animations[animationName], _initiasePos));
+                                        break;
+                                    case "C":
+                                        sprites.Add(new BlockClimbableGameObject(animations, animations[animationName], _initiasePos));
                                         break;
                                     case "M":
                                         if (ellement.Length > 3)
@@ -240,9 +254,9 @@ namespace GameProjectCode.Factory
                     return "Environment/Water_inside";
                 case "46":
                     return "Environment/Ladder_top";
-                case "47":
-                    return "Environment/Ladder_bottom";
                 case "48":
+                    return "Environment/Ladder_bottom";
+                case "47":
                     return "Environment/Ladder_middle";
                 case "49":
                     return "Environment/Box";
@@ -308,6 +322,18 @@ namespace GameProjectCode.Factory
                     return "Environment/Background_tree";
                 case "80":
                     return "Environment/Background_vines";
+                case "81":
+                    return "Paddo1";
+                case "82":
+                    return "Paddo2";
+                case "83":
+                    return "Paddo3";
+                case "84":
+                    return "Paddo4";
+                case "85":
+                    return "Paddo5";
+                case "86":
+                    return "Paddo6";
 
                 case "100":
                     return "Lucifer_Left";

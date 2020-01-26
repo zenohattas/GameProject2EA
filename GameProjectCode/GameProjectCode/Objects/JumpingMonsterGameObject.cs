@@ -29,7 +29,7 @@ namespace GameProjectCode.Objects
         public override void Collide(IHasCollision o)
         {
             base.Collide(o);
-            Vector2 movement = Actions.MoveObject((ICollidable)this, o);
+            Vector2 movement = Actions.MoveObject((ICanCollide)this, o);
             slow = DefaultSlowValue;
             Collided = true;
 

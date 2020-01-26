@@ -1,5 +1,6 @@
 ﻿using GameProjectCode.Manager;
 using GameProjectCode.Objects;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
@@ -17,24 +18,25 @@ namespace GameProjectCode.Models
         {
             get
             {
-                return gameSpriteObjects.Count;
+                return GameObjects.Count;
             }
         }
         public Background Background;
         public List<GameObject> GameObjects;
-        public List<GameSpriteObject> gameSpriteObjects;
-        public Stage(List<GameObject> gameObjects, Background background, PlayerManager playerManager, bool ShowPlayer = true)
+        public List<GameObject> BackgroundObjects;
+        public Stage(List<GameObject> forgroundObjects, Background background, PlayerManager playerManager, bool ShowPlayer = true)
         {
-            this.GameObjects = gameObjects;
+            this.GameObjects = forgroundObjects;
+            this.BackgroundObjects = new List<GameObject>();
             this.Background = background;
-            gameSpriteObjects = new List<GameSpriteObject>();
-            foreach (var gameObject in gameObjects)
-            {
-                if (gameObject is GameSpriteObject)
-                {
-                    gameSpriteObjects.Add(gameObject as GameSpriteObject);
-                }
-            }
+            showPlayer = ShowPlayer;
+            this.playerManager = playerManager;
+        }
+        public Stage(List<GameObject> forgroundObjects, List<GameObject> backgroundObjects, Background background, PlayerManager playerManager, bool ShowPlayer = true)
+        {
+            this.GameObjects = forgroundObjects;
+            this.BackgroundObjects = backgroundObjects;
+            this.Background = background;
             showPlayer = ShowPlayer;
             this.playerManager = playerManager;
         }
@@ -42,24 +44,43 @@ namespace GameProjectCode.Models
         {
             this.GameObjects = gameObjects;
         }
-        public void Update(Microsoft.Xna.Framework.GameTime gameTime)
+        public void Update(GameTime gameTime)
         {
-            for (int i = 0; i < gameSpriteObjects.Count; i++)
+            update(GameObjects, gameTime);
+            update(BackgroundObjects, gameTime);
+        }
+        private void update(List<GameObject> objects, GameTime gameTime)
+        {
+            foreach (var item in objects)
             {
-                gameSpriteObjects[i].Update(gameTime);
+                if (item is GameSpriteObject)
+                {
+                    var sprite = item as GameSpriteObject;
+                    sprite.Update(gameTime);
+                }
             }
         }
         public void Draw(SpriteBatch spriteBatch)
         {
             if (Background != null)
                 Background.Draw(spriteBatch);
+
+            this.draw(BackgroundObjects, spriteBatch);
             
             if(showPlayer)
                 playerManager.Draw(spriteBatch);
 
-            foreach (var o in gameSpriteObjects)
+            this.draw(GameObjects, spriteBatch);
+        }
+        private void draw(List<GameObject> objects, SpriteBatch spriteBatch)
+        {
+            foreach (var item in objects)
             {
-                o.Draw(spriteBatch);
+                if (item is GameSpriteObject)
+                {
+                    var sprite = item as GameSpriteObject;
+                    sprite.Draw(spriteBatch);
+                }
             }
         }
     }

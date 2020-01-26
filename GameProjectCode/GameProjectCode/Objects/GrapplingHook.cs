@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace GameProjectCode.Models
 {
-    class GrapplingHook : MoveableGameObject, ICollidable
+    class GrapplingHook : MoveableGameObject, ICanCollide
     {
         MouseState mouse;
         GrapplingHookSimulation GrapplingHookSimulation;

@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameProjectCode.Models.Interfaces
 {
-    interface ICollidable : IHasCollision
+    interface IClimbable
     {
-        //Defines that an object repels ICanCollidables
     }
 }

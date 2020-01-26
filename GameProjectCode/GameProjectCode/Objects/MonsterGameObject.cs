@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace GameProjectCode.Objects
 {
-    class MonsterGameObject : MoveableGameObject, ICollidable, IAnimated, IDamagable, IKillable
+    class MonsterGameObject : MoveableGameObject, ICanCollide, IAnimated, IDamagable, IKillable
     {
         protected Vector2 tomove;
         protected Rectangle _collisionRectangle;
@@ -64,7 +64,7 @@ namespace GameProjectCode.Objects
                 Actions.DealDamage(o as GameObject, power);
 
             }
-            Vector2 movement = Actions.MoveObject((ICollidable)this, o);
+            Vector2 movement = Actions.MoveObject((ICanCollide)this, o);
             tomove = movement;
         }
 

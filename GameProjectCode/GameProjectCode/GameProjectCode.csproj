@@ -84,7 +84,10 @@
     <Compile Include="Models\Classes\Simulations\Spring.cs" />
     <Compile Include="Models\Classes\GameSpeed.cs" />
     <Compile Include="Models\Classes\Timer.cs" />
+    <Compile Include="Models\Interfaces\IClimbable.cs" />
+    <Compile Include="Models\Interfaces\ICollidable.cs" />
     <Compile Include="Models\Interfaces\IWeighted.cs" />
+    <Compile Include="Objects\BlockClimbableGameObject.cs" />
     <Compile Include="Objects\GrapplingHook.cs" />
     <Compile Include="Models\Classes\Hud.cs" />
     <Compile Include="Models\Interfaces\IAnimated.cs" />
@@ -93,7 +96,7 @@
     <Compile Include="Models\Interfaces\IHasCollision.cs" />
     <Compile Include="Models\Interfaces\IDamagable.cs" />
     <Compile Include="Models\Interfaces\IFallThrough.cs" />
-    <Compile Include="Models\Interfaces\ICollidable.cs" />
+    <Compile Include="Models\Interfaces\ICanCollide.cs" />
     <Compile Include="Models\Interfaces\IHasGravity.cs" />
     <Compile Include="Models\Interfaces\IInteractable.cs" />
     <Compile Include="Models\Interfaces\ICanJump.cs" />

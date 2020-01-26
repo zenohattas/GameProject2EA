@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using GameProjectCode.Models;
+using GameProjectCode.Models.Interfaces;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 namespace GameProjectCode.Objects
 {
-    class BlockSolidGameObject : GameSpriteObject, IHasCollision
+    class BlockSolidGameObject : GameSpriteObject, ICollidable
     {
         public BlockSolidGameObject(Dictionary<string, Animation> animations, Animation animation, Vector2 position) : base(animations, animation)
         {
