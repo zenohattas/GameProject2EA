@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -105,7 +106,7 @@ namespace GameProjectCode.Factory
             {
                 for (int j = 0; j < objects[i].Count; j++)
                 {
-                    string[] ellement = objects[i][j].Split('.');
+                    string[] ellement = objects[i][j].Split(',');
                     if (ellement.Length > 0)
                     {
                         string animationName = GetAnimationName(ellement[0]);
@@ -128,10 +129,22 @@ namespace GameProjectCode.Factory
                                     case "C":
                                         sprites.Add(new BlockClimbableGameObject(animations, animations[animationName], _initiasePos));
                                         break;
+                                    case "JPU":
+                                        if (ellement.Length > 2)
+                                        {
+                                            sprites.Add(new JumpPowerUp(animations, animations[animationName], _initiasePos, (float)double.Parse(ellement[2], CultureInfo.InvariantCulture)));
+                                        }
+                                        break;
                                     case "M":
                                         if (ellement.Length > 3)
                                         {
                                             sprites.Add(new MonsterGameObject(animations, animations[animationName], animations[GetAnimationName(ellement[3])], movements[Convert.ToInt32(ellement[2])], _initiasePos));
+                                        }
+                                        break;
+                                    case "FM":
+                                        if (ellement.Length > 3)
+                                        {
+                                            sprites.Add(new FallingMonsterGameObject(animations, animations[animationName], animations[GetAnimationName(ellement[3])], movements[Convert.ToInt32(ellement[2])], _initiasePos));
                                         }
                                         break;
                                     case "MJ":
@@ -385,7 +398,7 @@ namespace GameProjectCode.Factory
             for (int i = 0; i < lines.Length; i++)
             {
                 spriteData.Add(new List<string>());
-                string[] split = lines[i].Split(',');
+                string[] split = lines[i].Split(';');
 
                 foreach (string item in split)
                 {

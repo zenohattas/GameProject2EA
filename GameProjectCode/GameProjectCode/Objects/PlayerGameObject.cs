@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,8 +14,8 @@ namespace GameProjectCode.Objects
 {
     class PlayerGameObject : ControlledGameObject, ICanCollide, ICanJump, IAnimated, IDamagable, ICanFall, IWeighted
     {
+        public int MaxJumps;
         private int JumpsLeft;
-        private int maxJumps;
         private bool IsfacingRight;
         private bool IsDrowning;
         private bool IsTouchingWall;
@@ -106,8 +106,8 @@ namespace GameProjectCode.Objects
             IsTouchingWall = false;
             IsHurt = false;
             CanJump = false;
-            maxJumps = 1;
-            JumpsLeft = maxJumps;
+            MaxJumps = 1;
+            JumpsLeft = MaxJumps;
             crouchOffset = new Vector2(0,_animations[_animationLeft_Crouch].Offset.Y);
             HP = 10;
             IsDrowning = false;
@@ -402,7 +402,7 @@ namespace GameProjectCode.Objects
                     if (movement.Y < 0)
                     {
                         IsGrounded = true;
-                        JumpsLeft = maxJumps;
+                        JumpsLeft = MaxJumps;
                         Velocity = new Vector2(Velocity.X, 0);
                     }
                     if (movement.Y > 0 && Velocity.Y < 0)
@@ -532,10 +532,10 @@ namespace GameProjectCode.Objects
             }
 
             if (Keyboard.GetState().IsKeyDown(Input.Spell)){
-                maxJumps++;
+                MaxJumps++;
             }
             if (Keyboard.GetState().IsKeyDown(Input.Dodge)){
-                maxJumps--;
+                MaxJumps--;
             }
         }
         protected override void draw(SpriteBatch spriteBatch)

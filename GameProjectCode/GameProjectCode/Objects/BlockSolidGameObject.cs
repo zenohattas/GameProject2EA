@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,9 +10,9 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace GameProjectCode.Objects
 {
-    class BlockSolidGameObject : GameSpriteObject, ICollidable
+    class BlockSolidGameObject : BlockTransparentGameObject, ICollidable
     {
-        public BlockSolidGameObject(Dictionary<string, Animation> animations, Animation animation, Vector2 position) : base(animations, animation)
+        public BlockSolidGameObject(Dictionary<string, Animation> animations, Animation animation, Vector2 position) : base(animations, animation, position)
         {
             Position = position;
             _collisionRectangle = new Rectangle((int)position.X, (int)position.Y, animation.Frames[0].Frame.Width, animation.Frames[0].Frame.Height);
