@@ -12,9 +12,9 @@ namespace GameProjectCode.Objects
     abstract class PowerUpGameObject : BlockSolidGameObject, ICanCollide
     {
         public bool IsVisible { get; set; }
-        public PowerUpGameObject(Dictionary<string, Animation> animations, Animation animation, Vector2 Position, float Scale) : base(animations, animation, Position)
+        public PowerUpGameObject(Dictionary<string, Animation> animations, Animation animation, Vector2 Position, float Scale = 1) : base(animations, animation, Position)
         {
-            animation.SetScale(new Vector2(Scale));
+            animation.Scale = new Vector2(Scale);
             IsVisible = true;
         }
 

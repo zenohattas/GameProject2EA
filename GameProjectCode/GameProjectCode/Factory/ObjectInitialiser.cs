@@ -51,9 +51,12 @@ namespace GameProjectCode.Factory
             menuDataLocations.Add(basePath + @"\Content\Menus\MenuStart.csv");
             menuDataLocations.Add(basePath + @"\Content\Menus\MenuOptions.csv");
             menuDataLocations.Add(basePath + @"\Content\Menus\MenuEndScreen.csv");
+            menuDataLocations.Add(basePath + @"\Content\Menus\MenuWinScreen.csv");
 
             //Stage
             stageDataLocations.Add(basePath + @"\Content\Stages\WaterBackground.csv");
+            stageDataLocations.Add(basePath + @"\Content\Stages\Stage1.csv");
+            stageBackgroundDataLocations.Add(basePath + @"\Content\Stages\Stage1Background.csv");
             stageDataLocations.Add(basePath + @"\Content\Stages\Stage2.csv");
             stageBackgroundDataLocations.Add(basePath + @"\Content\Stages\Stage2Background.csv");
 
@@ -130,10 +133,10 @@ namespace GameProjectCode.Factory
                                         sprites.Add(new BlockClimbableGameObject(animations, animations[animationName], _initiasePos));
                                         break;
                                     case "JPU":
-                                        if (ellement.Length > 2)
-                                        {
-                                            sprites.Add(new JumpPowerUp(animations, animations[animationName], _initiasePos, (float)double.Parse(ellement[2], CultureInfo.InvariantCulture)));
-                                        }
+                                        sprites.Add(new JumpPowerUp(animations, animations[animationName], _initiasePos));
+                                        break;
+                                    case "EG":
+                                        sprites.Add(new EndGameObject(animations, animations[animationName], _initiasePos));
                                         break;
                                     case "M":
                                         if (ellement.Length > 3)
@@ -160,7 +163,10 @@ namespace GameProjectCode.Factory
                             else
                                 sprites.Add(new BlockSolidGameObject(animations, animations[animationName], _initiasePos));
                         }
-
+                        else if (ellement[0] == "SE" && ellement.Length > 2)
+                        {
+                            sprites.Add(new StageExitGameObject(new Rectangle(_initiasePos.ToPoint(), new Point(16)), ellement[1], Convert.ToBoolean(ellement[2])));
+                        }
                     }
 
                     _initiasePos.X += _spriteSize.X;
@@ -347,7 +353,24 @@ namespace GameProjectCode.Factory
                     return "Paddo5";
                 case "86":
                     return "Paddo6";
-
+                case "87":
+                    return "Environment/Dirt_blue_inside_top_corner_left";
+                case "88":
+                    return "Environment/Dirt_blue_inside_top_corner_right";
+                case "89":
+                    return "Environment/Dirt_blue_inside_bottom_corner_left";
+                case "90":
+                    return "Environment/Dirt_blue_inside_bottom_corner_right";
+                case "91":
+                    return "Environment/Dirt_blue_inside_top_corners";
+                case "92":
+                    return "Environment/Dirt_blue_inside_bottom_corners";
+                case "93":
+                    return "Environment/Dirt_blue_inside_bottom_corners_diagonal_left";
+                case "94":
+                    return "Environment/Dirt_blue_inside_bottom_corners_diagonal_right";
+                case "95":
+                    return "Environment/EndCrystal";
                 case "100":
                     return "Lucifer_Left";
                 case "101":

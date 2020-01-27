@@ -92,7 +92,9 @@ namespace GameProjectCode
             stageManager.AddMenu(new Stage(objectInitialiser.LoadMenu(animations, 0, gameWidth, gameHeight), new Background(Content.Load<Texture2D>("Environment/MysticalForestMain"), new Rectangle(0, 0, 1601, 961)), stageManager.playerManager, false));
             stageManager.AddMenu(new Stage(objectInitialiser.LoadMenu(animations, 1, gameWidth, gameHeight), new Background(Content.Load<Texture2D>("Environment/MysticalForestMain"), new Rectangle(0, 0, 1601, 961)), stageManager.playerManager, false));
             stageManager.AddMenu(new Stage(objectInitialiser.LoadMenu(animations, 2, gameWidth, gameHeight), new Background(Content.Load<Texture2D>("Environment/MysticalDeadForest"), new Rectangle(0, 0, 1600, 965)), stageManager.playerManager, false));
+            stageManager.AddMenu(new Stage(objectInitialiser.LoadMenu(animations, 3, gameWidth, gameHeight), new Background(Content.Load<Texture2D>("Environment/MysticalForestMain"), new Rectangle(0, 0, 1600, 965)), stageManager.playerManager, false));
             stageManager.AddStage(new Stage(objectInitialiser.LoadStage(animations, 1, gameWidth, gameHeight), objectInitialiser.LoadStageBackground(animations,1), new Background(Content.Load<Texture2D>("Environment/MysticalForest"), new Rectangle(0,0, 1613, 1008)), stageManager.playerManager));
+            stageManager.AddStage(new Stage(objectInitialiser.LoadStage(animations, 2, gameWidth, gameHeight), objectInitialiser.LoadStageBackground(animations, 2), new Background(Content.Load<Texture2D>("Environment/MysticalForest"), new Rectangle(0, 0, 1613, 1008)), stageManager.playerManager));
             stageManager.hudManager.AddHudEllements(objectInitialiser.LoadHud(animations));
             stageManager.GetPlayer().Position = new Vector2(69, 887);
 
@@ -182,11 +184,11 @@ namespace GameProjectCode
                 graphics.ToggleFullScreen();
             }
 
-            //if (hero.IsMoving)
-            //{
-            //    camPos.X = hero.Position.X - GraphicsDevice.Viewport.Width / 2;
-            //    //camPos.Y = hero.Position.Y - GraphicsDevice.Viewport.Height / 2;
-            //}
+            if (hero.IsMoving)
+            {
+                camPos.X = hero.Position.X - GraphicsDevice.Viewport.Width / 2;
+                //camPos.Y = hero.Position.Y - GraphicsDevice.Viewport.Height / 2;
+            }
 
             mouse = Mouse.GetState();
 

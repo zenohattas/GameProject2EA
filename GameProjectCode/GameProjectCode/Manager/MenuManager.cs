@@ -176,6 +176,19 @@ namespace GameProjectCode.Manager
                             break;
                     }
                     break;
+                case 3:
+                    switch (selectedElement)
+                    {
+                        case 1:
+                            stageManager.SelectedStage = -2;
+                            break;
+                        case 2:
+                            stageManager.SelectedStage = -3;
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
                 default:
                     break;
             }
@@ -189,5 +202,10 @@ namespace GameProjectCode.Manager
         {
             selectedMenu = 2;
         }
+        public void ShowWinScreen()
+        {
+            selectedMenu = 3;
+        }
+
     }
 }

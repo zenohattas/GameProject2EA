@@ -48,7 +48,44 @@ namespace GameProjectCode.Manager
         public void AddStage(Stage stage)
         {
             Stages.Add(stage);
+            InitExtraParams();
         }
+
+        private void InitExtraParams()
+        {
+            for (int i = 0; i < Stages.Count; i++)
+            {
+                string id = "" ;
+                for (int j = 0; j < Stages[i].Count; j++)
+                {
+                    if (Stages[i].GameObjects[j] is StageExitGameObject)
+                    {
+                        id = (Stages[i].GameObjects[j] as StageExitGameObject).ID;
+
+                        for (int x = 0; x < Stages.Count; x++)
+                        {
+                            for (int y = 0; y < Stages[x].Count; y++)
+                            {
+                                if (Stages[x].GameObjects[y] is StageExitGameObject)
+                                {
+                                    if ((Stages[x].GameObjects[y] as StageExitGameObject).ID == id && x != i && j != y)
+                                    {
+                                        (Stages[i].GameObjects[j] as StageExitGameObject).Initialize(this, (Stages[x].GameObjects[y] as StageExitGameObject), i);
+                                        (Stages[x].GameObjects[y] as StageExitGameObject).Initialize(this, (Stages[i].GameObjects[j] as StageExitGameObject), x);
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (Stages[i].GameObjects[j] is EndGameObject)
+                    {
+                        (Stages[i].GameObjects[j] as EndGameObject).LoadStagemanager(this);
+                    }
+                }
+            }
+        }
+
         public List<GameObject> GetStage()
         {
             if(SelectedStage >= 0 && SelectedStage < Stages.Count)
@@ -67,21 +104,15 @@ namespace GameProjectCode.Manager
         }
         public void Draw(SpriteBatch spriteBatch, SpriteFont spriteFont)
         {
-            switch (SelectedStage)
-            {
-                case -1:
-                    menuManager.Draw(spriteBatch);
-                    break;
-                case 0:
-                    Stages[0].Draw(spriteBatch);
-                    break;                        
-                default:
-                    Stages[0].Draw(spriteBatch);
-                    break;
-            }
             if (SelectedStage > -1)
+            {
+                Stages[SelectedStage].Draw(spriteBatch);
                 hudManager.Draw(spriteBatch);
-           
+            }
+            else if (SelectedStage == -1)
+            {
+                menuManager.Draw(spriteBatch);
+            }
         }
         public void Update(GameTime gameTime)
         {

@@ -79,4 +79,12 @@ Environment/Dirt_blue_bottom_middle;208;112;16;16;;;;
 Environment/Dirt_blue_bottom_double;176;112;16;16;;;;
 Environment/Background_tree;31;0;80;128;;;;
 Environment/Background_vines;0;4;32;32;;;;
-
+Environment/Dirt_blue_inside_top_corner_left;272;0;16;16;;;;
+Environment/Dirt_blue_inside_top_corner_right;272;16;16;16;;;;
+Environment/Dirt_blue_inside_bottom_corner_left;272;32;16;16;;;;
+Environment/Dirt_blue_inside_bottom_corner_right;272;48;16;16;;;;
+Environment/Dirt_blue_inside_top_corners;272;64;16;16;;;;
+Environment/Dirt_blue_inside_bottom_corners;272;80;16;16;;;;
+Environment/Dirt_blue_inside_bottom_corners_diagonal_left;272;96;16;16;;;;
+Environment/Dirt_blue_inside_bottom_corners_diagonal_right;272;112;16;16;;;;
+Environment/EndCrystal;288;0;38;62;;;;

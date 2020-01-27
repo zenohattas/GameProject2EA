@@ -1,7 +1,7 @@
 Name;xPos;yPos;Width;Height;Islooping;FrameSpeed;xOffset;yOffset
-Paddo1;0;0;84;96;;;;
-Paddo2;102;0;90;96;;;;
-Paddo3;204;0;96;96;;;;
-Paddo4;6;114;87;96;;;;
-Paddo5;108;114;81;96;;;;
-Paddo6;216;114;72;96;;;;
+Paddo1;0;0;28;32;;;;
+Paddo2;34;0;30;32;;;;
+Paddo3;68;0;32;32;;;;
+Paddo4;2;38;29;32;;;;
+Paddo5;36;38;27;32;;;;
+Paddo6;72;38;24;32;;;;

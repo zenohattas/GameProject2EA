@@ -88,6 +88,7 @@
     <Compile Include="Models\Interfaces\ICollidable.cs" />
     <Compile Include="Models\Interfaces\IWeighted.cs" />
     <Compile Include="Objects\BlockClimbableGameObject.cs" />
+    <Compile Include="Objects\EndGameObject.cs" />
     <Compile Include="Objects\FallingMonsterGameObject.cs" />
     <Compile Include="Objects\GrapplingHook.cs" />
     <Compile Include="Models\Classes\Hud.cs" />
@@ -122,6 +123,7 @@
     <Compile Include="Objects\MonsterGameObject.cs" />
     <Compile Include="Objects\PowerUpGameObject.cs" />
     <Compile Include="Objects\SignObject.cs" />
+    <Compile Include="Objects\StageExitGameObject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Objects\GameSpriteObject.cs" />

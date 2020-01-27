@@ -10,7 +10,7 @@ namespace GameProjectCode.Objects
 {
     class JumpPowerUp : PowerUpGameObject
     {
-        public JumpPowerUp(Dictionary<string, Animation> animations, Animation animation, Vector2 Position,float Scale) : base(animations, animation, Position, Scale)
+        public JumpPowerUp(Dictionary<string, Animation> animations, Animation animation, Vector2 Position,float Scale = 1) : base(animations, animation, Position, Scale)
         {
         }
 
